@@ -35,6 +35,9 @@ Partial Class Main
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.dataTxt = New System.Windows.Forms.TextBox()
+        Me.csBtn = New System.Windows.Forms.Button()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.csTxt = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'portsBtn
@@ -97,7 +100,7 @@ Partial Class Main
         '
         'msgBtn
         '
-        Me.msgBtn.Location = New System.Drawing.Point(249, 113)
+        Me.msgBtn.Location = New System.Drawing.Point(249, 145)
         Me.msgBtn.Name = "msgBtn"
         Me.msgBtn.Size = New System.Drawing.Size(110, 23)
         Me.msgBtn.TabIndex = 7
@@ -114,11 +117,11 @@ Partial Class Main
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(26, 94)
+        Me.Label1.Location = New System.Drawing.Point(12, 94)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(55, 13)
+        Me.Label1.Size = New System.Drawing.Size(50, 13)
         Me.Label1.TabIndex = 9
-        Me.Label1.Text = "Messages"
+        Me.Label1.Text = "Message"
         '
         'Label3
         '
@@ -131,17 +134,49 @@ Partial Class Main
         '
         'dataTxt
         '
+        Me.dataTxt.BackColor = System.Drawing.SystemColors.ScrollBar
         Me.dataTxt.Location = New System.Drawing.Point(409, 55)
         Me.dataTxt.Multiline = True
         Me.dataTxt.Name = "dataTxt"
+        Me.dataTxt.ReadOnly = True
         Me.dataTxt.Size = New System.Drawing.Size(353, 197)
         Me.dataTxt.TabIndex = 11
+        '
+        'csBtn
+        '
+        Me.csBtn.Location = New System.Drawing.Point(249, 116)
+        Me.csBtn.Name = "csBtn"
+        Me.csBtn.Size = New System.Drawing.Size(107, 23)
+        Me.csBtn.TabIndex = 12
+        Me.csBtn.Text = "Add Checksum"
+        Me.csBtn.UseVisualStyleBackColor = True
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(17, 150)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(60, 13)
+        Me.Label4.TabIndex = 13
+        Me.Label4.Text = "Checksum:"
+        '
+        'csTxt
+        '
+        Me.csTxt.BackColor = System.Drawing.SystemColors.InactiveCaption
+        Me.csTxt.Enabled = False
+        Me.csTxt.Location = New System.Drawing.Point(83, 148)
+        Me.csTxt.Name = "csTxt"
+        Me.csTxt.Size = New System.Drawing.Size(100, 20)
+        Me.csTxt.TabIndex = 14
         '
         'Main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(804, 611)
+        Me.Controls.Add(Me.csTxt)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.csBtn)
         Me.Controls.Add(Me.dataTxt)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label1)
@@ -171,5 +206,8 @@ Partial Class Main
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents dataTxt As System.Windows.Forms.TextBox
+    Friend WithEvents csBtn As System.Windows.Forms.Button
+    Friend WithEvents Label4 As System.Windows.Forms.Label
+    Friend WithEvents csTxt As System.Windows.Forms.TextBox
 
 End Class

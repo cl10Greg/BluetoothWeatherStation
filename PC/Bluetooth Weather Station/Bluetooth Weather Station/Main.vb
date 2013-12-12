@@ -67,7 +67,6 @@
 
         masterSlaveComm(msgTxt.Text + vbLf)
 
-
     End Sub
 
     Private Sub addText(tempString As String)
@@ -98,5 +97,20 @@
         End Try
         addText(decIn)
         addText(charIn)
+    End Sub
+
+    Private Function checkSumCreator(tempString As String) As Integer
+        Dim i As Integer
+        For x = 0 To tempString.Length - 1 Step 2
+            i += Convert.ToInt32(tempString.Substring(x, 2), 16)
+        Next
+        Return i
+    End Function
+
+    Private Sub csBtn_Click(sender As Object, e As EventArgs) Handles csBtn.Click
+        Dim csString As String
+        csString = Conversion.Hex(checkSumCreator(msgTxt.Text))
+        csTxt.Text = csString.Substring(csString.Length - 2)
+        msgTxt.Text &= csString.Substring(csString.Length - 2)
     End Sub
 End Class
