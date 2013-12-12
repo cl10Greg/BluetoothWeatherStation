@@ -1,4 +1,5 @@
 ﻿Public Class Main
+    Dim _continue As Boolean
 
     Private Sub exitBtn_Click(sender As Object, e As EventArgs) Handles exitBtn.Click
         If spObj.IsOpen Then
@@ -38,6 +39,7 @@
             msgBtn.Enabled = True
             disBtn.Enabled = True
             connectBtn.Enabled = False
+            _continue = True
         End If
 
     End Sub
@@ -63,7 +65,27 @@
             Exit Sub
         End If
 
-        
+        spObj.Write(msgTxt.Text + vbLf)
+            addText("Message sent")
+        Dim decIn As String = ""
+        Dim charIn As String = ""
+        Try
+            Do
+                Dim incoming As String = spObj.ReadByte
+                If incoming Is Nothing Then
+                    Exit Do
+                Else
+                    decIn &= incoming & " "
+                    charIn &= Chr(incoming) & " "
+                End If
+            Loop
+        Catch ex As TimeoutException
+
+        End Try
+        addText(decIn)
+        addText(charIn)
+
+
 
     End Sub
 

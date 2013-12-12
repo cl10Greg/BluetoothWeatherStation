@@ -72,6 +72,11 @@ Partial Class Main
         Me.connectBtn.Text = "Connect"
         Me.connectBtn.UseVisualStyleBackColor = True
         '
+        'spObj
+        '
+        Me.spObj.ReadTimeout = 10000
+        Me.spObj.WriteTimeout = 10000
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
