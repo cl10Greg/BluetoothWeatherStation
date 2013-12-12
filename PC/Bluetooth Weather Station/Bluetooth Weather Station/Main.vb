@@ -38,6 +38,9 @@
         connectBtn.Enabled = False
         msgBtn.Enabled = False
         disBtn.Enabled = False
+        getBox.Enabled = False
+        setBox.Enabled = False
+        dataTxt.ScrollBars = ScrollBars.Both
     End Sub
 
     Private Sub connectBtn_Click(sender As Object, e As EventArgs) Handles connectBtn.Click
@@ -54,6 +57,8 @@
             msgBtn.Enabled = True
             disBtn.Enabled = True
             connectBtn.Enabled = False
+            getBox.Enabled = True
+            setBox.Enabled = True
         End If
 
     End Sub
@@ -65,6 +70,8 @@
             msgBtn.Enabled = False
             disBtn.Enabled = False
             connectBtn.Enabled = True
+            getBox.Enabled = False
+            setBox.Enabled = True
         End If
     End Sub
 
@@ -127,6 +134,10 @@
 
     Private Sub csBtn_Click(sender As Object, e As EventArgs) Handles csBtn.Click
         Dim csString As String
+        If msgTxt.TextLength = 0 Or msgTxt.TextLength Mod 2 = 1 Then
+            addText("Checksum fail, either no data or not the right number of bytes")
+            Exit Sub
+        End If
         csString = checkSumCreator(msgTxt.Text)
         csTxt.Text = csString
         msgTxt.Text &= csString
@@ -138,6 +149,41 @@
 
     Private Sub getTBtn_Click(sender As Object, e As EventArgs) Handles getTBtn.Click
         Dim dataStr As String = getTempStr + checkSumCreator(getTempStr) + vbLf
+        masterSlaveComm(dataStr)
+    End Sub
+
+    Private Sub getTHiBtn_Click(sender As Object, e As EventArgs) Handles getTHiBtn.Click
+        Dim dataStr As String = getTempHiStr + checkSumCreator(getTempHiStr) + vbLf
+        masterSlaveComm(dataStr)
+    End Sub
+
+    Private Sub getTLoBtn_Click(sender As Object, e As EventArgs) Handles getTLoBtn.Click
+        Dim dataStr As String = getTempLowStr + checkSumCreator(getTempLowStr) + vbLf
+        masterSlaveComm(dataStr)
+    End Sub
+
+    Private Sub getHBtn_Click(sender As Object, e As EventArgs) Handles getHBtn.Click
+        Dim dataStr As String = getHumStr + checkSumCreator(getHumStr) + vbLf
+        masterSlaveComm(dataStr)
+    End Sub
+
+    Private Sub getHHiBtn_Click(sender As Object, e As EventArgs) Handles getHHiBtn.Click
+        Dim dataStr As String = getHumHiStr + checkSumCreator(getHumHiStr) + vbLf
+        masterSlaveComm(dataStr)
+    End Sub
+
+    Private Sub getHLoBtn_Click(sender As Object, e As EventArgs) Handles getHLoBtn.Click
+        Dim dataStr As String = getHumLowStr + checkSumCreator(getHumLowStr) + vbLf
+        masterSlaveComm(dataStr)
+    End Sub
+
+    Private Sub getTimeBtn_Click(sender As Object, e As EventArgs) Handles getTimeBtn.Click
+        Dim dataStr As String = getTimeStr + checkSumCreator(getTimeStr) + vbLf
+        masterSlaveComm(dataStr)
+    End Sub
+
+    Private Sub getAllBtn_Click(sender As Object, e As EventArgs) Handles getAllBtn.Click
+        Dim dataStr As String = getAllStr + checkSumCreator(getAllStr) + vbLf
         masterSlaveComm(dataStr)
     End Sub
 End Class
