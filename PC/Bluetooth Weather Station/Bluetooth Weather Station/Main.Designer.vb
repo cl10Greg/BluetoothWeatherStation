@@ -74,8 +74,8 @@ Partial Class Main
         '
         'spObj
         '
-        Me.spObj.ReadTimeout = 10000
-        Me.spObj.WriteTimeout = 10000
+        Me.spObj.ReadTimeout = 1000
+        Me.spObj.WriteTimeout = 1000
         '
         'Label2
         '

@@ -65,8 +65,22 @@
             Exit Sub
         End If
 
-        spObj.Write(msgTxt.Text + vbLf)
-            addText("Message sent")
+        masterSlaveComm(msgTxt.Text + vbLf)
+
+
+    End Sub
+
+    Private Sub addText(tempString As String)
+        If dataTxt.TextLength = 0 Then
+            dataTxt.Text = tempString
+        Else
+            dataTxt.Text = dataTxt.Text + vbCrLf + tempString
+        End If
+    End Sub
+
+    Private Sub masterSlaveComm(tempString As String)
+        spObj.Write(tempString)
+        addText("Message sent")
         Dim decIn As String = ""
         Dim charIn As String = ""
         Try
@@ -84,16 +98,5 @@
         End Try
         addText(decIn)
         addText(charIn)
-
-
-
-    End Sub
-
-    Private Sub addText(tempString As String)
-        If dataTxt.TextLength = 0 Then
-            dataTxt.Text = tempString
-        Else
-            dataTxt.Text = dataTxt.Text + vbCrLf + tempString
-        End If
     End Sub
 End Class
