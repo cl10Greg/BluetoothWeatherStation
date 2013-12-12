@@ -113,4 +113,8 @@
         csTxt.Text = csString.Substring(csString.Length - 2)
         msgTxt.Text &= csString.Substring(csString.Length - 2)
     End Sub
+
+    Private Sub tempCRad_CheckedChanged(sender As Object, e As EventArgs) Handles tempCRad.CheckedChanged
+
+    End Sub
 End Class
