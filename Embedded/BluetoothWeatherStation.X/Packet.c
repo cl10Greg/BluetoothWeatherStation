@@ -1,6 +1,6 @@
 #include <htc.h>
-#include "C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h"
-#include "C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\Bluetooth.h"
+#include "userMacro.h"
+#include "Bluetooth.h"
 #include <Packet.h>
 #include <string.h>
 
@@ -149,8 +149,9 @@ int checkStartByte() {
     //Read the start byte from memory
     //Check to see if the start byte matches the user defined byte
     if (eeprom_read(startByteAddr) == userStartByte) {
-        //If it is, return true and write yet
+        //If it is, return true and write yes
         writeByte('S');
+        //Add the value to the check sum memory
         eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(startByteAddr));
         return 1;
     }
@@ -159,53 +160,120 @@ int checkStartByte() {
     return 0;
 }
 
+/********************************************************************
+ * Function:    checkRWByte                                         *
+ * Type:        int                                                 *
+ * Argument:    None                                                *
+ * Return:      int (1 or 0 to represent true or false)             *
+ * Purpose:     Check the RW byte value to make sure that it is the *
+ *              correct value range.                                *
+ *******************************************************************/
 int checkRWByte() {
+    //Read the rw byte value
+    //Must be a 1 or a 0
     if(eeprom_read(rwByteAddr) == 0 || eeprom_read(rwByteAddr) == 1){
+        //In range, return true and write yes
         writeByte('R');
+        //Add the value to the check sum memory
         eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(rwByteAddr));
         return 1;
     }
+    //If false, return false and write no
     writeByte('N');
     return 0;
 }
 
+/********************************************************************
+ * Function:    checkCMDByte                                        *
+ * Type:        int                                                 *
+ * Argument:    None                                                *
+ * Return:      int (1 or 0 to represent true or false)             *
+ * Purpose:     Check to see if the command byte value is valid     *
+ *******************************************************************/
 int checkCMDByte(){
+    //if the command byte is within range
     if(eeprom_read(cmdByteAddr) >= 0 && eeprom_read(cmdByteAddr) <= maxCmd){
+        //Write the value the check sum memory
         eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(cmdByteAddr));
+        //Return true and write yes
         writeByte('C');
         return 1;
     }
+    //If false, return false and write no
     writeByte('N');
     return 0;
 }
 
+/********************************************************************
+ * Function:    checkCS                                             *
+ * Type:        int                                                 *
+ * Argument:    None                                                *
+ * Return:      int (1 or 0 to represent true or false)             *
+ * Purpose:     Check to see if the data received matches the       *
+ *              check sum that was supplied by the message.         *
+ *******************************************************************/
+
 int checkCS(){
+    //If the check sums are equal
     if(eeprom_read(csByteAddr) == eeprom_read(calcCSByteAddr)){
+        //Return true and write yes
         writeByte('Y');
         return 1;
     }
+    //If not, return false and write no
     writeByte('N');
     return 0;
 }
+
+/********************************************************************
+ * Function:    validatePacket                                      *
+ * Type:        Int                                                 *
+ * Argument:    None                                                *
+ * Return:      int (1 or 0 to represent true or false              *
+ * Purpose:     To perform all the packet checks and validate the   *
+ *              data is sound.                                      *
+ *******************************************************************/
 int validatePacket(){
-    //Check the start byte
+    //Check the start byte, RW byte, CMD byte, and data frames
     if(checkStartByte() && checkRWByte() && checkCMDByte() && checkDataFrames()){
         //Get Data frame and length for checksum
         addDataToCheckSum();
+        //Check the check sum
         if(checkCS())
+            //if all true, return true
             return 1;
     }
+    //if not, return false
     return 0;
     
 }
 
+/********************************************************************
+ * Function:    addDataToCheckSum                                   *
+ * Type:        Void                                                *
+ * Argument:    None                                                *
+ * Return:      int (1 or 0 to represent true or false              *
+ * Purpose:     Sum all the data packets and add it to the check sum*
+ *******************************************************************/
 void addDataToCheckSum(){
+    //Add the data length byte to the check sum
     eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(lenByteAddr));
+
+    //Loop through all the data memory locations
     for (unsigned char i = 0x00; i < eeprom_read(lenByteAddr); i++) {
+        //Add the value at each location to the check sum
         eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(dataBytesAddr+i));
     }
 }
 
+/********************************************************************
+ * Function:    displayPacket                                       *
+ * Type:        Void                                                *
+ * Argument:    None                                                *
+ * Return:      None                                                *
+ * Purpose:     Debugging feature to show all the data that is in   *
+ *              eeprom locations.                                   *
+ *******************************************************************/
 void displayPacket() {
 
     //Write Start Byte
@@ -222,6 +290,7 @@ void displayPacket() {
     writeByte(eeprom_read(lenByteAddr));
     writeByte(newLineChar);
 
+    //Get all the data from the eeprom locations
     for (unsigned char i = 0x00; i < eeprom_read(lenByteAddr); i++) {
         writeByte(eeprom_read(dataBytesAddr+i));
         writeByte(newLineChar);

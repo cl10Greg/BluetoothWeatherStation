@@ -1,6 +1,6 @@
 #include "customADC.h"
 #include <htc.h>
-#include "C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h"
+#include "userMacro.h"
 
 
 void initADC()

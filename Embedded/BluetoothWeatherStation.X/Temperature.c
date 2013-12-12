@@ -1,5 +1,5 @@
-#include "C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\Temperature.h"
-#include "C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h"
+#include "Temperature.h"
+#include "userMacro.h"
 #include <htc.h>
 #include <pic.h>
 

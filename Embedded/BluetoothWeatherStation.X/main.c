@@ -41,19 +41,22 @@ __CONFIG(WDTE_OFF & LVP_OFF & BOREN_OFF & FOSC_HS & PWRTE_OFF) ;
 int main()
 {
     char testString[] = "Welcome\n";
-    char counterText[] = "Length: ";
+    //char counterText[] = "Length: ";
     
     //Used to setup the UART connection for bluetooth
     initUSART();
+    //Used to setup the ADC
     initADC();
+    //Used to setup the LCD
+    //initLCD();
     
-
+    //Write a welcome message on start up
     writeString(testString);
+
     //Infinite loop.  Will look for communication and get analog values. Will
     //send and receive data in this loop
     while(1){
-        //echoBack();
-
+        
         //Gets the raw value
         //selectTemp();
         //tempVal = readTemp();
@@ -62,24 +65,39 @@ int main()
         while(!RCIF);
             //Reset calculated check sum
             eeprom_write(calcCSByteAddr,0x00);
+
             //Data input space (temporarily only 4 packets of data)
             char arrStore[50] = {0};
+
             //Read the UART data
             readString(arrStore);
+
             //Write the data to the TX
-            writeString(arrStore);
+            //Used for debugging
+            //writeString(arrStore);
+
             //Write the length to TX
-            writeString(counterText);
+            //Used for debugging
+            //writeString(counterText);
+
             //Write the data stored in EEPROM
             writeByte(eeprom_read(RXLenAddr));
+
+            //Break the data up into the data sections
             parsePacket(arrStore);
+
+            //Validate the data that is in the packet
+            //If the data is all valid, go and make the response
             if(validatePacket()){
                 writeByte('V');
                 //Get values
                 //Make response
+            //If there is an error in the packet, response error
             }else{
                 writeByte('N');
             }
+
+            //Add delay based on the refresh rate
     }
 
     //Should never get to this part of the program.  If it does, there was an

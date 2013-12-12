@@ -119,8 +119,15 @@
         End Try
         addText(decIn)
         addText(charIn)
+        'analyze the response
+        'Find start byte
+        'Read until /n
+
     End Sub
 
+    Public Sub readResponse(tempString As String)
+
+    End Sub
     Private Function checkSumCreator(tempString As String) As String
         Dim i As Integer
         Dim csStr As String

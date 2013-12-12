@@ -1,5 +1,5 @@
-#include "C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\Bluetooth.h"
-#include "C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h"
+#include "Bluetooth.h"
+#include "userMacro.h"
 #include <htc.h>
 #include <string.h>
 #include "EEPROM.h"
