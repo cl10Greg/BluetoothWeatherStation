@@ -1,5 +1,20 @@
 ﻿Public Class Main
-    Dim _continue As Boolean
+    Dim getTempStr As String = "AA000000"
+    Dim getTempHiStr As String = "AA000100"
+    Dim getTempLowStr As String = "AA000200"
+    Dim getHumStr As String = "AA000300"
+    Dim getHumHiStr As String = "AA000400"
+    Dim getHumLowStr As String = "AA000500"
+    Dim getTimeStr As String = "AA000600"
+    Dim getAllStr As String = "AA000700"
+    Dim setTempUnitStr As String = "AA0108"
+    Dim setTempHiStr As String = "AA0109"
+    Dim setTempLowStr As String = "AA010A"
+    Dim setHumHiStr As String = "AA010B"
+    Dim setHumLowStr As String = "AA010C"
+    Dim setADCStr As String = "AA010D"
+    Dim setTimeStr As String = "AA010E"
+
 
     Private Sub exitBtn_Click(sender As Object, e As EventArgs) Handles exitBtn.Click
         If spObj.IsOpen Then
@@ -39,7 +54,6 @@
             msgBtn.Enabled = True
             disBtn.Enabled = True
             connectBtn.Enabled = False
-            _continue = True
         End If
 
     End Sub
@@ -55,15 +69,6 @@
     End Sub
 
     Private Sub msgBtn_Click(sender As Object, e As EventArgs) Handles msgBtn.Click
-        If msgTxt.TextLength = 0 Then
-            addText("No data to send")
-            Exit Sub
-        End If
-
-        If Not (spObj.IsOpen) Then
-            addText("Port is not open")
-            Exit Sub
-        End If
 
         masterSlaveComm(msgTxt.Text + vbLf)
 
@@ -78,6 +83,16 @@
     End Sub
 
     Private Sub masterSlaveComm(tempString As String)
+        If tempString.Length = 0 Then
+            addText("No data to send")
+            Exit Sub
+        End If
+
+        If Not (spObj.IsOpen) Then
+            addText("Port is not open")
+            Exit Sub
+        End If
+
         spObj.Write(tempString)
         addText("Message sent")
         Dim decIn As String = ""
@@ -99,22 +114,30 @@
         addText(charIn)
     End Sub
 
-    Private Function checkSumCreator(tempString As String) As Integer
+    Private Function checkSumCreator(tempString As String) As String
         Dim i As Integer
+        Dim csStr As String
         For x = 0 To tempString.Length - 1 Step 2
             i += Convert.ToInt32(tempString.Substring(x, 2), 16)
         Next
-        Return i
+        csStr = Conversion.Hex(i)
+        Return csStr.Substring(csStr.Length - 2)
+
     End Function
 
     Private Sub csBtn_Click(sender As Object, e As EventArgs) Handles csBtn.Click
         Dim csString As String
-        csString = Conversion.Hex(checkSumCreator(msgTxt.Text))
-        csTxt.Text = csString.Substring(csString.Length - 2)
-        msgTxt.Text &= csString.Substring(csString.Length - 2)
+        csString = checkSumCreator(msgTxt.Text)
+        csTxt.Text = csString
+        msgTxt.Text &= csString
     End Sub
 
     Private Sub tempCRad_CheckedChanged(sender As Object, e As EventArgs) Handles tempCRad.CheckedChanged
 
+    End Sub
+
+    Private Sub getTBtn_Click(sender As Object, e As EventArgs) Handles getTBtn.Click
+        Dim dataStr As String = getTempStr + checkSumCreator(getTempStr) + vbLf
+        masterSlaveComm(dataStr)
     End Sub
 End Class
