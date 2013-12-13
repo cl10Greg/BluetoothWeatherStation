@@ -16,7 +16,7 @@ Linker command line:
   -ACONFIG=02007h-02007h -pconfig=CONFIG -DCONFIG=2 -AIDLOC=02000h-02003h \
   -pidloc=IDLOC -DIDLOC=2 -AEEDATA=00h-0FFh/02100h -peeprom_data=EEDATA \
   -DEEDATA=2 -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\ggirard\AppData\Local\Temp\s5t4.obj \
+  C:\Users\ggirard\AppData\Local\Temp\s6sc.obj \
   dist/default/production\BluetoothWeatherStation.X.production.obj 
 
 Object code version is 3.10
@@ -26,7 +26,7 @@ Machine type is 16F877A
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\ggirard\AppData\Local\Temp\s5t4.obj
+C:\Users\ggirard\AppData\Local\Temp\s6sc.obj
                 end_init                              0        0        3        0       0
 dist/default/production\BluetoothWeatherStation.X.production.obj
                 config                             2007     2007        1     400E       0

@@ -1,7 +1,7 @@
 
 
 HI-TECH Software PIC LITE Macro Assembler V9.83 build 10920 
-                                                                                               Fri Dec 13 14:38:15 2013
+                                                                                               Fri Dec 13 14:45:28 2013
 
 HI-TECH Software Omniscient Code Generator (Lite mode) build 10920
      1  0000                     opt subtitle "HI-TECH Software Omniscient Code Generator (Lite mode) build 10920"
@@ -507,7 +507,7 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 10920
    500  0C61                     _WR	set	3169
    501                           	global	_WREN
    502  0C62                     _WREN	set	3170
-   503                           	file	"C:\Users\ggirard\AppData\Local\Temp\s5t4."
+   503                           	file	"C:\Users\ggirard\AppData\Local\Temp\s6sc."
    504                           	line	#
    505                           psect cinit,class=CODE,delta=2
    506                           global start_initialization
@@ -5097,7 +5097,7 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 10920
 
 
 HI-TECH Software PICC Macro Assembler V9.83 build 10920 
-Symbol Table                                                                                   Fri Dec 13 14:38:15 2013
+Symbol Table                                                                                   Fri Dec 13 14:45:28 2013
 
                          pc 0002                          _RD 0C60                          _WR 0C61  
                         fsr 0004                 _userEndByte 0065                         l763 007B  
