@@ -14,6 +14,7 @@
       <itemPath>pic16f877a.h</itemPath>
       <itemPath>userMacro.h</itemPath>
       <itemPath>LCD.h</itemPath>
+      <itemPath>Command.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -24,6 +25,7 @@
       <itemPath>customADC.c</itemPath>
       <itemPath>main.c</itemPath>
       <itemPath>LCD.c</itemPath>
+      <itemPath>Command.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -142,6 +144,7 @@
         <property key="warn-on-stack-overflow" value="true"/>
       </HI-TECH-LINK>
       <PICkit2PlatformTool>
+        <property key="pk2settings.setvddvoltage" value="5.00"/>
       </PICkit2PlatformTool>
     </conf>
   </confs>

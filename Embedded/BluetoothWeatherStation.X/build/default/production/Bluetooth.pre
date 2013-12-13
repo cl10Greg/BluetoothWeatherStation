@@ -32,6 +32,8 @@ const unsigned char newLineChar = 0x0A;
 const unsigned char minSizeByte = 0x0A;
 const unsigned char noDataLen = 0x0A;
 const unsigned char maxCmd = 0x0E;
+const unsigned char readByteVal = 0x00;
+const unsigned char writeByteVal = 0x01;
 
 const unsigned char RXLenAddr = 0x00;
 const unsigned char startByteAddr = 0x01;
@@ -44,7 +46,8 @@ const unsigned char dataBytesAddr = 0x07;
 
 const unsigned char calcCSByteAddr = 0x30;
 
-const unsigned char tempValAddr = 0x60;
+const unsigned char tempValHAddr = 0x60;
+const unsigned char tempValLAddr = 0x61;
 const unsigned char tempHiAddr = 0x62;
 const unsigned char tempLoAddr = 0x64;
 const unsigned char tempUnitAddr = 0x66;
@@ -1283,11 +1286,10 @@ i++;
 ch = readByte();
 }
 
-
 eeprom_write(RXLenAddr,i);
 }
 
-# 178
+# 177
 unsigned char makeNibble(unsigned char tempNib)
 {
 if(tempNib>='A'){
@@ -1296,7 +1298,7 @@ return ((tempNib - (unsigned char)'A')+10);
 return (tempNib - '0');
 }
 
-# 194
+# 193
 unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo)
 {
 unsigned char input_byte;

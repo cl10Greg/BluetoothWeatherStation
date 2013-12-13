@@ -905,49 +905,55 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _noDataLen `Cuc  1 e ]
 "31 userMacro.h
 [v _maxCmd `Cuc  1 e ]
+"32 userMacro.h
+[v _readByteVal `Cuc  1 e ]
 "33 userMacro.h
-[v _RXLenAddr `Cuc  1 e ]
-"34 userMacro.h
-[v _startByteAddr `Cuc  1 e ]
+[v _writeByteVal `Cuc  1 e ]
 "35 userMacro.h
-[v _rwByteAddr `Cuc  1 e ]
+[v _RXLenAddr `Cuc  1 e ]
 "36 userMacro.h
-[v _cmdByteAddr `Cuc  1 e ]
+[v _startByteAddr `Cuc  1 e ]
 "37 userMacro.h
-[v _lenByteAddr `Cuc  1 e ]
+[v _rwByteAddr `Cuc  1 e ]
 "38 userMacro.h
-[v _csByteAddr `Cuc  1 e ]
+[v _cmdByteAddr `Cuc  1 e ]
 "39 userMacro.h
-[v _endByteAddr `Cuc  1 e ]
+[v _lenByteAddr `Cuc  1 e ]
 "40 userMacro.h
-[v _dataBytesAddr `Cuc  1 e ]
+[v _csByteAddr `Cuc  1 e ]
+"41 userMacro.h
+[v _endByteAddr `Cuc  1 e ]
 "42 userMacro.h
-[v _calcCSByteAddr `Cuc  1 e ]
+[v _dataBytesAddr `Cuc  1 e ]
 "44 userMacro.h
-[v _tempValAddr `Cuc  1 e ]
-"45 userMacro.h
-[v _tempHiAddr `Cuc  1 e ]
+[v _calcCSByteAddr `Cuc  1 e ]
 "46 userMacro.h
-[v _tempLoAddr `Cuc  1 e ]
+[v _tempValHAddr `Cuc  1 e ]
 "47 userMacro.h
-[v _tempUnitAddr `Cuc  1 e ]
+[v _tempValLAddr `Cuc  1 e ]
+"48 userMacro.h
+[v _tempHiAddr `Cuc  1 e ]
 "49 userMacro.h
-[v _tempStartHi `Cuc  1 e ]
+[v _tempLoAddr `Cuc  1 e ]
 "50 userMacro.h
-[v _tempStartLo `Cuc  1 e ]
-"51 userMacro.h
-[v _tempC `Cuc  1 e ]
+[v _tempUnitAddr `Cuc  1 e ]
 "52 userMacro.h
-[v _tempF `Cuc  1 e ]
+[v _tempStartHi `Cuc  1 e ]
+"53 userMacro.h
+[v _tempStartLo `Cuc  1 e ]
 "54 userMacro.h
-[v _humValAddr `Cuc  1 e ]
+[v _tempC `Cuc  1 e ]
 "55 userMacro.h
-[v _humHiAddr `Cuc  1 e ]
-"56 userMacro.h
-[v _humLoAddr `Cuc  1 e ]
+[v _tempF `Cuc  1 e ]
+"57 userMacro.h
+[v _humValAddr `Cuc  1 e ]
 "58 userMacro.h
-[v _humStartHi `Cuc  1 e ]
+[v _humHiAddr `Cuc  1 e ]
 "59 userMacro.h
+[v _humLoAddr `Cuc  1 e ]
+"61 userMacro.h
+[v _humStartHi `Cuc  1 e ]
+"62 userMacro.h
 [v _humStartLo `Cuc  1 e ]
 [p mainexit ]
 "12 Bluetooth.h
@@ -958,25 +964,29 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _initTemp `(v  0 ef ]
 "20 Bluetooth.h
 [v _writeString `(v  0 ef1`*uc ]
-"33 main.c
+"34 main.c
 [v _getTemp `(v  0 ef ]
+"14 Bluetooth.h
+[v _writeByte `(v  0 ef1`uc ]
+"33 main.c
+[v _getPacket `(v  0 ef ]
 "154 C:\Microchip\Hitech\include\pic.h
 [v __delay `(v  0 ef1`ul ]
 [p i __delay ]
-"32 main.c
-[v _getPacket `(v  0 ef ]
 "41 C:\Microchip\Hitech\include\eeprom_routines.h
 [v _eeprom_write `(uc  0 ef2`uc`uc ]
 "22 Bluetooth.h
 [v _readString `(v  0 ef1`*uc ]
-"14 Bluetooth.h
-[v _writeByte `(v  0 ef1`uc ]
 "42 C:\Microchip\Hitech\include\eeprom_routines.h
 [v _eeprom_read `(uc  0 ef1`uc ]
 "14 Packet.h
 [v _parsePacket `(v  0 ef1`*uc ]
 "15 Packet.h
 [v _validatePacket `(i  0 ef ]
+"12 Command.h
+[v _getCommands `(v  0 ef ]
+"13 Command.h
+[v _setCommands `(v  0 ef ]
 "12 customADC.h
 [v _selectTemp `(v  0 ef ]
 "12 Temperature.h
@@ -1948,116 +1958,131 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> 14 `i `uc
 ]
 [; ;userMacro.h: 31: const unsigned char maxCmd = 0x0E;
+"32
+[i _readByteVal
+-> -> 0 `i `uc
+]
+[; ;userMacro.h: 32: const unsigned char readByteVal = 0x00;
 "33
+[i _writeByteVal
+-> -> 1 `i `uc
+]
+[; ;userMacro.h: 33: const unsigned char writeByteVal = 0x01;
+"35
 [i _RXLenAddr
 -> -> 0 `i `uc
 ]
-[; ;userMacro.h: 33: const unsigned char RXLenAddr = 0x00;
-"34
+[; ;userMacro.h: 35: const unsigned char RXLenAddr = 0x00;
+"36
 [i _startByteAddr
 -> -> 1 `i `uc
 ]
-[; ;userMacro.h: 34: const unsigned char startByteAddr = 0x01;
-"35
+[; ;userMacro.h: 36: const unsigned char startByteAddr = 0x01;
+"37
 [i _rwByteAddr
 -> -> 2 `i `uc
 ]
-[; ;userMacro.h: 35: const unsigned char rwByteAddr = 0x02;
-"36
+[; ;userMacro.h: 37: const unsigned char rwByteAddr = 0x02;
+"38
 [i _cmdByteAddr
 -> -> 3 `i `uc
 ]
-[; ;userMacro.h: 36: const unsigned char cmdByteAddr = 0x03;
-"37
+[; ;userMacro.h: 38: const unsigned char cmdByteAddr = 0x03;
+"39
 [i _lenByteAddr
 -> -> 4 `i `uc
 ]
-[; ;userMacro.h: 37: const unsigned char lenByteAddr = 0x04;
-"38
+[; ;userMacro.h: 39: const unsigned char lenByteAddr = 0x04;
+"40
 [i _csByteAddr
 -> -> 5 `i `uc
 ]
-[; ;userMacro.h: 38: const unsigned char csByteAddr = 0x05;
-"39
+[; ;userMacro.h: 40: const unsigned char csByteAddr = 0x05;
+"41
 [i _endByteAddr
 -> -> 6 `i `uc
 ]
-[; ;userMacro.h: 39: const unsigned char endByteAddr = 0x06;
-"40
+[; ;userMacro.h: 41: const unsigned char endByteAddr = 0x06;
+"42
 [i _dataBytesAddr
 -> -> 7 `i `uc
 ]
-[; ;userMacro.h: 40: const unsigned char dataBytesAddr = 0x07;
-"42
+[; ;userMacro.h: 42: const unsigned char dataBytesAddr = 0x07;
+"44
 [i _calcCSByteAddr
 -> -> 48 `i `uc
 ]
-[; ;userMacro.h: 42: const unsigned char calcCSByteAddr = 0x30;
-"44
-[i _tempValAddr
+[; ;userMacro.h: 44: const unsigned char calcCSByteAddr = 0x30;
+"46
+[i _tempValHAddr
 -> -> 96 `i `uc
 ]
-[; ;userMacro.h: 44: const unsigned char tempValAddr = 0x60;
-"45
+[; ;userMacro.h: 46: const unsigned char tempValHAddr = 0x60;
+"47
+[i _tempValLAddr
+-> -> 97 `i `uc
+]
+[; ;userMacro.h: 47: const unsigned char tempValLAddr = 0x61;
+"48
 [i _tempHiAddr
 -> -> 98 `i `uc
 ]
-[; ;userMacro.h: 45: const unsigned char tempHiAddr = 0x62;
-"46
+[; ;userMacro.h: 48: const unsigned char tempHiAddr = 0x62;
+"49
 [i _tempLoAddr
 -> -> 100 `i `uc
 ]
-[; ;userMacro.h: 46: const unsigned char tempLoAddr = 0x64;
-"47
+[; ;userMacro.h: 49: const unsigned char tempLoAddr = 0x64;
+"50
 [i _tempUnitAddr
 -> -> 102 `i `uc
 ]
-[; ;userMacro.h: 47: const unsigned char tempUnitAddr = 0x66;
-"49
+[; ;userMacro.h: 50: const unsigned char tempUnitAddr = 0x66;
+"52
 [i _tempStartHi
 -> -> 100 `i `uc
 ]
-[; ;userMacro.h: 49: const unsigned char tempStartHi = 0x64;
-"50
+[; ;userMacro.h: 52: const unsigned char tempStartHi = 0x64;
+"53
 [i _tempStartLo
 -> -> 160 `i `uc
 ]
-[; ;userMacro.h: 50: const unsigned char tempStartLo = 0xA0;
-"51
+[; ;userMacro.h: 53: const unsigned char tempStartLo = 0xA0;
+"54
 [i _tempC
 -> -> 0 `i `uc
 ]
-[; ;userMacro.h: 51: const unsigned char tempC = 0x00;
-"52
+[; ;userMacro.h: 54: const unsigned char tempC = 0x00;
+"55
 [i _tempF
 -> -> 16 `i `uc
 ]
-[; ;userMacro.h: 52: const unsigned char tempF = 0x10;
-"54
+[; ;userMacro.h: 55: const unsigned char tempF = 0x10;
+"57
 [i _humValAddr
 -> -> 128 `i `uc
 ]
-[; ;userMacro.h: 54: const unsigned char humValAddr = 0x80;
-"55
+[; ;userMacro.h: 57: const unsigned char humValAddr = 0x80;
+"58
 [i _humHiAddr
 -> -> 130 `i `uc
 ]
-[; ;userMacro.h: 55: const unsigned char humHiAddr = 0x82;
-"56
+[; ;userMacro.h: 58: const unsigned char humHiAddr = 0x82;
+"59
 [i _humLoAddr
 -> -> 132 `i `uc
 ]
-[; ;userMacro.h: 56: const unsigned char humLoAddr = 0x84;
-"58
+[; ;userMacro.h: 59: const unsigned char humLoAddr = 0x84;
+"61
 [i _humStartHi
 -> -> 80 `i `uc
 ]
-[; ;userMacro.h: 58: const unsigned char humStartHi = 0x50;
-"59
+[; ;userMacro.h: 61: const unsigned char humStartHi = 0x50;
+"62
 [i _humStartLo
 -> -> 10 `i `uc
 ]
-[; ;userMacro.h: 59: const unsigned char humStartLo = 0x0A;
+[; ;userMacro.h: 62: const unsigned char humStartLo = 0x0A;
 [; ;Temperature.h: 12: unsigned int readTemp();
 [; ;Temperature.h: 13: void initTemp();
 [; ;Temperature.h: 14: void setTempUnit();
@@ -2078,22 +2103,24 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Packet.h: 20: int checkDataLenByte();
 [; ;Packet.h: 21: int checkCS();
 [; ;Packet.h: 22: void displayPacket();
-"30 main.c
-[; ;main.c: 30: asm("\tpsect config,class=CONFIG,delta=2"); asm("\tdw ""0xFFFB & 0xFF7F & 0xFFBF & 0xFFFE & 0xFFFF") ;
+[; ;Command.h: 12: void getCommands();
+[; ;Command.h: 13: void setCommands();
+"31 main.c
+[; ;main.c: 31: asm("\tpsect config,class=CONFIG,delta=2"); asm("\tdw ""0xFFFB & 0xFF7F & 0xFFBF & 0xFFFE & 0xFFFF") ;
 [; 	psect config,class=CONFIG,delta=2 ;#
 [; 	dw 0xFFFB & 0xFF7F & 0xFFBF & 0xFFFE & 0xFFFF ;#
-[; ;main.c: 32: void getPacket(void);
-[; ;main.c: 33: void getTemp(void);
-"44
+[; ;main.c: 33: void getPacket(void);
+[; ;main.c: 34: void getTemp(void);
+"45
 [v _main `(i  1 ef ]
 {
-[; ;main.c: 43: int main()
-[; ;main.c: 44: {
+[; ;main.c: 44: int main()
+[; ;main.c: 45: {
 [e :U _main ]
 [f ]
-"45
-[v F1165 `uc  -> 0 `x s ]
-[i F1165
+"46
+[v F1170 `uc  -> 0 `x s ]
+[i F1170
 :U ..
 -> 87 `c
 -> 101 `c
@@ -2107,145 +2134,172 @@ Version 3.2 HI-TECH Software Intermediate Code
 ..
 ]
 [v _testString `uc  9  a ]
-[; ;main.c: 45: char testString[] = "Welcome\n";
-[e = _testString F1165 ]
-[; ;main.c: 49: initUSART();
-"49
+[; ;main.c: 46: char testString[] = "Welcome\n";
+[e = _testString F1170 ]
+[; ;main.c: 50: initUSART();
+"50
 [e ( _initUSART ..  ]
-[; ;main.c: 51: initADC();
-"51
+[; ;main.c: 52: initADC();
+"52
 [e ( _initADC ..  ]
-[; ;main.c: 54: initTemp();
-"54
+[; ;main.c: 55: initTemp();
+"55
 [e ( _initTemp ..  ]
-[; ;main.c: 57: writeString(testString);
-"57
+[; ;main.c: 58: writeString(testString);
+"58
 [e ( _writeString (1 &U _testString ]
-[; ;main.c: 61: while(1){
-"61
+[; ;main.c: 62: while(1){
+"62
 [e :U 103 ]
 {
-[; ;main.c: 64: getTemp();
-"64
-[e ( _getTemp ..  ]
-[; ;main.c: 65: _delay((unsigned long)((1000)*(20000000/4000.0)));
+[; ;main.c: 65: getTemp();
 "65
-[e ( __delay (1 -> * -> -> 1000 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[e ( _getTemp ..  ]
 [; ;main.c: 76: if(RCIF){
 "76
 [e $ ! _RCIF 105  ]
 {
-[; ;main.c: 77: getPacket();
+[; ;main.c: 77: writeByte('P');
 "77
-[e ( _getPacket ..  ]
+[e ( _writeByte (1 -> -> 80 `ui `uc ]
+[; ;main.c: 78: getPacket();
 "78
-}
-[e :U 105 ]
+[e ( _getPacket ..  ]
 "79
 }
+[e :U 105 ]
+[; ;main.c: 79: }
+[; ;main.c: 80: _delay((unsigned long)((10)*(20000000/4000.0)));
+"80
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+"81
+}
 [e :U 102 ]
-"61
+"62
 [e $U 103  ]
 [e :U 104 ]
-[; ;main.c: 78: }
-[; ;main.c: 79: }
-[; ;main.c: 83: return 0;
-"83
+[; ;main.c: 81: }
+[; ;main.c: 85: return 0;
+"85
 [e ) -> 0 `i ]
 [e $UE 101  ]
-[; ;main.c: 84: }
-"84
+[; ;main.c: 86: }
+"86
 [e :UE 101 ]
 }
-"86
+"88
 [v _getPacket `(v  1 ef ]
 {
-[; ;main.c: 86: void getPacket(){
+[; ;main.c: 88: void getPacket(){
 [e :U _getPacket ]
 [f ]
-[; ;main.c: 88: eeprom_write(calcCSByteAddr,0x00);
-"88
+[; ;main.c: 90: while(!RCIF);
+"90
+[e $U 107  ]
+[e :U 108 ]
+[e :U 107 ]
+[e $ ! _RCIF 108  ]
+[e :U 109 ]
+[; ;main.c: 92: eeprom_write(calcCSByteAddr,0x00);
+"92
 [e ( _eeprom_write (2 , _calcCSByteAddr -> -> 0 `i `uc ]
-"91
-[v F1168 `uc  -> 50 `i s ]
-[i F1168
+[; ;main.c: 93: writeByte('H');
+"93
+[e ( _writeByte (1 -> -> 72 `ui `uc ]
+"95
+[v F1173 `uc  -> 50 `i s ]
+[i F1173
 :U ..
 -> -> 0 `i `uc
 ..
 ]
 [v _arrStore `uc  -> 50 `i a ]
-[; ;main.c: 91: char arrStore[50] = {0};
-[e = _arrStore F1168 ]
-[; ;main.c: 94: readString(arrStore);
-"94
+[; ;main.c: 95: char arrStore[50] = {0};
+[e = _arrStore F1173 ]
+[; ;main.c: 96: writeByte('H');
+"96
+[e ( _writeByte (1 -> -> 72 `ui `uc ]
+[; ;main.c: 98: readString(arrStore);
+"98
 [e ( _readString (1 &U _arrStore ]
-[; ;main.c: 105: writeByte(eeprom_read(RXLenAddr));
-"105
+[; ;main.c: 99: writeByte('H');
+"99
+[e ( _writeByte (1 -> -> 72 `ui `uc ]
+[; ;main.c: 109: writeByte(eeprom_read(RXLenAddr));
+"109
 [e ( _writeByte (1 ( _eeprom_read (1 _RXLenAddr ]
-[; ;main.c: 108: parsePacket(arrStore);
-"108
-[e ( _parsePacket (1 &U _arrStore ]
-[; ;main.c: 112: if(validatePacket()){
+[; ;main.c: 110: writeByte('H');
+"110
+[e ( _writeByte (1 -> -> 72 `ui `uc ]
+[; ;main.c: 112: parsePacket(arrStore);
 "112
-[e $ ! != ( _validatePacket ..  -> 0 `i 107  ]
-{
-[; ;main.c: 113: writeByte('V');
+[e ( _parsePacket (1 &U _arrStore ]
+[; ;main.c: 113: writeByte('H');
 "113
-[e ( _writeByte (1 -> -> 86 `ui `uc ]
-"118
-}
-[; ;main.c: 118: }else{
-[e $U 108  ]
-[e :U 107 ]
+[e ( _writeByte (1 -> -> 72 `ui `uc ]
+[; ;main.c: 116: if(validatePacket()){
+"116
+[e $ ! != ( _validatePacket ..  -> 0 `i 110  ]
 {
-[; ;main.c: 120: writeByte('N');
+[; ;main.c: 119: if(eeprom_read(rwByteAddr) == 0){
+"119
+[e $ ! == -> ( _eeprom_read (1 _rwByteAddr `i -> 0 `i 111  ]
+{
+[; ;main.c: 120: writeByte('H');
 "120
-[e ( _writeByte (1 -> -> 78 `ui `uc ]
+[e ( _writeByte (1 -> -> 72 `ui `uc ]
+[; ;main.c: 121: getCommands();
 "121
-}
-[e :U 108 ]
-[; ;main.c: 121: }
-[; ;main.c: 122: }
+[e ( _getCommands ..  ]
 "122
+}
+[; ;main.c: 122: }else{
+[e $U 112  ]
+[e :U 111 ]
+{
+[; ;main.c: 123: setCommands();
+"123
+[e ( _setCommands ..  ]
+"124
+}
+[e :U 112 ]
+"126
+}
+[; ;main.c: 124: }
+[; ;main.c: 126: }else{
+[e $U 113  ]
+[e :U 110 ]
+{
+"129
+}
+[e :U 113 ]
+[; ;main.c: 129: }
+[; ;main.c: 130: }
+"130
 [e :UE 106 ]
 }
-"124
+"132
 [v _getTemp `(v  1 ef ]
 {
-[; ;main.c: 124: void getTemp(){
+[; ;main.c: 132: void getTemp(){
 [e :U _getTemp ]
 [f ]
-"125
+"133
 [v _tempReading `ui  1 a ]
-[; ;main.c: 125: unsigned int tempReading;
-[; ;main.c: 127: selectTemp();
-"127
-[e ( _selectTemp ..  ]
-[; ;main.c: 129: tempReading = readTemp();
-"129
-[e = _tempReading ( _readTemp ..  ]
-[; ;main.c: 130: writeByte('T');
-"130
-[e ( _writeByte (1 -> -> 84 `ui `uc ]
-[; ;main.c: 132: eeprom_write(tempValAddr,tempReading);
-"132
-[e ( _eeprom_write (2 , _tempValAddr -> _tempReading `uc ]
-[; ;main.c: 134: eeprom_write(tempValAddr+1,tempReading>>8);
-"134
-[e ( _eeprom_write (2 , -> + -> _tempValAddr `i -> 1 `i `uc -> >> _tempReading -> 8 `i `uc ]
-[; ;main.c: 135: writeByte('F');
+[; ;main.c: 133: unsigned int tempReading;
+[; ;main.c: 135: selectTemp();
 "135
-[e ( _writeByte (1 -> -> 70 `ui `uc ]
-[; ;main.c: 136: writeByte(eeprom_read(tempValAddr));
-"136
-[e ( _writeByte (1 ( _eeprom_read (1 _tempValAddr ]
-[; ;main.c: 137: writeByte('S');
+[e ( _selectTemp ..  ]
+[; ;main.c: 137: tempReading = readTemp();
 "137
-[e ( _writeByte (1 -> -> 83 `ui `uc ]
-[; ;main.c: 138: writeByte(eeprom_read(tempValAddr+1));
-"138
-[e ( _writeByte (1 ( _eeprom_read (1 -> + -> _tempValAddr `i -> 1 `i `uc ]
-[; ;main.c: 139: }
+[e = _tempReading ( _readTemp ..  ]
+[; ;main.c: 139: eeprom_write(tempValLAddr,tempReading);
 "139
-[e :UE 109 ]
+[e ( _eeprom_write (2 , _tempValLAddr -> _tempReading `uc ]
+[; ;main.c: 141: eeprom_write(tempValHAddr+1,tempReading>>8);
+"141
+[e ( _eeprom_write (2 , -> + -> _tempValHAddr `i -> 1 `i `uc -> >> _tempReading -> 8 `i `uc ]
+[; ;main.c: 142: }
+"142
+[e :UE 114 ]
 }

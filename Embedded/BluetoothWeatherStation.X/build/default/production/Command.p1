@@ -955,18 +955,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _EECON1bits `VS99  1 e@396 ]
 "1167 C:\Microchip\Hitech\include\pic16f877a.h
 [v _EECON2 `Vuc  1 e@397 ]
-"55 C:\Microchip\Hitech\include\string.h
-[v _strlen `(ui  0 ef1`*Cuc ]
-"41 C:\Microchip\Hitech\include\eeprom_routines.h
-[v _eeprom_write `(uc  0 ef2`uc`uc ]
-[; ;Bluetooth.h: 12: void initUSART();
-[; ;Bluetooth.h: 14: void writeByte(unsigned char Byte);
-[; ;Bluetooth.h: 16: unsigned char readByte();
-[; ;Bluetooth.h: 18: void echoBack();
-[; ;Bluetooth.h: 20: void writeString(unsigned char* userString);
-[; ;Bluetooth.h: 22: void readString(unsigned char* readStorage);
-[; ;Bluetooth.h: 24: unsigned char makeNibble(unsigned char tempByte);
-[; ;Bluetooth.h: 26: unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo);
+"14 Bluetooth.h
+[v _writeByte `(v  0 ef1`uc ]
+"42 C:\Microchip\Hitech\include\eeprom_routines.h
+[v _eeprom_read `(uc  0 ef1`uc ]
 "19 userMacro.h
 [i _member1
 :U ..
@@ -1220,6 +1212,14 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> 10 `i `uc
 ]
 [; ;userMacro.h: 62: const unsigned char humStartLo = 0x0A;
+[; ;Bluetooth.h: 12: void initUSART();
+[; ;Bluetooth.h: 14: void writeByte(unsigned char Byte);
+[; ;Bluetooth.h: 16: unsigned char readByte();
+[; ;Bluetooth.h: 18: void echoBack();
+[; ;Bluetooth.h: 20: void writeString(unsigned char* userString);
+[; ;Bluetooth.h: 22: void readString(unsigned char* readStorage);
+[; ;Bluetooth.h: 24: unsigned char makeNibble(unsigned char tempByte);
+[; ;Bluetooth.h: 26: unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo);
 [; ;pic16f877a.h: 82: volatile unsigned char INDF @ 0x000;
 [; ;pic16f877a.h: 86: volatile unsigned char TMR0 @ 0x001;
 [; ;pic16f877a.h: 90: volatile unsigned char PCL @ 0x002;
@@ -2051,268 +2051,55 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;eeprom_routines.h: 43: extern void eecpymem(volatile unsigned char *to, eeprom unsigned char *from, unsigned char size);
 [; ;eeprom_routines.h: 44: extern void memcpyee(eeprom unsigned char *to, const unsigned char *from, unsigned char size);
 [; ;pic.h: 154: extern void _delay(unsigned long);
-[; ;string.h: 4: typedef int ptrdiff_t;
-[; ;string.h: 5: typedef unsigned size_t;
-[; ;string.h: 6: typedef unsigned short wchar_t;
-[; ;string.h: 9: extern int errno;
-[; ;string.h: 22: extern void * memcpy(void *, const void *, size_t);
-[; ;string.h: 23: extern void * memmove(void *, const void *, size_t);
-[; ;string.h: 24: extern void * memset(void *, int, size_t);
-[; ;string.h: 35: extern char * strcat(char *, const char *);
-[; ;string.h: 36: extern char * strcpy(char *, const char *);
-[; ;string.h: 37: extern char * strncat(char *, const char *, size_t);
-[; ;string.h: 38: extern char * strncpy(char *, const char *, size_t);
-[; ;string.h: 39: extern char * strdup(const char *);
-[; ;string.h: 40: extern char * strtok(char *, const char *);
-[; ;string.h: 43: extern int memcmp(const void *, const void *, size_t);
-[; ;string.h: 44: extern int strcmp(const char *, const char *);
-[; ;string.h: 45: extern int stricmp(const char *, const char *);
-[; ;string.h: 46: extern int strncmp(const char *, const char *, size_t);
-[; ;string.h: 47: extern int strnicmp(const char *, const char *, size_t);
-[; ;string.h: 48: extern void * memchr(const void *, int, size_t);
-[; ;string.h: 49: extern size_t strcspn(const char *, const char *);
-[; ;string.h: 50: extern char * strpbrk(const char *, const char *);
-[; ;string.h: 51: extern size_t strspn(const char *, const char *);
-[; ;string.h: 52: extern char * strstr(const char *, const char *);
-[; ;string.h: 53: extern char * stristr(const char *, const char *);
-[; ;string.h: 54: extern char * strerror(int);
-[; ;string.h: 55: extern size_t strlen(const char *);
-[; ;string.h: 56: extern char * strchr(const char *, int);
-[; ;string.h: 57: extern char * strichr(const char *, int);
-[; ;string.h: 58: extern char * strrchr(const char *, int);
-[; ;string.h: 59: extern char * strrichr(const char *, int);
-[; ;EEPROM.h: 11: void eeWrite(unsigned char address, unsigned char value);
-[; ;EEPROM.h: 12: unsigned char eeRead(unsigned char address);
-"17 Bluetooth.c
-[v _initUSART `(v  1 ef ]
+"6 Command.c
+[v _getCommands `(v  1 ef ]
 {
-[; ;Bluetooth.c: 16: void initUSART()
-[; ;Bluetooth.c: 17: {
-[e :U _initUSART ]
+[; ;Command.c: 6: void getCommands(){
+[e :U _getCommands ]
 [f ]
-[; ;Bluetooth.c: 19: TRISC6 = 0;
-"19
-[e = _TRISC6 -> -> 0 `i `b ]
-[; ;Bluetooth.c: 22: TRISC7 = 1;
-"22
-[e = _TRISC7 -> -> 1 `i `b ]
-[; ;Bluetooth.c: 35: RCSTA = 0x90;
-"35
-[e = _RCSTA -> -> 144 `i `uc ]
-[; ;Bluetooth.c: 49: TXSTA = 0x24;
-"49
-[e = _TXSTA -> -> 36 `i `uc ]
-[; ;Bluetooth.c: 57: SPBRG = 129;
-"57
-[e = _SPBRG -> -> 129 `i `uc ]
-[; ;Bluetooth.c: 58: }
-"58
+[; ;Command.c: 8: switch(eeprom_read(rwByteAddr)){
+"8
+[e $U 103  ]
+{
+[; ;Command.c: 9: case 0:
+"9
+[e :U 104 ]
+[; ;Command.c: 10: writeByte('T');
+"10
+[e ( _writeByte (1 -> -> 84 `ui `uc ]
+[; ;Command.c: 11: break;
+"11
+[e $U 102  ]
+[; ;Command.c: 12: default:
+"12
+[e :U 105 ]
+[; ;Command.c: 13: writeByte('N');
+"13
+[e ( _writeByte (1 -> -> 78 `ui `uc ]
+[; ;Command.c: 14: break;
+"14
+[e $U 102  ]
+"15
+}
+[; ;Command.c: 15: }
+[e $U 102  ]
+"8
+[e :U 103 ]
+[e [\ ( _eeprom_read (1 _rwByteAddr , $ -> -> 0 `i `uc 104
+ 105 ]
+"15
+[e :U 102 ]
+[; ;Command.c: 16: }
+"16
 [e :UE 101 ]
 }
-"68
-[v _writeByte `(v  1 ef1`uc ]
+"18
+[v _setCommands `(v  1 ef ]
 {
-[; ;Bluetooth.c: 67: void writeByte(unsigned char Byte)
-[; ;Bluetooth.c: 68: {
-[e :U _writeByte ]
-[v _Byte `uc  1 r1 ]
+[; ;Command.c: 18: void setCommands(){
+[e :U _setCommands ]
 [f ]
-[; ;Bluetooth.c: 72: while(!TXIF);
-"72
-[e $U 103  ]
-[e :U 104 ]
-[e :U 103 ]
-[e $ ! _TXIF 104  ]
-[e :U 105 ]
-[; ;Bluetooth.c: 75: TXREG = Byte;
-"75
-[e = _TXREG _Byte ]
-[; ;Bluetooth.c: 76: }
-"76
-[e :UE 102 ]
-}
-"86
-[v _readByte `(uc  1 ef ]
-{
-[; ;Bluetooth.c: 85: unsigned char readByte()
-[; ;Bluetooth.c: 86: {
-[e :U _readByte ]
-[f ]
-[; ;Bluetooth.c: 90: while(!RCIF);
-"90
-[e $U 107  ]
-[e :U 108 ]
-[e :U 107 ]
-[e $ ! _RCIF 108  ]
-[e :U 109 ]
-[; ;Bluetooth.c: 93: return RCREG;
-"93
-[e ) _RCREG ]
-[e $UE 106  ]
-[; ;Bluetooth.c: 94: }
-"94
+[; ;Command.c: 20: }
+"20
 [e :UE 106 ]
-}
-"105
-[v _echoBack `(v  1 ef ]
-{
-[; ;Bluetooth.c: 104: void echoBack()
-[; ;Bluetooth.c: 105: {
-[e :U _echoBack ]
-[f ]
-"107
-[v _ch `uc  1 a ]
-[; ;Bluetooth.c: 107: unsigned char ch;
-[; ;Bluetooth.c: 109: ch = readByte();
-"109
-[e = _ch ( _readByte ..  ]
-[; ;Bluetooth.c: 111: writeByte(ch);
-"111
-[e ( _writeByte (1 _ch ]
-[; ;Bluetooth.c: 113: writeByte('*');
-"113
-[e ( _writeByte (1 -> -> 42 `ui `uc ]
-[; ;Bluetooth.c: 114: }
-"114
-[e :UE 110 ]
-}
-"125
-[v _writeString `(v  1 ef1`*uc ]
-{
-[; ;Bluetooth.c: 124: void writeString(unsigned char* userString)
-[; ;Bluetooth.c: 125: {
-[e :U _writeString ]
-[v _userString `*uc  1 r1 ]
-[f ]
-"127
-[v _i `ui  1 a ]
-[; ;Bluetooth.c: 127: unsigned int i;
-[; ;Bluetooth.c: 129: for(i = 0;i<strlen(userString);i++){
-"129
-{
-[e = _i -> -> 0 `i `ui ]
-[e $U 115  ]
-[e :U 112 ]
-{
-[; ;Bluetooth.c: 130: writeByte(userString[i]);
-"130
-[e ( _writeByte (1 *U + _userString * -> _i `ux -> -> # *U _userString `ui `ux ]
-"131
-}
-"129
-[e ++ _i -> -> 1 `i `ui ]
-[e :U 115 ]
-[e $ < _i ( _strlen (1 -> _userString `*Cuc 112  ]
-[e :U 113 ]
-"131
-}
-[; ;Bluetooth.c: 131: }
-[; ;Bluetooth.c: 133: writeByte((unsigned char)i);
-"133
-[e ( _writeByte (1 -> _i `uc ]
-[; ;Bluetooth.c: 135: }
-"135
-[e :UE 111 ]
-}
-"147
-[v _readString `(v  1 ef1`*uc ]
-{
-[; ;Bluetooth.c: 146: void readString(unsigned char* readStorage)
-[; ;Bluetooth.c: 147: {
-[e :U _readString ]
-[v _readStorage `*uc  1 r1 ]
-[f ]
-"149
-[v _i `ui  1 a ]
-[; ;Bluetooth.c: 149: unsigned int i = 0;
-[e = _i -> -> 0 `i `ui ]
-"151
-[v _ch `uc  1 a ]
-[; ;Bluetooth.c: 151: unsigned char ch;
-[; ;Bluetooth.c: 154: ch = readByte();
-"154
-[e = _ch ( _readByte ..  ]
-[; ;Bluetooth.c: 156: while(ch != userEndByte)
-"156
-[e $U 117  ]
-[e :U 118 ]
-[; ;Bluetooth.c: 157: {
-"157
-{
-[; ;Bluetooth.c: 159: readStorage[i] = ch;
-"159
-[e = *U + _readStorage * -> _i `ux -> -> # *U _readStorage `ui `ux _ch ]
-[; ;Bluetooth.c: 161: i++;
-"161
-[e ++ _i -> -> 1 `i `ui ]
-[; ;Bluetooth.c: 163: ch = readByte();
-"163
-[e = _ch ( _readByte ..  ]
-"164
-}
-[e :U 117 ]
-"156
-[e $ != -> _ch `i -> _userEndByte `i 118  ]
-[e :U 119 ]
-[; ;Bluetooth.c: 164: }
-[; ;Bluetooth.c: 166: eeprom_write(RXLenAddr,i);
-"166
-[e ( _eeprom_write (2 , _RXLenAddr -> _i `uc ]
-[; ;Bluetooth.c: 167: }
-"167
-[e :UE 116 ]
-}
-"178
-[v _makeNibble `(uc  1 ef1`uc ]
-{
-[; ;Bluetooth.c: 177: unsigned char makeNibble(unsigned char tempNib)
-[; ;Bluetooth.c: 178: {
-[e :U _makeNibble ]
-[v _tempNib `uc  1 r1 ]
-[f ]
-[; ;Bluetooth.c: 179: if(tempNib>='A'){
-"179
-[e $ ! >= -> _tempNib `ui -> 65 `ui 121  ]
-{
-[; ;Bluetooth.c: 180: return ((tempNib - (unsigned char)'A')+10);
-"180
-[e ) -> + - -> _tempNib `i -> -> -> 65 `ui `uc `i -> 10 `i `uc ]
-[e $UE 120  ]
-"181
-}
-[e :U 121 ]
-[; ;Bluetooth.c: 181: }
-[; ;Bluetooth.c: 182: return (tempNib - '0');
-"182
-[e ) -> - -> _tempNib `ui -> 48 `ui `uc ]
-[e $UE 120  ]
-[; ;Bluetooth.c: 183: }
-"183
-[e :UE 120 ]
-}
-"194
-[v _makeHexByte `(uc  1 ef2`uc`uc ]
-{
-[; ;Bluetooth.c: 193: unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo)
-[; ;Bluetooth.c: 194: {
-[e :U _makeHexByte ]
-[v _nibOne `uc  1 r1 ]
-[v _nibTwo `uc  1 r2 ]
-[f ]
-"195
-[v _input_byte `uc  1 a ]
-[; ;Bluetooth.c: 195: unsigned char input_byte;
-[; ;Bluetooth.c: 196: input_byte = (makeNibble(nibOne)<<4);
-"196
-[e = _input_byte -> << -> ( _makeNibble (1 _nibOne `i -> 4 `i `uc ]
-[; ;Bluetooth.c: 197: input_byte|= makeNibble(nibTwo);
-"197
-[e =| _input_byte ( _makeNibble (1 _nibTwo ]
-[; ;Bluetooth.c: 198: return input_byte;
-"198
-[e ) _input_byte ]
-[e $UE 122  ]
-[; ;Bluetooth.c: 199: }
-"199
-[e :UE 122 ]
 }

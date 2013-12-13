@@ -163,7 +163,6 @@ void readString(unsigned char* readStorage)
         ch = readByte();
     }
       //Write the counter length to memory
-      //Delete 1 to remove end byte
         eeprom_write(RXLenAddr,i);
 }
 

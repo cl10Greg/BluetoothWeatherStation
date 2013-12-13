@@ -12,6 +12,7 @@
 #include "Temperature.h"
 #include "customADC.h"
 #include "Packet.h"
+#include "Command.h"
 
 
 /*************************************************************************
@@ -62,7 +63,6 @@ int main()
 
         //Get Temp
         getTemp();
-        __delay_ms(1000);
         
         //Get humidity
         //Update LCD
@@ -74,8 +74,10 @@ int main()
         
         //If data is available, grab packet
         if(RCIF){
+            writeByte('P');
             getPacket();
-        } 
+        }
+        __delay_ms(10);
     }
 
     //Should never get to this part of the program.  If it does, there was an
@@ -84,15 +86,17 @@ int main()
 }
 
 void getPacket(){
+
+            while(!RCIF);
             //Reset calculated check sum
             eeprom_write(calcCSByteAddr,0x00);
-
+            writeByte('H');
             //Data input space (temporarily only 4 packets of data)
             char arrStore[50] = {0};
-
+            writeByte('H');
             //Read the UART data
             readString(arrStore);
-
+            writeByte('H');
             //Write the data to the TX
             //Used for debugging
             //writeString(arrStore);
@@ -103,16 +107,21 @@ void getPacket(){
 
             //Write the data stored in EEPROM
             writeByte(eeprom_read(RXLenAddr));
-
+            writeByte('H');
             //Break the data up into the data sections
             parsePacket(arrStore);
-
+            writeByte('H');
             //Validate the data that is in the packet
             //If the data is all valid, go and make the response
             if(validatePacket()){
                 //Get values
                 //Make response
-
+                if(eeprom_read(rwByteAddr) == 0){
+                    writeByte('H');
+                    getCommands();
+                }else{
+                    setCommands();
+                }
             //If there is an error in the packet, response error
             }else{
                 //Return error code

@@ -115,7 +115,7 @@
                 End If
             Loop
         Catch ex As TimeoutException
-
+            addText("Done or timed out")
         End Try
         addText(decIn)
         addText(charIn)

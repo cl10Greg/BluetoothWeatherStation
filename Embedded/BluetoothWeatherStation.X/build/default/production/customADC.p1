@@ -905,49 +905,55 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _noDataLen `Cuc  1 e ]
 "31 userMacro.h
 [v _maxCmd `Cuc  1 e ]
+"32 userMacro.h
+[v _readByteVal `Cuc  1 e ]
 "33 userMacro.h
-[v _RXLenAddr `Cuc  1 e ]
-"34 userMacro.h
-[v _startByteAddr `Cuc  1 e ]
+[v _writeByteVal `Cuc  1 e ]
 "35 userMacro.h
-[v _rwByteAddr `Cuc  1 e ]
+[v _RXLenAddr `Cuc  1 e ]
 "36 userMacro.h
-[v _cmdByteAddr `Cuc  1 e ]
+[v _startByteAddr `Cuc  1 e ]
 "37 userMacro.h
-[v _lenByteAddr `Cuc  1 e ]
+[v _rwByteAddr `Cuc  1 e ]
 "38 userMacro.h
-[v _csByteAddr `Cuc  1 e ]
+[v _cmdByteAddr `Cuc  1 e ]
 "39 userMacro.h
-[v _endByteAddr `Cuc  1 e ]
+[v _lenByteAddr `Cuc  1 e ]
 "40 userMacro.h
-[v _dataBytesAddr `Cuc  1 e ]
+[v _csByteAddr `Cuc  1 e ]
+"41 userMacro.h
+[v _endByteAddr `Cuc  1 e ]
 "42 userMacro.h
-[v _calcCSByteAddr `Cuc  1 e ]
+[v _dataBytesAddr `Cuc  1 e ]
 "44 userMacro.h
-[v _tempValAddr `Cuc  1 e ]
-"45 userMacro.h
-[v _tempHiAddr `Cuc  1 e ]
+[v _calcCSByteAddr `Cuc  1 e ]
 "46 userMacro.h
-[v _tempLoAddr `Cuc  1 e ]
+[v _tempValHAddr `Cuc  1 e ]
 "47 userMacro.h
-[v _tempUnitAddr `Cuc  1 e ]
+[v _tempValLAddr `Cuc  1 e ]
+"48 userMacro.h
+[v _tempHiAddr `Cuc  1 e ]
 "49 userMacro.h
-[v _tempStartHi `Cuc  1 e ]
+[v _tempLoAddr `Cuc  1 e ]
 "50 userMacro.h
-[v _tempStartLo `Cuc  1 e ]
-"51 userMacro.h
-[v _tempC `Cuc  1 e ]
+[v _tempUnitAddr `Cuc  1 e ]
 "52 userMacro.h
-[v _tempF `Cuc  1 e ]
+[v _tempStartHi `Cuc  1 e ]
+"53 userMacro.h
+[v _tempStartLo `Cuc  1 e ]
 "54 userMacro.h
-[v _humValAddr `Cuc  1 e ]
+[v _tempC `Cuc  1 e ]
 "55 userMacro.h
-[v _humHiAddr `Cuc  1 e ]
-"56 userMacro.h
-[v _humLoAddr `Cuc  1 e ]
+[v _tempF `Cuc  1 e ]
+"57 userMacro.h
+[v _humValAddr `Cuc  1 e ]
 "58 userMacro.h
-[v _humStartHi `Cuc  1 e ]
+[v _humHiAddr `Cuc  1 e ]
 "59 userMacro.h
+[v _humLoAddr `Cuc  1 e ]
+"61 userMacro.h
+[v _humStartHi `Cuc  1 e ]
+"62 userMacro.h
 [v _humStartLo `Cuc  1 e ]
 [; ;customADC.h: 11: void initADC();
 [; ;customADC.h: 12: void selectTemp();
@@ -1911,116 +1917,131 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> 14 `i `uc
 ]
 [; ;userMacro.h: 31: const unsigned char maxCmd = 0x0E;
+"32
+[i _readByteVal
+-> -> 0 `i `uc
+]
+[; ;userMacro.h: 32: const unsigned char readByteVal = 0x00;
 "33
+[i _writeByteVal
+-> -> 1 `i `uc
+]
+[; ;userMacro.h: 33: const unsigned char writeByteVal = 0x01;
+"35
 [i _RXLenAddr
 -> -> 0 `i `uc
 ]
-[; ;userMacro.h: 33: const unsigned char RXLenAddr = 0x00;
-"34
+[; ;userMacro.h: 35: const unsigned char RXLenAddr = 0x00;
+"36
 [i _startByteAddr
 -> -> 1 `i `uc
 ]
-[; ;userMacro.h: 34: const unsigned char startByteAddr = 0x01;
-"35
+[; ;userMacro.h: 36: const unsigned char startByteAddr = 0x01;
+"37
 [i _rwByteAddr
 -> -> 2 `i `uc
 ]
-[; ;userMacro.h: 35: const unsigned char rwByteAddr = 0x02;
-"36
+[; ;userMacro.h: 37: const unsigned char rwByteAddr = 0x02;
+"38
 [i _cmdByteAddr
 -> -> 3 `i `uc
 ]
-[; ;userMacro.h: 36: const unsigned char cmdByteAddr = 0x03;
-"37
+[; ;userMacro.h: 38: const unsigned char cmdByteAddr = 0x03;
+"39
 [i _lenByteAddr
 -> -> 4 `i `uc
 ]
-[; ;userMacro.h: 37: const unsigned char lenByteAddr = 0x04;
-"38
+[; ;userMacro.h: 39: const unsigned char lenByteAddr = 0x04;
+"40
 [i _csByteAddr
 -> -> 5 `i `uc
 ]
-[; ;userMacro.h: 38: const unsigned char csByteAddr = 0x05;
-"39
+[; ;userMacro.h: 40: const unsigned char csByteAddr = 0x05;
+"41
 [i _endByteAddr
 -> -> 6 `i `uc
 ]
-[; ;userMacro.h: 39: const unsigned char endByteAddr = 0x06;
-"40
+[; ;userMacro.h: 41: const unsigned char endByteAddr = 0x06;
+"42
 [i _dataBytesAddr
 -> -> 7 `i `uc
 ]
-[; ;userMacro.h: 40: const unsigned char dataBytesAddr = 0x07;
-"42
+[; ;userMacro.h: 42: const unsigned char dataBytesAddr = 0x07;
+"44
 [i _calcCSByteAddr
 -> -> 48 `i `uc
 ]
-[; ;userMacro.h: 42: const unsigned char calcCSByteAddr = 0x30;
-"44
-[i _tempValAddr
+[; ;userMacro.h: 44: const unsigned char calcCSByteAddr = 0x30;
+"46
+[i _tempValHAddr
 -> -> 96 `i `uc
 ]
-[; ;userMacro.h: 44: const unsigned char tempValAddr = 0x60;
-"45
+[; ;userMacro.h: 46: const unsigned char tempValHAddr = 0x60;
+"47
+[i _tempValLAddr
+-> -> 97 `i `uc
+]
+[; ;userMacro.h: 47: const unsigned char tempValLAddr = 0x61;
+"48
 [i _tempHiAddr
 -> -> 98 `i `uc
 ]
-[; ;userMacro.h: 45: const unsigned char tempHiAddr = 0x62;
-"46
+[; ;userMacro.h: 48: const unsigned char tempHiAddr = 0x62;
+"49
 [i _tempLoAddr
 -> -> 100 `i `uc
 ]
-[; ;userMacro.h: 46: const unsigned char tempLoAddr = 0x64;
-"47
+[; ;userMacro.h: 49: const unsigned char tempLoAddr = 0x64;
+"50
 [i _tempUnitAddr
 -> -> 102 `i `uc
 ]
-[; ;userMacro.h: 47: const unsigned char tempUnitAddr = 0x66;
-"49
+[; ;userMacro.h: 50: const unsigned char tempUnitAddr = 0x66;
+"52
 [i _tempStartHi
 -> -> 100 `i `uc
 ]
-[; ;userMacro.h: 49: const unsigned char tempStartHi = 0x64;
-"50
+[; ;userMacro.h: 52: const unsigned char tempStartHi = 0x64;
+"53
 [i _tempStartLo
 -> -> 160 `i `uc
 ]
-[; ;userMacro.h: 50: const unsigned char tempStartLo = 0xA0;
-"51
+[; ;userMacro.h: 53: const unsigned char tempStartLo = 0xA0;
+"54
 [i _tempC
 -> -> 0 `i `uc
 ]
-[; ;userMacro.h: 51: const unsigned char tempC = 0x00;
-"52
+[; ;userMacro.h: 54: const unsigned char tempC = 0x00;
+"55
 [i _tempF
 -> -> 16 `i `uc
 ]
-[; ;userMacro.h: 52: const unsigned char tempF = 0x10;
-"54
+[; ;userMacro.h: 55: const unsigned char tempF = 0x10;
+"57
 [i _humValAddr
 -> -> 128 `i `uc
 ]
-[; ;userMacro.h: 54: const unsigned char humValAddr = 0x80;
-"55
+[; ;userMacro.h: 57: const unsigned char humValAddr = 0x80;
+"58
 [i _humHiAddr
 -> -> 130 `i `uc
 ]
-[; ;userMacro.h: 55: const unsigned char humHiAddr = 0x82;
-"56
+[; ;userMacro.h: 58: const unsigned char humHiAddr = 0x82;
+"59
 [i _humLoAddr
 -> -> 132 `i `uc
 ]
-[; ;userMacro.h: 56: const unsigned char humLoAddr = 0x84;
-"58
+[; ;userMacro.h: 59: const unsigned char humLoAddr = 0x84;
+"61
 [i _humStartHi
 -> -> 80 `i `uc
 ]
-[; ;userMacro.h: 58: const unsigned char humStartHi = 0x50;
-"59
+[; ;userMacro.h: 61: const unsigned char humStartHi = 0x50;
+"62
 [i _humStartLo
 -> -> 10 `i `uc
 ]
-[; ;userMacro.h: 59: const unsigned char humStartLo = 0x0A;
+[; ;userMacro.h: 62: const unsigned char humStartLo = 0x0A;
 "7 customADC.c
 [v _initADC `(v  1 ef ]
 {

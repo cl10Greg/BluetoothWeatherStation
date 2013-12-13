@@ -1,5 +1,68 @@
 
-# 1 "Packet.c"
+# 1 "Command.c"
+
+# 19 "userMacro.h"
+const char member1[] = "Greg Girard";
+const char member2[] = "Deepak Chandrasekar";
+const char member3[] = "Apurve Bhide";
+const char classNum[] = "ECE5620";
+const char classTerm[] = "Fall 2013";
+const char groupNum = '2';
+
+const unsigned char userStartByte = 0xAA;
+const unsigned char userEndByte = 0x0A;
+const unsigned char newLineChar = 0x0A;
+const unsigned char minSizeByte = 0x0A;
+const unsigned char noDataLen = 0x0A;
+const unsigned char maxCmd = 0x0E;
+const unsigned char readByteVal = 0x00;
+const unsigned char writeByteVal = 0x01;
+
+const unsigned char RXLenAddr = 0x00;
+const unsigned char startByteAddr = 0x01;
+const unsigned char rwByteAddr = 0x02;
+const unsigned char cmdByteAddr = 0x03;
+const unsigned char lenByteAddr = 0x04;
+const unsigned char csByteAddr = 0x05;
+const unsigned char endByteAddr = 0x06;
+const unsigned char dataBytesAddr = 0x07;
+
+const unsigned char calcCSByteAddr = 0x30;
+
+const unsigned char tempValHAddr = 0x60;
+const unsigned char tempValLAddr = 0x61;
+const unsigned char tempHiAddr = 0x62;
+const unsigned char tempLoAddr = 0x64;
+const unsigned char tempUnitAddr = 0x66;
+
+const unsigned char tempStartHi = 0x64;
+const unsigned char tempStartLo = 0xA0;
+const unsigned char tempC = 0x00;
+const unsigned char tempF = 0x10;
+
+const unsigned char humValAddr = 0x80;
+const unsigned char humHiAddr = 0x82;
+const unsigned char humLoAddr = 0x84;
+
+const unsigned char humStartHi = 0x50;
+const unsigned char humStartLo = 0x0A;
+
+# 12 "Bluetooth.h"
+void initUSART();
+
+void writeByte(unsigned char Byte);
+
+unsigned char readByte();
+
+void echoBack();
+
+void writeString(unsigned char* userString);
+
+void readString(unsigned char* readStorage);
+
+unsigned char makeNibble(unsigned char tempByte);
+
+unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo);
 
 # 82 "C:\Microchip\Hitech\include\pic16f877a.h"
 volatile unsigned char INDF @ 0x000;
@@ -1090,311 +1153,19 @@ extern void memcpyee(eeprom unsigned char *to, const unsigned char *from, unsign
 #pragma inline(_delay)
 extern void _delay(unsigned long);
 
-# 19 "userMacro.h"
-const char member1[] = "Greg Girard";
-const char member2[] = "Deepak Chandrasekar";
-const char member3[] = "Apurve Bhide";
-const char classNum[] = "ECE5620";
-const char classTerm[] = "Fall 2013";
-const char groupNum = '2';
+# 6 "Command.c"
+void getCommands(){
 
-const unsigned char userStartByte = 0xAA;
-const unsigned char userEndByte = 0x0A;
-const unsigned char newLineChar = 0x0A;
-const unsigned char minSizeByte = 0x0A;
-const unsigned char noDataLen = 0x0A;
-const unsigned char maxCmd = 0x0E;
-const unsigned char readByteVal = 0x00;
-const unsigned char writeByteVal = 0x01;
-
-const unsigned char RXLenAddr = 0x00;
-const unsigned char startByteAddr = 0x01;
-const unsigned char rwByteAddr = 0x02;
-const unsigned char cmdByteAddr = 0x03;
-const unsigned char lenByteAddr = 0x04;
-const unsigned char csByteAddr = 0x05;
-const unsigned char endByteAddr = 0x06;
-const unsigned char dataBytesAddr = 0x07;
-
-const unsigned char calcCSByteAddr = 0x30;
-
-const unsigned char tempValHAddr = 0x60;
-const unsigned char tempValLAddr = 0x61;
-const unsigned char tempHiAddr = 0x62;
-const unsigned char tempLoAddr = 0x64;
-const unsigned char tempUnitAddr = 0x66;
-
-const unsigned char tempStartHi = 0x64;
-const unsigned char tempStartLo = 0xA0;
-const unsigned char tempC = 0x00;
-const unsigned char tempF = 0x10;
-
-const unsigned char humValAddr = 0x80;
-const unsigned char humHiAddr = 0x82;
-const unsigned char humLoAddr = 0x84;
-
-const unsigned char humStartHi = 0x50;
-const unsigned char humStartLo = 0x0A;
-
-# 12 "Bluetooth.h"
-void initUSART();
-
-void writeByte(unsigned char Byte);
-
-unsigned char readByte();
-
-void echoBack();
-
-void writeString(unsigned char* userString);
-
-void readString(unsigned char* readStorage);
-
-unsigned char makeNibble(unsigned char tempByte);
-
-unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo);
-
-# 11 "C:\Microchip\Hitech\include\Packet.h"
-int checkEven();
-int checkLength();
-int checkDataFrames();
-void parsePacket(unsigned char* dataPacket);
-int validatePacket();
-void addDataToCheckSum();
-int checkStartByte();
-int checkRWByte();
-int checkCMDByte();
-int checkDataLenByte();
-int checkCS();
-void displayPacket();
-
-# 4 "C:\Microchip\Hitech\include\string.h"
-typedef int ptrdiff_t;
-typedef unsigned size_t;
-typedef unsigned short wchar_t;
-
-
-extern int errno;
-
-# 22
-extern void * memcpy(void *, const void *, size_t);
-extern void * memmove(void *, const void *, size_t);
-extern void * memset(void *, int, size_t);
-
-# 35
-extern char * strcat(char *, const char *);
-extern char * strcpy(char *, const char *);
-extern char * strncat(char *, const char *, size_t);
-extern char * strncpy(char *, const char *, size_t);
-extern char * strdup(const char *);
-extern char * strtok(char *, const char *);
-
-
-extern int memcmp(const void *, const void *, size_t);
-extern int strcmp(const char *, const char *);
-extern int stricmp(const char *, const char *);
-extern int strncmp(const char *, const char *, size_t);
-extern int strnicmp(const char *, const char *, size_t);
-extern void * memchr(const void *, int, size_t);
-extern size_t strcspn(const char *, const char *);
-extern char * strpbrk(const char *, const char *);
-extern size_t strspn(const char *, const char *);
-extern char * strstr(const char *, const char *);
-extern char * stristr(const char *, const char *);
-extern char * strerror(int);
-extern size_t strlen(const char *);
-extern char * strchr(const char *, int);
-extern char * strichr(const char *, int);
-extern char * strrchr(const char *, int);
-extern char * strrichr(const char *, int);
-
-# 42 "Packet.c"
-int checkEven() {
-
-
-if (eeprom_read(RXLenAddr) % 2 == 0) {
-
-writeByte('E');
-return 1;
-}
-
+switch(eeprom_read(rwByteAddr)){
+case 0:
+writeByte('T');
+break;
+default:
 writeByte('N');
-return 0;
-}
-
-# 64
-int checkLength() {
-
-
-if (eeprom_read(RXLenAddr) >= minSizeByte) {
-
-writeByte('L');
-return 1;
-}
-
-writeByte('N');
-return 0;
-}
-
-# 85
-int checkDataFrames(){
-
-if(eeprom_read(lenByteAddr) == 0 && (eeprom_read(RXLenAddr)-noDataLen) == 0){
-
-writeByte('D');
-return 1;
-
-
-
-}else if((eeprom_read(RXLenAddr) - noDataLen) == (eeprom_read(lenByteAddr)*2)){
-
-writeByte('D');
-return 1;
-}
-
-
-writeByte('N');
-return 0;
-}
-
-# 114
-void parsePacket(unsigned char* dataPacket) {
-
-int dataCounter = 0;
-
-
-if (checkLength() && checkEven()) {
-
-
-eeprom_write(startByteAddr, makeHexByte(dataPacket[0], dataPacket[1]));
-
-eeprom_write(rwByteAddr, makeHexByte(dataPacket[2], dataPacket[3]));
-
-eeprom_write(cmdByteAddr, makeHexByte(dataPacket[4], dataPacket[5]));
-
-eeprom_write(lenByteAddr, makeHexByte(dataPacket[6], dataPacket[7]));
-
-eeprom_write(csByteAddr, makeHexByte(dataPacket[strlen(dataPacket) - 2], dataPacket[strlen(dataPacket) - 1]));
-
-
-for (unsigned char i = 0x00; i < eeprom_read(lenByteAddr); i++) {
-eeprom_write(dataBytesAddr+i, makeHexByte(dataPacket[8 + dataCounter], dataPacket[9 + dataCounter]));
-dataCounter += 2;
-}
+break;
 }
 }
 
-# 148
-int checkStartByte() {
+void setCommands(){
 
-
-if (eeprom_read(startByteAddr) == userStartByte) {
-
-writeByte('S');
-
-eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(startByteAddr));
-return 1;
-}
-
-writeByte('N');
-return 0;
-}
-
-# 171
-int checkRWByte() {
-
-
-if(eeprom_read(rwByteAddr) == 0 || eeprom_read(rwByteAddr) == 1){
-
-writeByte('R');
-
-eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(rwByteAddr));
-return 1;
-}
-
-writeByte('N');
-return 0;
-}
-
-# 193
-int checkCMDByte(){
-
-if(eeprom_read(cmdByteAddr) >= 0 && eeprom_read(cmdByteAddr) <= maxCmd){
-
-eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(cmdByteAddr));
-
-writeByte('C');
-return 1;
-}
-
-writeByte('N');
-return 0;
-}
-
-# 216
-int checkCS(){
-
-if(eeprom_read(csByteAddr) == eeprom_read(calcCSByteAddr)){
-
-writeByte('Y');
-return 1;
-}
-
-writeByte('N');
-return 0;
-}
-
-# 236
-int validatePacket(){
-
-if(checkStartByte() && checkRWByte() && checkCMDByte() && checkDataFrames()){
-
-addDataToCheckSum();
-
-if(checkCS())
-
-return 1;
-}
-
-return 0;
-
-}
-
-# 258
-void addDataToCheckSum(){
-
-eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(lenByteAddr));
-
-
-for (unsigned char i = 0x00; i < eeprom_read(lenByteAddr); i++) {
-
-eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(dataBytesAddr+i));
-}
-}
-
-# 277
-void displayPacket() {
-
-
-writeByte(newLineChar);
-writeByte(eeprom_read(startByteAddr));
-writeByte(newLineChar);
-
-writeByte(eeprom_read(rwByteAddr));
-writeByte(newLineChar);
-
-writeByte(eeprom_read(cmdByteAddr));
-writeByte(newLineChar);
-
-writeByte(eeprom_read(lenByteAddr));
-writeByte(newLineChar);
-
-
-for (unsigned char i = 0x00; i < eeprom_read(lenByteAddr); i++) {
-writeByte(eeprom_read(dataBytesAddr+i));
-writeByte(newLineChar);
-}
-
-
-writeByte(eeprom_read(csByteAddr));
-writeByte(newLineChar);
 }

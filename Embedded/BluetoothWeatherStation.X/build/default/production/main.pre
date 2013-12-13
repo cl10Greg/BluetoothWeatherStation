@@ -1121,6 +1121,8 @@ const unsigned char newLineChar = 0x0A;
 const unsigned char minSizeByte = 0x0A;
 const unsigned char noDataLen = 0x0A;
 const unsigned char maxCmd = 0x0E;
+const unsigned char readByteVal = 0x00;
+const unsigned char writeByteVal = 0x01;
 
 const unsigned char RXLenAddr = 0x00;
 const unsigned char startByteAddr = 0x01;
@@ -1133,7 +1135,8 @@ const unsigned char dataBytesAddr = 0x07;
 
 const unsigned char calcCSByteAddr = 0x30;
 
-const unsigned char tempValAddr = 0x60;
+const unsigned char tempValHAddr = 0x60;
+const unsigned char tempValLAddr = 0x61;
 const unsigned char tempHiAddr = 0x62;
 const unsigned char tempLoAddr = 0x64;
 const unsigned char tempUnitAddr = 0x66;
@@ -1176,13 +1179,17 @@ int checkDataLenByte();
 int checkCS();
 void displayPacket();
 
-# 30 "main.c"
+# 12 "Command.h"
+void getCommands();
+void setCommands();
+
+# 31 "main.c"
 asm("\tpsect config,class=CONFIG,delta=2"); asm("\tdw ""0xFFFB & 0xFF7F & 0xFFBF & 0xFFFE & 0xFFFF") ;
 
 void getPacket(void);
 void getTemp(void);
 
-# 43
+# 44
 int main()
 {
 char testString[] = "Welcome\n";
@@ -1205,12 +1212,13 @@ while(1){
 
 
 getTemp();
-_delay((unsigned long)((1000)*(20000000/4000.0)));
 
 # 76
 if(RCIF){
+writeByte('P');
 getPacket();
 }
+_delay((unsigned long)((10)*(20000000/4000.0)));
 }
 
 
@@ -1220,31 +1228,38 @@ return 0;
 
 void getPacket(){
 
-eeprom_write(calcCSByteAddr,0x00);
+while(!RCIF);
 
+eeprom_write(calcCSByteAddr,0x00);
+writeByte('H');
 
 char arrStore[50] = {0};
-
+writeByte('H');
 
 readString(arrStore);
+writeByte('H');
 
-# 105
+# 109
 writeByte(eeprom_read(RXLenAddr));
-
+writeByte('H');
 
 parsePacket(arrStore);
-
+writeByte('H');
 
 
 if(validatePacket()){
-writeByte('V');
 
 
-
+if(eeprom_read(rwByteAddr) == 0){
+writeByte('H');
+getCommands();
+}else{
+setCommands();
+}
 
 }else{
 
-writeByte('N');
+
 }
 }
 
@@ -1254,13 +1269,8 @@ unsigned int tempReading;
 selectTemp();
 
 tempReading = readTemp();
-writeByte('T');
 
-eeprom_write(tempValAddr,tempReading);
+eeprom_write(tempValLAddr,tempReading);
 
-eeprom_write(tempValAddr+1,tempReading>>8);
-writeByte('F');
-writeByte(eeprom_read(tempValAddr));
-writeByte('S');
-writeByte(eeprom_read(tempValAddr+1));
+eeprom_write(tempValHAddr+1,tempReading>>8);
 }
