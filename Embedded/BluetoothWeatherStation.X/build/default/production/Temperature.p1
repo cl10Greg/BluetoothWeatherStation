@@ -39,8 +39,34 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _endByteAddr `Cuc  1 e ]
 "40 userMacro.h
 [v _dataBytesAddr `Cuc  1 e ]
-"41 userMacro.h
+"42 userMacro.h
 [v _calcCSByteAddr `Cuc  1 e ]
+"44 userMacro.h
+[v _tempValAddr `Cuc  1 e ]
+"45 userMacro.h
+[v _tempHiAddr `Cuc  1 e ]
+"46 userMacro.h
+[v _tempLoAddr `Cuc  1 e ]
+"47 userMacro.h
+[v _tempUnitAddr `Cuc  1 e ]
+"49 userMacro.h
+[v _tempStartHi `Cuc  1 e ]
+"50 userMacro.h
+[v _tempStartLo `Cuc  1 e ]
+"51 userMacro.h
+[v _tempC `Cuc  1 e ]
+"52 userMacro.h
+[v _tempF `Cuc  1 e ]
+"54 userMacro.h
+[v _humValAddr `Cuc  1 e ]
+"55 userMacro.h
+[v _humHiAddr `Cuc  1 e ]
+"56 userMacro.h
+[v _humLoAddr `Cuc  1 e ]
+"58 userMacro.h
+[v _humStartHi `Cuc  1 e ]
+"59 userMacro.h
+[v _humStartLo `Cuc  1 e ]
 "82 C:\Microchip\Hitech\include\pic16f877a.h
 [v _INDF `Vuc  1 e@0 ]
 "86 C:\Microchip\Hitech\include\pic16f877a.h
@@ -926,7 +952,13 @@ Version 3.2 HI-TECH Software Intermediate Code
 "154 C:\Microchip\Hitech\include\pic.h
 [v __delay `(v  0 ef1`ul ]
 [p i __delay ]
-[; ;Temperature.h: 11: unsigned int readTemp();
+"41 C:\Microchip\Hitech\include\eeprom_routines.h
+[v _eeprom_write `(uc  0 ef2`uc`uc ]
+[; ;Temperature.h: 12: unsigned int readTemp();
+[; ;Temperature.h: 13: void initTemp();
+[; ;Temperature.h: 14: void setTempUnit();
+[; ;Temperature.h: 15: void setTempHi();
+[; ;Temperature.h: 16: void setTempLo();
 "19 userMacro.h
 [i _member1
 :U ..
@@ -1095,11 +1127,76 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> 7 `i `uc
 ]
 [; ;userMacro.h: 40: const unsigned char dataBytesAddr = 0x07;
-"41
+"42
 [i _calcCSByteAddr
 -> -> 48 `i `uc
 ]
-[; ;userMacro.h: 41: const unsigned char calcCSByteAddr = 0x30;
+[; ;userMacro.h: 42: const unsigned char calcCSByteAddr = 0x30;
+"44
+[i _tempValAddr
+-> -> 96 `i `uc
+]
+[; ;userMacro.h: 44: const unsigned char tempValAddr = 0x60;
+"45
+[i _tempHiAddr
+-> -> 98 `i `uc
+]
+[; ;userMacro.h: 45: const unsigned char tempHiAddr = 0x62;
+"46
+[i _tempLoAddr
+-> -> 100 `i `uc
+]
+[; ;userMacro.h: 46: const unsigned char tempLoAddr = 0x64;
+"47
+[i _tempUnitAddr
+-> -> 102 `i `uc
+]
+[; ;userMacro.h: 47: const unsigned char tempUnitAddr = 0x66;
+"49
+[i _tempStartHi
+-> -> 100 `i `uc
+]
+[; ;userMacro.h: 49: const unsigned char tempStartHi = 0x64;
+"50
+[i _tempStartLo
+-> -> 160 `i `uc
+]
+[; ;userMacro.h: 50: const unsigned char tempStartLo = 0xA0;
+"51
+[i _tempC
+-> -> 0 `i `uc
+]
+[; ;userMacro.h: 51: const unsigned char tempC = 0x00;
+"52
+[i _tempF
+-> -> 16 `i `uc
+]
+[; ;userMacro.h: 52: const unsigned char tempF = 0x10;
+"54
+[i _humValAddr
+-> -> 128 `i `uc
+]
+[; ;userMacro.h: 54: const unsigned char humValAddr = 0x80;
+"55
+[i _humHiAddr
+-> -> 130 `i `uc
+]
+[; ;userMacro.h: 55: const unsigned char humHiAddr = 0x82;
+"56
+[i _humLoAddr
+-> -> 132 `i `uc
+]
+[; ;userMacro.h: 56: const unsigned char humLoAddr = 0x84;
+"58
+[i _humStartHi
+-> -> 80 `i `uc
+]
+[; ;userMacro.h: 58: const unsigned char humStartHi = 0x50;
+"59
+[i _humStartLo
+-> -> 10 `i `uc
+]
+[; ;userMacro.h: 59: const unsigned char humStartLo = 0x0A;
 [; ;pic16f877a.h: 82: volatile unsigned char INDF @ 0x000;
 [; ;pic16f877a.h: 86: volatile unsigned char TMR0 @ 0x001;
 [; ;pic16f877a.h: 90: volatile unsigned char PCL @ 0x002;
@@ -1931,34 +2028,86 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;eeprom_routines.h: 43: extern void eecpymem(volatile unsigned char *to, eeprom unsigned char *from, unsigned char size);
 [; ;eeprom_routines.h: 44: extern void memcpyee(eeprom unsigned char *to, const unsigned char *from, unsigned char size);
 [; ;pic.h: 154: extern void _delay(unsigned long);
-"7 Temperature.c
+"6 Temperature.c
 [v _readTemp `(ui  1 ef ]
 {
-[; ;Temperature.c: 6: unsigned int readTemp()
-[; ;Temperature.c: 7: {
+[; ;Temperature.c: 5: unsigned int readTemp()
+[; ;Temperature.c: 6: {
 [e :U _readTemp ]
 [f ]
-[; ;Temperature.c: 9: ADON = 1;
-"9
+[; ;Temperature.c: 8: ADON = 1;
+"8
 [e = _ADON -> -> 1 `i `b ]
-[; ;Temperature.c: 13: _delay((unsigned long)((10)*(20000000/4000.0)));
-"13
+[; ;Temperature.c: 12: _delay((unsigned long)((10)*(20000000/4000.0)));
+"12
 [e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-[; ;Temperature.c: 15: GO_nDONE = 1;
-"15
+[; ;Temperature.c: 14: GO_nDONE = 1;
+"14
 [e = _GO_nDONE -> -> 1 `i `b ]
-[; ;Temperature.c: 18: while(GO_nDONE);
-"18
+[; ;Temperature.c: 17: while(GO_nDONE);
+"17
 [e $U 102  ]
 [e :U 103 ]
 [e :U 102 ]
 [e $ _GO_nDONE 103  ]
 [e :U 104 ]
-[; ;Temperature.c: 21: return ((ADRESH<<8)+ADRESL);
-"21
+[; ;Temperature.c: 20: return ((ADRESH<<8)+ADRESL);
+"20
 [e ) -> + << -> _ADRESH `i -> 8 `i -> _ADRESL `i `ui ]
 [e $UE 101  ]
-[; ;Temperature.c: 22: }
-"22
+[; ;Temperature.c: 21: }
+"21
 [e :UE 101 ]
+}
+"23
+[v _initTemp `(v  1 ef ]
+{
+[; ;Temperature.c: 23: void initTemp(){
+[e :U _initTemp ]
+[f ]
+[; ;Temperature.c: 25: eeprom_write(tempValAddr,0x00);
+"25
+[e ( _eeprom_write (2 , _tempValAddr -> -> 0 `i `uc ]
+[; ;Temperature.c: 26: eeprom_write(tempHiAddr, tempStartHi);
+"26
+[e ( _eeprom_write (2 , _tempHiAddr _tempStartHi ]
+[; ;Temperature.c: 27: eeprom_write(tempLoAddr, tempStartLo);
+"27
+[e ( _eeprom_write (2 , _tempLoAddr _tempStartLo ]
+[; ;Temperature.c: 28: eeprom_write(tempUnitAddr, tempC);
+"28
+[e ( _eeprom_write (2 , _tempUnitAddr _tempC ]
+[; ;Temperature.c: 29: }
+"29
+[e :UE 105 ]
+}
+"31
+[v _setTempUnit `(v  1 ef ]
+{
+[; ;Temperature.c: 31: void setTempUnit(){
+[e :U _setTempUnit ]
+[f ]
+[; ;Temperature.c: 33: }
+"33
+[e :UE 106 ]
+}
+"35
+[v _setTempHi `(v  1 ef ]
+{
+[; ;Temperature.c: 35: void setTempHi(){
+[e :U _setTempHi ]
+[f ]
+[; ;Temperature.c: 37: }
+"37
+[e :UE 107 ]
+}
+"39
+[v _setTempLo `(v  1 ef ]
+{
+[; ;Temperature.c: 39: void setTempLo(){
+[e :U _setTempLo ]
+[f ]
+[; ;Temperature.c: 41: }
+"41
+[e :UE 108 ]
 }

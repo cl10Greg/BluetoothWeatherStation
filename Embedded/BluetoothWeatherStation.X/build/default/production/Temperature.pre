@@ -1,8 +1,12 @@
 
 # 1 "Temperature.c"
 
-# 11 "Temperature.h"
+# 12 "Temperature.h"
 unsigned int readTemp();
+void initTemp();
+void setTempUnit();
+void setTempHi();
+void setTempLo();
 
 # 19 "userMacro.h"
 const char member1[] = "Greg Girard";
@@ -27,7 +31,25 @@ const unsigned char lenByteAddr = 0x04;
 const unsigned char csByteAddr = 0x05;
 const unsigned char endByteAddr = 0x06;
 const unsigned char dataBytesAddr = 0x07;
+
 const unsigned char calcCSByteAddr = 0x30;
+
+const unsigned char tempValAddr = 0x60;
+const unsigned char tempHiAddr = 0x62;
+const unsigned char tempLoAddr = 0x64;
+const unsigned char tempUnitAddr = 0x66;
+
+const unsigned char tempStartHi = 0x64;
+const unsigned char tempStartLo = 0xA0;
+const unsigned char tempC = 0x00;
+const unsigned char tempF = 0x10;
+
+const unsigned char humValAddr = 0x80;
+const unsigned char humHiAddr = 0x82;
+const unsigned char humLoAddr = 0x84;
+
+const unsigned char humStartHi = 0x50;
+const unsigned char humStartLo = 0x0A;
 
 # 82 "C:\Microchip\Hitech\include\pic16f877a.h"
 volatile unsigned char INDF @ 0x000;
@@ -1118,7 +1140,7 @@ extern void memcpyee(eeprom unsigned char *to, const unsigned char *from, unsign
 #pragma inline(_delay)
 extern void _delay(unsigned long);
 
-# 6 "Temperature.c"
+# 5 "Temperature.c"
 unsigned int readTemp()
 {
 
@@ -1136,3 +1158,24 @@ while(GO_nDONE);
 
 return ((ADRESH<<8)+ADRESL);
 }
+
+void initTemp(){
+
+eeprom_write(tempValAddr,0x00);
+eeprom_write(tempHiAddr, tempStartHi);
+eeprom_write(tempLoAddr, tempStartLo);
+eeprom_write(tempUnitAddr, tempC);
+}
+
+void setTempUnit(){
+
+}
+
+void setTempHi(){
+
+}
+
+void setTempLo(){
+
+}
+

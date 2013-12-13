@@ -38,8 +38,26 @@ const unsigned char lenByteAddr = 0x04;
 const unsigned char csByteAddr = 0x05;
 const unsigned char endByteAddr = 0x06;
 const unsigned char dataBytesAddr = 0x07;
+
 const unsigned char calcCSByteAddr = 0x30;
 
+const unsigned char tempValHAddr = 0x60;
+const unsigned char tempValLAddr = 0x61;
+const unsigned char tempHiAddr = 0x62;
+const unsigned char tempLoAddr = 0x64;
+const unsigned char tempUnitAddr = 0x66;
+
+const unsigned char tempStartHi = 0x64; //100C
+const unsigned char tempStartLo = 0xA0; //10C
+const unsigned char tempC = 0x00;
+const unsigned char tempF = 0x10;
+
+const unsigned char humValAddr = 0x80;
+const unsigned char humHiAddr = 0x82;
+const unsigned char humLoAddr = 0x84;
+
+const unsigned char humStartHi = 0x50; //80%
+const unsigned char humStartLo = 0x0A; //10%
 
 #endif	/* USERMACRO_H */
 

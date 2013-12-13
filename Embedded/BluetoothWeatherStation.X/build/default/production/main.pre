@@ -1130,10 +1130,32 @@ const unsigned char lenByteAddr = 0x04;
 const unsigned char csByteAddr = 0x05;
 const unsigned char endByteAddr = 0x06;
 const unsigned char dataBytesAddr = 0x07;
+
 const unsigned char calcCSByteAddr = 0x30;
 
-# 11 "Temperature.h"
+const unsigned char tempValAddr = 0x60;
+const unsigned char tempHiAddr = 0x62;
+const unsigned char tempLoAddr = 0x64;
+const unsigned char tempUnitAddr = 0x66;
+
+const unsigned char tempStartHi = 0x64;
+const unsigned char tempStartLo = 0xA0;
+const unsigned char tempC = 0x00;
+const unsigned char tempF = 0x10;
+
+const unsigned char humValAddr = 0x80;
+const unsigned char humHiAddr = 0x82;
+const unsigned char humLoAddr = 0x84;
+
+const unsigned char humStartHi = 0x50;
+const unsigned char humStartLo = 0x0A;
+
+# 12 "Temperature.h"
 unsigned int readTemp();
+void initTemp();
+void setTempUnit();
+void setTempHi();
+void setTempLo();
 
 # 11 "customADC.h"
 void initADC();
@@ -1158,8 +1180,9 @@ void displayPacket();
 asm("\tpsect config,class=CONFIG,delta=2"); asm("\tdw ""0xFFFB & 0xFF7F & 0xFFBF & 0xFFFE & 0xFFFF") ;
 
 void getPacket(void);
+void getTemp(void);
 
-# 42
+# 43
 int main()
 {
 char testString[] = "Welcome\n";
@@ -1171,6 +1194,7 @@ initUSART();
 initADC();
 
 
+initTemp();
 
 
 writeString(testString);
@@ -1179,7 +1203,11 @@ writeString(testString);
 
 while(1){
 
-# 71
+
+getTemp();
+_delay((unsigned long)((1000)*(20000000/4000.0)));
+
+# 76
 if(RCIF){
 getPacket();
 }
@@ -1200,7 +1228,7 @@ char arrStore[50] = {0};
 
 readString(arrStore);
 
-# 100
+# 105
 writeByte(eeprom_read(RXLenAddr));
 
 
@@ -1218,6 +1246,21 @@ writeByte('V');
 
 writeByte('N');
 }
+}
 
+void getTemp(){
+unsigned int tempReading;
 
+selectTemp();
+
+tempReading = readTemp();
+writeByte('T');
+
+eeprom_write(tempValAddr,tempReading);
+
+eeprom_write(tempValAddr+1,tempReading>>8);
+writeByte('F');
+writeByte(eeprom_read(tempValAddr));
+writeByte('S');
+writeByte(eeprom_read(tempValAddr+1));
 }

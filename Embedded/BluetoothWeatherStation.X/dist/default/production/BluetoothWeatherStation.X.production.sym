@@ -1,28 +1,29 @@
 _RD C60 0 ABS
 _WR C61 0 ABS
-__end_of_readByte 189 0 CODE
-_newLineChar 52 0 STRING
+__end_of_readByte 8C 0 CODE
+_newLineChar 57 0 STRING
 __S0 2008 0 ABS
 __S1 DB 0 ABS
 __S2 0 0 ABS
 _GIE 5F 0 ABS
 __end_of_addDataToCheckSum 631 0 CODE
+_tempValAddr 62 0 STRING
 __Hintentry 0 0 CODE
 __Lintentry 0 0 CODE
-_userEndByte 56 0 STRING
+_userEndByte 63 0 STRING
 _cmdByteAddr 4A 0 STRING
 _endByteAddr 4D 0 STRING
-_lenByteAddr 4F 0 STRING
+_lenByteAddr 54 0 STRING
 ??_initUSART 70 0 COMMON
 _RCIF 65 0 ABS
-__end_of_writeString 285 0 CODE
+__end_of_writeString 1AF 0 CODE
 _TXIF 64 0 ABS
 _ADON F8 0 ABS
 _WREN C62 0 ABS
-_minSizeByte 51 0 STRING
+_minSizeByte 56 0 STRING
 ??_writeByte 70 0 COMMON
-_makeHexByte 20A 0 CODE
-_main 34A 0 CODE
+_makeHexByte 10D 0 CODE
+_main 360 0 CODE
 btemp 7E 0 ABS
 _exit 0 0 CODE
 start 0 0 CODE
@@ -37,24 +38,30 @@ reset_vec 0 0 CODE
 _SPBRG 99 0 ABS
 _TXSTA 98 0 ABS
 _EEADR 10D 0 ABS
-_writeString 256 0 CODE
+_writeString 180 0 CODE
 wtemp0 7E 0 ABS
 _CARRY 18 0 ABS
 __Hconfig 2008 0 CONFIG
 __Lconfig 2007 0 CONFIG
-_readByte 17E 0 CODE
+_tempC 5B 0 STRING
+_tempF 5C 0 STRING
+_readByte 81 0 CODE
 __size_of_eeprom_read 0 0 ABS
 ?_makeHexByte 7D 0 COMMON
-clear_ram 16D 0 CODE
+clear_ram 70 0 CODE
+_tempUnitAddr 61 0 STRING
 __Hram 0 0 ABS
 __Lram 0 0 ABS
 ?_main 70 0 COMMON
 ??_checkCMDByte 22 0 BANK0
+_readTemp 159 0 CODE
 _classNum 40 0 STRING
 __size_of_parsePacket 0 0 ABS
 _groupNum 4E 0 STRING
 ??_strlen 72 0 COMMON
-main@F1146 D2 0 BANK1
+?_getTemp 70 0 COMMON
+_initTemp 2BF 0 CODE
+main@F1165 D2 0 BANK1
 __Hfunctab 0 0 CODE
 readString@i 23 0 BANK0
 __Lfunctab 0 0 CODE
@@ -64,17 +71,17 @@ _EECON1 18C 0 ABS
 _EECON2 18D 0 ABS
 _TRISC6 43E 0 ABS
 _TRISC7 43F 0 ABS
-_checkLength 285 0 CODE
+_checkLength 1AF 0 CODE
 __Hcommon 0 0 ABS
 __Lcommon 0 0 ABS
-_startByteAddr 55 0 STRING
+_startByteAddr 5A 0 STRING
 __Heeprom_data 0 0 EEDATA
 __Leeprom_data 0 0 EEDATA
 ??_readString 20 0 BANK0
 makeNibble@tempNib 70 0 COMMON
 _EEDATA 10C 0 ABS
-__end_of_strlen 2E5 0 CODE
-_noDataLen 53 0 STRING
+__end_of_strlen 20F 0 CODE
+_noDataLen 58 0 STRING
 getPacket@arrStore 30 0 BANK0
 _ADRESH 1E 0 ABS
 ?_writeString 70 0 COMMON
@@ -91,83 +98,97 @@ __Hsfr2 0 0 ABS
 __Lsfr2 0 0 ABS
 __Hsfr3 0 0 ABS
 __Lsfr3 0 0 ABS
-__ptext500 54A 0 CODE
-__ptext510 1EB 0 CODE
-__ptext501 4E0 0 CODE
-init_fetch 1BE 0 CODE
-__ptext511 1AF 0 CODE
-__ptext502 47C 0 CODE
+_humStartHi 51 0 STRING
+__end_of_initTemp 30F 0 CODE
+getPacket@F1168 A0 0 BANK1
+init_fetch C1 0 CODE
 ?_addDataToCheckSum 70 0 COMMON
-__ptext512 2E5 0 CODE
+_humHiAddr 4F 0 STRING
 __size_of_initADC 0 0 ABS
 _RXLenAddr 48 0 STRING
-__ptext503 631 0 CODE
+_humLoAddr 50 0 STRING
 ?_readByte 70 0 COMMON
-__ptext513 2B4 0 CODE
 ??_addDataToCheckSum 20 0 BANK0
-_writeByte 194 0 CODE
-__end_of_checkStartByte 4E0 0 CODE
-__ptext504 285 0 CODE
-_maxCmd 50 0 STRING
+_writeByte 97 0 CODE
+__end_of_checkStartByte 473 0 CODE
+__ptext580 54A 0 CODE
+_maxCmd 55 0 STRING
 ?_eeprom_read 70 0 COMMON
 ??_makeHexByte 20 0 BANK0
 __Hcode 0 0 ABS
 _dataBytesAddr 4C 0 STRING
 __Lcode 0 0 ABS
-__ptext514 17E 0 CODE
-_checkEven 22F 0 CODE
-__ptext505 22F 0 CODE
+__ptext590 8C 0 CODE
+_checkEven 132 0 CODE
+__ptext581 473 0 CODE
+?_selectTemp 70 0 COMMON
 _calcCSByteAddr 49 0 STRING
-__ptext515 194 0 CODE
+__ptext572 3B2 0 CODE
+__ptext591 EE 0 CODE
 ??_main 62 0 BANK0
 __HcstackBANK0 0 0 ABS
 __LcstackBANK0 0 0 ABS
-__ptext506 20A 0 CODE
+__ptext582 40F 0 CODE
 __pcstackBANK0 20 0 BANK0
-_strlen 2B4 0 CODE
-__end_of_checkLength 2B4 0 CODE
-__ptext516 1A0 0 CODE
+_strlen 1DE 0 CODE
+__end_of_checkLength 1DE 0 CODE
+__ptext573 4DD 0 CODE
+__ptext592 B2 0 CODE
 __Hinit 0 0 CODE
 __Linit 0 0 CODE
-__end_of_main 383 0 CODE
-__ptext507 383 0 CODE
+__end_of_main 3B2 0 CODE
+__ptext583 631 0 CODE
 __Htext 0 0 ABS
 __Ltext 0 0 ABS
-__ptext517 0 0 CODE
-__ptext508 256 0 CODE
+__ptext574 30F 0 CODE
+__ptext593 20F 0 CODE
+?_readTemp 70 0 COMMON
+__ptext584 1AF 0 CODE
 makeHexByte@nibTwo 7D 0 COMMON
+__ptext575 6CB 0 CODE
+__ptext594 1DE 0 CODE
+??_getTemp 7D 0 COMMON
 _classTerm 36 0 STRING
-end_of_initialization 1E7 0 CODE
-__ptext509 189 0 CODE
-__ptext495 41F 0 CODE
-__end_of_makeHexByte 22F 0 CODE
+end_of_initialization EA 0 CODE
+__ptext585 132 0 CODE
+?_initTemp 70 0 COMMON
+__ptext576 2BF 0 CODE
+__ptext595 81 0 CODE
+__end_of_makeHexByte 132 0 CODE
 __size_of_makeNibble 0 0 ABS
+__ptext586 10D 0 CODE
 writeString@i 7C 0 COMMON
-__ptext496 3CE 0 CODE
 __end_of_checkDataFrames 6CB 0 CODE
-_getPacket 41F 0 CODE
-__ptext497 6CB 0 CODE
-_eeprom_write 2E5 0 CODE
+__ptext577 159 0 CODE
+__ptext596 97 0 CODE
+_getPacket 3B2 0 CODE
+__ptext587 274 0 CODE
+_eeprom_write 20F 0 CODE
+__ptext578 5BA 0 CODE
+__ptext597 A3 0 CODE
 _parsePacket 6CB 0 CODE
+__ptext588 180 0 CODE
 ??_getPacket 2C 0 BANK0
 ?_checkLength 72 0 COMMON
-__ptext498 5BA 0 CODE
 __HdataBANK1 0 0 ABS
 __LdataBANK1 0 0 ABS
 __size_of_checkCS 0 0 ABS
+__ptext579 240 0 CODE
+__ptext598 0 0 CODE
 __pdataBANK1 D2 0 BANK1
-__ptext499 316 0 CODE
+__ptext589 6B 0 CODE
 addDataToCheckSum@i 7D 0 COMMON
-_userStartByte 57 0 STRING
+_userStartByte 64 0 STRING
 __Hstrings 0 0 ABS
 __Lstrings 0 0 ABS
 __pstrings 3 0 STRING
 ??_eeprom_write 7B 0 COMMON
-_makeNibble 1AF 0 CODE
-_initADC 189 0 CODE
+_makeNibble B2 0 CODE
+_initADC 8C 0 CODE
 makeHexByte@input_byte 23 0 BANK0
 __size_of_strlen 0 0 ABS
 ??_writeString 7A 0 COMMON
+_humStartLo 52 0 STRING
 ??_parsePacket 24 0 BANK0
 __Hbank0 0 0 ABS
 __Lbank0 0 0 ABS
@@ -175,6 +196,7 @@ __Hbank1 0 0 ABS
 __Lbank1 0 0 ABS
 __Hbank2 0 0 ABS
 __Lbank2 0 0 ABS
+__end_of_readTemp 180 0 CODE
 __Hbank3 0 0 ABS
 __Lbank3 0 0 ABS
 _member1 2A 0 STRING
@@ -184,49 +206,62 @@ __Lpowerup 0 0 CODE
 _member3 1D 0 STRING
 __size_of_readByte 0 0 ABS
 eeprom_read@addr 71 0 COMMON
-_checkCS 316 0 CODE
+_checkCS 240 0 CODE
 writeString@userString 7B 0 COMMON
 parsePacket@i 2A 0 BANK0
 __size_of_initUSART 0 0 ABS
 __Hclrtext 0 0 ABS
 __Lclrtext 0 0 ABS
+_tempStartHi 5F 0 STRING
+__end_of_getTemp 54A 0 CODE
 ?_checkStartByte 20 0 BANK0
 __size_of_checkCMDByte 0 0 ABS
 parsePacket@dataPacket 2B 0 BANK0
 __size_of_writeString 0 0 ABS
+__size_of_initTemp 0 0 ABS
+_tempHiAddr 5D 0 STRING
+__size_of_selectTemp 0 0 ABS
+_tempLoAddr 5E 0 STRING
 ??_readByte 70 0 COMMON
+_humValAddr 53 0 STRING
 _checkDataFrames 631 0 CODE
 _csByteAddr 4B 0 STRING
 ?_initUSART 70 0 COMMON
-_rwByteAddr 54 0 STRING
+_rwByteAddr 59 0 STRING
 ?_writeByte 70 0 COMMON
 ??_eeprom_read 70 0 COMMON
 ??_makeNibble 70 0 COMMON
 strlen@s 78 0 COMMON
-_readString 383 0 CODE
+__end_of_selectTemp 70 0 CODE
+_readString 274 0 CODE
 ?_checkEven 72 0 COMMON
 __size_of_makeHexByte 0 0 ABS
-__end_of_checkEven 256 0 CODE
+__end_of_checkEven 159 0 CODE
 __Hidloc 0 0 IDLOC
 __Lidloc 0 0 IDLOC
 ??_initADC 70 0 COMMON
 readString@readStorage 22 0 BANK0
+??_selectTemp 70 0 COMMON
 eeprom_write@addr 7C 0 COMMON
-init_ram 1C2 0 CODE
+init_ram C5 0 CODE
 ?_checkCMDByte 20 0 BANK0
-__end_of_getPacket 47C 0 CODE
+__end_of_getPacket 40F 0 CODE
 ?_strlen 70 0 COMMON
-__end_of_makeNibble 1BE 0 CODE
+_getTemp 4DD 0 CODE
+__end_of_makeNibble C1 0 CODE
 __size_of_addDataToCheckSum 0 0 ABS
 __Hcinit 0 0 ABS
 __Lcinit 0 0 ABS
 ??_validatePacket 7E 0 COMMON
 ?_validatePacket 24 0 BANK0
 __size_of_main 0 0 ABS
-__end_of_writeByte 1A0 0 CODE
+??_readTemp 72 0 COMMON
+__end_of_writeByte A3 0 CODE
 __size_of_checkLength 0 0 ABS
 ??_checkDataFrames 74 0 COMMON
-_eeprom_read 1EB 0 CODE
+_eeprom_read EE 0 CODE
+_selectTemp 6B 0 CODE
+??_initTemp 7D 0 COMMON
 parsePacket@dataCounter 28 0 BANK0
 eeprom_write@value 7A 0 COMMON
 ?_getPacket 70 0 COMMON
@@ -238,21 +273,21 @@ __pbssBANK1 A0 0 BANK1
 ??_checkLength 74 0 COMMON
 __HidataBANK1 0 0 ABS
 __LidataBANK1 0 0 ABS
-__end_of_initADC 194 0 CODE
+__end_of_initADC 97 0 CODE
 __end_of_checkCMDByte 5BA 0 CODE
-__pidataBANK1 175 0 CODE
-__end_of_checkRWByte 54A 0 CODE
+__pidataBANK1 78 0 CODE
+__end_of_checkRWByte 4DD 0 CODE
 _addDataToCheckSum 5BA 0 CODE
-_checkStartByte 47C 0 CODE
+_checkStartByte 40F 0 CODE
 __size_of_checkRWByte 0 0 ABS
 __size_of_writeByte 0 0 ABS
 __size_of_checkEven 0 0 ABS
-__end_of_validatePacket 41F 0 CODE
+__end_of_validatePacket 360 0 CODE
 __Hend_init 3 0 CODE
 __Lend_init 0 0 CODE
-_initUSART 1A0 0 CODE
+_initUSART A3 0 CODE
 ?_makeNibble 70 0 COMMON
-__end_of_checkCS 34A 0 CODE
+__end_of_checkCS 274 0 CODE
 ?_initADC 70 0 COMMON
 _checkCMDByte 54A 0 CODE
 writeByte@Byte 70 0 COMMON
@@ -260,40 +295,43 @@ writeByte@Byte 70 0 COMMON
 _GO_nDONE FA 0 ABS
 __Hreset_vec 0 0 CODE
 __Lreset_vec 0 0 CODE
-_validatePacket 3CE 0 CODE
+_validatePacket 30F 0 CODE
 ??_checkCS 74 0 COMMON
 __end_of_parsePacket 800 0 CODE
+_tempStartLo 60 0 STRING
 intlevel0 0 0 CODE
 intlevel1 0 0 CODE
 intlevel2 0 0 CODE
 readString@ch 25 0 BANK0
 intlevel3 0 0 CODE
 intlevel4 0 0 CODE
-__end_of_readString 3CE 0 CODE
+__size_of_getTemp 0 0 ABS
+__end_of_readString 2BF 0 CODE
 intlevel5 0 0 CODE
+__size_of_readTemp 0 0 ABS
 __size_of_readString 0 0 ABS
 main@testString 66 0 BANK0
 makeHexByte@nibOne 22 0 BANK0
 __HcstackCOMMON 0 0 ABS
 __LcstackCOMMON 0 0 ABS
-getPacket@F1148 A0 0 BANK1
 __pcstackCOMMON 70 0 COMMON
 ??_checkRWByte 22 0 BANK0
-start_initialization 1D1 0 CODE
+start_initialization D4 0 CODE
 ?_checkCS 72 0 COMMON
 __size_of_validatePacket 0 0 ABS
-__end_of_eeprom_read 20A 0 CODE
+__end_of_eeprom_read 10D 0 CODE
 __Hmaintext 0 0 ABS
 __Lmaintext 0 0 ABS
-__pmaintext 34A 0 CODE
+__pmaintext 360 0 CODE
 __size_of_getPacket 0 0 ABS
 __size_of_checkStartByte 0 0 ABS
 __Hinittext 0 0 ABS
 __Linittext 0 0 ABS
-__end_of_initUSART 1AF 0 CODE
+getTemp@tempReading 20 0 BANK0
+__end_of_initUSART B2 0 CODE
 ?_checkRWByte 20 0 BANK0
-__end_of_eeprom_write 316 0 CODE
-_checkRWByte 4E0 0 CODE
+__end_of_eeprom_write 240 0 CODE
+_checkRWByte 473 0 CODE
 ??_checkStartByte 22 0 BANK0
 %segments
 reset_vec 0 5 CODE 0
@@ -301,39 +339,43 @@ config 400E 400F CONFIG 400E
 cstackCOMMON 70 7D COMMON 70
 cstackBANK0 20 6E BANK0 20
 bssBANK1 A0 DA BANK1 A0
-text497 D96 FFF CODE D96
-text503 C62 D95 CODE C62
-text498 B74 C61 CODE B74
-text500 A94 B73 CODE A94
-text501 9C0 A93 CODE 9C0
-text502 8F8 9BF CODE 8F8
-text495 83E 8F7 CODE 83E
-strings 6 AF STRING 6
-text496 79C 83D CODE 79C
-text507 706 79B CODE 706
-maintext 694 705 CODE 694
-text499 62C 693 CODE 62C
-text512 5CA 62B CODE 5CA
-text513 568 5C9 CODE 568
-text504 50A 567 CODE 50A
-text508 4AC 509 CODE 4AC
-text505 45E 4AB CODE 45E
-text506 414 45D CODE 414
-text510 3D6 413 CODE 3D6
-cinit 3A2 3D5 CODE 3A2
-inittext 37C 3A1 CODE 37C
-text511 35E 37B CODE 35E
-text516 340 35D CODE 340
-text515 328 33F CODE 328
-text509 312 327 CODE 312
-text514 2FC 311 CODE 2FC
-idataBANK1 2EA 2FB CODE 2EA
-clrtext 2DA 2E9 CODE 2DA
+text575 D96 FFF CODE D96
+text583 C62 D95 CODE C62
+text578 B74 C61 CODE B74
+text580 A94 B73 CODE A94
+text573 9BA A93 CODE 9BA
+text581 8E6 9B9 CODE 8E6
+text582 81E 8E5 CODE 81E
+strings 6 C9 STRING 6
+text572 764 81D CODE 764
+maintext 6C0 763 CODE 6C0
+text574 61E 6BF CODE 61E
+text576 57E 61D CODE 57E
+text587 4E8 57D CODE 4E8
+text579 480 4E7 CODE 480
+text593 41E 47F CODE 41E
+text594 3BC 41D CODE 3BC
+text584 35E 3BB CODE 35E
+text588 300 35D CODE 300
+text577 2B2 2FF CODE 2B2
+text585 264 2B1 CODE 264
+text586 21A 263 CODE 21A
+text591 1DC 219 CODE 1DC
+cinit 1A8 1DB CODE 1A8
+inittext 182 1A7 CODE 182
+text592 164 181 CODE 164
+text597 146 163 CODE 146
+text596 12E 145 CODE 12E
+text590 118 12D CODE 118
+text595 102 117 CODE 102
+idataBANK1 F0 101 CODE F0
+clrtext E0 EF CODE E0
+text589 D6 DF CODE D6
 %locals
 dist/default/production\BluetoothWeatherStation.X.production.obj
 main.c
 30 2007 0 CONFIG
-44 175 0 CODE
+45 78 0 CODE
 userMacro.h
 20 9 0 STRING
 21 1D 0 STRING
@@ -341,48 +383,74 @@ userMacro.h
 23 36 0 STRING
 22 40 0 STRING
 33 48 0 STRING
-41 49 0 STRING
+42 49 0 STRING
 36 4A 0 STRING
 38 4B 0 STRING
 40 4C 0 STRING
 39 4D 0 STRING
 24 4E 0 STRING
-37 4F 0 STRING
-31 50 0 STRING
-29 51 0 STRING
-28 52 0 STRING
-30 53 0 STRING
-35 54 0 STRING
-34 55 0 STRING
-27 56 0 STRING
-26 57 0 STRING
+55 4F 0 STRING
+56 50 0 STRING
+58 51 0 STRING
+59 52 0 STRING
+54 53 0 STRING
+37 54 0 STRING
+31 55 0 STRING
+29 56 0 STRING
+28 57 0 STRING
+30 58 0 STRING
+35 59 0 STRING
+34 5A 0 STRING
+51 5B 0 STRING
+52 5C 0 STRING
+45 5D 0 STRING
+46 5E 0 STRING
+49 5F 0 STRING
+50 60 0 STRING
+47 61 0 STRING
+44 62 0 STRING
+27 63 0 STRING
+26 64 0 STRING
 main.c
-44 1D1 0 CODE
-48 361 0 CODE
-50 366 0 CODE
-55 36B 0 CODE
-71 372 0 CODE
-72 378 0 CODE
-73 37E 0 CODE
-59 37F 0 CODE
-79 380 0 CODE
-83 41F 0 CODE
-86 42C 0 CODE
-89 443 0 CODE
-100 449 0 CODE
-103 45A 0 CODE
-107 460 0 CODE
-108 46D 0 CODE
-113 473 0 CODE
-115 474 0 CODE
-119 47B 0 CODE
+45 D4 0 CODE
+49 377 0 CODE
+51 37C 0 CODE
+54 381 0 CODE
+57 386 0 CODE
+64 38D 0 CODE
+65 392 0 CODE
+76 3A1 0 CODE
+77 3A7 0 CODE
+78 3AD 0 CODE
+61 3AE 0 CODE
+84 3AF 0 CODE
+88 3B2 0 CODE
+91 3BF 0 CODE
+94 3D6 0 CODE
+105 3DC 0 CODE
+108 3ED 0 CODE
+112 3F3 0 CODE
+113 400 0 CODE
+118 406 0 CODE
+120 407 0 CODE
+122 40E 0 CODE
+127 4DD 0 CODE
+129 4E2 0 CODE
+130 4EF 0 CODE
+132 4F5 0 CODE
+134 507 0 CODE
+135 51A 0 CODE
+136 520 0 CODE
+137 531 0 CODE
+138 537 0 CODE
+139 549 0 CODE
 Packet.c
-238 3CE 0 CODE
-240 400 0 CODE
-242 405 0 CODE
-244 410 0 CODE
-247 419 0 CODE
-249 41E 0 CODE
+238 30F 0 CODE
+240 341 0 CODE
+242 346 0 CODE
+244 351 0 CODE
+247 35A 0 CODE
+249 35F 0 CODE
 116 6CB 0 CODE
 119 6D0 0 CODE
 122 6E6 0 CODE
@@ -395,17 +463,30 @@ Packet.c
 135 7DD 0 CODE
 133 7E5 0 CODE
 138 7FF 0 CODE
+Temperature.c
+25 2BF 0 CODE
+26 2CC 0 CODE
+27 2E2 0 CODE
+28 2F8 0 CODE
+29 30E 0 CODE
+8 159 0 CODE
+12 15C 0 CODE
+14 165 0 CODE
+17 168 0 CODE
+20 16E 0 CODE
+21 17F 0 CODE
+Packet.c
 260 5BA 0 CODE
 263 5E7 0 CODE
 265 5E9 0 CODE
 263 617 0 CODE
 267 630 0 CODE
-218 316 0 CODE
-220 334 0 CODE
-221 33A 0 CODE
-224 340 0 CODE
-225 346 0 CODE
-226 349 0 CODE
+218 240 0 CODE
+220 25E 0 CODE
+221 264 0 CODE
+224 26A 0 CODE
+225 270 0 CODE
+226 273 0 CODE
 195 54A 0 CODE
 197 573 0 CODE
 199 5A0 0 CODE
@@ -413,20 +494,20 @@ Packet.c
 203 5AE 0 CODE
 204 5B4 0 CODE
 205 5B9 0 CODE
-174 4E0 0 CODE
-176 503 0 CODE
-178 509 0 CODE
-179 536 0 CODE
-182 53E 0 CODE
-183 544 0 CODE
-184 549 0 CODE
-151 47C 0 CODE
-153 499 0 CODE
-155 49F 0 CODE
-156 4CC 0 CODE
-159 4D4 0 CODE
-160 4DA 0 CODE
-161 4DF 0 CODE
+174 473 0 CODE
+176 496 0 CODE
+178 49C 0 CODE
+179 4C9 0 CODE
+182 4D1 0 CODE
+183 4D7 0 CODE
+184 4DC 0 CODE
+151 40F 0 CODE
+153 42C 0 CODE
+155 432 0 CODE
+156 45F 0 CODE
+159 467 0 CODE
+160 46D 0 CODE
+161 472 0 CODE
 87 631 0 CODE
 89 668 0 CODE
 90 66E 0 CODE
@@ -437,75 +518,77 @@ Packet.c
 101 6C1 0 CODE
 102 6C7 0 CODE
 103 6CA 0 CODE
-67 285 0 CODE
-69 29E 0 CODE
-70 2A4 0 CODE
-73 2AA 0 CODE
-74 2B0 0 CODE
-75 2B3 0 CODE
-45 22F 0 CODE
-47 240 0 CODE
-48 246 0 CODE
-51 24C 0 CODE
-52 252 0 CODE
-53 255 0 CODE
+67 1AF 0 CODE
+69 1C8 0 CODE
+70 1CE 0 CODE
+73 1D4 0 CODE
+74 1DA 0 CODE
+75 1DD 0 CODE
+45 132 0 CODE
+47 143 0 CODE
+48 149 0 CODE
+51 14F 0 CODE
+52 155 0 CODE
+53 158 0 CODE
 Bluetooth.c
-197 20A 0 CODE
-198 221 0 CODE
-199 22C 0 CODE
-200 22E 0 CODE
-149 383 0 CODE
-154 388 0 CODE
-156 392 0 CODE
-159 393 0 CODE
-161 39D 0 CODE
-163 3A3 0 CODE
-156 3AE 0 CODE
-167 3BD 0 CODE
-168 3CD 0 CODE
-129 256 0 CODE
-130 25A 0 CODE
-129 266 0 CODE
-133 27E 0 CODE
-135 284 0 CODE
+197 10D 0 CODE
+198 124 0 CODE
+199 12F 0 CODE
+200 131 0 CODE
+149 274 0 CODE
+154 279 0 CODE
+156 283 0 CODE
+159 284 0 CODE
+161 28E 0 CODE
+163 294 0 CODE
+156 29F 0 CODE
+167 2AE 0 CODE
+168 2BE 0 CODE
+129 180 0 CODE
+130 184 0 CODE
+129 190 0 CODE
+133 1A8 0 CODE
+135 1AE 0 CODE
 customADC.c
-8 189 0 CODE
-22 18D 0 CODE
-39 18F 0 CODE
-40 193 0 CODE
+44 6B 0 CODE
+45 6F 0 CODE
+8 8C 0 CODE
+22 90 0 CODE
+39 92 0 CODE
+40 96 0 CODE
 C:\Microchip\Hitech\sources\eeread.c
-9 1EB 0 CODE
-10 1ED 0 CODE
-11 1F4 0 CODE
-12 209 0 CODE
+9 EE 0 CODE
+10 F0 0 CODE
+11 F7 0 CODE
+12 10C 0 CODE
 Bluetooth.c
-179 1AF 0 CODE
-180 1B0 0 CODE
-181 1B6 0 CODE
-183 1BA 0 CODE
-184 1BD 0 CODE
+179 B2 0 CODE
+180 B3 0 CODE
+181 B9 0 CODE
+183 BD 0 CODE
+184 C0 0 CODE
 C:\Microchip\Hitech\sources\eewrite.c
-7 2E5 0 CODE
-8 2E6 0 CODE
-10 315 0 CODE
+7 20F 0 CODE
+8 210 0 CODE
+10 23F 0 CODE
 C:\Microchip\Hitech\sources\strlen.c
-8 2B4 0 CODE
-9 2B9 0 CODE
-10 2BA 0 CODE
-9 2BB 0 CODE
-11 2C6 0 CODE
-12 2E4 0 CODE
+8 1DE 0 CODE
+9 1E3 0 CODE
+10 1E4 0 CODE
+9 1E5 0 CODE
+11 1F0 0 CODE
+12 20E 0 CODE
 Bluetooth.c
-90 17E 0 CODE
-93 186 0 CODE
-94 188 0 CODE
-68 194 0 CODE
-72 195 0 CODE
-75 19D 0 CODE
-76 19F 0 CODE
-19 1A0 0 CODE
-22 1A3 0 CODE
-35 1A4 0 CODE
-49 1A8 0 CODE
-57 1AC 0 CODE
-58 1AE 0 CODE
+90 81 0 CODE
+93 89 0 CODE
+94 8B 0 CODE
+68 97 0 CODE
+72 98 0 CODE
+75 A0 0 CODE
+76 A2 0 CODE
+19 A3 0 CODE
+22 A6 0 CODE
+35 A7 0 CODE
+49 AB 0 CODE
+57 AF 0 CODE
+58 B1 0 CODE

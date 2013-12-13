@@ -30,6 +30,7 @@
 __CONFIG(WDTE_OFF & LVP_OFF & BOREN_OFF & FOSC_HS & PWRTE_OFF) ;
 
 void getPacket(void);
+void getTemp(void);
 /************************************************************************
  * Function:    Main                                                    *
  * Type:        Int                                                     *
@@ -50,6 +51,7 @@ int main()
     initADC();
     //Used to setup the LCD
     //initLCD();
+    initTemp();
     
     //Write a welcome message on start up
     writeString(testString);
@@ -59,6 +61,9 @@ int main()
     while(1){
 
         //Get Temp
+        getTemp();
+        __delay_ms(1000);
+        
         //Get humidity
         //Update LCD
         //Check to see if UART has been received
@@ -105,15 +110,24 @@ void getPacket(){
             //Validate the data that is in the packet
             //If the data is all valid, go and make the response
             if(validatePacket()){
-                writeByte('V');
                 //Get values
                 //Make response
 
             //If there is an error in the packet, response error
             }else{
                 //Return error code
-                writeByte('N');
+                
             }
+}
 
-            //Add delay based on the refresh rate
+void getTemp(){
+    unsigned int tempReading;
+        //Select the channel
+        selectTemp();
+        //Get the values
+        tempReading = readTemp();
+        //Write lower 8 bits here
+        eeprom_write(tempValLAddr,tempReading);
+        //Write higher 2 bits here
+        eeprom_write(tempValHAddr+1,tempReading>>8);
 }

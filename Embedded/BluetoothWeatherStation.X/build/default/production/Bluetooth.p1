@@ -39,8 +39,34 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _endByteAddr `Cuc  1 e ]
 "40 userMacro.h
 [v _dataBytesAddr `Cuc  1 e ]
-"41 userMacro.h
+"42 userMacro.h
 [v _calcCSByteAddr `Cuc  1 e ]
+"44 userMacro.h
+[v _tempValAddr `Cuc  1 e ]
+"45 userMacro.h
+[v _tempHiAddr `Cuc  1 e ]
+"46 userMacro.h
+[v _tempLoAddr `Cuc  1 e ]
+"47 userMacro.h
+[v _tempUnitAddr `Cuc  1 e ]
+"49 userMacro.h
+[v _tempStartHi `Cuc  1 e ]
+"50 userMacro.h
+[v _tempStartLo `Cuc  1 e ]
+"51 userMacro.h
+[v _tempC `Cuc  1 e ]
+"52 userMacro.h
+[v _tempF `Cuc  1 e ]
+"54 userMacro.h
+[v _humValAddr `Cuc  1 e ]
+"55 userMacro.h
+[v _humHiAddr `Cuc  1 e ]
+"56 userMacro.h
+[v _humLoAddr `Cuc  1 e ]
+"58 userMacro.h
+[v _humStartHi `Cuc  1 e ]
+"59 userMacro.h
+[v _humStartLo `Cuc  1 e ]
 "82 C:\Microchip\Hitech\include\pic16f877a.h
 [v _INDF `Vuc  1 e@0 ]
 "86 C:\Microchip\Hitech\include\pic16f877a.h
@@ -1103,11 +1129,76 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> 7 `i `uc
 ]
 [; ;userMacro.h: 40: const unsigned char dataBytesAddr = 0x07;
-"41
+"42
 [i _calcCSByteAddr
 -> -> 48 `i `uc
 ]
-[; ;userMacro.h: 41: const unsigned char calcCSByteAddr = 0x30;
+[; ;userMacro.h: 42: const unsigned char calcCSByteAddr = 0x30;
+"44
+[i _tempValAddr
+-> -> 96 `i `uc
+]
+[; ;userMacro.h: 44: const unsigned char tempValAddr = 0x60;
+"45
+[i _tempHiAddr
+-> -> 98 `i `uc
+]
+[; ;userMacro.h: 45: const unsigned char tempHiAddr = 0x62;
+"46
+[i _tempLoAddr
+-> -> 100 `i `uc
+]
+[; ;userMacro.h: 46: const unsigned char tempLoAddr = 0x64;
+"47
+[i _tempUnitAddr
+-> -> 102 `i `uc
+]
+[; ;userMacro.h: 47: const unsigned char tempUnitAddr = 0x66;
+"49
+[i _tempStartHi
+-> -> 100 `i `uc
+]
+[; ;userMacro.h: 49: const unsigned char tempStartHi = 0x64;
+"50
+[i _tempStartLo
+-> -> 160 `i `uc
+]
+[; ;userMacro.h: 50: const unsigned char tempStartLo = 0xA0;
+"51
+[i _tempC
+-> -> 0 `i `uc
+]
+[; ;userMacro.h: 51: const unsigned char tempC = 0x00;
+"52
+[i _tempF
+-> -> 16 `i `uc
+]
+[; ;userMacro.h: 52: const unsigned char tempF = 0x10;
+"54
+[i _humValAddr
+-> -> 128 `i `uc
+]
+[; ;userMacro.h: 54: const unsigned char humValAddr = 0x80;
+"55
+[i _humHiAddr
+-> -> 130 `i `uc
+]
+[; ;userMacro.h: 55: const unsigned char humHiAddr = 0x82;
+"56
+[i _humLoAddr
+-> -> 132 `i `uc
+]
+[; ;userMacro.h: 56: const unsigned char humLoAddr = 0x84;
+"58
+[i _humStartHi
+-> -> 80 `i `uc
+]
+[; ;userMacro.h: 58: const unsigned char humStartHi = 0x50;
+"59
+[i _humStartLo
+-> -> 10 `i `uc
+]
+[; ;userMacro.h: 59: const unsigned char humStartLo = 0x0A;
 [; ;pic16f877a.h: 82: volatile unsigned char INDF @ 0x000;
 [; ;pic16f877a.h: 86: volatile unsigned char TMR0 @ 0x001;
 [; ;pic16f877a.h: 90: volatile unsigned char PCL @ 0x002;
