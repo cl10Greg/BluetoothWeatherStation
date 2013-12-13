@@ -1,45 +1,45 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"19 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"19 userMacro.h
 [v _member1 `Cuc  -> 0 `x e ]
-"20 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"20 userMacro.h
 [v _member2 `Cuc  -> 0 `x e ]
-"21 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"21 userMacro.h
 [v _member3 `Cuc  -> 0 `x e ]
-"22 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"22 userMacro.h
 [v _classNum `Cuc  -> 0 `x e ]
-"23 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"23 userMacro.h
 [v _classTerm `Cuc  -> 0 `x e ]
-"24 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"24 userMacro.h
 [v _groupNum `Cuc  1 e ]
-"26 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"26 userMacro.h
 [v _userStartByte `Cuc  1 e ]
-"27 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"27 userMacro.h
 [v _userEndByte `Cuc  1 e ]
-"28 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"28 userMacro.h
 [v _newLineChar `Cuc  1 e ]
-"29 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"29 userMacro.h
 [v _minSizeByte `Cuc  1 e ]
-"30 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"30 userMacro.h
 [v _noDataLen `Cuc  1 e ]
-"31 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"31 userMacro.h
 [v _maxCmd `Cuc  1 e ]
-"33 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"33 userMacro.h
 [v _RXLenAddr `Cuc  1 e ]
-"34 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"34 userMacro.h
 [v _startByteAddr `Cuc  1 e ]
-"35 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"35 userMacro.h
 [v _rwByteAddr `Cuc  1 e ]
-"36 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"36 userMacro.h
 [v _cmdByteAddr `Cuc  1 e ]
-"37 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"37 userMacro.h
 [v _lenByteAddr `Cuc  1 e ]
-"38 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"38 userMacro.h
 [v _csByteAddr `Cuc  1 e ]
-"39 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"39 userMacro.h
 [v _endByteAddr `Cuc  1 e ]
-"40 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"40 userMacro.h
 [v _dataBytesAddr `Cuc  1 e ]
-"41 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"41 userMacro.h
 [v _calcCSByteAddr `Cuc  1 e ]
 "82 C:\Microchip\Hitech\include\pic16f877a.h
 [v _INDF `Vuc  1 e@0 ]
@@ -935,7 +935,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Bluetooth.h: 22: void readString(unsigned char* readStorage);
 [; ;Bluetooth.h: 24: unsigned char makeNibble(unsigned char tempByte);
 [; ;Bluetooth.h: 26: unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo);
-"19 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"19 userMacro.h
 [i _member1
 :U ..
 -> 71 `c

@@ -2395,8 +2395,10 @@
 [v _selectHumidity `(v  1 e 0 0 ]
 "7 eeread.c
 [v _eeprom_read `(uc  1 e 1 0 ]
-"42 main.c
+"43 main.c
 [v _main `(i  1 e 2 0 ]
+"81
+[v _getPacket `(v  1 e 0 0 ]
 "42 Packet.c
 [v _checkEven `(i  1 e 2 0 ]
 "64
@@ -2407,17 +2409,17 @@
 [v _parsePacket `(v  1 e 0 0 ]
 "148
 [v _checkStartByte `(i  1 e 2 0 ]
-"162
+"171
 [v _checkRWByte `(i  1 e 2 0 ]
-"172
+"193
 [v _checkCMDByte `(i  1 e 2 0 ]
-"182
+"216
 [v _checkCS `(i  1 e 2 0 ]
-"190
+"236
 [v _validatePacket `(i  1 e 2 0 ]
-"202
+"258
 [v _addDataToCheckSum `(v  1 e 0 0 ]
-"209
+"277
 [v _displayPacket `(v  1 e 0 0 ]
 "7 Temperature.c
 [v _readTemp `(ui  1 e 2 0 ]
@@ -3145,26 +3147,26 @@
 [v _dataBytesAddr `DCuc  1 e 1 0 ]
 "41
 [v _calcCSByteAddr `DCuc  1 e 1 0 ]
-"42 main.c
+"43 main.c
 [v _main `(i  1 e 2 0 ]
 {
-"66
-[v main@arrStore `[50]uc  1 a 50 0 ]
 "44
-[v main@counterText `[9]uc  1 a 9 59 ]
-"43
-[v main@testString `[9]uc  1 a 9 50 ]
-[v main@F1144 `[9]uc  1 s 9 F1144 ]
-"44
+[v main@testString `[9]uc  1 a 9 70 ]
 [v main@F1146 `[9]uc  1 s 9 F1146 ]
-"66
-[v main@F1148 `[50]uc  1 s 50 F1148 ]
-"88
+"79
 } 0
-"190 Packet.c
+"81
+[v _getPacket `(v  1 e 0 0 ]
+{
+"86
+[v getPacket@arrStore `[50]uc  1 a 50 16 ]
+[v getPacket@F1148 `[50]uc  1 s 50 F1148 ]
+"119
+} 0
+"236 Packet.c
 [v _validatePacket `(i  1 e 2 0 ]
 {
-"200
+"249
 } 0
 "114
 [v _parsePacket `(v  1 e 0 0 ]
@@ -3178,32 +3180,32 @@
 [v parsePacket@dataPacket `*.0uc  1 a 1 wreg ]
 "138
 } 0
-"202
+"258
 [v _addDataToCheckSum `(v  1 e 0 0 ]
 {
-"204
+"263
 [v addDataToCheckSum@i `uc  1 a 1 13 ]
-"207
+"267
 } 0
-"182
+"216
 [v _checkCS `(i  1 e 2 0 ]
 {
-"189
+"226
 } 0
-"172
+"193
 [v _checkCMDByte `(i  1 e 2 0 ]
 {
-"180
+"205
 } 0
-"162
+"171
 [v _checkRWByte `(i  1 e 2 0 ]
 {
-"170
+"184
 } 0
 "148
 [v _checkStartByte `(i  1 e 2 0 ]
 {
-"160
+"161
 } 0
 "85
 [v _checkDataFrames `(i  1 e 2 0 ]

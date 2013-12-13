@@ -13,6 +13,7 @@
       <itemPath>customADC.h</itemPath>
       <itemPath>pic16f877a.h</itemPath>
       <itemPath>userMacro.h</itemPath>
+      <itemPath>LCD.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -22,6 +23,7 @@
       <itemPath>Temperature.c</itemPath>
       <itemPath>customADC.c</itemPath>
       <itemPath>main.c</itemPath>
+      <itemPath>LCD.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"

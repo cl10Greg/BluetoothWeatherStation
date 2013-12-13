@@ -29,6 +29,7 @@
  ************************************************************************/
 __CONFIG(WDTE_OFF & LVP_OFF & BOREN_OFF & FOSC_HS & PWRTE_OFF) ;
 
+void getPacket(void);
 /************************************************************************
  * Function:    Main                                                    *
  * Type:        Int                                                     *
@@ -56,13 +57,28 @@ int main()
     //Infinite loop.  Will look for communication and get analog values. Will
     //send and receive data in this loop
     while(1){
+
+        //Get Temp
+        //Get humidity
+        //Update LCD
+        //Check to see if UART has been received
         
         //Gets the raw value
         //selectTemp();
         //tempVal = readTemp();
+        
+        //If data is available, grab packet
+        if(RCIF){
+            getPacket();
+        } 
+    }
 
-        //This reads the uart and parses it
-        while(!RCIF);
+    //Should never get to this part of the program.  If it does, there was an
+    //error.
+    return 0;
+}
+
+void getPacket(){
             //Reset calculated check sum
             eeprom_write(calcCSByteAddr,0x00);
 
@@ -92,15 +108,12 @@ int main()
                 writeByte('V');
                 //Get values
                 //Make response
+
             //If there is an error in the packet, response error
             }else{
+                //Return error code
                 writeByte('N');
             }
 
             //Add delay based on the refresh rate
-    }
-
-    //Should never get to this part of the program.  If it does, there was an
-    //error.
-    return 0;
 }

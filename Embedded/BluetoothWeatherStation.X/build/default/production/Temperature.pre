@@ -1,10 +1,10 @@
 
 # 1 "Temperature.c"
 
-# 11 "C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\Temperature.h"
+# 11 "Temperature.h"
 unsigned int readTemp();
 
-# 19 "C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h"
+# 19 "userMacro.h"
 const char member1[] = "Greg Girard";
 const char member2[] = "Deepak Chandrasekar";
 const char member3[] = "Apurve Bhide";

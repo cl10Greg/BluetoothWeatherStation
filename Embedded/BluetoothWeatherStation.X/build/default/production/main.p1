@@ -930,6 +930,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _initADC `(v  0 ef ]
 "20 Bluetooth.h
 [v _writeString `(v  0 ef1`*uc ]
+"32 main.c
+[v _getPacket `(v  0 ef ]
 "41 C:\Microchip\Hitech\include\eeprom_routines.h
 [v _eeprom_write `(uc  0 ef2`uc`uc ]
 "22 Bluetooth.h
@@ -1974,16 +1976,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 30: asm("\tpsect config,class=CONFIG,delta=2"); asm("\tdw ""0xFFFB & 0xFF7F & 0xFFBF & 0xFFFE & 0xFFFF") ;
 [; 	psect config,class=CONFIG,delta=2 ;#
 [; 	dw 0xFFFB & 0xFF7F & 0xFFBF & 0xFFFE & 0xFFFF ;#
-"42
+[; ;main.c: 32: void getPacket(void);
+"43
 [v _main `(i  1 ef ]
 {
-[; ;main.c: 41: int main()
-[; ;main.c: 42: {
+[; ;main.c: 42: int main()
+[; ;main.c: 43: {
 [e :U _main ]
 [f ]
-"43
-[v F1144 `uc  -> 0 `x s ]
-[i F1144
+"44
+[v F1146 `uc  -> 0 `x s ]
+[i F1146
 :U ..
 -> 87 `c
 -> 101 `c
@@ -1997,50 +2000,57 @@ Version 3.2 HI-TECH Software Intermediate Code
 ..
 ]
 [v _testString `uc  9  a ]
-[; ;main.c: 43: char testString[] = "Welcome\n";
-[e = _testString F1144 ]
-"44
-[v F1146 `uc  -> 0 `x s ]
-[i F1146
-:U ..
--> 76 `c
--> 101 `c
--> 110 `c
--> 103 `c
--> 116 `c
--> 104 `c
--> 58 `c
--> 32 `c
--> 0 `c
-..
-]
-[v _counterText `uc  9  a ]
-[; ;main.c: 44: char counterText[] = "Length: ";
-[e = _counterText F1146 ]
-[; ;main.c: 47: initUSART();
-"47
-[e ( _initUSART ..  ]
-[; ;main.c: 48: initADC();
+[; ;main.c: 44: char testString[] = "Welcome\n";
+[e = _testString F1146 ]
+[; ;main.c: 48: initUSART();
 "48
+[e ( _initUSART ..  ]
+[; ;main.c: 50: initADC();
+"50
 [e ( _initADC ..  ]
-[; ;main.c: 51: writeString(testString);
-"51
+[; ;main.c: 55: writeString(testString);
+"55
 [e ( _writeString (1 &U _testString ]
-[; ;main.c: 54: while(1){
-"54
+[; ;main.c: 59: while(1){
+"59
 [e :U 103 ]
 {
-[; ;main.c: 62: while(!RCIF);
-"62
-[e $U 105  ]
-[e :U 106 ]
+[; ;main.c: 71: if(RCIF){
+"71
+[e $ ! _RCIF 105  ]
+{
+[; ;main.c: 72: getPacket();
+"72
+[e ( _getPacket ..  ]
+"73
+}
 [e :U 105 ]
-[e $ ! _RCIF 106  ]
-[e :U 107 ]
-[; ;main.c: 64: eeprom_write(calcCSByteAddr,0x00);
-"64
+"74
+}
+[e :U 102 ]
+"59
+[e $U 103  ]
+[e :U 104 ]
+[; ;main.c: 73: }
+[; ;main.c: 74: }
+[; ;main.c: 78: return 0;
+"78
+[e ) -> 0 `i ]
+[e $UE 101  ]
+[; ;main.c: 79: }
+"79
+[e :UE 101 ]
+}
+"81
+[v _getPacket `(v  1 ef ]
+{
+[; ;main.c: 81: void getPacket(){
+[e :U _getPacket ]
+[f ]
+[; ;main.c: 83: eeprom_write(calcCSByteAddr,0x00);
+"83
 [e ( _eeprom_write (2 , _calcCSByteAddr -> -> 0 `i `uc ]
-"66
+"86
 [v F1148 `uc  -> 50 `i s ]
 [i F1148
 :U ..
@@ -2048,55 +2058,38 @@ Version 3.2 HI-TECH Software Intermediate Code
 ..
 ]
 [v _arrStore `uc  -> 50 `i a ]
-[; ;main.c: 66: char arrStore[50] = {0};
+[; ;main.c: 86: char arrStore[50] = {0};
 [e = _arrStore F1148 ]
-[; ;main.c: 68: readString(arrStore);
-"68
+[; ;main.c: 89: readString(arrStore);
+"89
 [e ( _readString (1 &U _arrStore ]
-[; ;main.c: 70: writeString(arrStore);
-"70
-[e ( _writeString (1 &U _arrStore ]
-[; ;main.c: 72: writeString(counterText);
-"72
-[e ( _writeString (1 &U _counterText ]
-[; ;main.c: 74: writeByte(eeprom_read(RXLenAddr));
-"74
+[; ;main.c: 100: writeByte(eeprom_read(RXLenAddr));
+"100
 [e ( _writeByte (1 ( _eeprom_read (1 _RXLenAddr ]
-[; ;main.c: 75: parsePacket(arrStore);
-"75
+[; ;main.c: 103: parsePacket(arrStore);
+"103
 [e ( _parsePacket (1 &U _arrStore ]
-[; ;main.c: 76: if(validatePacket()){
-"76
-[e $ ! != ( _validatePacket ..  -> 0 `i 108  ]
+[; ;main.c: 107: if(validatePacket()){
+"107
+[e $ ! != ( _validatePacket ..  -> 0 `i 107  ]
 {
-[; ;main.c: 77: writeByte('V');
-"77
+[; ;main.c: 108: writeByte('V');
+"108
 [e ( _writeByte (1 -> -> 86 `ui `uc ]
-"80
+"113
 }
-[; ;main.c: 80: }else{
-[e $U 109  ]
-[e :U 108 ]
+[; ;main.c: 113: }else{
+[e $U 108  ]
+[e :U 107 ]
 {
-[; ;main.c: 81: writeByte('N');
-"81
+[; ;main.c: 115: writeByte('N');
+"115
 [e ( _writeByte (1 -> -> 78 `ui `uc ]
-"82
+"116
 }
-[e :U 109 ]
-"83
-}
-[e :U 102 ]
-"54
-[e $U 103  ]
-[e :U 104 ]
-[; ;main.c: 82: }
-[; ;main.c: 83: }
-[; ;main.c: 87: return 0;
-"87
-[e ) -> 0 `i ]
-[e $UE 101  ]
-[; ;main.c: 88: }
-"88
-[e :UE 101 ]
+[e :U 108 ]
+[; ;main.c: 116: }
+[; ;main.c: 119: }
+"119
+[e :UE 106 ]
 }

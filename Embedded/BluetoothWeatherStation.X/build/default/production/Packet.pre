@@ -1090,7 +1090,7 @@ extern void memcpyee(eeprom unsigned char *to, const unsigned char *from, unsign
 #pragma inline(_delay)
 extern void _delay(unsigned long);
 
-# 19 "C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h"
+# 19 "userMacro.h"
 const char member1[] = "Greg Girard";
 const char member2[] = "Deepak Chandrasekar";
 const char member3[] = "Apurve Bhide";
@@ -1115,7 +1115,7 @@ const unsigned char endByteAddr = 0x06;
 const unsigned char dataBytesAddr = 0x07;
 const unsigned char calcCSByteAddr = 0x30;
 
-# 12 "C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\Bluetooth.h"
+# 12 "Bluetooth.h"
 void initUSART();
 
 void writeByte(unsigned char Byte);
@@ -1269,6 +1269,7 @@ int checkStartByte() {
 if (eeprom_read(startByteAddr) == userStartByte) {
 
 writeByte('S');
+
 eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(startByteAddr));
 return 1;
 }
@@ -1277,53 +1278,79 @@ writeByte('N');
 return 0;
 }
 
+# 171
 int checkRWByte() {
+
+
 if(eeprom_read(rwByteAddr) == 0 || eeprom_read(rwByteAddr) == 1){
+
 writeByte('R');
+
 eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(rwByteAddr));
 return 1;
 }
+
 writeByte('N');
 return 0;
 }
 
+# 193
 int checkCMDByte(){
+
 if(eeprom_read(cmdByteAddr) >= 0 && eeprom_read(cmdByteAddr) <= maxCmd){
+
 eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(cmdByteAddr));
+
 writeByte('C');
 return 1;
 }
+
 writeByte('N');
 return 0;
 }
 
+# 216
 int checkCS(){
+
 if(eeprom_read(csByteAddr) == eeprom_read(calcCSByteAddr)){
+
 writeByte('Y');
 return 1;
 }
+
 writeByte('N');
 return 0;
 }
+
+# 236
 int validatePacket(){
 
 if(checkStartByte() && checkRWByte() && checkCMDByte() && checkDataFrames()){
 
 addDataToCheckSum();
+
 if(checkCS())
+
 return 1;
 }
+
 return 0;
 
 }
 
+# 258
 void addDataToCheckSum(){
+
 eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(lenByteAddr));
+
+
 for (unsigned char i = 0x00; i < eeprom_read(lenByteAddr); i++) {
+
 eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(dataBytesAddr+i));
 }
 }
 
+# 277
 void displayPacket() {
 
 
@@ -1339,6 +1366,7 @@ writeByte(newLineChar);
 
 writeByte(eeprom_read(lenByteAddr));
 writeByte(newLineChar);
+
 
 for (unsigned char i = 0x00; i < eeprom_read(lenByteAddr); i++) {
 writeByte(eeprom_read(dataBytesAddr+i));

@@ -1,7 +1,7 @@
 
 # 1 "Bluetooth.c"
 
-# 12 "C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\Bluetooth.h"
+# 12 "Bluetooth.h"
 void initUSART();
 
 void writeByte(unsigned char Byte);
@@ -18,7 +18,7 @@ unsigned char makeNibble(unsigned char tempByte);
 
 unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo);
 
-# 19 "C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h"
+# 19 "userMacro.h"
 const char member1[] = "Greg Girard";
 const char member2[] = "Deepak Chandrasekar";
 const char member3[] = "Apurve Bhide";

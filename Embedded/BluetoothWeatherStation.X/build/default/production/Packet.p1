@@ -881,55 +881,55 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _EECON1bits `VS99  1 e@396 ]
 "1167 C:\Microchip\Hitech\include\pic16f877a.h
 [v _EECON2 `Vuc  1 e@397 ]
-"19 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"19 userMacro.h
 [v _member1 `Cuc  -> 0 `x e ]
-"20 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"20 userMacro.h
 [v _member2 `Cuc  -> 0 `x e ]
-"21 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"21 userMacro.h
 [v _member3 `Cuc  -> 0 `x e ]
-"22 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"22 userMacro.h
 [v _classNum `Cuc  -> 0 `x e ]
-"23 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"23 userMacro.h
 [v _classTerm `Cuc  -> 0 `x e ]
-"24 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"24 userMacro.h
 [v _groupNum `Cuc  1 e ]
-"26 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"26 userMacro.h
 [v _userStartByte `Cuc  1 e ]
-"27 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"27 userMacro.h
 [v _userEndByte `Cuc  1 e ]
-"28 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"28 userMacro.h
 [v _newLineChar `Cuc  1 e ]
-"29 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"29 userMacro.h
 [v _minSizeByte `Cuc  1 e ]
-"30 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"30 userMacro.h
 [v _noDataLen `Cuc  1 e ]
-"31 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"31 userMacro.h
 [v _maxCmd `Cuc  1 e ]
-"33 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"33 userMacro.h
 [v _RXLenAddr `Cuc  1 e ]
-"34 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"34 userMacro.h
 [v _startByteAddr `Cuc  1 e ]
-"35 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"35 userMacro.h
 [v _rwByteAddr `Cuc  1 e ]
-"36 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"36 userMacro.h
 [v _cmdByteAddr `Cuc  1 e ]
-"37 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"37 userMacro.h
 [v _lenByteAddr `Cuc  1 e ]
-"38 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"38 userMacro.h
 [v _csByteAddr `Cuc  1 e ]
-"39 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"39 userMacro.h
 [v _endByteAddr `Cuc  1 e ]
-"40 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"40 userMacro.h
 [v _dataBytesAddr `Cuc  1 e ]
-"41 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"41 userMacro.h
 [v _calcCSByteAddr `Cuc  1 e ]
 "42 C:\Microchip\Hitech\include\eeprom_routines.h
 [v _eeprom_read `(uc  0 ef1`uc ]
-"14 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\Bluetooth.h
+"14 Bluetooth.h
 [v _writeByte `(v  0 ef1`uc ]
 "41 C:\Microchip\Hitech\include\eeprom_routines.h
 [v _eeprom_write `(uc  0 ef2`uc`uc ]
-"26 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\Bluetooth.h
+"26 Bluetooth.h
 [v _makeHexByte `(uc  0 ef2`uc`uc ]
 "55 C:\Microchip\Hitech\include\string.h
 [v _strlen `(ui  0 ef1`*Cuc ]
@@ -1766,7 +1766,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;eeprom_routines.h: 43: extern void eecpymem(volatile unsigned char *to, eeprom unsigned char *from, unsigned char size);
 [; ;eeprom_routines.h: 44: extern void memcpyee(eeprom unsigned char *to, const unsigned char *from, unsigned char size);
 [; ;pic.h: 154: extern void _delay(unsigned long);
-"19 C:\Users\ggirard\MPLABXProjects\BluetoothWeatherStation.X\userMacro.h
+"19 userMacro.h
 [i _member1
 :U ..
 -> 71 `c
@@ -2175,261 +2175,261 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Packet.c: 153: writeByte('S');
 "153
 [e ( _writeByte (1 -> -> 83 `ui `uc ]
-[; ;Packet.c: 154: eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(startByteAddr));
-"154
-[e ( _eeprom_write (2 , _calcCSByteAddr -> + -> ( _eeprom_read (1 _calcCSByteAddr `i -> ( _eeprom_read (1 _startByteAddr `i `uc ]
-[; ;Packet.c: 155: return 1;
+[; ;Packet.c: 155: eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(startByteAddr));
 "155
+[e ( _eeprom_write (2 , _calcCSByteAddr -> + -> ( _eeprom_read (1 _calcCSByteAddr `i -> ( _eeprom_read (1 _startByteAddr `i `uc ]
+[; ;Packet.c: 156: return 1;
+"156
 [e ) -> 1 `i ]
 [e $UE 115  ]
-"156
+"157
 }
 [e :U 116 ]
-[; ;Packet.c: 156: }
-[; ;Packet.c: 158: writeByte('N');
-"158
-[e ( _writeByte (1 -> -> 78 `ui `uc ]
-[; ;Packet.c: 159: return 0;
+[; ;Packet.c: 157: }
+[; ;Packet.c: 159: writeByte('N');
 "159
+[e ( _writeByte (1 -> -> 78 `ui `uc ]
+[; ;Packet.c: 160: return 0;
+"160
 [e ) -> 0 `i ]
 [e $UE 115  ]
-[; ;Packet.c: 160: }
-"160
+[; ;Packet.c: 161: }
+"161
 [e :UE 115 ]
 }
-"162
+"171
 [v _checkRWByte `(i  1 ef ]
 {
-[; ;Packet.c: 162: int checkRWByte() {
+[; ;Packet.c: 171: int checkRWByte() {
 [e :U _checkRWByte ]
 [f ]
-[; ;Packet.c: 163: if(eeprom_read(rwByteAddr) == 0 || eeprom_read(rwByteAddr) == 1){
-"163
+[; ;Packet.c: 174: if(eeprom_read(rwByteAddr) == 0 || eeprom_read(rwByteAddr) == 1){
+"174
 [e $ ! || == -> ( _eeprom_read (1 _rwByteAddr `i -> 0 `i == -> ( _eeprom_read (1 _rwByteAddr `i -> 1 `i 118  ]
 {
-[; ;Packet.c: 164: writeByte('R');
-"164
+[; ;Packet.c: 176: writeByte('R');
+"176
 [e ( _writeByte (1 -> -> 82 `ui `uc ]
-[; ;Packet.c: 165: eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(rwByteAddr));
-"165
+[; ;Packet.c: 178: eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(rwByteAddr));
+"178
 [e ( _eeprom_write (2 , _calcCSByteAddr -> + -> ( _eeprom_read (1 _calcCSByteAddr `i -> ( _eeprom_read (1 _rwByteAddr `i `uc ]
-[; ;Packet.c: 166: return 1;
-"166
+[; ;Packet.c: 179: return 1;
+"179
 [e ) -> 1 `i ]
 [e $UE 117  ]
-"167
+"180
 }
 [e :U 118 ]
-[; ;Packet.c: 167: }
-[; ;Packet.c: 168: writeByte('N');
-"168
+[; ;Packet.c: 180: }
+[; ;Packet.c: 182: writeByte('N');
+"182
 [e ( _writeByte (1 -> -> 78 `ui `uc ]
-[; ;Packet.c: 169: return 0;
-"169
+[; ;Packet.c: 183: return 0;
+"183
 [e ) -> 0 `i ]
 [e $UE 117  ]
-[; ;Packet.c: 170: }
-"170
+[; ;Packet.c: 184: }
+"184
 [e :UE 117 ]
 }
-"172
+"193
 [v _checkCMDByte `(i  1 ef ]
 {
-[; ;Packet.c: 172: int checkCMDByte(){
+[; ;Packet.c: 193: int checkCMDByte(){
 [e :U _checkCMDByte ]
 [f ]
-[; ;Packet.c: 173: if(eeprom_read(cmdByteAddr) >= 0 && eeprom_read(cmdByteAddr) <= maxCmd){
-"173
+[; ;Packet.c: 195: if(eeprom_read(cmdByteAddr) >= 0 && eeprom_read(cmdByteAddr) <= maxCmd){
+"195
 [e $ ! && >= -> ( _eeprom_read (1 _cmdByteAddr `i -> 0 `i <= -> ( _eeprom_read (1 _cmdByteAddr `i -> _maxCmd `i 120  ]
 {
-[; ;Packet.c: 174: eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(cmdByteAddr));
-"174
+[; ;Packet.c: 197: eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(cmdByteAddr));
+"197
 [e ( _eeprom_write (2 , _calcCSByteAddr -> + -> ( _eeprom_read (1 _calcCSByteAddr `i -> ( _eeprom_read (1 _cmdByteAddr `i `uc ]
-[; ;Packet.c: 175: writeByte('C');
-"175
+[; ;Packet.c: 199: writeByte('C');
+"199
 [e ( _writeByte (1 -> -> 67 `ui `uc ]
-[; ;Packet.c: 176: return 1;
-"176
+[; ;Packet.c: 200: return 1;
+"200
 [e ) -> 1 `i ]
 [e $UE 119  ]
-"177
+"201
 }
 [e :U 120 ]
-[; ;Packet.c: 177: }
-[; ;Packet.c: 178: writeByte('N');
-"178
+[; ;Packet.c: 201: }
+[; ;Packet.c: 203: writeByte('N');
+"203
 [e ( _writeByte (1 -> -> 78 `ui `uc ]
-[; ;Packet.c: 179: return 0;
-"179
+[; ;Packet.c: 204: return 0;
+"204
 [e ) -> 0 `i ]
 [e $UE 119  ]
-[; ;Packet.c: 180: }
-"180
+[; ;Packet.c: 205: }
+"205
 [e :UE 119 ]
 }
-"182
+"216
 [v _checkCS `(i  1 ef ]
 {
-[; ;Packet.c: 182: int checkCS(){
+[; ;Packet.c: 216: int checkCS(){
 [e :U _checkCS ]
 [f ]
-[; ;Packet.c: 183: if(eeprom_read(csByteAddr) == eeprom_read(calcCSByteAddr)){
-"183
+[; ;Packet.c: 218: if(eeprom_read(csByteAddr) == eeprom_read(calcCSByteAddr)){
+"218
 [e $ ! == -> ( _eeprom_read (1 _csByteAddr `i -> ( _eeprom_read (1 _calcCSByteAddr `i 122  ]
 {
-[; ;Packet.c: 184: writeByte('Y');
-"184
+[; ;Packet.c: 220: writeByte('Y');
+"220
 [e ( _writeByte (1 -> -> 89 `ui `uc ]
-[; ;Packet.c: 185: return 1;
-"185
+[; ;Packet.c: 221: return 1;
+"221
 [e ) -> 1 `i ]
 [e $UE 121  ]
-"186
+"222
 }
 [e :U 122 ]
-[; ;Packet.c: 186: }
-[; ;Packet.c: 187: writeByte('N');
-"187
+[; ;Packet.c: 222: }
+[; ;Packet.c: 224: writeByte('N');
+"224
 [e ( _writeByte (1 -> -> 78 `ui `uc ]
-[; ;Packet.c: 188: return 0;
-"188
+[; ;Packet.c: 225: return 0;
+"225
 [e ) -> 0 `i ]
 [e $UE 121  ]
-[; ;Packet.c: 189: }
-"189
+[; ;Packet.c: 226: }
+"226
 [e :UE 121 ]
 }
-"190
+"236
 [v _validatePacket `(i  1 ef ]
 {
-[; ;Packet.c: 190: int validatePacket(){
+[; ;Packet.c: 236: int validatePacket(){
 [e :U _validatePacket ]
 [f ]
-[; ;Packet.c: 192: if(checkStartByte() && checkRWByte() && checkCMDByte() && checkDataFrames()){
-"192
+[; ;Packet.c: 238: if(checkStartByte() && checkRWByte() && checkCMDByte() && checkDataFrames()){
+"238
 [e $ ! && && && != ( _checkStartByte ..  -> 0 `i != ( _checkRWByte ..  -> 0 `i != ( _checkCMDByte ..  -> 0 `i != ( _checkDataFrames ..  -> 0 `i 124  ]
 {
-[; ;Packet.c: 194: addDataToCheckSum();
-"194
+[; ;Packet.c: 240: addDataToCheckSum();
+"240
 [e ( _addDataToCheckSum ..  ]
-[; ;Packet.c: 195: if(checkCS())
-"195
+[; ;Packet.c: 242: if(checkCS())
+"242
 [e $ ! != ( _checkCS ..  -> 0 `i 125  ]
-[; ;Packet.c: 196: return 1;
-"196
+[; ;Packet.c: 244: return 1;
+"244
 [e ) -> 1 `i ]
 [e $UE 123  ]
 [e :U 125 ]
-"197
+"245
 }
 [e :U 124 ]
-[; ;Packet.c: 197: }
-[; ;Packet.c: 198: return 0;
-"198
+[; ;Packet.c: 245: }
+[; ;Packet.c: 247: return 0;
+"247
 [e ) -> 0 `i ]
 [e $UE 123  ]
-[; ;Packet.c: 200: }
-"200
+[; ;Packet.c: 249: }
+"249
 [e :UE 123 ]
 }
-"202
+"258
 [v _addDataToCheckSum `(v  1 ef ]
 {
-[; ;Packet.c: 202: void addDataToCheckSum(){
+[; ;Packet.c: 258: void addDataToCheckSum(){
 [e :U _addDataToCheckSum ]
 [f ]
-[; ;Packet.c: 203: eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(lenByteAddr));
-"203
+[; ;Packet.c: 260: eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(lenByteAddr));
+"260
 [e ( _eeprom_write (2 , _calcCSByteAddr -> + -> ( _eeprom_read (1 _calcCSByteAddr `i -> ( _eeprom_read (1 _lenByteAddr `i `uc ]
-[; ;Packet.c: 204: for (unsigned char i = 0x00; i < eeprom_read(lenByteAddr); i++) {
-"204
+[; ;Packet.c: 263: for (unsigned char i = 0x00; i < eeprom_read(lenByteAddr); i++) {
+"263
 {
 [v _i `uc  1 a ]
 [e = _i -> -> 0 `i `uc ]
 [e $U 130  ]
 [e :U 127 ]
 {
-[; ;Packet.c: 205: eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(dataBytesAddr+i));
-"205
+[; ;Packet.c: 265: eeprom_write(calcCSByteAddr,eeprom_read(calcCSByteAddr)+eeprom_read(dataBytesAddr+i));
+"265
 [e ( _eeprom_write (2 , _calcCSByteAddr -> + -> ( _eeprom_read (1 _calcCSByteAddr `i -> ( _eeprom_read (1 -> + -> _dataBytesAddr `i -> _i `i `uc `i `uc ]
-"206
+"266
 }
-"204
+"263
 [e ++ _i -> -> 1 `i `uc ]
 [e :U 130 ]
 [e $ < -> _i `i -> ( _eeprom_read (1 _lenByteAddr `i 127  ]
 [e :U 128 ]
-"206
+"266
 }
-[; ;Packet.c: 206: }
-[; ;Packet.c: 207: }
-"207
+[; ;Packet.c: 266: }
+[; ;Packet.c: 267: }
+"267
 [e :UE 126 ]
 }
-"209
+"277
 [v _displayPacket `(v  1 ef ]
 {
-[; ;Packet.c: 209: void displayPacket() {
+[; ;Packet.c: 277: void displayPacket() {
 [e :U _displayPacket ]
 [f ]
-[; ;Packet.c: 212: writeByte(newLineChar);
-"212
+[; ;Packet.c: 280: writeByte(newLineChar);
+"280
 [e ( _writeByte (1 _newLineChar ]
-[; ;Packet.c: 213: writeByte(eeprom_read(startByteAddr));
-"213
+[; ;Packet.c: 281: writeByte(eeprom_read(startByteAddr));
+"281
 [e ( _writeByte (1 ( _eeprom_read (1 _startByteAddr ]
-[; ;Packet.c: 214: writeByte(newLineChar);
-"214
+[; ;Packet.c: 282: writeByte(newLineChar);
+"282
 [e ( _writeByte (1 _newLineChar ]
-[; ;Packet.c: 216: writeByte(eeprom_read(rwByteAddr));
-"216
+[; ;Packet.c: 284: writeByte(eeprom_read(rwByteAddr));
+"284
 [e ( _writeByte (1 ( _eeprom_read (1 _rwByteAddr ]
-[; ;Packet.c: 217: writeByte(newLineChar);
-"217
+[; ;Packet.c: 285: writeByte(newLineChar);
+"285
 [e ( _writeByte (1 _newLineChar ]
-[; ;Packet.c: 219: writeByte(eeprom_read(cmdByteAddr));
-"219
+[; ;Packet.c: 287: writeByte(eeprom_read(cmdByteAddr));
+"287
 [e ( _writeByte (1 ( _eeprom_read (1 _cmdByteAddr ]
-[; ;Packet.c: 220: writeByte(newLineChar);
-"220
+[; ;Packet.c: 288: writeByte(newLineChar);
+"288
 [e ( _writeByte (1 _newLineChar ]
-[; ;Packet.c: 222: writeByte(eeprom_read(lenByteAddr));
-"222
+[; ;Packet.c: 290: writeByte(eeprom_read(lenByteAddr));
+"290
 [e ( _writeByte (1 ( _eeprom_read (1 _lenByteAddr ]
-[; ;Packet.c: 223: writeByte(newLineChar);
-"223
+[; ;Packet.c: 291: writeByte(newLineChar);
+"291
 [e ( _writeByte (1 _newLineChar ]
-[; ;Packet.c: 225: for (unsigned char i = 0x00; i < eeprom_read(lenByteAddr); i++) {
-"225
+[; ;Packet.c: 294: for (unsigned char i = 0x00; i < eeprom_read(lenByteAddr); i++) {
+"294
 {
 [v _i `uc  1 a ]
 [e = _i -> -> 0 `i `uc ]
 [e $U 135  ]
 [e :U 132 ]
 {
-[; ;Packet.c: 226: writeByte(eeprom_read(dataBytesAddr+i));
-"226
+[; ;Packet.c: 295: writeByte(eeprom_read(dataBytesAddr+i));
+"295
 [e ( _writeByte (1 ( _eeprom_read (1 -> + -> _dataBytesAddr `i -> _i `i `uc ]
-[; ;Packet.c: 227: writeByte(newLineChar);
-"227
+[; ;Packet.c: 296: writeByte(newLineChar);
+"296
 [e ( _writeByte (1 _newLineChar ]
-"228
+"297
 }
-"225
+"294
 [e ++ _i -> -> 1 `i `uc ]
 [e :U 135 ]
 [e $ < -> _i `i -> ( _eeprom_read (1 _lenByteAddr `i 132  ]
 [e :U 133 ]
-"228
+"297
 }
-[; ;Packet.c: 228: }
-[; ;Packet.c: 231: writeByte(eeprom_read(csByteAddr));
-"231
+[; ;Packet.c: 297: }
+[; ;Packet.c: 300: writeByte(eeprom_read(csByteAddr));
+"300
 [e ( _writeByte (1 ( _eeprom_read (1 _csByteAddr ]
-[; ;Packet.c: 232: writeByte(newLineChar);
-"232
+[; ;Packet.c: 301: writeByte(newLineChar);
+"301
 [e ( _writeByte (1 _newLineChar ]
-[; ;Packet.c: 233: }
-"233
+[; ;Packet.c: 302: }
+"302
 [e :UE 131 ]
 }
