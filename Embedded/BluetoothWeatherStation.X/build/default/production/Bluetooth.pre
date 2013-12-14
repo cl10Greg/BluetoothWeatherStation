@@ -18,6 +18,8 @@ unsigned char makeNibble(unsigned char tempByte);
 
 unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo);
 
+void clearUARTErr();
+
 # 19 "userMacro.h"
 const char member1[] = "Greg Girard";
 const char member2[] = "Deepak Chandrasekar";
@@ -34,6 +36,7 @@ const unsigned char noDataLen = 0x0A;
 const unsigned char maxCmd = 0x0E;
 const unsigned char readByteVal = 0x00;
 const unsigned char writeByteVal = 0x01;
+const unsigned char timeoutByte = 0xFF;
 
 const unsigned char RXLenAddr = 0x00;
 const unsigned char startByteAddr = 0x01;
@@ -64,7 +67,7 @@ const unsigned char humLoAddr = 0x84;
 const unsigned char humStartHi = 0x50;
 const unsigned char humStartLo = 0x0A;
 
-# 82 "C:\Microchip\Hitech\include\pic16f877a.h"
+# 82 "C:\Microchip\HiTech\include\pic16f877a.h"
 volatile unsigned char INDF @ 0x000;
 
 
@@ -1135,25 +1138,25 @@ unsigned EEPGD : 1;
 volatile unsigned char EECON2 @ 0x18D;
 
 
-# 27 "C:\Microchip\Hitech\include\pic.h"
+# 27 "C:\Microchip\HiTech\include\pic.h"
 #pragma inline(_nop)
 extern void _nop(void);
 
 # 80
 extern unsigned int flash_read(unsigned short addr);
 
-# 41 "C:\Microchip\Hitech\include\eeprom_routines.h"
+# 41 "C:\Microchip\HiTech\include\eeprom_routines.h"
 extern unsigned char eeprom_write(unsigned char addr, unsigned char value);
 extern unsigned char eeprom_read(unsigned char addr);
 extern void eecpymem(volatile unsigned char *to, eeprom unsigned char *from, unsigned char size);
 extern void memcpyee(eeprom unsigned char *to, const unsigned char *from, unsigned char size);
 
 
-# 153 "C:\Microchip\Hitech\include\pic.h"
+# 153 "C:\Microchip\HiTech\include\pic.h"
 #pragma inline(_delay)
 extern void _delay(unsigned long);
 
-# 4 "C:\Microchip\Hitech\include\string.h"
+# 4 "C:\Microchip\HiTech\include\string.h"
 typedef int ptrdiff_t;
 typedef unsigned size_t;
 typedef unsigned short wchar_t;
@@ -1193,11 +1196,7 @@ extern char * strichr(const char *, int);
 extern char * strrchr(const char *, int);
 extern char * strrichr(const char *, int);
 
-# 11 "EEPROM.h"
-void eeWrite(unsigned char address, unsigned char value);
-unsigned char eeRead(unsigned char address);
-
-# 16 "Bluetooth.c"
+# 15 "Bluetooth.c"
 void initUSART()
 {
 
@@ -1206,39 +1205,48 @@ TRISC6 = 0;
 
 TRISC7 = 1;
 
-# 35
+# 34
 RCSTA = 0x90;
 
-# 49
+# 48
 TXSTA = 0x24;
 
-# 57
+# 56
 SPBRG = 129;
+GIE = 1;
+PEIE = 1;
+RCIE = 1;
+
 }
 
-# 67
+# 70
 void writeByte(unsigned char Byte)
 {
 
-# 72
+# 75
 while(!TXIF);
 
 
 TXREG = Byte;
 }
 
-# 85
+# 88
 unsigned char readByte()
 {
 
-# 90
+# 94
+if(OERR){
+clearUARTErr();
+}
 while(!RCIF);
 
-
+# 106
 return RCREG;
+
+
 }
 
-# 104
+# 119
 void echoBack()
 {
 
@@ -1251,7 +1259,7 @@ writeByte(ch);
 writeByte('*');
 }
 
-# 124
+# 139
 void writeString(unsigned char* userString)
 {
 
@@ -1265,7 +1273,7 @@ writeByte((unsigned char)i);
 
 }
 
-# 146
+# 161
 void readString(unsigned char* readStorage)
 {
 
@@ -1273,8 +1281,8 @@ unsigned int i = 0;
 
 unsigned char ch;
 
-
 ch = readByte();
+writeByte(ch);
 
 while(ch != userEndByte)
 {
@@ -1284,12 +1292,18 @@ readStorage[i] = ch;
 i++;
 
 ch = readByte();
+writeByte(ch);
 }
+
+
+
 
 eeprom_write(RXLenAddr,i);
+
+
 }
 
-# 177
+# 198
 unsigned char makeNibble(unsigned char tempNib)
 {
 if(tempNib>='A'){
@@ -1298,11 +1312,18 @@ return ((tempNib - (unsigned char)'A')+10);
 return (tempNib - '0');
 }
 
-# 193
+# 214
 unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo)
 {
 unsigned char input_byte;
 input_byte = (makeNibble(nibOne)<<4);
 input_byte|= makeNibble(nibTwo);
 return input_byte;
+}
+
+void clearUARTErr(){
+RCSTA = 0x80;
+_delay((unsigned long)((10)*(20000000/4000.0)));
+RCSTA = 0x90;
+_delay((unsigned long)((10)*(20000000/4000.0)));
 }

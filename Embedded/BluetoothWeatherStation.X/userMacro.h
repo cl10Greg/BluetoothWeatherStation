@@ -31,6 +31,7 @@ const unsigned char noDataLen = 0x0A;
 const unsigned char maxCmd = 0x0E;
 const unsigned char readByteVal = 0x00;
 const unsigned char writeByteVal = 0x01;
+const unsigned char timeoutByte = 0xFF;
 
 const unsigned char RXLenAddr = 0x00;
 const unsigned char startByteAddr = 0x01;

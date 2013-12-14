@@ -27,75 +27,77 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _readByteVal `Cuc  1 e ]
 "33 userMacro.h
 [v _writeByteVal `Cuc  1 e ]
-"35 userMacro.h
-[v _RXLenAddr `Cuc  1 e ]
+"34 userMacro.h
+[v _timeoutByte `Cuc  1 e ]
 "36 userMacro.h
-[v _startByteAddr `Cuc  1 e ]
+[v _RXLenAddr `Cuc  1 e ]
 "37 userMacro.h
-[v _rwByteAddr `Cuc  1 e ]
+[v _startByteAddr `Cuc  1 e ]
 "38 userMacro.h
-[v _cmdByteAddr `Cuc  1 e ]
+[v _rwByteAddr `Cuc  1 e ]
 "39 userMacro.h
-[v _lenByteAddr `Cuc  1 e ]
+[v _cmdByteAddr `Cuc  1 e ]
 "40 userMacro.h
-[v _csByteAddr `Cuc  1 e ]
+[v _lenByteAddr `Cuc  1 e ]
 "41 userMacro.h
-[v _endByteAddr `Cuc  1 e ]
+[v _csByteAddr `Cuc  1 e ]
 "42 userMacro.h
+[v _endByteAddr `Cuc  1 e ]
+"43 userMacro.h
 [v _dataBytesAddr `Cuc  1 e ]
-"44 userMacro.h
+"45 userMacro.h
 [v _calcCSByteAddr `Cuc  1 e ]
-"46 userMacro.h
-[v _tempValHAddr `Cuc  1 e ]
 "47 userMacro.h
-[v _tempValLAddr `Cuc  1 e ]
+[v _tempValHAddr `Cuc  1 e ]
 "48 userMacro.h
-[v _tempHiAddr `Cuc  1 e ]
+[v _tempValLAddr `Cuc  1 e ]
 "49 userMacro.h
-[v _tempLoAddr `Cuc  1 e ]
+[v _tempHiAddr `Cuc  1 e ]
 "50 userMacro.h
+[v _tempLoAddr `Cuc  1 e ]
+"51 userMacro.h
 [v _tempUnitAddr `Cuc  1 e ]
-"52 userMacro.h
-[v _tempStartHi `Cuc  1 e ]
 "53 userMacro.h
-[v _tempStartLo `Cuc  1 e ]
+[v _tempStartHi `Cuc  1 e ]
 "54 userMacro.h
-[v _tempC `Cuc  1 e ]
+[v _tempStartLo `Cuc  1 e ]
 "55 userMacro.h
+[v _tempC `Cuc  1 e ]
+"56 userMacro.h
 [v _tempF `Cuc  1 e ]
-"57 userMacro.h
-[v _humValAddr `Cuc  1 e ]
 "58 userMacro.h
-[v _humHiAddr `Cuc  1 e ]
+[v _humValAddr `Cuc  1 e ]
 "59 userMacro.h
+[v _humHiAddr `Cuc  1 e ]
+"60 userMacro.h
 [v _humLoAddr `Cuc  1 e ]
-"61 userMacro.h
-[v _humStartHi `Cuc  1 e ]
 "62 userMacro.h
+[v _humStartHi `Cuc  1 e ]
+"63 userMacro.h
 [v _humStartLo `Cuc  1 e ]
-"82 C:\Microchip\Hitech\include\pic16f877a.h
+"82 C:\Microchip\HiTech\include\pic16f877a.h
 [v _INDF `Vuc  1 e@0 ]
-"86 C:\Microchip\Hitech\include\pic16f877a.h
+"86 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TMR0 `Vuc  1 e@1 ]
-"90 C:\Microchip\Hitech\include\pic16f877a.h
+"90 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PCL `Vuc  1 e@2 ]
-"94 C:\Microchip\Hitech\include\pic16f877a.h
+"94 C:\Microchip\HiTech\include\pic16f877a.h
 [v _STATUS `Vuc  1 e@3 ]
-"96 C:\Microchip\Hitech\include\pic16f877a.h
+"96 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CARRY `Vb  1 e@24 ]
-"97 C:\Microchip\Hitech\include\pic16f877a.h
+"97 C:\Microchip\HiTech\include\pic16f877a.h
 [v _DC `Vb  1 e@25 ]
-"98 C:\Microchip\Hitech\include\pic16f877a.h
+"98 C:\Microchip\HiTech\include\pic16f877a.h
 [v _ZERO `Vb  1 e@26 ]
-"99 C:\Microchip\Hitech\include\pic16f877a.h
+"99 C:\Microchip\HiTech\include\pic16f877a.h
 [v _nPD `Vb  1 e@27 ]
-"100 C:\Microchip\Hitech\include\pic16f877a.h
+"100 C:\Microchip\HiTech\include\pic16f877a.h
 [v _nTO `Vb  1 e@28 ]
-"101 C:\Microchip\Hitech\include\pic16f877a.h
+"101 C:\Microchip\HiTech\include\pic16f877a.h
 [v _IRP `Vb  1 e@31 ]
-"102 C:\Microchip\Hitech\include\pic16f877a.h
+"102 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RP0 `Vb  1 e@29 ]
-"103 C:\Microchip\Hitech\include\pic16f877a.h
+"103 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RP1 `Vb  1 e@30 ]
 [s S2 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
 [n S2 . C DC Z nPD nTO RP IRP ]
@@ -103,145 +105,145 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S3 . . RP0 RP1 ]
 [u S1 `S2 1 `S3 1 ]
 [n S1 . . . ]
-"120 C:\Microchip\Hitech\include\pic16f877a.h
+"120 C:\Microchip\HiTech\include\pic16f877a.h
 [v _STATUSbits `VS1  1 e@3 ]
-"124 C:\Microchip\Hitech\include\pic16f877a.h
+"124 C:\Microchip\HiTech\include\pic16f877a.h
 [v _FSR `Vuc  1 e@4 ]
-"128 C:\Microchip\Hitech\include\pic16f877a.h
+"128 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PORTA `Vuc  1 e@5 ]
-"130 C:\Microchip\Hitech\include\pic16f877a.h
+"130 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RA0 `Vb  1 e@40 ]
-"131 C:\Microchip\Hitech\include\pic16f877a.h
+"131 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RA1 `Vb  1 e@41 ]
-"132 C:\Microchip\Hitech\include\pic16f877a.h
+"132 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RA2 `Vb  1 e@42 ]
-"133 C:\Microchip\Hitech\include\pic16f877a.h
+"133 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RA3 `Vb  1 e@43 ]
-"134 C:\Microchip\Hitech\include\pic16f877a.h
+"134 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RA4 `Vb  1 e@44 ]
-"135 C:\Microchip\Hitech\include\pic16f877a.h
+"135 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RA5 `Vb  1 e@45 ]
 [s S5 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S5 . RA0 RA1 RA2 RA3 RA4 RA5 ]
 [u S4 `S5 1 ]
 [n S4 . . ]
-"146 C:\Microchip\Hitech\include\pic16f877a.h
+"146 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PORTAbits `VS4  1 e@5 ]
-"150 C:\Microchip\Hitech\include\pic16f877a.h
+"150 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PORTB `Vuc  1 e@6 ]
-"152 C:\Microchip\Hitech\include\pic16f877a.h
+"152 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RB0 `Vb  1 e@48 ]
-"153 C:\Microchip\Hitech\include\pic16f877a.h
+"153 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RB1 `Vb  1 e@49 ]
-"154 C:\Microchip\Hitech\include\pic16f877a.h
+"154 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RB2 `Vb  1 e@50 ]
-"155 C:\Microchip\Hitech\include\pic16f877a.h
+"155 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RB3 `Vb  1 e@51 ]
-"156 C:\Microchip\Hitech\include\pic16f877a.h
+"156 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RB4 `Vb  1 e@52 ]
-"157 C:\Microchip\Hitech\include\pic16f877a.h
+"157 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RB5 `Vb  1 e@53 ]
-"158 C:\Microchip\Hitech\include\pic16f877a.h
+"158 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RB6 `Vb  1 e@54 ]
-"159 C:\Microchip\Hitech\include\pic16f877a.h
+"159 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RB7 `Vb  1 e@55 ]
 [s S7 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S7 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
 [u S6 `S7 1 ]
 [n S6 . . ]
-"172 C:\Microchip\Hitech\include\pic16f877a.h
+"172 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PORTBbits `VS6  1 e@6 ]
-"176 C:\Microchip\Hitech\include\pic16f877a.h
+"176 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PORTC `Vuc  1 e@7 ]
-"178 C:\Microchip\Hitech\include\pic16f877a.h
+"178 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RC0 `Vb  1 e@56 ]
-"179 C:\Microchip\Hitech\include\pic16f877a.h
+"179 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RC1 `Vb  1 e@57 ]
-"180 C:\Microchip\Hitech\include\pic16f877a.h
+"180 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RC2 `Vb  1 e@58 ]
-"181 C:\Microchip\Hitech\include\pic16f877a.h
+"181 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RC3 `Vb  1 e@59 ]
-"182 C:\Microchip\Hitech\include\pic16f877a.h
+"182 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RC4 `Vb  1 e@60 ]
-"183 C:\Microchip\Hitech\include\pic16f877a.h
+"183 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RC5 `Vb  1 e@61 ]
-"184 C:\Microchip\Hitech\include\pic16f877a.h
+"184 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RC6 `Vb  1 e@62 ]
-"185 C:\Microchip\Hitech\include\pic16f877a.h
+"185 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RC7 `Vb  1 e@63 ]
 [s S9 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S9 . RC0 RC1 RC2 RC3 RC4 RC5 RC6 RC7 ]
 [u S8 `S9 1 ]
 [n S8 . . ]
-"198 C:\Microchip\Hitech\include\pic16f877a.h
+"198 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PORTCbits `VS8  1 e@7 ]
-"202 C:\Microchip\Hitech\include\pic16f877a.h
+"202 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PORTD `Vuc  1 e@8 ]
-"204 C:\Microchip\Hitech\include\pic16f877a.h
+"204 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RD0 `Vb  1 e@64 ]
-"205 C:\Microchip\Hitech\include\pic16f877a.h
+"205 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RD1 `Vb  1 e@65 ]
-"206 C:\Microchip\Hitech\include\pic16f877a.h
+"206 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RD2 `Vb  1 e@66 ]
-"207 C:\Microchip\Hitech\include\pic16f877a.h
+"207 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RD3 `Vb  1 e@67 ]
-"208 C:\Microchip\Hitech\include\pic16f877a.h
+"208 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RD4 `Vb  1 e@68 ]
-"209 C:\Microchip\Hitech\include\pic16f877a.h
+"209 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RD5 `Vb  1 e@69 ]
-"210 C:\Microchip\Hitech\include\pic16f877a.h
+"210 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RD6 `Vb  1 e@70 ]
-"211 C:\Microchip\Hitech\include\pic16f877a.h
+"211 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RD7 `Vb  1 e@71 ]
 [s S11 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S11 . RD0 RD1 RD2 RD3 RD4 RD5 RD6 RD7 ]
 [u S10 `S11 1 ]
 [n S10 . . ]
-"224 C:\Microchip\Hitech\include\pic16f877a.h
+"224 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PORTDbits `VS10  1 e@8 ]
-"228 C:\Microchip\Hitech\include\pic16f877a.h
+"228 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PORTE `Vuc  1 e@9 ]
-"230 C:\Microchip\Hitech\include\pic16f877a.h
+"230 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RE0 `Vb  1 e@72 ]
-"231 C:\Microchip\Hitech\include\pic16f877a.h
+"231 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RE1 `Vb  1 e@73 ]
-"232 C:\Microchip\Hitech\include\pic16f877a.h
+"232 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RE2 `Vb  1 e@74 ]
 [s S13 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S13 . RE0 RE1 RE2 ]
 [u S12 `S13 1 ]
 [n S12 . . ]
-"240 C:\Microchip\Hitech\include\pic16f877a.h
+"240 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PORTEbits `VS12  1 e@9 ]
-"244 C:\Microchip\Hitech\include\pic16f877a.h
+"244 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PCLATH `Vuc  1 e@10 ]
 [s S15 :5 `uc 1 ]
 [n S15 . PCLATH ]
 [u S14 `S15 1 ]
 [n S14 . . ]
-"251 C:\Microchip\Hitech\include\pic16f877a.h
+"251 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PCLATHbits `VS14  1 e@10 ]
-"255 C:\Microchip\Hitech\include\pic16f877a.h
+"255 C:\Microchip\HiTech\include\pic16f877a.h
 [v _INTCON `Vuc  1 e@11 ]
-"257 C:\Microchip\Hitech\include\pic16f877a.h
+"257 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RBIF `Vb  1 e@88 ]
-"258 C:\Microchip\Hitech\include\pic16f877a.h
+"258 C:\Microchip\HiTech\include\pic16f877a.h
 [v _INTF `Vb  1 e@89 ]
-"259 C:\Microchip\Hitech\include\pic16f877a.h
+"259 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TMR0IF `Vb  1 e@90 ]
-"260 C:\Microchip\Hitech\include\pic16f877a.h
+"260 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RBIE `Vb  1 e@91 ]
-"261 C:\Microchip\Hitech\include\pic16f877a.h
+"261 C:\Microchip\HiTech\include\pic16f877a.h
 [v _INTE `Vb  1 e@92 ]
-"262 C:\Microchip\Hitech\include\pic16f877a.h
+"262 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TMR0IE `Vb  1 e@93 ]
-"263 C:\Microchip\Hitech\include\pic16f877a.h
+"263 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PEIE `Vb  1 e@94 ]
-"264 C:\Microchip\Hitech\include\pic16f877a.h
+"264 C:\Microchip\HiTech\include\pic16f877a.h
 [v _GIE `Vb  1 e@95 ]
-"265 C:\Microchip\Hitech\include\pic16f877a.h
+"265 C:\Microchip\HiTech\include\pic16f877a.h
 [v _T0IF `Vb  1 e@90 ]
-"266 C:\Microchip\Hitech\include\pic16f877a.h
+"266 C:\Microchip\HiTech\include\pic16f877a.h
 [v _T0IE `Vb  1 e@93 ]
 [s S17 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S17 . RBIF INTF TMR0IF RBIE INTE TMR0IE PEIE GIE ]
@@ -249,25 +251,25 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S18 . . T0IF . T0IE ]
 [u S16 `S17 1 `S18 1 ]
 [n S16 . . . ]
-"285 C:\Microchip\Hitech\include\pic16f877a.h
+"285 C:\Microchip\HiTech\include\pic16f877a.h
 [v _INTCONbits `VS16  1 e@11 ]
-"289 C:\Microchip\Hitech\include\pic16f877a.h
+"289 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PIR1 `Vuc  1 e@12 ]
-"291 C:\Microchip\Hitech\include\pic16f877a.h
+"291 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TMR1IF `Vb  1 e@96 ]
-"292 C:\Microchip\Hitech\include\pic16f877a.h
+"292 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TMR2IF `Vb  1 e@97 ]
-"293 C:\Microchip\Hitech\include\pic16f877a.h
+"293 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP1IF `Vb  1 e@98 ]
-"294 C:\Microchip\Hitech\include\pic16f877a.h
+"294 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SSPIF `Vb  1 e@99 ]
-"295 C:\Microchip\Hitech\include\pic16f877a.h
+"295 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TXIF `Vb  1 e@100 ]
-"296 C:\Microchip\Hitech\include\pic16f877a.h
+"296 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RCIF `Vb  1 e@101 ]
-"297 C:\Microchip\Hitech\include\pic16f877a.h
+"297 C:\Microchip\HiTech\include\pic16f877a.h
 [v _ADIF `Vb  1 e@102 ]
-"298 C:\Microchip\Hitech\include\pic16f877a.h
+"298 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PSPIF `Vb  1 e@103 ]
 [s S20 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S20 . TMR1IF TMR2IF CCP1IF SSPIF TXIF RCIF ADIF PSPIF ]
@@ -275,47 +277,47 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S21 . . . . . . . . ]
 [u S19 `S20 1 `S21 1 ]
 [n S19 . . . ]
-"320 C:\Microchip\Hitech\include\pic16f877a.h
+"320 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PIR1bits `VS19  1 e@12 ]
-"324 C:\Microchip\Hitech\include\pic16f877a.h
+"324 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PIR2 `Vuc  1 e@13 ]
-"326 C:\Microchip\Hitech\include\pic16f877a.h
+"326 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP2IF `Vb  1 e@104 ]
-"327 C:\Microchip\Hitech\include\pic16f877a.h
+"327 C:\Microchip\HiTech\include\pic16f877a.h
 [v _BCLIF `Vb  1 e@107 ]
-"328 C:\Microchip\Hitech\include\pic16f877a.h
+"328 C:\Microchip\HiTech\include\pic16f877a.h
 [v _EEIF `Vb  1 e@108 ]
-"329 C:\Microchip\Hitech\include\pic16f877a.h
+"329 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CMIF `Vb  1 e@110 ]
 [s S23 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S23 . CCP2IF . BCLIF EEIF . CMIF ]
 [u S22 `S23 1 ]
 [n S22 . . ]
-"340 C:\Microchip\Hitech\include\pic16f877a.h
+"340 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PIR2bits `VS22  1 e@13 ]
-"345 C:\Microchip\Hitech\include\pic16f877a.h
+"345 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TMR1L `Vuc  1 e@14 ]
-"349 C:\Microchip\Hitech\include\pic16f877a.h
+"349 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TMR1H `Vuc  1 e@15 ]
-"353 C:\Microchip\Hitech\include\pic16f877a.h
+"353 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TMR1 `Vui  1 e@14 ]
-"356 C:\Microchip\Hitech\include\pic16f877a.h
+"356 C:\Microchip\HiTech\include\pic16f877a.h
 [v _T1CON `Vuc  1 e@16 ]
-"358 C:\Microchip\Hitech\include\pic16f877a.h
+"358 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TMR1ON `Vb  1 e@128 ]
-"359 C:\Microchip\Hitech\include\pic16f877a.h
+"359 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TMR1CS `Vb  1 e@129 ]
-"360 C:\Microchip\Hitech\include\pic16f877a.h
+"360 C:\Microchip\HiTech\include\pic16f877a.h
 [v _nT1SYNC `Vb  1 e@130 ]
-"361 C:\Microchip\Hitech\include\pic16f877a.h
+"361 C:\Microchip\HiTech\include\pic16f877a.h
 [v _T1OSCEN `Vb  1 e@131 ]
-"362 C:\Microchip\Hitech\include\pic16f877a.h
+"362 C:\Microchip\HiTech\include\pic16f877a.h
 [v _T1SYNC `Vb  1 e@130 ]
-"363 C:\Microchip\Hitech\include\pic16f877a.h
+"363 C:\Microchip\HiTech\include\pic16f877a.h
 [v _T1CKPS0 `Vb  1 e@132 ]
-"364 C:\Microchip\Hitech\include\pic16f877a.h
+"364 C:\Microchip\HiTech\include\pic16f877a.h
 [v _T1CKPS1 `Vb  1 e@133 ]
-"365 C:\Microchip\Hitech\include\pic16f877a.h
+"365 C:\Microchip\HiTech\include\pic16f877a.h
 [v _T1INSYNC `Vb  1 e@130 ]
 [s S25 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 ]
 [n S25 . TMR1ON TMR1CS nT1SYNC T1OSCEN T1CKPS ]
@@ -325,25 +327,25 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S27 . . T1INSYNC ]
 [u S24 `S25 1 `S26 1 `S27 1 ]
 [n S24 . . . . ]
-"386 C:\Microchip\Hitech\include\pic16f877a.h
+"386 C:\Microchip\HiTech\include\pic16f877a.h
 [v _T1CONbits `VS24  1 e@16 ]
-"390 C:\Microchip\Hitech\include\pic16f877a.h
+"390 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TMR2 `Vuc  1 e@17 ]
-"394 C:\Microchip\Hitech\include\pic16f877a.h
+"394 C:\Microchip\HiTech\include\pic16f877a.h
 [v _T2CON `Vuc  1 e@18 ]
-"396 C:\Microchip\Hitech\include\pic16f877a.h
+"396 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TMR2ON `Vb  1 e@146 ]
-"397 C:\Microchip\Hitech\include\pic16f877a.h
+"397 C:\Microchip\HiTech\include\pic16f877a.h
 [v _T2CKPS0 `Vb  1 e@144 ]
-"398 C:\Microchip\Hitech\include\pic16f877a.h
+"398 C:\Microchip\HiTech\include\pic16f877a.h
 [v _T2CKPS1 `Vb  1 e@145 ]
-"399 C:\Microchip\Hitech\include\pic16f877a.h
+"399 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TOUTPS0 `Vb  1 e@147 ]
-"400 C:\Microchip\Hitech\include\pic16f877a.h
+"400 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TOUTPS1 `Vb  1 e@148 ]
-"401 C:\Microchip\Hitech\include\pic16f877a.h
+"401 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TOUTPS2 `Vb  1 e@149 ]
-"402 C:\Microchip\Hitech\include\pic16f877a.h
+"402 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TOUTPS3 `Vb  1 e@150 ]
 [s S29 :2 `uc 1 :1 `uc 1 :4 `uc 1 ]
 [n S29 . T2CKPS TMR2ON TOUTPS ]
@@ -351,27 +353,27 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S30 . T2CKPS0 T2CKPS1 . TOUTPS0 TOUTPS1 TOUTPS2 TOUTPS3 ]
 [u S28 `S29 1 `S30 1 ]
 [n S28 . . . ]
-"419 C:\Microchip\Hitech\include\pic16f877a.h
+"419 C:\Microchip\HiTech\include\pic16f877a.h
 [v _T2CONbits `VS28  1 e@18 ]
-"423 C:\Microchip\Hitech\include\pic16f877a.h
+"423 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SSPBUF `Vuc  1 e@19 ]
-"427 C:\Microchip\Hitech\include\pic16f877a.h
+"427 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SSPCON `Vuc  1 e@20 ]
-"429 C:\Microchip\Hitech\include\pic16f877a.h
+"429 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CKP `Vb  1 e@164 ]
-"430 C:\Microchip\Hitech\include\pic16f877a.h
+"430 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SSPEN `Vb  1 e@165 ]
-"431 C:\Microchip\Hitech\include\pic16f877a.h
+"431 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SSPOV `Vb  1 e@166 ]
-"432 C:\Microchip\Hitech\include\pic16f877a.h
+"432 C:\Microchip\HiTech\include\pic16f877a.h
 [v _WCOL `Vb  1 e@167 ]
-"433 C:\Microchip\Hitech\include\pic16f877a.h
+"433 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SSPM0 `Vb  1 e@160 ]
-"434 C:\Microchip\Hitech\include\pic16f877a.h
+"434 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SSPM1 `Vb  1 e@161 ]
-"435 C:\Microchip\Hitech\include\pic16f877a.h
+"435 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SSPM2 `Vb  1 e@162 ]
-"436 C:\Microchip\Hitech\include\pic16f877a.h
+"436 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SSPM3 `Vb  1 e@163 ]
 [s S32 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S32 . SSPM CKP SSPEN SSPOV WCOL ]
@@ -379,27 +381,27 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S33 . SSPM0 SSPM1 SSPM2 SSPM3 ]
 [u S31 `S32 1 `S33 1 ]
 [n S31 . . . ]
-"452 C:\Microchip\Hitech\include\pic16f877a.h
+"452 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SSPCONbits `VS31  1 e@20 ]
-"457 C:\Microchip\Hitech\include\pic16f877a.h
+"457 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCPR1L `Vuc  1 e@21 ]
-"461 C:\Microchip\Hitech\include\pic16f877a.h
+"461 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCPR1H `Vuc  1 e@22 ]
-"465 C:\Microchip\Hitech\include\pic16f877a.h
+"465 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCPR1 `Vui  1 e@21 ]
-"468 C:\Microchip\Hitech\include\pic16f877a.h
+"468 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP1CON `Vuc  1 e@23 ]
-"470 C:\Microchip\Hitech\include\pic16f877a.h
+"470 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP1Y `Vb  1 e@188 ]
-"471 C:\Microchip\Hitech\include\pic16f877a.h
+"471 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP1X `Vb  1 e@189 ]
-"472 C:\Microchip\Hitech\include\pic16f877a.h
+"472 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP1M0 `Vb  1 e@184 ]
-"473 C:\Microchip\Hitech\include\pic16f877a.h
+"473 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP1M1 `Vb  1 e@185 ]
-"474 C:\Microchip\Hitech\include\pic16f877a.h
+"474 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP1M2 `Vb  1 e@186 ]
-"475 C:\Microchip\Hitech\include\pic16f877a.h
+"475 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP1M3 `Vb  1 e@187 ]
 [s S35 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S35 . CCP1M CCP1Y CCP1X ]
@@ -407,33 +409,33 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S36 . CCP1M0 CCP1M1 CCP1M2 CCP1M3 ]
 [u S34 `S35 1 `S36 1 ]
 [n S34 . . . ]
-"489 C:\Microchip\Hitech\include\pic16f877a.h
+"489 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP1CONbits `VS34  1 e@23 ]
-"493 C:\Microchip\Hitech\include\pic16f877a.h
+"493 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RCSTA `Vuc  1 e@24 ]
-"495 C:\Microchip\Hitech\include\pic16f877a.h
+"495 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RX9D `Vb  1 e@192 ]
-"496 C:\Microchip\Hitech\include\pic16f877a.h
+"496 C:\Microchip\HiTech\include\pic16f877a.h
 [v _OERR `Vb  1 e@193 ]
-"497 C:\Microchip\Hitech\include\pic16f877a.h
+"497 C:\Microchip\HiTech\include\pic16f877a.h
 [v _FERR `Vb  1 e@194 ]
-"498 C:\Microchip\Hitech\include\pic16f877a.h
+"498 C:\Microchip\HiTech\include\pic16f877a.h
 [v _ADDEN `Vb  1 e@195 ]
-"499 C:\Microchip\Hitech\include\pic16f877a.h
+"499 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CREN `Vb  1 e@196 ]
-"500 C:\Microchip\Hitech\include\pic16f877a.h
+"500 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SREN `Vb  1 e@197 ]
-"501 C:\Microchip\Hitech\include\pic16f877a.h
+"501 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RX9 `Vb  1 e@198 ]
-"502 C:\Microchip\Hitech\include\pic16f877a.h
+"502 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SPEN `Vb  1 e@199 ]
-"503 C:\Microchip\Hitech\include\pic16f877a.h
+"503 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RCD8 `Vb  1 e@192 ]
-"504 C:\Microchip\Hitech\include\pic16f877a.h
+"504 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RC9 `Vb  1 e@198 ]
-"505 C:\Microchip\Hitech\include\pic16f877a.h
+"505 C:\Microchip\HiTech\include\pic16f877a.h
 [v _nRC8 `Vb  1 e@198 ]
-"506 C:\Microchip\Hitech\include\pic16f877a.h
+"506 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RC8_9 `Vb  1 e@198 ]
 [s S38 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S38 . RX9D OERR FERR ADDEN CREN SREN RX9 SPEN ]
@@ -445,31 +447,31 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S41 . . RC8_9 ]
 [u S37 `S38 1 `S39 1 `S40 1 `S41 1 ]
 [n S37 . . . . . ]
-"532 C:\Microchip\Hitech\include\pic16f877a.h
+"532 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RCSTAbits `VS37  1 e@24 ]
-"536 C:\Microchip\Hitech\include\pic16f877a.h
+"536 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TXREG `Vuc  1 e@25 ]
-"540 C:\Microchip\Hitech\include\pic16f877a.h
+"540 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RCREG `Vuc  1 e@26 ]
-"545 C:\Microchip\Hitech\include\pic16f877a.h
+"545 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCPR2L `Vuc  1 e@27 ]
-"549 C:\Microchip\Hitech\include\pic16f877a.h
+"549 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCPR2H `Vuc  1 e@28 ]
-"553 C:\Microchip\Hitech\include\pic16f877a.h
+"553 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCPR2 `Vui  1 e@27 ]
-"556 C:\Microchip\Hitech\include\pic16f877a.h
+"556 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP2CON `Vuc  1 e@29 ]
-"558 C:\Microchip\Hitech\include\pic16f877a.h
+"558 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP2Y `Vb  1 e@236 ]
-"559 C:\Microchip\Hitech\include\pic16f877a.h
+"559 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP2X `Vb  1 e@237 ]
-"560 C:\Microchip\Hitech\include\pic16f877a.h
+"560 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP2M0 `Vb  1 e@232 ]
-"561 C:\Microchip\Hitech\include\pic16f877a.h
+"561 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP2M1 `Vb  1 e@233 ]
-"562 C:\Microchip\Hitech\include\pic16f877a.h
+"562 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP2M2 `Vb  1 e@234 ]
-"563 C:\Microchip\Hitech\include\pic16f877a.h
+"563 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP2M3 `Vb  1 e@235 ]
 [s S43 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S43 . CCP2M CCP2Y CCP2X ]
@@ -477,31 +479,31 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S44 . CCP2M0 CCP2M1 CCP2M2 CCP2M3 ]
 [u S42 `S43 1 `S44 1 ]
 [n S42 . . . ]
-"577 C:\Microchip\Hitech\include\pic16f877a.h
+"577 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP2CONbits `VS42  1 e@29 ]
-"581 C:\Microchip\Hitech\include\pic16f877a.h
+"581 C:\Microchip\HiTech\include\pic16f877a.h
 [v _ADRESH `Vuc  1 e@30 ]
-"585 C:\Microchip\Hitech\include\pic16f877a.h
+"585 C:\Microchip\HiTech\include\pic16f877a.h
 [v _ADCON0 `Vuc  1 e@31 ]
-"587 C:\Microchip\Hitech\include\pic16f877a.h
+"587 C:\Microchip\HiTech\include\pic16f877a.h
 [v _ADON `Vb  1 e@248 ]
-"588 C:\Microchip\Hitech\include\pic16f877a.h
+"588 C:\Microchip\HiTech\include\pic16f877a.h
 [v _GO_nDONE `Vb  1 e@250 ]
-"589 C:\Microchip\Hitech\include\pic16f877a.h
+"589 C:\Microchip\HiTech\include\pic16f877a.h
 [v _GO `Vb  1 e@250 ]
-"590 C:\Microchip\Hitech\include\pic16f877a.h
+"590 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CHS0 `Vb  1 e@251 ]
-"591 C:\Microchip\Hitech\include\pic16f877a.h
+"591 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CHS1 `Vb  1 e@252 ]
-"592 C:\Microchip\Hitech\include\pic16f877a.h
+"592 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CHS2 `Vb  1 e@253 ]
-"593 C:\Microchip\Hitech\include\pic16f877a.h
+"593 C:\Microchip\HiTech\include\pic16f877a.h
 [v _ADCS0 `Vb  1 e@254 ]
-"594 C:\Microchip\Hitech\include\pic16f877a.h
+"594 C:\Microchip\HiTech\include\pic16f877a.h
 [v _ADCS1 `Vb  1 e@255 ]
-"595 C:\Microchip\Hitech\include\pic16f877a.h
+"595 C:\Microchip\HiTech\include\pic16f877a.h
 [v _nDONE `Vb  1 e@250 ]
-"596 C:\Microchip\Hitech\include\pic16f877a.h
+"596 C:\Microchip\HiTech\include\pic16f877a.h
 [v _GO_DONE `Vb  1 e@250 ]
 [s S46 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :2 `uc 1 ]
 [n S46 . ADON . GO_nDONE CHS ADCS ]
@@ -515,25 +517,25 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S50 . . GO_DONE ]
 [u S45 `S46 1 `S47 1 `S48 1 `S49 1 `S50 1 ]
 [n S45 . . . . . . ]
-"630 C:\Microchip\Hitech\include\pic16f877a.h
+"630 C:\Microchip\HiTech\include\pic16f877a.h
 [v _ADCON0bits `VS45  1 e@31 ]
-"639 C:\Microchip\Hitech\include\pic16f877a.h
+"639 C:\Microchip\HiTech\include\pic16f877a.h
 [v _OPTION_REG `Vuc  1 e@129 ]
-"641 C:\Microchip\Hitech\include\pic16f877a.h
+"641 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PSA `Vb  1 e@1035 ]
-"642 C:\Microchip\Hitech\include\pic16f877a.h
+"642 C:\Microchip\HiTech\include\pic16f877a.h
 [v _T0SE `Vb  1 e@1036 ]
-"643 C:\Microchip\Hitech\include\pic16f877a.h
+"643 C:\Microchip\HiTech\include\pic16f877a.h
 [v _T0CS `Vb  1 e@1037 ]
-"644 C:\Microchip\Hitech\include\pic16f877a.h
+"644 C:\Microchip\HiTech\include\pic16f877a.h
 [v _INTEDG `Vb  1 e@1038 ]
-"645 C:\Microchip\Hitech\include\pic16f877a.h
+"645 C:\Microchip\HiTech\include\pic16f877a.h
 [v _nRBPU `Vb  1 e@1039 ]
-"646 C:\Microchip\Hitech\include\pic16f877a.h
+"646 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PS0 `Vb  1 e@1032 ]
-"647 C:\Microchip\Hitech\include\pic16f877a.h
+"647 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PS1 `Vb  1 e@1033 ]
-"648 C:\Microchip\Hitech\include\pic16f877a.h
+"648 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PS2 `Vb  1 e@1034 ]
 [s S52 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S52 . PS PSA T0SE T0CS INTEDG nRBPU ]
@@ -541,169 +543,169 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S53 . PS0 PS1 PS2 ]
 [u S51 `S52 1 `S53 1 ]
 [n S51 . . . ]
-"664 C:\Microchip\Hitech\include\pic16f877a.h
+"664 C:\Microchip\HiTech\include\pic16f877a.h
 [v _OPTION_REGbits `VS51  1 e@129 ]
-"668 C:\Microchip\Hitech\include\pic16f877a.h
+"668 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISA `Vuc  1 e@133 ]
-"670 C:\Microchip\Hitech\include\pic16f877a.h
+"670 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISA0 `Vb  1 e@1064 ]
-"671 C:\Microchip\Hitech\include\pic16f877a.h
+"671 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISA1 `Vb  1 e@1065 ]
-"672 C:\Microchip\Hitech\include\pic16f877a.h
+"672 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISA2 `Vb  1 e@1066 ]
-"673 C:\Microchip\Hitech\include\pic16f877a.h
+"673 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISA3 `Vb  1 e@1067 ]
-"674 C:\Microchip\Hitech\include\pic16f877a.h
+"674 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISA4 `Vb  1 e@1068 ]
-"675 C:\Microchip\Hitech\include\pic16f877a.h
+"675 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISA5 `Vb  1 e@1069 ]
 [s S55 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S55 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 ]
 [u S54 `S55 1 ]
 [n S54 . . ]
-"686 C:\Microchip\Hitech\include\pic16f877a.h
+"686 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISAbits `VS54  1 e@133 ]
-"690 C:\Microchip\Hitech\include\pic16f877a.h
+"690 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISB `Vuc  1 e@134 ]
-"692 C:\Microchip\Hitech\include\pic16f877a.h
+"692 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISB0 `Vb  1 e@1072 ]
-"693 C:\Microchip\Hitech\include\pic16f877a.h
+"693 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISB1 `Vb  1 e@1073 ]
-"694 C:\Microchip\Hitech\include\pic16f877a.h
+"694 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISB2 `Vb  1 e@1074 ]
-"695 C:\Microchip\Hitech\include\pic16f877a.h
+"695 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISB3 `Vb  1 e@1075 ]
-"696 C:\Microchip\Hitech\include\pic16f877a.h
+"696 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISB4 `Vb  1 e@1076 ]
-"697 C:\Microchip\Hitech\include\pic16f877a.h
+"697 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISB5 `Vb  1 e@1077 ]
-"698 C:\Microchip\Hitech\include\pic16f877a.h
+"698 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISB6 `Vb  1 e@1078 ]
-"699 C:\Microchip\Hitech\include\pic16f877a.h
+"699 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISB7 `Vb  1 e@1079 ]
 [s S57 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S57 . TRISB0 TRISB1 TRISB2 TRISB3 TRISB4 TRISB5 TRISB6 TRISB7 ]
 [u S56 `S57 1 ]
 [n S56 . . ]
-"712 C:\Microchip\Hitech\include\pic16f877a.h
+"712 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISBbits `VS56  1 e@134 ]
-"716 C:\Microchip\Hitech\include\pic16f877a.h
+"716 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISC `Vuc  1 e@135 ]
-"718 C:\Microchip\Hitech\include\pic16f877a.h
+"718 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISC0 `Vb  1 e@1080 ]
-"719 C:\Microchip\Hitech\include\pic16f877a.h
+"719 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISC1 `Vb  1 e@1081 ]
-"720 C:\Microchip\Hitech\include\pic16f877a.h
+"720 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISC2 `Vb  1 e@1082 ]
-"721 C:\Microchip\Hitech\include\pic16f877a.h
+"721 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISC3 `Vb  1 e@1083 ]
-"722 C:\Microchip\Hitech\include\pic16f877a.h
+"722 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISC4 `Vb  1 e@1084 ]
-"723 C:\Microchip\Hitech\include\pic16f877a.h
+"723 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISC5 `Vb  1 e@1085 ]
-"724 C:\Microchip\Hitech\include\pic16f877a.h
+"724 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISC6 `Vb  1 e@1086 ]
-"725 C:\Microchip\Hitech\include\pic16f877a.h
+"725 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISC7 `Vb  1 e@1087 ]
 [s S59 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S59 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 TRISC6 TRISC7 ]
 [u S58 `S59 1 ]
 [n S58 . . ]
-"738 C:\Microchip\Hitech\include\pic16f877a.h
+"738 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISCbits `VS58  1 e@135 ]
-"742 C:\Microchip\Hitech\include\pic16f877a.h
+"742 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISD `Vuc  1 e@136 ]
-"744 C:\Microchip\Hitech\include\pic16f877a.h
+"744 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISD0 `Vb  1 e@1088 ]
-"745 C:\Microchip\Hitech\include\pic16f877a.h
+"745 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISD1 `Vb  1 e@1089 ]
-"746 C:\Microchip\Hitech\include\pic16f877a.h
+"746 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISD2 `Vb  1 e@1090 ]
-"747 C:\Microchip\Hitech\include\pic16f877a.h
+"747 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISD3 `Vb  1 e@1091 ]
-"748 C:\Microchip\Hitech\include\pic16f877a.h
+"748 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISD4 `Vb  1 e@1092 ]
-"749 C:\Microchip\Hitech\include\pic16f877a.h
+"749 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISD5 `Vb  1 e@1093 ]
-"750 C:\Microchip\Hitech\include\pic16f877a.h
+"750 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISD6 `Vb  1 e@1094 ]
-"751 C:\Microchip\Hitech\include\pic16f877a.h
+"751 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISD7 `Vb  1 e@1095 ]
 [s S61 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S61 . TRISD0 TRISD1 TRISD2 TRISD3 TRISD4 TRISD5 TRISD6 TRISD7 ]
 [u S60 `S61 1 ]
 [n S60 . . ]
-"764 C:\Microchip\Hitech\include\pic16f877a.h
+"764 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISDbits `VS60  1 e@136 ]
-"768 C:\Microchip\Hitech\include\pic16f877a.h
+"768 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISE `Vuc  1 e@137 ]
-"770 C:\Microchip\Hitech\include\pic16f877a.h
+"770 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISE0 `Vb  1 e@1096 ]
-"771 C:\Microchip\Hitech\include\pic16f877a.h
+"771 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISE1 `Vb  1 e@1097 ]
-"772 C:\Microchip\Hitech\include\pic16f877a.h
+"772 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISE2 `Vb  1 e@1098 ]
-"773 C:\Microchip\Hitech\include\pic16f877a.h
+"773 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PSPMODE `Vb  1 e@1100 ]
-"774 C:\Microchip\Hitech\include\pic16f877a.h
+"774 C:\Microchip\HiTech\include\pic16f877a.h
 [v _IBOV `Vb  1 e@1101 ]
-"775 C:\Microchip\Hitech\include\pic16f877a.h
+"775 C:\Microchip\HiTech\include\pic16f877a.h
 [v _OBF `Vb  1 e@1102 ]
-"776 C:\Microchip\Hitech\include\pic16f877a.h
+"776 C:\Microchip\HiTech\include\pic16f877a.h
 [v _IBF `Vb  1 e@1103 ]
 [s S63 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S63 . TRISE0 TRISE1 TRISE2 . PSPMODE IBOV OBF IBF ]
 [u S62 `S63 1 ]
 [n S62 . . ]
-"789 C:\Microchip\Hitech\include\pic16f877a.h
+"789 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRISEbits `VS62  1 e@137 ]
-"793 C:\Microchip\Hitech\include\pic16f877a.h
+"793 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PIE1 `Vuc  1 e@140 ]
-"795 C:\Microchip\Hitech\include\pic16f877a.h
+"795 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TMR1IE `Vb  1 e@1120 ]
-"796 C:\Microchip\Hitech\include\pic16f877a.h
+"796 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TMR2IE `Vb  1 e@1121 ]
-"797 C:\Microchip\Hitech\include\pic16f877a.h
+"797 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP1IE `Vb  1 e@1122 ]
-"798 C:\Microchip\Hitech\include\pic16f877a.h
+"798 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SSPIE `Vb  1 e@1123 ]
-"799 C:\Microchip\Hitech\include\pic16f877a.h
+"799 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TXIE `Vb  1 e@1124 ]
-"800 C:\Microchip\Hitech\include\pic16f877a.h
+"800 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RCIE `Vb  1 e@1125 ]
-"801 C:\Microchip\Hitech\include\pic16f877a.h
+"801 C:\Microchip\HiTech\include\pic16f877a.h
 [v _ADIE `Vb  1 e@1126 ]
-"802 C:\Microchip\Hitech\include\pic16f877a.h
+"802 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PSPIE `Vb  1 e@1127 ]
 [s S65 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S65 . TMR1IE TMR2IE CCP1IE SSPIE TXIE RCIE ADIE PSPIE ]
 [u S64 `S65 1 ]
 [n S64 . . ]
-"815 C:\Microchip\Hitech\include\pic16f877a.h
+"815 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PIE1bits `VS64  1 e@140 ]
-"819 C:\Microchip\Hitech\include\pic16f877a.h
+"819 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PIE2 `Vuc  1 e@141 ]
-"821 C:\Microchip\Hitech\include\pic16f877a.h
+"821 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CCP2IE `Vb  1 e@1128 ]
-"822 C:\Microchip\Hitech\include\pic16f877a.h
+"822 C:\Microchip\HiTech\include\pic16f877a.h
 [v _BCLIE `Vb  1 e@1131 ]
-"823 C:\Microchip\Hitech\include\pic16f877a.h
+"823 C:\Microchip\HiTech\include\pic16f877a.h
 [v _EEIE `Vb  1 e@1132 ]
-"824 C:\Microchip\Hitech\include\pic16f877a.h
+"824 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CMIE `Vb  1 e@1134 ]
 [s S67 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S67 . CCP2IE . BCLIE EEIE . CMIE ]
 [u S66 `S67 1 ]
 [n S66 . . ]
-"835 C:\Microchip\Hitech\include\pic16f877a.h
+"835 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PIE2bits `VS66  1 e@141 ]
-"839 C:\Microchip\Hitech\include\pic16f877a.h
+"839 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PCON `Vuc  1 e@142 ]
-"841 C:\Microchip\Hitech\include\pic16f877a.h
+"841 C:\Microchip\HiTech\include\pic16f877a.h
 [v _nBOR `Vb  1 e@1136 ]
-"842 C:\Microchip\Hitech\include\pic16f877a.h
+"842 C:\Microchip\HiTech\include\pic16f877a.h
 [v _nPOR `Vb  1 e@1137 ]
-"843 C:\Microchip\Hitech\include\pic16f877a.h
+"843 C:\Microchip\HiTech\include\pic16f877a.h
 [v _nBO `Vb  1 e@1136 ]
 [s S69 :1 `uc 1 :1 `uc 1 ]
 [n S69 . nBOR nPOR ]
@@ -711,81 +713,81 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S70 . nBO ]
 [u S68 `S69 1 `S70 1 ]
 [n S68 . . . ]
-"853 C:\Microchip\Hitech\include\pic16f877a.h
+"853 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PCONbits `VS68  1 e@142 ]
-"857 C:\Microchip\Hitech\include\pic16f877a.h
+"857 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SSPCON2 `Vuc  1 e@145 ]
-"859 C:\Microchip\Hitech\include\pic16f877a.h
+"859 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SEN `Vb  1 e@1160 ]
-"860 C:\Microchip\Hitech\include\pic16f877a.h
+"860 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RSEN `Vb  1 e@1161 ]
-"861 C:\Microchip\Hitech\include\pic16f877a.h
+"861 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PEN `Vb  1 e@1162 ]
-"862 C:\Microchip\Hitech\include\pic16f877a.h
+"862 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RCEN `Vb  1 e@1163 ]
-"863 C:\Microchip\Hitech\include\pic16f877a.h
+"863 C:\Microchip\HiTech\include\pic16f877a.h
 [v _ACKEN `Vb  1 e@1164 ]
-"864 C:\Microchip\Hitech\include\pic16f877a.h
+"864 C:\Microchip\HiTech\include\pic16f877a.h
 [v _ACKDT `Vb  1 e@1165 ]
-"865 C:\Microchip\Hitech\include\pic16f877a.h
+"865 C:\Microchip\HiTech\include\pic16f877a.h
 [v _ACKSTAT `Vb  1 e@1166 ]
-"866 C:\Microchip\Hitech\include\pic16f877a.h
+"866 C:\Microchip\HiTech\include\pic16f877a.h
 [v _GCEN `Vb  1 e@1167 ]
 [s S72 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S72 . SEN RSEN PEN RCEN ACKEN ACKDT ACKSTAT GCEN ]
 [u S71 `S72 1 ]
 [n S71 . . ]
-"879 C:\Microchip\Hitech\include\pic16f877a.h
+"879 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SSPCON2bits `VS71  1 e@145 ]
-"883 C:\Microchip\Hitech\include\pic16f877a.h
+"883 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PR2 `Vuc  1 e@146 ]
-"887 C:\Microchip\Hitech\include\pic16f877a.h
+"887 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SSPADD `Vuc  1 e@147 ]
-"891 C:\Microchip\Hitech\include\pic16f877a.h
+"891 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SSPSTAT `Vuc  1 e@148 ]
-"893 C:\Microchip\Hitech\include\pic16f877a.h
+"893 C:\Microchip\HiTech\include\pic16f877a.h
 [v _BF `Vb  1 e@1184 ]
-"894 C:\Microchip\Hitech\include\pic16f877a.h
+"894 C:\Microchip\HiTech\include\pic16f877a.h
 [v _UA `Vb  1 e@1185 ]
-"895 C:\Microchip\Hitech\include\pic16f877a.h
+"895 C:\Microchip\HiTech\include\pic16f877a.h
 [v _R_nW `Vb  1 e@1186 ]
-"896 C:\Microchip\Hitech\include\pic16f877a.h
+"896 C:\Microchip\HiTech\include\pic16f877a.h
 [v _S `Vb  1 e@1187 ]
-"897 C:\Microchip\Hitech\include\pic16f877a.h
+"897 C:\Microchip\HiTech\include\pic16f877a.h
 [v _P `Vb  1 e@1188 ]
-"898 C:\Microchip\Hitech\include\pic16f877a.h
+"898 C:\Microchip\HiTech\include\pic16f877a.h
 [v _D_nA `Vb  1 e@1189 ]
-"899 C:\Microchip\Hitech\include\pic16f877a.h
+"899 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CKE `Vb  1 e@1190 ]
-"900 C:\Microchip\Hitech\include\pic16f877a.h
+"900 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SMP `Vb  1 e@1191 ]
-"901 C:\Microchip\Hitech\include\pic16f877a.h
+"901 C:\Microchip\HiTech\include\pic16f877a.h
 [v _R `Vb  1 e@1186 ]
-"902 C:\Microchip\Hitech\include\pic16f877a.h
+"902 C:\Microchip\HiTech\include\pic16f877a.h
 [v _D `Vb  1 e@1189 ]
-"903 C:\Microchip\Hitech\include\pic16f877a.h
+"903 C:\Microchip\HiTech\include\pic16f877a.h
 [v _I2C_READ `Vb  1 e@1186 ]
-"904 C:\Microchip\Hitech\include\pic16f877a.h
+"904 C:\Microchip\HiTech\include\pic16f877a.h
 [v _I2C_START `Vb  1 e@1187 ]
-"905 C:\Microchip\Hitech\include\pic16f877a.h
+"905 C:\Microchip\HiTech\include\pic16f877a.h
 [v _I2C_STOP `Vb  1 e@1188 ]
-"906 C:\Microchip\Hitech\include\pic16f877a.h
+"906 C:\Microchip\HiTech\include\pic16f877a.h
 [v _I2C_DATA `Vb  1 e@1189 ]
-"907 C:\Microchip\Hitech\include\pic16f877a.h
+"907 C:\Microchip\HiTech\include\pic16f877a.h
 [v _nW `Vb  1 e@1186 ]
-"908 C:\Microchip\Hitech\include\pic16f877a.h
+"908 C:\Microchip\HiTech\include\pic16f877a.h
 [v _nA `Vb  1 e@1189 ]
-"909 C:\Microchip\Hitech\include\pic16f877a.h
+"909 C:\Microchip\HiTech\include\pic16f877a.h
 [v _nWRITE `Vb  1 e@1186 ]
-"910 C:\Microchip\Hitech\include\pic16f877a.h
+"910 C:\Microchip\HiTech\include\pic16f877a.h
 [v _nADDRESS `Vb  1 e@1189 ]
-"911 C:\Microchip\Hitech\include\pic16f877a.h
+"911 C:\Microchip\HiTech\include\pic16f877a.h
 [v _R_W `Vb  1 e@1186 ]
-"912 C:\Microchip\Hitech\include\pic16f877a.h
+"912 C:\Microchip\HiTech\include\pic16f877a.h
 [v _D_A `Vb  1 e@1189 ]
-"913 C:\Microchip\Hitech\include\pic16f877a.h
+"913 C:\Microchip\HiTech\include\pic16f877a.h
 [v _READ_WRITE `Vb  1 e@1186 ]
-"914 C:\Microchip\Hitech\include\pic16f877a.h
+"914 C:\Microchip\HiTech\include\pic16f877a.h
 [v _DATA_ADDRESS `Vb  1 e@1189 ]
 [s S74 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S74 . BF UA R_nW S P D_nA CKE SMP ]
@@ -805,29 +807,29 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S81 . . READ_WRITE . DATA_ADDRESS ]
 [u S73 `S74 1 `S75 1 `S76 1 `S77 1 `S78 1 `S79 1 `S80 1 `S81 1 ]
 [n S73 . . . . . . . . . ]
-"974 C:\Microchip\Hitech\include\pic16f877a.h
+"974 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SSPSTATbits `VS73  1 e@148 ]
-"978 C:\Microchip\Hitech\include\pic16f877a.h
+"978 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TXSTA `Vuc  1 e@152 ]
-"980 C:\Microchip\Hitech\include\pic16f877a.h
+"980 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TX9D `Vb  1 e@1216 ]
-"981 C:\Microchip\Hitech\include\pic16f877a.h
+"981 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TRMT `Vb  1 e@1217 ]
-"982 C:\Microchip\Hitech\include\pic16f877a.h
+"982 C:\Microchip\HiTech\include\pic16f877a.h
 [v _BRGH `Vb  1 e@1218 ]
-"983 C:\Microchip\Hitech\include\pic16f877a.h
+"983 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SYNC `Vb  1 e@1220 ]
-"984 C:\Microchip\Hitech\include\pic16f877a.h
+"984 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TXEN `Vb  1 e@1221 ]
-"985 C:\Microchip\Hitech\include\pic16f877a.h
+"985 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TX9 `Vb  1 e@1222 ]
-"986 C:\Microchip\Hitech\include\pic16f877a.h
+"986 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CSRC `Vb  1 e@1223 ]
-"987 C:\Microchip\Hitech\include\pic16f877a.h
+"987 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TXD8 `Vb  1 e@1216 ]
-"988 C:\Microchip\Hitech\include\pic16f877a.h
+"988 C:\Microchip\HiTech\include\pic16f877a.h
 [v _nTX8 `Vb  1 e@1222 ]
-"989 C:\Microchip\Hitech\include\pic16f877a.h
+"989 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TX8_9 `Vb  1 e@1222 ]
 [s S83 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S83 . TX9D TRMT BRGH . SYNC TXEN TX9 CSRC ]
@@ -837,27 +839,27 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S85 . . TX8_9 ]
 [u S82 `S83 1 `S84 1 `S85 1 ]
 [n S82 . . . . ]
-"1011 C:\Microchip\Hitech\include\pic16f877a.h
+"1011 C:\Microchip\HiTech\include\pic16f877a.h
 [v _TXSTAbits `VS82  1 e@152 ]
-"1015 C:\Microchip\Hitech\include\pic16f877a.h
+"1015 C:\Microchip\HiTech\include\pic16f877a.h
 [v _SPBRG `Vuc  1 e@153 ]
-"1019 C:\Microchip\Hitech\include\pic16f877a.h
+"1019 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CMCON `Vuc  1 e@156 ]
-"1021 C:\Microchip\Hitech\include\pic16f877a.h
+"1021 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CIS `Vb  1 e@1251 ]
-"1022 C:\Microchip\Hitech\include\pic16f877a.h
+"1022 C:\Microchip\HiTech\include\pic16f877a.h
 [v _C1INV `Vb  1 e@1252 ]
-"1023 C:\Microchip\Hitech\include\pic16f877a.h
+"1023 C:\Microchip\HiTech\include\pic16f877a.h
 [v _C2INV `Vb  1 e@1253 ]
-"1024 C:\Microchip\Hitech\include\pic16f877a.h
+"1024 C:\Microchip\HiTech\include\pic16f877a.h
 [v _C1OUT `Vb  1 e@1254 ]
-"1025 C:\Microchip\Hitech\include\pic16f877a.h
+"1025 C:\Microchip\HiTech\include\pic16f877a.h
 [v _C2OUT `Vb  1 e@1255 ]
-"1026 C:\Microchip\Hitech\include\pic16f877a.h
+"1026 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CM0 `Vb  1 e@1248 ]
-"1027 C:\Microchip\Hitech\include\pic16f877a.h
+"1027 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CM1 `Vb  1 e@1249 ]
-"1028 C:\Microchip\Hitech\include\pic16f877a.h
+"1028 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CM2 `Vb  1 e@1250 ]
 [s S87 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S87 . CM CIS C1INV C2INV C1OUT C2OUT ]
@@ -865,23 +867,23 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S88 . CM0 CM1 CM2 ]
 [u S86 `S87 1 `S88 1 ]
 [n S86 . . . ]
-"1044 C:\Microchip\Hitech\include\pic16f877a.h
+"1044 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CMCONbits `VS86  1 e@156 ]
-"1048 C:\Microchip\Hitech\include\pic16f877a.h
+"1048 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CVRCON `Vuc  1 e@157 ]
-"1050 C:\Microchip\Hitech\include\pic16f877a.h
+"1050 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CVRR `Vb  1 e@1261 ]
-"1051 C:\Microchip\Hitech\include\pic16f877a.h
+"1051 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CVROE `Vb  1 e@1262 ]
-"1052 C:\Microchip\Hitech\include\pic16f877a.h
+"1052 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CVREN `Vb  1 e@1263 ]
-"1053 C:\Microchip\Hitech\include\pic16f877a.h
+"1053 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CVR0 `Vb  1 e@1256 ]
-"1054 C:\Microchip\Hitech\include\pic16f877a.h
+"1054 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CVR1 `Vb  1 e@1257 ]
-"1055 C:\Microchip\Hitech\include\pic16f877a.h
+"1055 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CVR2 `Vb  1 e@1258 ]
-"1056 C:\Microchip\Hitech\include\pic16f877a.h
+"1056 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CVR3 `Vb  1 e@1259 ]
 [s S90 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S90 . CVR . CVRR CVROE CVREN ]
@@ -889,23 +891,23 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S91 . CVR0 CVR1 CVR2 CVR3 ]
 [u S89 `S90 1 `S91 1 ]
 [n S89 . . . ]
-"1072 C:\Microchip\Hitech\include\pic16f877a.h
+"1072 C:\Microchip\HiTech\include\pic16f877a.h
 [v _CVRCONbits `VS89  1 e@157 ]
-"1076 C:\Microchip\Hitech\include\pic16f877a.h
+"1076 C:\Microchip\HiTech\include\pic16f877a.h
 [v _ADRESL `Vuc  1 e@158 ]
-"1080 C:\Microchip\Hitech\include\pic16f877a.h
+"1080 C:\Microchip\HiTech\include\pic16f877a.h
 [v _ADCON1 `Vuc  1 e@159 ]
-"1082 C:\Microchip\Hitech\include\pic16f877a.h
+"1082 C:\Microchip\HiTech\include\pic16f877a.h
 [v _ADCS2 `Vb  1 e@1278 ]
-"1083 C:\Microchip\Hitech\include\pic16f877a.h
+"1083 C:\Microchip\HiTech\include\pic16f877a.h
 [v _ADFM `Vb  1 e@1279 ]
-"1084 C:\Microchip\Hitech\include\pic16f877a.h
+"1084 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PCFG0 `Vb  1 e@1272 ]
-"1085 C:\Microchip\Hitech\include\pic16f877a.h
+"1085 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PCFG1 `Vb  1 e@1273 ]
-"1086 C:\Microchip\Hitech\include\pic16f877a.h
+"1086 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PCFG2 `Vb  1 e@1274 ]
-"1087 C:\Microchip\Hitech\include\pic16f877a.h
+"1087 C:\Microchip\HiTech\include\pic16f877a.h
 [v _PCFG3 `Vb  1 e@1275 ]
 [s S93 :4 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S93 . PCFG . ADCS2 ADFM ]
@@ -913,52 +915,57 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S94 . PCFG0 PCFG1 PCFG2 PCFG3 ]
 [u S92 `S93 1 `S94 1 ]
 [n S92 . . . ]
-"1102 C:\Microchip\Hitech\include\pic16f877a.h
+"1102 C:\Microchip\HiTech\include\pic16f877a.h
 [v _ADCON1bits `VS92  1 e@159 ]
-"1111 C:\Microchip\Hitech\include\pic16f877a.h
+"1111 C:\Microchip\HiTech\include\pic16f877a.h
 [v _EEDATA `Vuc  1 e@268 ]
-"1115 C:\Microchip\Hitech\include\pic16f877a.h
+"1115 C:\Microchip\HiTech\include\pic16f877a.h
 [v _EEADR `Vuc  1 e@269 ]
-"1119 C:\Microchip\Hitech\include\pic16f877a.h
+"1119 C:\Microchip\HiTech\include\pic16f877a.h
 [v _EEDATH `Vuc  1 e@270 ]
 [s S96 :6 `uc 1 ]
 [n S96 . . ]
 [u S95 `S96 1 ]
 [n S95 . . ]
-"1126 C:\Microchip\Hitech\include\pic16f877a.h
+"1126 C:\Microchip\HiTech\include\pic16f877a.h
 [v _EEDATHbits `VS95  1 e@270 ]
-"1130 C:\Microchip\Hitech\include\pic16f877a.h
+"1130 C:\Microchip\HiTech\include\pic16f877a.h
 [v _EEADRH `Vuc  1 e@271 ]
 [s S98 :5 `uc 1 ]
 [n S98 . . ]
 [u S97 `S98 1 ]
 [n S97 . . ]
-"1137 C:\Microchip\Hitech\include\pic16f877a.h
+"1137 C:\Microchip\HiTech\include\pic16f877a.h
 [v _EEADRHbits `VS97  1 e@271 ]
-"1146 C:\Microchip\Hitech\include\pic16f877a.h
+"1146 C:\Microchip\HiTech\include\pic16f877a.h
 [v _EECON1 `Vuc  1 e@396 ]
-"1148 C:\Microchip\Hitech\include\pic16f877a.h
+"1148 C:\Microchip\HiTech\include\pic16f877a.h
 [v _RD `Vb  1 e@3168 ]
-"1149 C:\Microchip\Hitech\include\pic16f877a.h
+"1149 C:\Microchip\HiTech\include\pic16f877a.h
 [v _WR `Vb  1 e@3169 ]
-"1150 C:\Microchip\Hitech\include\pic16f877a.h
+"1150 C:\Microchip\HiTech\include\pic16f877a.h
 [v _WREN `Vb  1 e@3170 ]
-"1151 C:\Microchip\Hitech\include\pic16f877a.h
+"1151 C:\Microchip\HiTech\include\pic16f877a.h
 [v _WRERR `Vb  1 e@3171 ]
-"1152 C:\Microchip\Hitech\include\pic16f877a.h
+"1152 C:\Microchip\HiTech\include\pic16f877a.h
 [v _EEPGD `Vb  1 e@3175 ]
 [s S100 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 :1 `uc 1 ]
 [n S100 . RD WR WREN WRERR . EEPGD ]
 [u S99 `S100 1 ]
 [n S99 . . ]
-"1163 C:\Microchip\Hitech\include\pic16f877a.h
+"1163 C:\Microchip\HiTech\include\pic16f877a.h
 [v _EECON1bits `VS99  1 e@396 ]
-"1167 C:\Microchip\Hitech\include\pic16f877a.h
+"1167 C:\Microchip\HiTech\include\pic16f877a.h
 [v _EECON2 `Vuc  1 e@397 ]
-"55 C:\Microchip\Hitech\include\string.h
+"28 Bluetooth.h
+[v _clearUARTErr `(v  0 ef ]
+"55 C:\Microchip\HiTech\include\string.h
 [v _strlen `(ui  0 ef1`*Cuc ]
-"41 C:\Microchip\Hitech\include\eeprom_routines.h
+"41 C:\Microchip\HiTech\include\eeprom_routines.h
 [v _eeprom_write `(uc  0 ef2`uc`uc ]
+"154 C:\Microchip\HiTech\include\pic.h
+[v __delay `(v  0 ef1`ul ]
+[p i __delay ]
 [; ;Bluetooth.h: 12: void initUSART();
 [; ;Bluetooth.h: 14: void writeByte(unsigned char Byte);
 [; ;Bluetooth.h: 16: unsigned char readByte();
@@ -967,6 +974,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Bluetooth.h: 22: void readString(unsigned char* readStorage);
 [; ;Bluetooth.h: 24: unsigned char makeNibble(unsigned char tempByte);
 [; ;Bluetooth.h: 26: unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo);
+[; ;Bluetooth.h: 28: void clearUARTErr();
 "19 userMacro.h
 [i _member1
 :U ..
@@ -1105,121 +1113,126 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> -> 1 `i `uc
 ]
 [; ;userMacro.h: 33: const unsigned char writeByteVal = 0x01;
-"35
+"34
+[i _timeoutByte
+-> -> 255 `i `uc
+]
+[; ;userMacro.h: 34: const unsigned char timeoutByte = 0xFF;
+"36
 [i _RXLenAddr
 -> -> 0 `i `uc
 ]
-[; ;userMacro.h: 35: const unsigned char RXLenAddr = 0x00;
-"36
+[; ;userMacro.h: 36: const unsigned char RXLenAddr = 0x00;
+"37
 [i _startByteAddr
 -> -> 1 `i `uc
 ]
-[; ;userMacro.h: 36: const unsigned char startByteAddr = 0x01;
-"37
+[; ;userMacro.h: 37: const unsigned char startByteAddr = 0x01;
+"38
 [i _rwByteAddr
 -> -> 2 `i `uc
 ]
-[; ;userMacro.h: 37: const unsigned char rwByteAddr = 0x02;
-"38
+[; ;userMacro.h: 38: const unsigned char rwByteAddr = 0x02;
+"39
 [i _cmdByteAddr
 -> -> 3 `i `uc
 ]
-[; ;userMacro.h: 38: const unsigned char cmdByteAddr = 0x03;
-"39
+[; ;userMacro.h: 39: const unsigned char cmdByteAddr = 0x03;
+"40
 [i _lenByteAddr
 -> -> 4 `i `uc
 ]
-[; ;userMacro.h: 39: const unsigned char lenByteAddr = 0x04;
-"40
+[; ;userMacro.h: 40: const unsigned char lenByteAddr = 0x04;
+"41
 [i _csByteAddr
 -> -> 5 `i `uc
 ]
-[; ;userMacro.h: 40: const unsigned char csByteAddr = 0x05;
-"41
+[; ;userMacro.h: 41: const unsigned char csByteAddr = 0x05;
+"42
 [i _endByteAddr
 -> -> 6 `i `uc
 ]
-[; ;userMacro.h: 41: const unsigned char endByteAddr = 0x06;
-"42
+[; ;userMacro.h: 42: const unsigned char endByteAddr = 0x06;
+"43
 [i _dataBytesAddr
 -> -> 7 `i `uc
 ]
-[; ;userMacro.h: 42: const unsigned char dataBytesAddr = 0x07;
-"44
+[; ;userMacro.h: 43: const unsigned char dataBytesAddr = 0x07;
+"45
 [i _calcCSByteAddr
 -> -> 48 `i `uc
 ]
-[; ;userMacro.h: 44: const unsigned char calcCSByteAddr = 0x30;
-"46
+[; ;userMacro.h: 45: const unsigned char calcCSByteAddr = 0x30;
+"47
 [i _tempValHAddr
 -> -> 96 `i `uc
 ]
-[; ;userMacro.h: 46: const unsigned char tempValHAddr = 0x60;
-"47
+[; ;userMacro.h: 47: const unsigned char tempValHAddr = 0x60;
+"48
 [i _tempValLAddr
 -> -> 97 `i `uc
 ]
-[; ;userMacro.h: 47: const unsigned char tempValLAddr = 0x61;
-"48
+[; ;userMacro.h: 48: const unsigned char tempValLAddr = 0x61;
+"49
 [i _tempHiAddr
 -> -> 98 `i `uc
 ]
-[; ;userMacro.h: 48: const unsigned char tempHiAddr = 0x62;
-"49
+[; ;userMacro.h: 49: const unsigned char tempHiAddr = 0x62;
+"50
 [i _tempLoAddr
 -> -> 100 `i `uc
 ]
-[; ;userMacro.h: 49: const unsigned char tempLoAddr = 0x64;
-"50
+[; ;userMacro.h: 50: const unsigned char tempLoAddr = 0x64;
+"51
 [i _tempUnitAddr
 -> -> 102 `i `uc
 ]
-[; ;userMacro.h: 50: const unsigned char tempUnitAddr = 0x66;
-"52
+[; ;userMacro.h: 51: const unsigned char tempUnitAddr = 0x66;
+"53
 [i _tempStartHi
 -> -> 100 `i `uc
 ]
-[; ;userMacro.h: 52: const unsigned char tempStartHi = 0x64;
-"53
+[; ;userMacro.h: 53: const unsigned char tempStartHi = 0x64;
+"54
 [i _tempStartLo
 -> -> 160 `i `uc
 ]
-[; ;userMacro.h: 53: const unsigned char tempStartLo = 0xA0;
-"54
+[; ;userMacro.h: 54: const unsigned char tempStartLo = 0xA0;
+"55
 [i _tempC
 -> -> 0 `i `uc
 ]
-[; ;userMacro.h: 54: const unsigned char tempC = 0x00;
-"55
+[; ;userMacro.h: 55: const unsigned char tempC = 0x00;
+"56
 [i _tempF
 -> -> 16 `i `uc
 ]
-[; ;userMacro.h: 55: const unsigned char tempF = 0x10;
-"57
+[; ;userMacro.h: 56: const unsigned char tempF = 0x10;
+"58
 [i _humValAddr
 -> -> 128 `i `uc
 ]
-[; ;userMacro.h: 57: const unsigned char humValAddr = 0x80;
-"58
+[; ;userMacro.h: 58: const unsigned char humValAddr = 0x80;
+"59
 [i _humHiAddr
 -> -> 130 `i `uc
 ]
-[; ;userMacro.h: 58: const unsigned char humHiAddr = 0x82;
-"59
+[; ;userMacro.h: 59: const unsigned char humHiAddr = 0x82;
+"60
 [i _humLoAddr
 -> -> 132 `i `uc
 ]
-[; ;userMacro.h: 59: const unsigned char humLoAddr = 0x84;
-"61
+[; ;userMacro.h: 60: const unsigned char humLoAddr = 0x84;
+"62
 [i _humStartHi
 -> -> 80 `i `uc
 ]
-[; ;userMacro.h: 61: const unsigned char humStartHi = 0x50;
-"62
+[; ;userMacro.h: 62: const unsigned char humStartHi = 0x50;
+"63
 [i _humStartLo
 -> -> 10 `i `uc
 ]
-[; ;userMacro.h: 62: const unsigned char humStartLo = 0x0A;
+[; ;userMacro.h: 63: const unsigned char humStartLo = 0x0A;
 [; ;pic16f877a.h: 82: volatile unsigned char INDF @ 0x000;
 [; ;pic16f877a.h: 86: volatile unsigned char TMR0 @ 0x001;
 [; ;pic16f877a.h: 90: volatile unsigned char PCL @ 0x002;
@@ -2081,238 +2094,284 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;string.h: 57: extern char * strichr(const char *, int);
 [; ;string.h: 58: extern char * strrchr(const char *, int);
 [; ;string.h: 59: extern char * strrichr(const char *, int);
-[; ;EEPROM.h: 11: void eeWrite(unsigned char address, unsigned char value);
-[; ;EEPROM.h: 12: unsigned char eeRead(unsigned char address);
-"17 Bluetooth.c
+"16 Bluetooth.c
 [v _initUSART `(v  1 ef ]
 {
-[; ;Bluetooth.c: 16: void initUSART()
-[; ;Bluetooth.c: 17: {
+[; ;Bluetooth.c: 15: void initUSART()
+[; ;Bluetooth.c: 16: {
 [e :U _initUSART ]
 [f ]
-[; ;Bluetooth.c: 19: TRISC6 = 0;
-"19
+[; ;Bluetooth.c: 18: TRISC6 = 0;
+"18
 [e = _TRISC6 -> -> 0 `i `b ]
-[; ;Bluetooth.c: 22: TRISC7 = 1;
-"22
+[; ;Bluetooth.c: 21: TRISC7 = 1;
+"21
 [e = _TRISC7 -> -> 1 `i `b ]
-[; ;Bluetooth.c: 35: RCSTA = 0x90;
-"35
+[; ;Bluetooth.c: 34: RCSTA = 0x90;
+"34
 [e = _RCSTA -> -> 144 `i `uc ]
-[; ;Bluetooth.c: 49: TXSTA = 0x24;
-"49
+[; ;Bluetooth.c: 48: TXSTA = 0x24;
+"48
 [e = _TXSTA -> -> 36 `i `uc ]
-[; ;Bluetooth.c: 57: SPBRG = 129;
-"57
+[; ;Bluetooth.c: 56: SPBRG = 129;
+"56
 [e = _SPBRG -> -> 129 `i `uc ]
-[; ;Bluetooth.c: 58: }
+[; ;Bluetooth.c: 57: GIE = 1;
+"57
+[e = _GIE -> -> 1 `i `b ]
+[; ;Bluetooth.c: 58: PEIE = 1;
 "58
+[e = _PEIE -> -> 1 `i `b ]
+[; ;Bluetooth.c: 59: RCIE = 1;
+"59
+[e = _RCIE -> -> 1 `i `b ]
+[; ;Bluetooth.c: 61: }
+"61
 [e :UE 101 ]
 }
-"68
+"71
 [v _writeByte `(v  1 ef1`uc ]
 {
-[; ;Bluetooth.c: 67: void writeByte(unsigned char Byte)
-[; ;Bluetooth.c: 68: {
+[; ;Bluetooth.c: 70: void writeByte(unsigned char Byte)
+[; ;Bluetooth.c: 71: {
 [e :U _writeByte ]
 [v _Byte `uc  1 r1 ]
 [f ]
-[; ;Bluetooth.c: 72: while(!TXIF);
-"72
+[; ;Bluetooth.c: 75: while(!TXIF);
+"75
 [e $U 103  ]
 [e :U 104 ]
 [e :U 103 ]
 [e $ ! _TXIF 104  ]
 [e :U 105 ]
-[; ;Bluetooth.c: 75: TXREG = Byte;
-"75
+[; ;Bluetooth.c: 78: TXREG = Byte;
+"78
 [e = _TXREG _Byte ]
-[; ;Bluetooth.c: 76: }
-"76
+[; ;Bluetooth.c: 79: }
+"79
 [e :UE 102 ]
 }
-"86
+"89
 [v _readByte `(uc  1 ef ]
 {
-[; ;Bluetooth.c: 85: unsigned char readByte()
-[; ;Bluetooth.c: 86: {
+[; ;Bluetooth.c: 88: unsigned char readByte()
+[; ;Bluetooth.c: 89: {
 [e :U _readByte ]
 [f ]
-[; ;Bluetooth.c: 90: while(!RCIF);
-"90
-[e $U 107  ]
-[e :U 108 ]
+[; ;Bluetooth.c: 94: if(OERR){
+"94
+[e $ ! _OERR 107  ]
+{
+[; ;Bluetooth.c: 95: clearUARTErr();
+"95
+[e ( _clearUARTErr ..  ]
+"96
+}
 [e :U 107 ]
-[e $ ! _RCIF 108  ]
+[; ;Bluetooth.c: 96: }
+[; ;Bluetooth.c: 97: while(!RCIF);
+"97
+[e $U 108  ]
 [e :U 109 ]
-[; ;Bluetooth.c: 93: return RCREG;
-"93
+[e :U 108 ]
+[e $ ! _RCIF 109  ]
+[e :U 110 ]
+[; ;Bluetooth.c: 106: return RCREG;
+"106
 [e ) _RCREG ]
 [e $UE 106  ]
-[; ;Bluetooth.c: 94: }
-"94
+[; ;Bluetooth.c: 109: }
+"109
 [e :UE 106 ]
 }
-"105
+"120
 [v _echoBack `(v  1 ef ]
 {
-[; ;Bluetooth.c: 104: void echoBack()
-[; ;Bluetooth.c: 105: {
+[; ;Bluetooth.c: 119: void echoBack()
+[; ;Bluetooth.c: 120: {
 [e :U _echoBack ]
 [f ]
-"107
+"122
 [v _ch `uc  1 a ]
-[; ;Bluetooth.c: 107: unsigned char ch;
-[; ;Bluetooth.c: 109: ch = readByte();
-"109
+[; ;Bluetooth.c: 122: unsigned char ch;
+[; ;Bluetooth.c: 124: ch = readByte();
+"124
 [e = _ch ( _readByte ..  ]
-[; ;Bluetooth.c: 111: writeByte(ch);
-"111
+[; ;Bluetooth.c: 126: writeByte(ch);
+"126
 [e ( _writeByte (1 _ch ]
-[; ;Bluetooth.c: 113: writeByte('*');
-"113
+[; ;Bluetooth.c: 128: writeByte('*');
+"128
 [e ( _writeByte (1 -> -> 42 `ui `uc ]
-[; ;Bluetooth.c: 114: }
-"114
-[e :UE 110 ]
+[; ;Bluetooth.c: 129: }
+"129
+[e :UE 111 ]
 }
-"125
+"140
 [v _writeString `(v  1 ef1`*uc ]
 {
-[; ;Bluetooth.c: 124: void writeString(unsigned char* userString)
-[; ;Bluetooth.c: 125: {
+[; ;Bluetooth.c: 139: void writeString(unsigned char* userString)
+[; ;Bluetooth.c: 140: {
 [e :U _writeString ]
 [v _userString `*uc  1 r1 ]
 [f ]
-"127
+"142
 [v _i `ui  1 a ]
-[; ;Bluetooth.c: 127: unsigned int i;
-[; ;Bluetooth.c: 129: for(i = 0;i<strlen(userString);i++){
-"129
+[; ;Bluetooth.c: 142: unsigned int i;
+[; ;Bluetooth.c: 144: for(i = 0;i<strlen(userString);i++){
+"144
 {
 [e = _i -> -> 0 `i `ui ]
-[e $U 115  ]
-[e :U 112 ]
-{
-[; ;Bluetooth.c: 130: writeByte(userString[i]);
-"130
-[e ( _writeByte (1 *U + _userString * -> _i `ux -> -> # *U _userString `ui `ux ]
-"131
-}
-"129
-[e ++ _i -> -> 1 `i `ui ]
-[e :U 115 ]
-[e $ < _i ( _strlen (1 -> _userString `*Cuc 112  ]
+[e $U 116  ]
 [e :U 113 ]
-"131
+{
+[; ;Bluetooth.c: 145: writeByte(userString[i]);
+"145
+[e ( _writeByte (1 *U + _userString * -> _i `ux -> -> # *U _userString `ui `ux ]
+"146
 }
-[; ;Bluetooth.c: 131: }
-[; ;Bluetooth.c: 133: writeByte((unsigned char)i);
-"133
+"144
+[e ++ _i -> -> 1 `i `ui ]
+[e :U 116 ]
+[e $ < _i ( _strlen (1 -> _userString `*Cuc 113  ]
+[e :U 114 ]
+"146
+}
+[; ;Bluetooth.c: 146: }
+[; ;Bluetooth.c: 148: writeByte((unsigned char)i);
+"148
 [e ( _writeByte (1 -> _i `uc ]
-[; ;Bluetooth.c: 135: }
-"135
-[e :UE 111 ]
+[; ;Bluetooth.c: 150: }
+"150
+[e :UE 112 ]
 }
-"147
+"162
 [v _readString `(v  1 ef1`*uc ]
 {
-[; ;Bluetooth.c: 146: void readString(unsigned char* readStorage)
-[; ;Bluetooth.c: 147: {
+[; ;Bluetooth.c: 161: void readString(unsigned char* readStorage)
+[; ;Bluetooth.c: 162: {
 [e :U _readString ]
 [v _readStorage `*uc  1 r1 ]
 [f ]
-"149
-[v _i `ui  1 a ]
-[; ;Bluetooth.c: 149: unsigned int i = 0;
-[e = _i -> -> 0 `i `ui ]
-"151
-[v _ch `uc  1 a ]
-[; ;Bluetooth.c: 151: unsigned char ch;
-[; ;Bluetooth.c: 154: ch = readByte();
-"154
-[e = _ch ( _readByte ..  ]
-[; ;Bluetooth.c: 156: while(ch != userEndByte)
-"156
-[e $U 117  ]
-[e :U 118 ]
-[; ;Bluetooth.c: 157: {
-"157
-{
-[; ;Bluetooth.c: 159: readStorage[i] = ch;
-"159
-[e = *U + _readStorage * -> _i `ux -> -> # *U _readStorage `ui `ux _ch ]
-[; ;Bluetooth.c: 161: i++;
-"161
-[e ++ _i -> -> 1 `i `ui ]
-[; ;Bluetooth.c: 163: ch = readByte();
-"163
-[e = _ch ( _readByte ..  ]
 "164
-}
-[e :U 117 ]
-"156
-[e $ != -> _ch `i -> _userEndByte `i 118  ]
-[e :U 119 ]
-[; ;Bluetooth.c: 164: }
-[; ;Bluetooth.c: 166: eeprom_write(RXLenAddr,i);
+[v _i `ui  1 a ]
+[; ;Bluetooth.c: 164: unsigned int i = 0;
+[e = _i -> -> 0 `i `ui ]
 "166
-[e ( _eeprom_write (2 , _RXLenAddr -> _i `uc ]
-[; ;Bluetooth.c: 167: }
-"167
-[e :UE 116 ]
-}
+[v _ch `uc  1 a ]
+[; ;Bluetooth.c: 166: unsigned char ch;
+[; ;Bluetooth.c: 168: ch = readByte();
+"168
+[e = _ch ( _readByte ..  ]
+[; ;Bluetooth.c: 169: writeByte(ch);
+"169
+[e ( _writeByte (1 _ch ]
+[; ;Bluetooth.c: 171: while(ch != userEndByte)
+"171
+[e $U 118  ]
+[e :U 119 ]
+[; ;Bluetooth.c: 172: {
+"172
+{
+[; ;Bluetooth.c: 174: readStorage[i] = ch;
+"174
+[e = *U + _readStorage * -> _i `ux -> -> # *U _readStorage `ui `ux _ch ]
+[; ;Bluetooth.c: 176: i++;
+"176
+[e ++ _i -> -> 1 `i `ui ]
+[; ;Bluetooth.c: 178: ch = readByte();
 "178
+[e = _ch ( _readByte ..  ]
+[; ;Bluetooth.c: 179: writeByte(ch);
+"179
+[e ( _writeByte (1 _ch ]
+"180
+}
+[e :U 118 ]
+"171
+[e $ != -> _ch `i -> _userEndByte `i 119  ]
+[e :U 120 ]
+[; ;Bluetooth.c: 180: }
+[; ;Bluetooth.c: 185: eeprom_write(RXLenAddr,i);
+"185
+[e ( _eeprom_write (2 , _RXLenAddr -> _i `uc ]
+[; ;Bluetooth.c: 188: }
+"188
+[e :UE 117 ]
+}
+"199
 [v _makeNibble `(uc  1 ef1`uc ]
 {
-[; ;Bluetooth.c: 177: unsigned char makeNibble(unsigned char tempNib)
-[; ;Bluetooth.c: 178: {
+[; ;Bluetooth.c: 198: unsigned char makeNibble(unsigned char tempNib)
+[; ;Bluetooth.c: 199: {
 [e :U _makeNibble ]
 [v _tempNib `uc  1 r1 ]
 [f ]
-[; ;Bluetooth.c: 179: if(tempNib>='A'){
-"179
-[e $ ! >= -> _tempNib `ui -> 65 `ui 121  ]
+[; ;Bluetooth.c: 200: if(tempNib>='A'){
+"200
+[e $ ! >= -> _tempNib `ui -> 65 `ui 122  ]
 {
-[; ;Bluetooth.c: 180: return ((tempNib - (unsigned char)'A')+10);
-"180
+[; ;Bluetooth.c: 201: return ((tempNib - (unsigned char)'A')+10);
+"201
 [e ) -> + - -> _tempNib `i -> -> -> 65 `ui `uc `i -> 10 `i `uc ]
-[e $UE 120  ]
-"181
+[e $UE 121  ]
+"202
 }
-[e :U 121 ]
-[; ;Bluetooth.c: 181: }
-[; ;Bluetooth.c: 182: return (tempNib - '0');
-"182
+[e :U 122 ]
+[; ;Bluetooth.c: 202: }
+[; ;Bluetooth.c: 203: return (tempNib - '0');
+"203
 [e ) -> - -> _tempNib `ui -> 48 `ui `uc ]
-[e $UE 120  ]
-[; ;Bluetooth.c: 183: }
-"183
-[e :UE 120 ]
+[e $UE 121  ]
+[; ;Bluetooth.c: 204: }
+"204
+[e :UE 121 ]
 }
-"194
+"215
 [v _makeHexByte `(uc  1 ef2`uc`uc ]
 {
-[; ;Bluetooth.c: 193: unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo)
-[; ;Bluetooth.c: 194: {
+[; ;Bluetooth.c: 214: unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo)
+[; ;Bluetooth.c: 215: {
 [e :U _makeHexByte ]
 [v _nibOne `uc  1 r1 ]
 [v _nibTwo `uc  1 r2 ]
 [f ]
-"195
+"216
 [v _input_byte `uc  1 a ]
-[; ;Bluetooth.c: 195: unsigned char input_byte;
-[; ;Bluetooth.c: 196: input_byte = (makeNibble(nibOne)<<4);
-"196
+[; ;Bluetooth.c: 216: unsigned char input_byte;
+[; ;Bluetooth.c: 217: input_byte = (makeNibble(nibOne)<<4);
+"217
 [e = _input_byte -> << -> ( _makeNibble (1 _nibOne `i -> 4 `i `uc ]
-[; ;Bluetooth.c: 197: input_byte|= makeNibble(nibTwo);
-"197
+[; ;Bluetooth.c: 218: input_byte|= makeNibble(nibTwo);
+"218
 [e =| _input_byte ( _makeNibble (1 _nibTwo ]
-[; ;Bluetooth.c: 198: return input_byte;
-"198
+[; ;Bluetooth.c: 219: return input_byte;
+"219
 [e ) _input_byte ]
-[e $UE 122  ]
-[; ;Bluetooth.c: 199: }
-"199
-[e :UE 122 ]
+[e $UE 123  ]
+[; ;Bluetooth.c: 220: }
+"220
+[e :UE 123 ]
+}
+"222
+[v _clearUARTErr `(v  1 ef ]
+{
+[; ;Bluetooth.c: 222: void clearUARTErr(){
+[e :U _clearUARTErr ]
+[f ]
+[; ;Bluetooth.c: 223: RCSTA = 0x80;
+"223
+[e = _RCSTA -> -> 128 `i `uc ]
+[; ;Bluetooth.c: 224: _delay((unsigned long)((10)*(20000000/4000.0)));
+"224
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;Bluetooth.c: 225: RCSTA = 0x90;
+"225
+[e = _RCSTA -> -> 144 `i `uc ]
+[; ;Bluetooth.c: 226: _delay((unsigned long)((10)*(20000000/4000.0)));
+"226
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;Bluetooth.c: 227: }
+"227
+[e :UE 124 ]
 }

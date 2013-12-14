@@ -1,7 +1,7 @@
 
 # 1 "Packet.c"
 
-# 82 "C:\Microchip\Hitech\include\pic16f877a.h"
+# 82 "C:\Microchip\HiTech\include\pic16f877a.h"
 volatile unsigned char INDF @ 0x000;
 
 
@@ -1072,21 +1072,21 @@ unsigned EEPGD : 1;
 volatile unsigned char EECON2 @ 0x18D;
 
 
-# 27 "C:\Microchip\Hitech\include\pic.h"
+# 27 "C:\Microchip\HiTech\include\pic.h"
 #pragma inline(_nop)
 extern void _nop(void);
 
 # 80
 extern unsigned int flash_read(unsigned short addr);
 
-# 41 "C:\Microchip\Hitech\include\eeprom_routines.h"
+# 41 "C:\Microchip\HiTech\include\eeprom_routines.h"
 extern unsigned char eeprom_write(unsigned char addr, unsigned char value);
 extern unsigned char eeprom_read(unsigned char addr);
 extern void eecpymem(volatile unsigned char *to, eeprom unsigned char *from, unsigned char size);
 extern void memcpyee(eeprom unsigned char *to, const unsigned char *from, unsigned char size);
 
 
-# 153 "C:\Microchip\Hitech\include\pic.h"
+# 153 "C:\Microchip\HiTech\include\pic.h"
 #pragma inline(_delay)
 extern void _delay(unsigned long);
 
@@ -1106,6 +1106,7 @@ const unsigned char noDataLen = 0x0A;
 const unsigned char maxCmd = 0x0E;
 const unsigned char readByteVal = 0x00;
 const unsigned char writeByteVal = 0x01;
+const unsigned char timeoutByte = 0xFF;
 
 const unsigned char RXLenAddr = 0x00;
 const unsigned char startByteAddr = 0x01;
@@ -1153,7 +1154,9 @@ unsigned char makeNibble(unsigned char tempByte);
 
 unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo);
 
-# 11 "C:\Microchip\Hitech\include\Packet.h"
+void clearUARTErr();
+
+# 11 "Packet.h"
 int checkEven();
 int checkLength();
 int checkDataFrames();
@@ -1167,7 +1170,7 @@ int checkDataLenByte();
 int checkCS();
 void displayPacket();
 
-# 4 "C:\Microchip\Hitech\include\string.h"
+# 4 "C:\Microchip\HiTech\include\string.h"
 typedef int ptrdiff_t;
 typedef unsigned size_t;
 typedef unsigned short wchar_t;

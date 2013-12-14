@@ -14,6 +14,7 @@ void initTemp();
 void setTempUnit();
 void setTempHi();
 void setTempLo();
+void getTemp();
 //unsigned char convertToTemp();
 
 #endif	/* TEMPERATURE_H */

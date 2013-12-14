@@ -7,7 +7,10 @@ void getCommands(){
     //If read has been detected
     switch(eeprom_read(rwByteAddr)){
         case 0:
-            writeByte('T');
+            writeByte('R');
+            break;
+        case 1:
+            writeByte('W');
             break;
         default:
             writeByte('N');

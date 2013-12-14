@@ -2,7 +2,6 @@
 #include "userMacro.h"
 #include <htc.h>
 #include <string.h>
-#include "EEPROM.h"
 
 /************************************************************************
  * Function:    initUSART                                               *
@@ -55,6 +54,10 @@ void initUSART()
          * 20000000/(16(9600+1)) = 130
          * ~129 on the datasheet                                */
 	SPBRG = 129;
+        GIE = 1;
+        PEIE = 1;
+        RCIE = 1;
+        
 }
 /************************************************************************
  * Function:    writeByte                                               *
@@ -84,13 +87,25 @@ void writeByte(unsigned char Byte)
  ***********************************************************************/
 unsigned char readByte()
 {
+    //unsigned char timeoutCounter = 0;
     /* RCIF:    USART receive interrupt flag bit
      * 1:       Buffer is full
      * 0:       Buffer is empty                     */
-    while(!RCIF);
+    if(OERR){
+        clearUARTErr();
+    }
+    while(!RCIF);// || timeoutCounter < 100){
+        //timeoutCounter++;
+        //__delay_ms(10);
+    //}
 
-    //Returns the data that is in the receive register
-    return RCREG;
+    //if(timeoutCounter == 100){
+    //    return timeoutByte;
+    //}else{
+       //Returns the data that is in the receive register
+        return RCREG;
+    //}
+    
 }
 
 /************************************************************************
@@ -150,10 +165,10 @@ void readString(unsigned char* readStorage)
     //Char to hold each byte
     unsigned char ch;
     //Get the first byte
-
     ch = readByte();
+    writeByte(ch);
     //Loop through all the data until a end byte is detected
-    while(ch != userEndByte)
+    while(ch != userEndByte)// || ch != timeoutByte)
     {
         //Store each byte into the char array
         readStorage[i] = ch;
@@ -161,9 +176,15 @@ void readString(unsigned char* readStorage)
         i++;
         //Get the next byte
         ch = readByte();
+        writeByte(ch);
     }
-      //Write the counter length to memory
+    //if(ch == timeoutByte){
+    //    writeByte('O');
+    //}else{
+        //Write the counter length to memory
         eeprom_write(RXLenAddr,i);
+    //}
+      
 }
 
 /********************************************************************
@@ -196,4 +217,11 @@ unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo)
     input_byte = (makeNibble(nibOne)<<4);
     input_byte|= makeNibble(nibTwo);
     return input_byte;
+}
+
+void clearUARTErr(){
+    RCSTA = 0x80;
+    __delay_ms(10);
+    RCSTA = 0x90;
+    __delay_ms(10);
 }

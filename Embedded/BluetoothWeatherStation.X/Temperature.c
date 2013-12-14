@@ -1,6 +1,7 @@
 #include "Temperature.h"
 #include "userMacro.h"
 #include <htc.h>
+#include "customADC.h"
 
 unsigned int readTemp()
 {
@@ -41,6 +42,17 @@ void setTempLo(){
     
 }
 
+void getTemp(){
+    unsigned int tempReading;
+        //Select the channel
+        selectTemp();
+        //Get the values
+        tempReading = readTemp();
+        //Write lower 8 bits here
+        eeprom_write(tempValLAddr,tempReading);
+        //Write higher 2 bits here
+        eeprom_write(tempValHAddr+1,tempReading>>8);
+}
 /*unsigned char convertToTemp(){
     
 }*/

@@ -31,7 +31,12 @@
 __CONFIG(WDTE_OFF & LVP_OFF & BOREN_OFF & FOSC_HS & PWRTE_OFF) ;
 
 void getPacket(void);
-void getTemp(void);
+
+static void interrupt isr(void){
+    if(RCIF && RCIE){
+        getPacket();
+    }
+}
 /************************************************************************
  * Function:    Main                                                    *
  * Type:        Int                                                     *
@@ -60,24 +65,8 @@ int main()
     //Infinite loop.  Will look for communication and get analog values. Will
     //send and receive data in this loop
     while(1){
-
-        //Get Temp
-        getTemp();
-        
-        //Get humidity
-        //Update LCD
-        //Check to see if UART has been received
-        
-        //Gets the raw value
-        //selectTemp();
-        //tempVal = readTemp();
-        
-        //If data is available, grab packet
-        if(RCIF){
-            writeByte('P');
-            getPacket();
-        }
-        __delay_ms(10);
+            getTemp();
+            __delay_ms(10);
     }
 
     //Should never get to this part of the program.  If it does, there was an
@@ -86,17 +75,12 @@ int main()
 }
 
 void getPacket(){
-
-            while(!RCIF);
             //Reset calculated check sum
             eeprom_write(calcCSByteAddr,0x00);
-            writeByte('H');
             //Data input space (temporarily only 4 packets of data)
             char arrStore[50] = {0};
-            writeByte('H');
             //Read the UART data
             readString(arrStore);
-            writeByte('H');
             //Write the data to the TX
             //Used for debugging
             //writeString(arrStore);
@@ -107,17 +91,14 @@ void getPacket(){
 
             //Write the data stored in EEPROM
             writeByte(eeprom_read(RXLenAddr));
-            writeByte('H');
             //Break the data up into the data sections
             parsePacket(arrStore);
-            writeByte('H');
             //Validate the data that is in the packet
             //If the data is all valid, go and make the response
             if(validatePacket()){
                 //Get values
                 //Make response
                 if(eeprom_read(rwByteAddr) == 0){
-                    writeByte('H');
                     getCommands();
                 }else{
                     setCommands();
@@ -129,14 +110,3 @@ void getPacket(){
             }
 }
 
-void getTemp(){
-    unsigned int tempReading;
-        //Select the channel
-        selectTemp();
-        //Get the values
-        tempReading = readTemp();
-        //Write lower 8 bits here
-        eeprom_write(tempValLAddr,tempReading);
-        //Write higher 2 bits here
-        eeprom_write(tempValHAddr+1,tempReading>>8);
-}
