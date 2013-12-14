@@ -5,7 +5,6 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>Bluetooth.h</itemPath>
-      <itemPath>EEPROM.h</itemPath>
       <itemPath>Humidity.h</itemPath>
       <itemPath>Packet.h</itemPath>
       <itemPath>RTC.h</itemPath>

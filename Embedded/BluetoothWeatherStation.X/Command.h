@@ -8,9 +8,9 @@
 #ifndef COMMAND_H
 #define	COMMAND_H
 
-//check read/write
-void getCommands();
-void setCommands();
+
+void readCommands();
+void writeCommands();
 
 #endif	/* COMMAND_H */
 

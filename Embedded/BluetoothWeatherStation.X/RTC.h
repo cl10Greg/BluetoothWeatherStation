@@ -8,16 +8,7 @@
 #ifndef RTC_H
 #define	RTC_H
 
-#ifdef	__cplusplus
-extern "C" {
-#endif
-
-
-
-
-#ifdef	__cplusplus
-}
-#endif
+//Real time clock functinons
 
 #endif	/* RTC_H */
 

@@ -12,68 +12,72 @@ Version 3.2 HI-TECH Software Intermediate Code
 "24 userMacro.h
 [v _groupNum `Cuc  1 e ]
 "26 userMacro.h
-[v _userStartByte `Cuc  1 e ]
-"27 userMacro.h
-[v _userEndByte `Cuc  1 e ]
-"28 userMacro.h
-[v _newLineChar `Cuc  1 e ]
-"29 userMacro.h
-[v _minSizeByte `Cuc  1 e ]
+[v _readError `Cuc  -> 0 `x e ]
 "30 userMacro.h
-[v _noDataLen `Cuc  1 e ]
-"31 userMacro.h
-[v _maxCmd `Cuc  1 e ]
+[v _userStartByte `Cuc  1 e ]
 "32 userMacro.h
-[v _readByteVal `Cuc  1 e ]
-"33 userMacro.h
-[v _writeByteVal `Cuc  1 e ]
+[v _userEndByte `Cuc  1 e ]
 "34 userMacro.h
-[v _timeoutByte `Cuc  1 e ]
+[v _newLineChar `Cuc  1 e ]
 "36 userMacro.h
-[v _RXLenAddr `Cuc  1 e ]
-"37 userMacro.h
-[v _startByteAddr `Cuc  1 e ]
+[v _minSizeByte `Cuc  1 e ]
 "38 userMacro.h
-[v _rwByteAddr `Cuc  1 e ]
-"39 userMacro.h
-[v _cmdByteAddr `Cuc  1 e ]
+[v _noDataLen `Cuc  1 e ]
 "40 userMacro.h
-[v _lenByteAddr `Cuc  1 e ]
-"41 userMacro.h
-[v _csByteAddr `Cuc  1 e ]
+[v _maxCmd `Cuc  1 e ]
 "42 userMacro.h
-[v _endByteAddr `Cuc  1 e ]
-"43 userMacro.h
-[v _dataBytesAddr `Cuc  1 e ]
-"45 userMacro.h
-[v _calcCSByteAddr `Cuc  1 e ]
-"47 userMacro.h
-[v _tempValHAddr `Cuc  1 e ]
-"48 userMacro.h
-[v _tempValLAddr `Cuc  1 e ]
-"49 userMacro.h
-[v _tempHiAddr `Cuc  1 e ]
+[v _readByteVal `Cuc  1 e ]
+"44 userMacro.h
+[v _writeByteVal `Cuc  1 e ]
+"46 userMacro.h
+[v _timeoutByte `Cuc  1 e ]
 "50 userMacro.h
-[v _tempLoAddr `Cuc  1 e ]
-"51 userMacro.h
-[v _tempUnitAddr `Cuc  1 e ]
-"53 userMacro.h
-[v _tempStartHi `Cuc  1 e ]
+[v _RXLenAddr `Cuc  1 e ]
+"52 userMacro.h
+[v _startByteAddr `Cuc  1 e ]
 "54 userMacro.h
-[v _tempStartLo `Cuc  1 e ]
-"55 userMacro.h
-[v _tempC `Cuc  1 e ]
+[v _rwByteAddr `Cuc  1 e ]
 "56 userMacro.h
-[v _tempF `Cuc  1 e ]
+[v _cmdByteAddr `Cuc  1 e ]
 "58 userMacro.h
-[v _humValAddr `Cuc  1 e ]
-"59 userMacro.h
-[v _humHiAddr `Cuc  1 e ]
+[v _lenByteAddr `Cuc  1 e ]
 "60 userMacro.h
-[v _humLoAddr `Cuc  1 e ]
+[v _csByteAddr `Cuc  1 e ]
 "62 userMacro.h
+[v _endByteAddr `Cuc  1 e ]
+"64 userMacro.h
+[v _dataBytesAddr `Cuc  1 e ]
+"66 userMacro.h
+[v _calcCSByteAddr `Cuc  1 e ]
+"70 userMacro.h
+[v _tempValHAddr `Cuc  1 e ]
+"72 userMacro.h
+[v _tempValLAddr `Cuc  1 e ]
+"74 userMacro.h
+[v _tempHiAddr `Cuc  1 e ]
+"76 userMacro.h
+[v _tempLoAddr `Cuc  1 e ]
+"78 userMacro.h
+[v _tempUnitAddr `Cuc  1 e ]
+"82 userMacro.h
+[v _tempStartHi `Cuc  1 e ]
+"84 userMacro.h
+[v _tempStartLo `Cuc  1 e ]
+"86 userMacro.h
+[v _tempC `Cuc  1 e ]
+"88 userMacro.h
+[v _tempF `Cuc  1 e ]
+"92 userMacro.h
+[v _humValHAddr `Cuc  1 e ]
+"94 userMacro.h
+[v _humValLAddr `Cuc  1 e ]
+"96 userMacro.h
+[v _humHiAddr `Cuc  1 e ]
+"98 userMacro.h
+[v _humLoAddr `Cuc  1 e ]
+"102 userMacro.h
 [v _humStartHi `Cuc  1 e ]
-"63 userMacro.h
+"104 userMacro.h
 [v _humStartLo `Cuc  1 e ]
 "82 C:\Microchip\HiTech\include\pic16f877a.h
 [v _INDF `Vuc  1 e@0 ]
@@ -957,15 +961,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _EECON1bits `VS99  1 e@396 ]
 "1167 C:\Microchip\HiTech\include\pic16f877a.h
 [v _EECON2 `Vuc  1 e@397 ]
-"28 Bluetooth.h
-[v _clearUARTErr `(v  0 ef ]
 "55 C:\Microchip\HiTech\include\string.h
 [v _strlen `(ui  0 ef1`*Cuc ]
 "41 C:\Microchip\HiTech\include\eeprom_routines.h
 [v _eeprom_write `(uc  0 ef2`uc`uc ]
-"154 C:\Microchip\HiTech\include\pic.h
-[v __delay `(v  0 ef1`ul ]
-[p i __delay ]
 [; ;Bluetooth.h: 12: void initUSART();
 [; ;Bluetooth.h: 14: void writeByte(unsigned char Byte);
 [; ;Bluetooth.h: 16: unsigned char readByte();
@@ -974,7 +973,6 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Bluetooth.h: 22: void readString(unsigned char* readStorage);
 [; ;Bluetooth.h: 24: unsigned char makeNibble(unsigned char tempByte);
 [; ;Bluetooth.h: 26: unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo);
-[; ;Bluetooth.h: 28: void clearUARTErr();
 "19 userMacro.h
 [i _member1
 :U ..
@@ -1074,165 +1072,201 @@ Version 3.2 HI-TECH Software Intermediate Code
 ]
 [; ;userMacro.h: 24: const char groupNum = '2';
 "26
+[i _readError
+:U ..
+-> 78 `c
+-> 111 `c
+-> 116 `c
+-> 32 `c
+-> 97 `c
+-> 32 `c
+-> 118 `c
+-> 97 `c
+-> 108 `c
+-> 105 `c
+-> 100 `c
+-> 32 `c
+-> 114 `c
+-> 101 `c
+-> 97 `c
+-> 100 `c
+-> 32 `c
+-> 99 `c
+-> 111 `c
+-> 109 `c
+-> 109 `c
+-> 97 `c
+-> 110 `c
+-> 100 `c
+-> 0 `c
+..
+]
+[; ;userMacro.h: 26: const unsigned char readError[] = "Not a valid read command";
+"30
 [i _userStartByte
 -> -> 170 `i `uc
 ]
-[; ;userMacro.h: 26: const unsigned char userStartByte = 0xAA;
-"27
+[; ;userMacro.h: 30: const unsigned char userStartByte = 0xAA;
+"32
 [i _userEndByte
 -> -> 10 `i `uc
 ]
-[; ;userMacro.h: 27: const unsigned char userEndByte = 0x0A;
-"28
+[; ;userMacro.h: 32: const unsigned char userEndByte = 0x0A;
+"34
 [i _newLineChar
 -> -> 10 `i `uc
 ]
-[; ;userMacro.h: 28: const unsigned char newLineChar = 0x0A;
-"29
+[; ;userMacro.h: 34: const unsigned char newLineChar = 0x0A;
+"36
 [i _minSizeByte
 -> -> 10 `i `uc
 ]
-[; ;userMacro.h: 29: const unsigned char minSizeByte = 0x0A;
-"30
+[; ;userMacro.h: 36: const unsigned char minSizeByte = 0x0A;
+"38
 [i _noDataLen
 -> -> 10 `i `uc
 ]
-[; ;userMacro.h: 30: const unsigned char noDataLen = 0x0A;
-"31
+[; ;userMacro.h: 38: const unsigned char noDataLen = 0x0A;
+"40
 [i _maxCmd
 -> -> 14 `i `uc
 ]
-[; ;userMacro.h: 31: const unsigned char maxCmd = 0x0E;
-"32
+[; ;userMacro.h: 40: const unsigned char maxCmd = 0x0E;
+"42
 [i _readByteVal
 -> -> 0 `i `uc
 ]
-[; ;userMacro.h: 32: const unsigned char readByteVal = 0x00;
-"33
+[; ;userMacro.h: 42: const unsigned char readByteVal = 0x00;
+"44
 [i _writeByteVal
 -> -> 1 `i `uc
 ]
-[; ;userMacro.h: 33: const unsigned char writeByteVal = 0x01;
-"34
+[; ;userMacro.h: 44: const unsigned char writeByteVal = 0x01;
+"46
 [i _timeoutByte
 -> -> 255 `i `uc
 ]
-[; ;userMacro.h: 34: const unsigned char timeoutByte = 0xFF;
-"36
+[; ;userMacro.h: 46: const unsigned char timeoutByte = 0xFF;
+"50
 [i _RXLenAddr
 -> -> 0 `i `uc
 ]
-[; ;userMacro.h: 36: const unsigned char RXLenAddr = 0x00;
-"37
+[; ;userMacro.h: 50: const unsigned char RXLenAddr = 0x00;
+"52
 [i _startByteAddr
 -> -> 1 `i `uc
 ]
-[; ;userMacro.h: 37: const unsigned char startByteAddr = 0x01;
-"38
+[; ;userMacro.h: 52: const unsigned char startByteAddr = 0x01;
+"54
 [i _rwByteAddr
 -> -> 2 `i `uc
 ]
-[; ;userMacro.h: 38: const unsigned char rwByteAddr = 0x02;
-"39
+[; ;userMacro.h: 54: const unsigned char rwByteAddr = 0x02;
+"56
 [i _cmdByteAddr
 -> -> 3 `i `uc
 ]
-[; ;userMacro.h: 39: const unsigned char cmdByteAddr = 0x03;
-"40
+[; ;userMacro.h: 56: const unsigned char cmdByteAddr = 0x03;
+"58
 [i _lenByteAddr
 -> -> 4 `i `uc
 ]
-[; ;userMacro.h: 40: const unsigned char lenByteAddr = 0x04;
-"41
+[; ;userMacro.h: 58: const unsigned char lenByteAddr = 0x04;
+"60
 [i _csByteAddr
 -> -> 5 `i `uc
 ]
-[; ;userMacro.h: 41: const unsigned char csByteAddr = 0x05;
-"42
+[; ;userMacro.h: 60: const unsigned char csByteAddr = 0x05;
+"62
 [i _endByteAddr
 -> -> 6 `i `uc
 ]
-[; ;userMacro.h: 42: const unsigned char endByteAddr = 0x06;
-"43
+[; ;userMacro.h: 62: const unsigned char endByteAddr = 0x06;
+"64
 [i _dataBytesAddr
 -> -> 7 `i `uc
 ]
-[; ;userMacro.h: 43: const unsigned char dataBytesAddr = 0x07;
-"45
+[; ;userMacro.h: 64: const unsigned char dataBytesAddr = 0x07;
+"66
 [i _calcCSByteAddr
 -> -> 48 `i `uc
 ]
-[; ;userMacro.h: 45: const unsigned char calcCSByteAddr = 0x30;
-"47
+[; ;userMacro.h: 66: const unsigned char calcCSByteAddr = 0x30;
+"70
 [i _tempValHAddr
 -> -> 96 `i `uc
 ]
-[; ;userMacro.h: 47: const unsigned char tempValHAddr = 0x60;
-"48
+[; ;userMacro.h: 70: const unsigned char tempValHAddr = 0x60;
+"72
 [i _tempValLAddr
 -> -> 97 `i `uc
 ]
-[; ;userMacro.h: 48: const unsigned char tempValLAddr = 0x61;
-"49
+[; ;userMacro.h: 72: const unsigned char tempValLAddr = 0x61;
+"74
 [i _tempHiAddr
 -> -> 98 `i `uc
 ]
-[; ;userMacro.h: 49: const unsigned char tempHiAddr = 0x62;
-"50
+[; ;userMacro.h: 74: const unsigned char tempHiAddr = 0x62;
+"76
 [i _tempLoAddr
 -> -> 100 `i `uc
 ]
-[; ;userMacro.h: 50: const unsigned char tempLoAddr = 0x64;
-"51
+[; ;userMacro.h: 76: const unsigned char tempLoAddr = 0x64;
+"78
 [i _tempUnitAddr
 -> -> 102 `i `uc
 ]
-[; ;userMacro.h: 51: const unsigned char tempUnitAddr = 0x66;
-"53
+[; ;userMacro.h: 78: const unsigned char tempUnitAddr = 0x66;
+"82
 [i _tempStartHi
 -> -> 100 `i `uc
 ]
-[; ;userMacro.h: 53: const unsigned char tempStartHi = 0x64;
-"54
+[; ;userMacro.h: 82: const unsigned char tempStartHi = 0x64;
+"84
 [i _tempStartLo
 -> -> 160 `i `uc
 ]
-[; ;userMacro.h: 54: const unsigned char tempStartLo = 0xA0;
-"55
+[; ;userMacro.h: 84: const unsigned char tempStartLo = 0xA0;
+"86
 [i _tempC
 -> -> 0 `i `uc
 ]
-[; ;userMacro.h: 55: const unsigned char tempC = 0x00;
-"56
+[; ;userMacro.h: 86: const unsigned char tempC = 0x00;
+"88
 [i _tempF
 -> -> 16 `i `uc
 ]
-[; ;userMacro.h: 56: const unsigned char tempF = 0x10;
-"58
-[i _humValAddr
+[; ;userMacro.h: 88: const unsigned char tempF = 0x10;
+"92
+[i _humValHAddr
 -> -> 128 `i `uc
 ]
-[; ;userMacro.h: 58: const unsigned char humValAddr = 0x80;
-"59
-[i _humHiAddr
+[; ;userMacro.h: 92: const unsigned char humValHAddr = 0x80;
+"94
+[i _humValLAddr
 -> -> 130 `i `uc
 ]
-[; ;userMacro.h: 59: const unsigned char humHiAddr = 0x82;
-"60
-[i _humLoAddr
+[; ;userMacro.h: 94: const unsigned char humValLAddr = 0x82;
+"96
+[i _humHiAddr
 -> -> 132 `i `uc
 ]
-[; ;userMacro.h: 60: const unsigned char humLoAddr = 0x84;
-"62
+[; ;userMacro.h: 96: const unsigned char humHiAddr = 0x84;
+"98
+[i _humLoAddr
+-> -> 134 `i `uc
+]
+[; ;userMacro.h: 98: const unsigned char humLoAddr = 0x86;
+"102
 [i _humStartHi
 -> -> 80 `i `uc
 ]
-[; ;userMacro.h: 62: const unsigned char humStartHi = 0x50;
-"63
+[; ;userMacro.h: 102: const unsigned char humStartHi = 0x50;
+"104
 [i _humStartLo
 -> -> 10 `i `uc
 ]
-[; ;userMacro.h: 63: const unsigned char humStartLo = 0x0A;
+[; ;userMacro.h: 104: const unsigned char humStartLo = 0x0A;
 [; ;pic16f877a.h: 82: volatile unsigned char INDF @ 0x000;
 [; ;pic16f877a.h: 86: volatile unsigned char TMR0 @ 0x001;
 [; ;pic16f877a.h: 90: volatile unsigned char PCL @ 0x002;
@@ -2116,66 +2150,55 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Bluetooth.c: 56: SPBRG = 129;
 "56
 [e = _SPBRG -> -> 129 `i `uc ]
-[; ;Bluetooth.c: 57: GIE = 1;
-"57
-[e = _GIE -> -> 1 `i `b ]
-[; ;Bluetooth.c: 58: PEIE = 1;
+[; ;Bluetooth.c: 58: GIE = 1;
 "58
+[e = _GIE -> -> 1 `i `b ]
+[; ;Bluetooth.c: 60: PEIE = 1;
+"60
 [e = _PEIE -> -> 1 `i `b ]
-[; ;Bluetooth.c: 59: RCIE = 1;
-"59
+[; ;Bluetooth.c: 62: RCIE = 1;
+"62
 [e = _RCIE -> -> 1 `i `b ]
-[; ;Bluetooth.c: 61: }
-"61
+[; ;Bluetooth.c: 64: }
+"64
 [e :UE 101 ]
 }
-"71
+"74
 [v _writeByte `(v  1 ef1`uc ]
 {
-[; ;Bluetooth.c: 70: void writeByte(unsigned char Byte)
-[; ;Bluetooth.c: 71: {
+[; ;Bluetooth.c: 73: void writeByte(unsigned char Byte)
+[; ;Bluetooth.c: 74: {
 [e :U _writeByte ]
 [v _Byte `uc  1 r1 ]
 [f ]
-[; ;Bluetooth.c: 75: while(!TXIF);
-"75
+[; ;Bluetooth.c: 78: while(!TXIF);
+"78
 [e $U 103  ]
 [e :U 104 ]
 [e :U 103 ]
 [e $ ! _TXIF 104  ]
 [e :U 105 ]
-[; ;Bluetooth.c: 78: TXREG = Byte;
-"78
+[; ;Bluetooth.c: 81: TXREG = Byte;
+"81
 [e = _TXREG _Byte ]
-[; ;Bluetooth.c: 79: }
-"79
+[; ;Bluetooth.c: 82: }
+"82
 [e :UE 102 ]
 }
-"89
+"92
 [v _readByte `(uc  1 ef ]
 {
-[; ;Bluetooth.c: 88: unsigned char readByte()
-[; ;Bluetooth.c: 89: {
+[; ;Bluetooth.c: 91: unsigned char readByte()
+[; ;Bluetooth.c: 92: {
 [e :U _readByte ]
 [f ]
-[; ;Bluetooth.c: 94: if(OERR){
-"94
-[e $ ! _OERR 107  ]
-{
-[; ;Bluetooth.c: 95: clearUARTErr();
-"95
-[e ( _clearUARTErr ..  ]
-"96
-}
-[e :U 107 ]
-[; ;Bluetooth.c: 96: }
 [; ;Bluetooth.c: 97: while(!RCIF);
 "97
-[e $U 108  ]
-[e :U 109 ]
+[e $U 107  ]
 [e :U 108 ]
-[e $ ! _RCIF 109  ]
-[e :U 110 ]
+[e :U 107 ]
+[e $ ! _RCIF 108  ]
+[e :U 109 ]
 [; ;Bluetooth.c: 106: return RCREG;
 "106
 [e ) _RCREG ]
@@ -2205,7 +2228,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e ( _writeByte (1 -> -> 42 `ui `uc ]
 [; ;Bluetooth.c: 129: }
 "129
-[e :UE 111 ]
+[e :UE 110 ]
 }
 "140
 [v _writeString `(v  1 ef1`*uc ]
@@ -2222,8 +2245,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 "144
 {
 [e = _i -> -> 0 `i `ui ]
-[e $U 116  ]
-[e :U 113 ]
+[e $U 115  ]
+[e :U 112 ]
 {
 [; ;Bluetooth.c: 145: writeByte(userString[i]);
 "145
@@ -2232,9 +2255,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 }
 "144
 [e ++ _i -> -> 1 `i `ui ]
-[e :U 116 ]
-[e $ < _i ( _strlen (1 -> _userString `*Cuc 113  ]
-[e :U 114 ]
+[e :U 115 ]
+[e $ < _i ( _strlen (1 -> _userString `*Cuc 112  ]
+[e :U 113 ]
 "146
 }
 [; ;Bluetooth.c: 146: }
@@ -2243,7 +2266,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e ( _writeByte (1 -> _i `uc ]
 [; ;Bluetooth.c: 150: }
 "150
-[e :UE 112 ]
+[e :UE 111 ]
 }
 "162
 [v _readString `(v  1 ef1`*uc ]
@@ -2268,8 +2291,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e ( _writeByte (1 _ch ]
 [; ;Bluetooth.c: 171: while(ch != userEndByte)
 "171
-[e $U 118  ]
-[e :U 119 ]
+[e $U 117  ]
+[e :U 118 ]
 [; ;Bluetooth.c: 172: {
 "172
 {
@@ -2287,17 +2310,17 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e ( _writeByte (1 _ch ]
 "180
 }
-[e :U 118 ]
+[e :U 117 ]
 "171
-[e $ != -> _ch `i -> _userEndByte `i 119  ]
-[e :U 120 ]
+[e $ != -> _ch `i -> _userEndByte `i 118  ]
+[e :U 119 ]
 [; ;Bluetooth.c: 180: }
 [; ;Bluetooth.c: 185: eeprom_write(RXLenAddr,i);
 "185
 [e ( _eeprom_write (2 , _RXLenAddr -> _i `uc ]
 [; ;Bluetooth.c: 188: }
 "188
-[e :UE 117 ]
+[e :UE 116 ]
 }
 "199
 [v _makeNibble `(uc  1 ef1`uc ]
@@ -2309,23 +2332,23 @@ Version 3.2 HI-TECH Software Intermediate Code
 [f ]
 [; ;Bluetooth.c: 200: if(tempNib>='A'){
 "200
-[e $ ! >= -> _tempNib `ui -> 65 `ui 122  ]
+[e $ ! >= -> _tempNib `ui -> 65 `ui 121  ]
 {
 [; ;Bluetooth.c: 201: return ((tempNib - (unsigned char)'A')+10);
 "201
 [e ) -> + - -> _tempNib `i -> -> -> 65 `ui `uc `i -> 10 `i `uc ]
-[e $UE 121  ]
+[e $UE 120  ]
 "202
 }
-[e :U 122 ]
+[e :U 121 ]
 [; ;Bluetooth.c: 202: }
 [; ;Bluetooth.c: 203: return (tempNib - '0');
 "203
 [e ) -> - -> _tempNib `ui -> 48 `ui `uc ]
-[e $UE 121  ]
+[e $UE 120  ]
 [; ;Bluetooth.c: 204: }
 "204
-[e :UE 121 ]
+[e :UE 120 ]
 }
 "215
 [v _makeHexByte `(uc  1 ef2`uc`uc ]
@@ -2348,30 +2371,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Bluetooth.c: 219: return input_byte;
 "219
 [e ) _input_byte ]
-[e $UE 123  ]
+[e $UE 122  ]
 [; ;Bluetooth.c: 220: }
 "220
-[e :UE 123 ]
-}
-"222
-[v _clearUARTErr `(v  1 ef ]
-{
-[; ;Bluetooth.c: 222: void clearUARTErr(){
-[e :U _clearUARTErr ]
-[f ]
-[; ;Bluetooth.c: 223: RCSTA = 0x80;
-"223
-[e = _RCSTA -> -> 128 `i `uc ]
-[; ;Bluetooth.c: 224: _delay((unsigned long)((10)*(20000000/4000.0)));
-"224
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-[; ;Bluetooth.c: 225: RCSTA = 0x90;
-"225
-[e = _RCSTA -> -> 144 `i `uc ]
-[; ;Bluetooth.c: 226: _delay((unsigned long)((10)*(20000000/4000.0)));
-"226
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
-[; ;Bluetooth.c: 227: }
-"227
-[e :UE 124 ]
+[e :UE 122 ]
 }

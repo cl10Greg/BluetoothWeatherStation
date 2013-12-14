@@ -81,14 +81,6 @@ void getPacket(){
             char arrStore[50] = {0};
             //Read the UART data
             readString(arrStore);
-            //Write the data to the TX
-            //Used for debugging
-            //writeString(arrStore);
-
-            //Write the length to TX
-            //Used for debugging
-            //writeString(counterText);
-
             //Write the data stored in EEPROM
             writeByte(eeprom_read(RXLenAddr));
             //Break the data up into the data sections
@@ -96,12 +88,13 @@ void getPacket(){
             //Validate the data that is in the packet
             //If the data is all valid, go and make the response
             if(validatePacket()){
-                //Get values
-                //Make response
+                //If valid, check RW byte
+                //If read, find read commands
                 if(eeprom_read(rwByteAddr) == 0){
-                    getCommands();
+                    readCommands();
+                //if write, find write commands
                 }else{
-                    setCommands();
+                    writeCommands();
                 }
             //If there is an error in the packet, response error
             }else{

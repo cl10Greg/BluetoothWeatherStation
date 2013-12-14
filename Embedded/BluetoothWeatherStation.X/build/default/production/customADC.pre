@@ -1,9 +1,11 @@
 
 # 1 "customADC.c"
 
-# 11 "customADC.h"
+# 12 "customADC.h"
 void initADC();
+
 void selectTemp();
+
 void selectHumidity();
 
 # 82 "C:\Microchip\HiTech\include\pic16f877a.h"
@@ -1103,43 +1105,84 @@ const char classNum[] = "ECE5620";
 const char classTerm[] = "Fall 2013";
 const char groupNum = '2';
 
+const unsigned char readError[] = "Not a valid read command";
+
+
+
 const unsigned char userStartByte = 0xAA;
+
 const unsigned char userEndByte = 0x0A;
+
 const unsigned char newLineChar = 0x0A;
+
 const unsigned char minSizeByte = 0x0A;
+
 const unsigned char noDataLen = 0x0A;
+
 const unsigned char maxCmd = 0x0E;
+
 const unsigned char readByteVal = 0x00;
+
 const unsigned char writeByteVal = 0x01;
+
 const unsigned char timeoutByte = 0xFF;
 
+
+
 const unsigned char RXLenAddr = 0x00;
+
 const unsigned char startByteAddr = 0x01;
+
 const unsigned char rwByteAddr = 0x02;
+
 const unsigned char cmdByteAddr = 0x03;
+
 const unsigned char lenByteAddr = 0x04;
+
 const unsigned char csByteAddr = 0x05;
+
 const unsigned char endByteAddr = 0x06;
+
 const unsigned char dataBytesAddr = 0x07;
 
 const unsigned char calcCSByteAddr = 0x30;
 
+
+
 const unsigned char tempValHAddr = 0x60;
+
 const unsigned char tempValLAddr = 0x61;
+
 const unsigned char tempHiAddr = 0x62;
+
 const unsigned char tempLoAddr = 0x64;
+
 const unsigned char tempUnitAddr = 0x66;
 
+
+
 const unsigned char tempStartHi = 0x64;
+
 const unsigned char tempStartLo = 0xA0;
+
 const unsigned char tempC = 0x00;
+
 const unsigned char tempF = 0x10;
 
-const unsigned char humValAddr = 0x80;
-const unsigned char humHiAddr = 0x82;
-const unsigned char humLoAddr = 0x84;
+
+
+const unsigned char humValHAddr = 0x80;
+
+const unsigned char humValLAddr = 0x82;
+
+const unsigned char humHiAddr = 0x84;
+
+const unsigned char humLoAddr = 0x86;
+
+
 
 const unsigned char humStartHi = 0x50;
+
 const unsigned char humStartLo = 0x0A;
 
 # 6 "customADC.c"

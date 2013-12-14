@@ -8,6 +8,7 @@
 #ifndef LCD_H
 #define	LCD_H
 
+//Initialize the LCD display
 void initLCD();
 
 

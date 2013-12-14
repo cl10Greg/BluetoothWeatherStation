@@ -54,8 +54,11 @@ void initUSART()
          * 20000000/(16(9600+1)) = 130
          * ~129 on the datasheet                                */
 	SPBRG = 129;
+        //Turn on global interrupts
         GIE = 1;
+        //Turn on the peripheral interrupts
         PEIE = 1;
+        //Turn on the RX interrupt
         RCIE = 1;
         
 }
@@ -91,9 +94,6 @@ unsigned char readByte()
     /* RCIF:    USART receive interrupt flag bit
      * 1:       Buffer is full
      * 0:       Buffer is empty                     */
-    if(OERR){
-        clearUARTErr();
-    }
     while(!RCIF);// || timeoutCounter < 100){
         //timeoutCounter++;
         //__delay_ms(10);
@@ -217,11 +217,4 @@ unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo)
     input_byte = (makeNibble(nibOne)<<4);
     input_byte|= makeNibble(nibTwo);
     return input_byte;
-}
-
-void clearUARTErr(){
-    RCSTA = 0x80;
-    __delay_ms(10);
-    RCSTA = 0x90;
-    __delay_ms(10);
 }
