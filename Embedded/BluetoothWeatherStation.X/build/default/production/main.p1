@@ -2260,47 +2260,47 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;main.c: 83: readString(arrStore);
 "83
 [e ( _readString (1 &U _arrStore ]
-[; ;main.c: 93: writeByte(eeprom_read(RXLenAddr));
-"93
+[; ;main.c: 85: writeByte(eeprom_read(RXLenAddr));
+"85
 [e ( _writeByte (1 ( _eeprom_read (1 _RXLenAddr ]
-[; ;main.c: 95: parsePacket(arrStore);
-"95
+[; ;main.c: 87: parsePacket(arrStore);
+"87
 [e ( _parsePacket (1 &U _arrStore ]
-[; ;main.c: 98: if(validatePacket()){
-"98
+[; ;main.c: 90: if(validatePacket()){
+"90
 [e $ ! != ( _validatePacket ..  -> 0 `i 108  ]
 {
-[; ;main.c: 101: if(eeprom_read(rwByteAddr) == 0){
-"101
+[; ;main.c: 93: if(eeprom_read(rwByteAddr) == 0){
+"93
 [e $ ! == -> ( _eeprom_read (1 _rwByteAddr `i -> 0 `i 109  ]
 {
-[; ;main.c: 102: readCommands();
-"102
+[; ;main.c: 94: readCommands();
+"94
 [e ( _readCommands ..  ]
-"103
+"96
 }
-[; ;main.c: 103: }else{
+[; ;main.c: 96: }else{
 [e $U 110  ]
 [e :U 109 ]
 {
-[; ;main.c: 104: writeCommands();
-"104
+[; ;main.c: 97: writeCommands();
+"97
 [e ( _writeCommands ..  ]
-"105
+"98
 }
 [e :U 110 ]
-"107
+"100
 }
-[; ;main.c: 105: }
-[; ;main.c: 107: }else{
+[; ;main.c: 98: }
+[; ;main.c: 100: }else{
 [e $U 111  ]
 [e :U 108 ]
 {
-"110
+"103
 }
 [e :U 111 ]
-[; ;main.c: 110: }
-[; ;main.c: 111: }
-"111
+[; ;main.c: 103: }
+[; ;main.c: 104: }
+"104
 [e :UE 107 ]
 }

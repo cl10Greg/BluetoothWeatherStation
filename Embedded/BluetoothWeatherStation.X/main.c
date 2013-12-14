@@ -81,8 +81,6 @@ void getPacket(){
             char arrStore[50] = {0};
             //Read the UART data
             readString(arrStore);
-            //Write the data stored in EEPROM
-            writeByte(eeprom_read(RXLenAddr));
             //Break the data up into the data sections
             parsePacket(arrStore);
             //Validate the data that is in the packet

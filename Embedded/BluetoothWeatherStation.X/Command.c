@@ -2,7 +2,13 @@
 #include "Bluetooth.h"
 #include <htc.h>
 
-
+/********************************************************************
+ * Function:    readCommands                                        *
+ * Type:        Void                                                *
+ * Argument:    None                                                *
+ * Return:      None                                                *
+ * Function:    Read the cmd to determine what information to return*
+ *******************************************************************/
 void readCommands(){
 
     switch(eeprom_read(cmdByteAddr)){
@@ -68,6 +74,13 @@ void readCommands(){
     //Return the data wanted
 }
 
+/********************************************************************
+ * Function:    writeCommands                                       *
+ * Type:        Void                                                *
+ * Argument:    None                                                *
+ * Return:      None                                                *
+ * Purpose:     Set the system parameter based on user data         *
+ *******************************************************************/
 void writeCommands(){
     //Check the cmd byte
     //set the values

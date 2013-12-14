@@ -156,41 +156,49 @@
 
     Private Sub getTBtn_Click(sender As Object, e As EventArgs) Handles getTBtn.Click
         Dim dataStr As String = getTempStr + checkSumCreator(getTempStr) + vbLf
+        addText("Message: " + dataStr)
         masterSlaveComm(dataStr)
     End Sub
 
     Private Sub getTHiBtn_Click(sender As Object, e As EventArgs) Handles getTHiBtn.Click
         Dim dataStr As String = getTempHiStr + checkSumCreator(getTempHiStr) + vbLf
+        addText("Message: " + dataStr)
         masterSlaveComm(dataStr)
     End Sub
 
     Private Sub getTLoBtn_Click(sender As Object, e As EventArgs) Handles getTLoBtn.Click
         Dim dataStr As String = getTempLowStr + checkSumCreator(getTempLowStr) + vbLf
+        addText("Message: " + dataStr)
         masterSlaveComm(dataStr)
     End Sub
 
     Private Sub getHBtn_Click(sender As Object, e As EventArgs) Handles getHBtn.Click
         Dim dataStr As String = getHumStr + checkSumCreator(getHumStr) + vbLf
+        addText("Message: " + dataStr)
         masterSlaveComm(dataStr)
     End Sub
 
     Private Sub getHHiBtn_Click(sender As Object, e As EventArgs) Handles getHHiBtn.Click
         Dim dataStr As String = getHumHiStr + checkSumCreator(getHumHiStr) + vbLf
+        addText("Message: " + dataStr)
         masterSlaveComm(dataStr)
     End Sub
 
     Private Sub getHLoBtn_Click(sender As Object, e As EventArgs) Handles getHLoBtn.Click
         Dim dataStr As String = getHumLowStr + checkSumCreator(getHumLowStr) + vbLf
+        addText("Message: " + dataStr)
         masterSlaveComm(dataStr)
     End Sub
 
     Private Sub getTimeBtn_Click(sender As Object, e As EventArgs) Handles getTimeBtn.Click
         Dim dataStr As String = getTimeStr + checkSumCreator(getTimeStr) + vbLf
+        addText("Message: " + dataStr)
         masterSlaveComm(dataStr)
     End Sub
 
     Private Sub getAllBtn_Click(sender As Object, e As EventArgs) Handles getAllBtn.Click
         Dim dataStr As String = getAllStr + checkSumCreator(getAllStr) + vbLf
+        addText("Message: " + dataStr)
         masterSlaveComm(dataStr)
     End Sub
 End Class

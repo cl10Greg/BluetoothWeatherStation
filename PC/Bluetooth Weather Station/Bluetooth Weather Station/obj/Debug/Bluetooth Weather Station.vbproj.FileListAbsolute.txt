@@ -8,3 +8,13 @@ C:\Users\ggirard\Desktop\GitHub\BluetoothWeatherStation\PC\Bluetooth Weather Sta
 C:\Users\ggirard\Desktop\GitHub\BluetoothWeatherStation\PC\Bluetooth Weather Station\Bluetooth Weather Station\obj\Debug\Bluetooth Weather Station.exe
 C:\Users\ggirard\Desktop\GitHub\BluetoothWeatherStation\PC\Bluetooth Weather Station\Bluetooth Weather Station\obj\Debug\Bluetooth Weather Station.xml
 C:\Users\ggirard\Desktop\GitHub\BluetoothWeatherStation\PC\Bluetooth Weather Station\Bluetooth Weather Station\obj\Debug\Bluetooth Weather Station.pdb
+C:\Users\Greg Laptop\Documents\GitHub\BluetoothWeatherStation\PC\Bluetooth Weather Station\Bluetooth Weather Station\bin\Debug\Bluetooth Weather Station.exe.config
+C:\Users\Greg Laptop\Documents\GitHub\BluetoothWeatherStation\PC\Bluetooth Weather Station\Bluetooth Weather Station\obj\Debug\Bluetooth Weather Station.exe
+C:\Users\Greg Laptop\Documents\GitHub\BluetoothWeatherStation\PC\Bluetooth Weather Station\Bluetooth Weather Station\obj\Debug\Bluetooth Weather Station.xml
+C:\Users\Greg Laptop\Documents\GitHub\BluetoothWeatherStation\PC\Bluetooth Weather Station\Bluetooth Weather Station\obj\Debug\Bluetooth Weather Station.pdb
+C:\Users\Greg Laptop\Documents\GitHub\BluetoothWeatherStation\PC\Bluetooth Weather Station\Bluetooth Weather Station\bin\Debug\Bluetooth Weather Station.exe
+C:\Users\Greg Laptop\Documents\GitHub\BluetoothWeatherStation\PC\Bluetooth Weather Station\Bluetooth Weather Station\bin\Debug\Bluetooth Weather Station.pdb
+C:\Users\Greg Laptop\Documents\GitHub\BluetoothWeatherStation\PC\Bluetooth Weather Station\Bluetooth Weather Station\bin\Debug\Bluetooth Weather Station.xml
+C:\Users\Greg Laptop\Documents\GitHub\BluetoothWeatherStation\PC\Bluetooth Weather Station\Bluetooth Weather Station\obj\Debug\Bluetooth_Weather_Station.Main.resources
+C:\Users\Greg Laptop\Documents\GitHub\BluetoothWeatherStation\PC\Bluetooth Weather Station\Bluetooth Weather Station\obj\Debug\Bluetooth_Weather_Station.Resources.resources
+C:\Users\Greg Laptop\Documents\GitHub\BluetoothWeatherStation\PC\Bluetooth Weather Station\Bluetooth Weather Station\obj\Debug\Bluetooth Weather Station.vbproj.GenerateResource.Cache

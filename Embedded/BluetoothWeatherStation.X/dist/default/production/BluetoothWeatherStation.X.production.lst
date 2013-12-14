@@ -1,7 +1,7 @@
 
 
 HI-TECH Software PIC LITE Macro Assembler V9.83 build 10920 
-                                                                                               Sat Dec 14 16:41:44 2013
+                                                                                               Sat Dec 14 16:44:26 2013
 
 HI-TECH Software Omniscient Code Generator (Lite mode) build 10920
      1  0000                     opt subtitle "HI-TECH Software Omniscient Code Generator (Lite mode) build 10920"
@@ -572,7 +572,7 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 10920
    565  0C61                     _WR	set	3169
    566                           	global	_WREN
    567  0C62                     _WREN	set	3170
-   568                           	file	"C:\Users\GREGLA~1\AppData\Local\Temp\saao."
+   568                           	file	"C:\Users\GREGLA~1\AppData\Local\Temp\s76g."
    569                           	line	#
    570                           psect cinit,class=CODE,delta=2
    571                           global start_initialization
@@ -2795,10 +2795,10 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 10920
   2753  0408  302E               	movlw	(getPacket@arrStore)&0ffh
   2754  0409  120A  118A  2658   	fcall	_readString
               120A  118A         
-  2755                           	line	93
+  2755                           	line	85
   2756                           	
   2757  040E                     i1l8925:	
-  2758                           ;main.c: 93: writeByte(eeprom_read(RXLenAddr));
+  2758                           ;main.c: 85: writeByte(eeprom_read(RXLenAddr));
   2759  040E  3040               	movlw	(_RXLenAddr-__stringbase)
   2760  040F  0084               	movwf	fsr0
   2761  0410  120A  118A  2363   	fcall	stringdir
@@ -2807,17 +2807,17 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 10920
               120A  118A         
   2763  041A  120A  158A  259F   	fcall	i1_writeByte
               120A  118A         
-  2764                           	line	95
+  2764                           	line	87
   2765                           	
   2766  041F                     i1l8927:	
-  2767                           ;main.c: 95: parsePacket(arrStore);
+  2767                           ;main.c: 87: parsePacket(arrStore);
   2768  041F  302E               	movlw	(getPacket@arrStore)&0ffh
   2769  0420  120A  118A  2184   	fcall	_parsePacket
               120A  118A         
-  2770                           	line	98
+  2770                           	line	90
   2771                           	
   2772  0425                     i1l8929:	
-  2773                           ;main.c: 98: if(validatePacket()){
+  2773                           ;main.c: 90: if(validatePacket()){
   2774  0425  120A  118A  26B3   	fcall	_validatePacket
               120A  118A         
   2775  042A  1283               	bcf	status, 5	;RP0=0, select bank0
@@ -2830,10 +2830,10 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 10920
   2782  0431                     u333_21:
   2783  0431  2C51               	goto	i1l4006
   2784  0432                     u333_20:
-  2785                           	line	101
+  2785                           	line	93
   2786                           	
   2787  0432                     i1l8931:	
-  2788                           ;main.c: 101: if(eeprom_read(rwByteAddr) == 0){
+  2788                           ;main.c: 93: if(eeprom_read(rwByteAddr) == 0){
   2789  0432  3053               	movlw	(_rwByteAddr-__stringbase)
   2790  0433  0084               	movwf	fsr0
   2791  0434  120A  118A  2363   	fcall	stringdir
@@ -2847,38 +2847,38 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 10920
   2797  0442                     u334_21:
   2798  0442  2C49               	goto	i1l8935
   2799  0443                     u334_20:
-  2800                           	line	102
+  2800                           	line	94
   2801                           	
   2802  0443                     i1l8933:	
-  2803                           ;main.c: 102: readCommands();
+  2803                           ;main.c: 94: readCommands();
   2804  0443  120A  118A  2015   	fcall	_readCommands
               120A  118A         
-  2805                           	line	103
-  2806                           ;main.c: 103: }else{
+  2805                           	line	96
+  2806                           ;main.c: 96: }else{
   2807  0448  2C51               	goto	i1l4006
   2808                           	
   2809  0449                     i1l4003:	
-  2810                           	line	104
+  2810                           	line	97
   2811                           	
   2812  0449                     i1l8935:	
-  2813                           ;main.c: 104: writeCommands();
+  2813                           ;main.c: 97: writeCommands();
   2814  0449  120A  118A  27FF   	fcall	_writeCommands
               120A  118A         
   2815  044E  2C51               	goto	i1l4006
-  2816                           	line	105
+  2816                           	line	98
   2817                           	
   2818  044F                     i1l4004:	
-  2819                           	line	107
-  2820                           ;main.c: 105: }
-  2821                           ;main.c: 107: }else{
+  2819                           	line	100
+  2820                           ;main.c: 98: }
+  2821                           ;main.c: 100: }else{
   2822  044F  2C51               	goto	i1l4006
   2823                           	
   2824  0450                     i1l4002:	
   2825  0450  2C51               	goto	i1l4006
-  2826                           	line	110
+  2826                           	line	103
   2827                           	
   2828  0451                     i1l4005:	
-  2829                           	line	111
+  2829                           	line	104
   2830                           	
   2831  0451                     i1l4006:	
   2832  0451  0008               	return
@@ -6154,7 +6154,7 @@ HI-TECH Software Omniscient Code Generator (Lite mode) build 10920
 
 
 HI-TECH Software PICC Macro Assembler V9.83 build 10920 
-Symbol Table                                                                                   Sat Dec 14 16:41:44 2013
+Symbol Table                                                                                   Sat Dec 14 16:44:26 2013
 
                          pc 0002                          _RD 0C60                          _WR 0C61  
                         fsr 0004                 _userEndByte 03C7                         l772 0DBE  
