@@ -1206,7 +1206,7 @@ ADON = 1;
 
 
 
-_delay((unsigned long)((10)*(20000000/4000.0)));
+_delay((unsigned long)((10)*(4000000/4000.0)));
 
 GO_nDONE = 1;
 

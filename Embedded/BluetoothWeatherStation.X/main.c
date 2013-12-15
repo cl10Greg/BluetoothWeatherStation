@@ -29,8 +29,9 @@
  * PWRTE:   Power up timer enable bit                                    *
  *      Value:  OFF                                                      *
  ************************************************************************/
-__CONFIG(WDTE_OFF & LVP_OFF & BOREN_OFF & FOSC_HS & PWRTE_OFF) ;
-
+__CONFIG(WDTE_OFF & LVP_OFF & BOREN_OFF & FOSC_XT & PWRTE_OFF) ;
+//XT for 4MHZ
+//HS for 20MHz
 void getPacket(void);
 
 static void interrupt isr(void){

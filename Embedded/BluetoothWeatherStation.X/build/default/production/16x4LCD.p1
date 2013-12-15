@@ -2132,24 +2132,24 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;16x4LCD.c: 14: RD7 = 0;
 "14
 [e = _RD7 -> -> 0 `i `b ]
-[; ;16x4LCD.c: 15: _delay((unsigned long)((15)*(20000000/4000.0)));
+[; ;16x4LCD.c: 15: _delay((unsigned long)((15)*(4000000/4000.0)));
 "15
-[e ( __delay (1 -> * -> -> 15 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[e ( __delay (1 -> * -> -> 15 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 [; ;16x4LCD.c: 16: PORTD = 0x30;
 "16
 [e = _PORTD -> -> 48 `i `uc ]
 [; ;16x4LCD.c: 17: togE();
 "17
 [e ( _togE ..  ]
-[; ;16x4LCD.c: 18: _delay((unsigned long)((5)*(20000000/4000.0)));
+[; ;16x4LCD.c: 18: _delay((unsigned long)((5)*(4000000/4000.0)));
 "18
-[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[e ( __delay (1 -> * -> -> 5 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 [; ;16x4LCD.c: 19: togE();
 "19
 [e ( _togE ..  ]
-[; ;16x4LCD.c: 20: _delay((unsigned long)((200)*(20000000/4000000.0)));
+[; ;16x4LCD.c: 20: _delay((unsigned long)((200)*(4000000/4000000.0)));
 "20
-[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 20000000 `l `d .4000000.0 `ul ]
+[e ( __delay (1 -> * -> -> 200 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
 [; ;16x4LCD.c: 21: togE();
 "21
 [e ( _togE ..  ]
@@ -2184,15 +2184,15 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;16x4LCD.c: 33: RD2 = 1;
 "33
 [e = _RD2 -> -> 1 `i `b ]
-[; ;16x4LCD.c: 34: _delay((unsigned long)((2)*(20000000/4000.0)));
+[; ;16x4LCD.c: 34: _delay((unsigned long)((2)*(4000000/4000.0)));
 "34
-[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 [; ;16x4LCD.c: 35: RD2 = 0;
 "35
 [e = _RD2 -> -> 0 `i `b ]
-[; ;16x4LCD.c: 36: _delay((unsigned long)((2)*(20000000/4000.0)));
+[; ;16x4LCD.c: 36: _delay((unsigned long)((2)*(4000000/4000.0)));
 "36
-[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 [; ;16x4LCD.c: 37: }
 "37
 [e :UE 102 ]
@@ -2204,9 +2204,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [e :U _lcdWrite ]
 [v _c `uc  1 r1 ]
 [f ]
-[; ;16x4LCD.c: 40: _delay((unsigned long)((40)*(20000000/4000000.0)));
+[; ;16x4LCD.c: 40: _delay((unsigned long)((40)*(4000000/4000000.0)));
 "40
-[e ( __delay (1 -> * -> -> 40 `i `d / -> -> 20000000 `l `d .4000000.0 `ul ]
+[e ( __delay (1 -> * -> -> 40 `i `d / -> -> 4000000 `l `d .4000000.0 `ul ]
 [; ;16x4LCD.c: 41: PORTD = ((c >> 4) & 0xF0);
 "41
 [e = _PORTD -> & >> -> _c `i -> 4 `i -> 240 `i `uc ]
@@ -2235,9 +2235,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;16x4LCD.c: 49: lcdWrite(0x10);
 "49
 [e ( _lcdWrite (1 -> -> 16 `i `uc ]
-[; ;16x4LCD.c: 50: _delay((unsigned long)((2)*(20000000/4000.0)));
+[; ;16x4LCD.c: 50: _delay((unsigned long)((2)*(4000000/4000.0)));
 "50
-[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 [; ;16x4LCD.c: 51: }
 "51
 [e :UE 104 ]
@@ -2297,9 +2297,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;16x4LCD.c: 66: lcdWrite(0x80+pos);
 "66
 [e ( _lcdWrite (1 -> + -> 128 `i -> _pos `i `uc ]
-[; ;16x4LCD.c: 67: _delay((unsigned long)((10)*(20000000/4000.0)));
+[; ;16x4LCD.c: 67: _delay((unsigned long)((10)*(4000000/4000.0)));
 "67
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 [; ;16x4LCD.c: 68: }
 "68
 [e :UE 110 ]

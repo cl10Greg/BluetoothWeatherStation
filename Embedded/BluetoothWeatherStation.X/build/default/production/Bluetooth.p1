@@ -2147,232 +2147,232 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Bluetooth.c: 48: TXSTA = 0x24;
 "48
 [e = _TXSTA -> -> 36 `i `uc ]
-[; ;Bluetooth.c: 56: SPBRG = 129;
-"56
-[e = _SPBRG -> -> 129 `i `uc ]
-[; ;Bluetooth.c: 58: GIE = 1;
-"58
+[; ;Bluetooth.c: 57: SPBRG = 25;
+"57
+[e = _SPBRG -> -> 25 `i `uc ]
+[; ;Bluetooth.c: 59: GIE = 1;
+"59
 [e = _GIE -> -> 1 `i `b ]
-[; ;Bluetooth.c: 60: PEIE = 1;
-"60
+[; ;Bluetooth.c: 61: PEIE = 1;
+"61
 [e = _PEIE -> -> 1 `i `b ]
-[; ;Bluetooth.c: 62: RCIE = 1;
-"62
+[; ;Bluetooth.c: 63: RCIE = 1;
+"63
 [e = _RCIE -> -> 1 `i `b ]
-[; ;Bluetooth.c: 64: }
-"64
+[; ;Bluetooth.c: 65: }
+"65
 [e :UE 101 ]
 }
-"74
+"75
 [v _writeByte `(v  1 ef1`uc ]
 {
-[; ;Bluetooth.c: 73: void writeByte(unsigned char Byte)
-[; ;Bluetooth.c: 74: {
+[; ;Bluetooth.c: 74: void writeByte(unsigned char Byte)
+[; ;Bluetooth.c: 75: {
 [e :U _writeByte ]
 [v _Byte `uc  1 r1 ]
 [f ]
-[; ;Bluetooth.c: 78: while(!TXIF);
-"78
+[; ;Bluetooth.c: 79: while(!TXIF);
+"79
 [e $U 103  ]
 [e :U 104 ]
 [e :U 103 ]
 [e $ ! _TXIF 104  ]
 [e :U 105 ]
-[; ;Bluetooth.c: 81: TXREG = Byte;
-"81
-[e = _TXREG _Byte ]
-[; ;Bluetooth.c: 82: }
+[; ;Bluetooth.c: 82: TXREG = Byte;
 "82
+[e = _TXREG _Byte ]
+[; ;Bluetooth.c: 83: }
+"83
 [e :UE 102 ]
 }
-"92
+"93
 [v _readByte `(uc  1 ef ]
 {
-[; ;Bluetooth.c: 91: unsigned char readByte()
-[; ;Bluetooth.c: 92: {
+[; ;Bluetooth.c: 92: unsigned char readByte()
+[; ;Bluetooth.c: 93: {
 [e :U _readByte ]
 [f ]
-[; ;Bluetooth.c: 97: while(!RCIF);
-"97
+[; ;Bluetooth.c: 98: while(!RCIF);
+"98
 [e $U 107  ]
 [e :U 108 ]
 [e :U 107 ]
 [e $ ! _RCIF 108  ]
 [e :U 109 ]
-[; ;Bluetooth.c: 106: return RCREG;
-"106
+[; ;Bluetooth.c: 107: return RCREG;
+"107
 [e ) _RCREG ]
 [e $UE 106  ]
-[; ;Bluetooth.c: 109: }
-"109
+[; ;Bluetooth.c: 110: }
+"110
 [e :UE 106 ]
 }
-"120
+"121
 [v _echoBack `(v  1 ef ]
 {
-[; ;Bluetooth.c: 119: void echoBack()
-[; ;Bluetooth.c: 120: {
+[; ;Bluetooth.c: 120: void echoBack()
+[; ;Bluetooth.c: 121: {
 [e :U _echoBack ]
 [f ]
-"122
+"123
 [v _ch `uc  1 a ]
-[; ;Bluetooth.c: 122: unsigned char ch;
-[; ;Bluetooth.c: 124: ch = readByte();
-"124
+[; ;Bluetooth.c: 123: unsigned char ch;
+[; ;Bluetooth.c: 125: ch = readByte();
+"125
 [e = _ch ( _readByte ..  ]
-[; ;Bluetooth.c: 126: writeByte(ch);
-"126
+[; ;Bluetooth.c: 127: writeByte(ch);
+"127
 [e ( _writeByte (1 _ch ]
-[; ;Bluetooth.c: 128: writeByte('*');
-"128
-[e ( _writeByte (1 -> -> 42 `ui `uc ]
-[; ;Bluetooth.c: 129: }
+[; ;Bluetooth.c: 129: writeByte('*');
 "129
+[e ( _writeByte (1 -> -> 42 `ui `uc ]
+[; ;Bluetooth.c: 130: }
+"130
 [e :UE 110 ]
 }
-"140
+"141
 [v _writeString `(v  1 ef1`*uc ]
 {
-[; ;Bluetooth.c: 139: void writeString(unsigned char* userString)
-[; ;Bluetooth.c: 140: {
+[; ;Bluetooth.c: 140: void writeString(unsigned char* userString)
+[; ;Bluetooth.c: 141: {
 [e :U _writeString ]
 [v _userString `*uc  1 r1 ]
 [f ]
-"142
+"143
 [v _i `ui  1 a ]
-[; ;Bluetooth.c: 142: unsigned int i;
-[; ;Bluetooth.c: 144: for(i = 0;i<strlen(userString);i++){
-"144
+[; ;Bluetooth.c: 143: unsigned int i;
+[; ;Bluetooth.c: 145: for(i = 0;i<strlen(userString);i++){
+"145
 {
 [e = _i -> -> 0 `i `ui ]
 [e $U 115  ]
 [e :U 112 ]
 {
-[; ;Bluetooth.c: 145: writeByte(userString[i]);
-"145
-[e ( _writeByte (1 *U + _userString * -> _i `ux -> -> # *U _userString `ui `ux ]
+[; ;Bluetooth.c: 146: writeByte(userString[i]);
 "146
+[e ( _writeByte (1 *U + _userString * -> _i `ux -> -> # *U _userString `ui `ux ]
+"147
 }
-"144
+"145
 [e ++ _i -> -> 1 `i `ui ]
 [e :U 115 ]
 [e $ < _i ( _strlen (1 -> _userString `*Cuc 112  ]
 [e :U 113 ]
-"146
+"147
 }
-[; ;Bluetooth.c: 146: }
-[; ;Bluetooth.c: 148: writeByte((unsigned char)i);
-"148
+[; ;Bluetooth.c: 147: }
+[; ;Bluetooth.c: 149: writeByte((unsigned char)i);
+"149
 [e ( _writeByte (1 -> _i `uc ]
-[; ;Bluetooth.c: 150: }
-"150
+[; ;Bluetooth.c: 151: }
+"151
 [e :UE 111 ]
 }
-"162
+"163
 [v _readString `(v  1 ef1`*uc ]
 {
-[; ;Bluetooth.c: 161: void readString(unsigned char* readStorage)
-[; ;Bluetooth.c: 162: {
+[; ;Bluetooth.c: 162: void readString(unsigned char* readStorage)
+[; ;Bluetooth.c: 163: {
 [e :U _readString ]
 [v _readStorage `*uc  1 r1 ]
 [f ]
-"164
+"165
 [v _i `ui  1 a ]
-[; ;Bluetooth.c: 164: unsigned int i = 0;
+[; ;Bluetooth.c: 165: unsigned int i = 0;
 [e = _i -> -> 0 `i `ui ]
-"166
+"167
 [v _ch `uc  1 a ]
-[; ;Bluetooth.c: 166: unsigned char ch;
-[; ;Bluetooth.c: 168: ch = readByte();
-"168
-[e = _ch ( _readByte ..  ]
-[; ;Bluetooth.c: 169: writeByte(ch);
+[; ;Bluetooth.c: 167: unsigned char ch;
+[; ;Bluetooth.c: 169: ch = readByte();
 "169
+[e = _ch ( _readByte ..  ]
+[; ;Bluetooth.c: 170: writeByte(ch);
+"170
 [e ( _writeByte (1 _ch ]
-[; ;Bluetooth.c: 171: while(ch != userEndByte)
-"171
+[; ;Bluetooth.c: 172: while(ch != userEndByte)
+"172
 [e $U 117  ]
 [e :U 118 ]
-[; ;Bluetooth.c: 172: {
-"172
+[; ;Bluetooth.c: 173: {
+"173
 {
-[; ;Bluetooth.c: 174: readStorage[i] = ch;
-"174
+[; ;Bluetooth.c: 175: readStorage[i] = ch;
+"175
 [e = *U + _readStorage * -> _i `ux -> -> # *U _readStorage `ui `ux _ch ]
-[; ;Bluetooth.c: 176: i++;
-"176
+[; ;Bluetooth.c: 177: i++;
+"177
 [e ++ _i -> -> 1 `i `ui ]
-[; ;Bluetooth.c: 178: ch = readByte();
-"178
-[e = _ch ( _readByte ..  ]
-[; ;Bluetooth.c: 179: writeByte(ch);
+[; ;Bluetooth.c: 179: ch = readByte();
 "179
-[e ( _writeByte (1 _ch ]
+[e = _ch ( _readByte ..  ]
+[; ;Bluetooth.c: 180: writeByte(ch);
 "180
+[e ( _writeByte (1 _ch ]
+"181
 }
 [e :U 117 ]
-"171
+"172
 [e $ != -> _ch `i -> _userEndByte `i 118  ]
 [e :U 119 ]
-[; ;Bluetooth.c: 180: }
-[; ;Bluetooth.c: 185: eeprom_write(RXLenAddr,i);
-"185
+[; ;Bluetooth.c: 181: }
+[; ;Bluetooth.c: 186: eeprom_write(RXLenAddr,i);
+"186
 [e ( _eeprom_write (2 , _RXLenAddr -> _i `uc ]
-[; ;Bluetooth.c: 188: }
-"188
+[; ;Bluetooth.c: 189: }
+"189
 [e :UE 116 ]
 }
-"199
+"200
 [v _makeNibble `(uc  1 ef1`uc ]
 {
-[; ;Bluetooth.c: 198: unsigned char makeNibble(unsigned char tempNib)
-[; ;Bluetooth.c: 199: {
+[; ;Bluetooth.c: 199: unsigned char makeNibble(unsigned char tempNib)
+[; ;Bluetooth.c: 200: {
 [e :U _makeNibble ]
 [v _tempNib `uc  1 r1 ]
 [f ]
-[; ;Bluetooth.c: 200: if(tempNib>='A'){
-"200
+[; ;Bluetooth.c: 201: if(tempNib>='A'){
+"201
 [e $ ! >= -> _tempNib `ui -> 65 `ui 121  ]
 {
-[; ;Bluetooth.c: 201: return ((tempNib - (unsigned char)'A')+10);
-"201
+[; ;Bluetooth.c: 202: return ((tempNib - (unsigned char)'A')+10);
+"202
 [e ) -> + - -> _tempNib `i -> -> -> 65 `ui `uc `i -> 10 `i `uc ]
 [e $UE 120  ]
-"202
+"203
 }
 [e :U 121 ]
-[; ;Bluetooth.c: 202: }
-[; ;Bluetooth.c: 203: return (tempNib - '0');
-"203
+[; ;Bluetooth.c: 203: }
+[; ;Bluetooth.c: 204: return (tempNib - '0');
+"204
 [e ) -> - -> _tempNib `ui -> 48 `ui `uc ]
 [e $UE 120  ]
-[; ;Bluetooth.c: 204: }
-"204
+[; ;Bluetooth.c: 205: }
+"205
 [e :UE 120 ]
 }
-"215
+"216
 [v _makeHexByte `(uc  1 ef2`uc`uc ]
 {
-[; ;Bluetooth.c: 214: unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo)
-[; ;Bluetooth.c: 215: {
+[; ;Bluetooth.c: 215: unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo)
+[; ;Bluetooth.c: 216: {
 [e :U _makeHexByte ]
 [v _nibOne `uc  1 r1 ]
 [v _nibTwo `uc  1 r2 ]
 [f ]
-"216
-[v _input_byte `uc  1 a ]
-[; ;Bluetooth.c: 216: unsigned char input_byte;
-[; ;Bluetooth.c: 217: input_byte = (makeNibble(nibOne)<<4);
 "217
-[e = _input_byte -> << -> ( _makeNibble (1 _nibOne `i -> 4 `i `uc ]
-[; ;Bluetooth.c: 218: input_byte|= makeNibble(nibTwo);
+[v _input_byte `uc  1 a ]
+[; ;Bluetooth.c: 217: unsigned char input_byte;
+[; ;Bluetooth.c: 218: input_byte = (makeNibble(nibOne)<<4);
 "218
-[e =| _input_byte ( _makeNibble (1 _nibTwo ]
-[; ;Bluetooth.c: 219: return input_byte;
+[e = _input_byte -> << -> ( _makeNibble (1 _nibOne `i -> 4 `i `uc ]
+[; ;Bluetooth.c: 219: input_byte|= makeNibble(nibTwo);
 "219
+[e =| _input_byte ( _makeNibble (1 _nibTwo ]
+[; ;Bluetooth.c: 220: return input_byte;
+"220
 [e ) _input_byte ]
 [e $UE 122  ]
-[; ;Bluetooth.c: 220: }
-"220
+[; ;Bluetooth.c: 221: }
+"221
 [e :UE 122 ]
 }

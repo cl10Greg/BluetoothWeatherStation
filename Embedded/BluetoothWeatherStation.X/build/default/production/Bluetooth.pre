@@ -1250,8 +1250,8 @@ RCSTA = 0x90;
 # 48
 TXSTA = 0x24;
 
-# 56
-SPBRG = 129;
+# 57
+SPBRG = 25;
 
 GIE = 1;
 
@@ -1261,31 +1261,31 @@ RCIE = 1;
 
 }
 
-# 73
+# 74
 void writeByte(unsigned char Byte)
 {
 
-# 78
+# 79
 while(!TXIF);
 
 
 TXREG = Byte;
 }
 
-# 91
+# 92
 unsigned char readByte()
 {
 
-# 97
+# 98
 while(!RCIF);
 
-# 106
+# 107
 return RCREG;
 
 
 }
 
-# 119
+# 120
 void echoBack()
 {
 
@@ -1298,7 +1298,7 @@ writeByte(ch);
 writeByte('*');
 }
 
-# 139
+# 140
 void writeString(unsigned char* userString)
 {
 
@@ -1312,7 +1312,7 @@ writeByte((unsigned char)i);
 
 }
 
-# 161
+# 162
 void readString(unsigned char* readStorage)
 {
 
@@ -1342,7 +1342,7 @@ eeprom_write(RXLenAddr,i);
 
 }
 
-# 198
+# 199
 unsigned char makeNibble(unsigned char tempNib)
 {
 if(tempNib>='A'){
@@ -1351,7 +1351,7 @@ return ((tempNib - (unsigned char)'A')+10);
 return (tempNib - '0');
 }
 
-# 214
+# 215
 unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo)
 {
 unsigned char input_byte;

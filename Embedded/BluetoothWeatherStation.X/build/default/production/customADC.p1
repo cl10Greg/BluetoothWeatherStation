@@ -2102,38 +2102,38 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;customADC.c: 22: ADCON1 = 0x0F;
 "22
 [e = _ADCON1 -> -> 15 `i `uc ]
-[; ;customADC.c: 39: ADCON0 = 0x80;
-"39
-[e = _ADCON0 -> -> 128 `i `uc ]
-[; ;customADC.c: 40: }
+[; ;customADC.c: 40: ADCON0 = 0x80;
 "40
+[e = _ADCON0 -> -> 128 `i `uc ]
+[; ;customADC.c: 41: }
+"41
 [e :UE 101 ]
 }
-"43
+"44
 [v _selectTemp `(v  1 ef ]
 {
-[; ;customADC.c: 42: void selectTemp()
-[; ;customADC.c: 43: {
+[; ;customADC.c: 43: void selectTemp()
+[; ;customADC.c: 44: {
 [e :U _selectTemp ]
 [f ]
-[; ;customADC.c: 44: ADCON0 = 0x80;
-"44
-[e = _ADCON0 -> -> 128 `i `uc ]
-[; ;customADC.c: 45: }
+[; ;customADC.c: 45: ADCON0 = 0x80;
 "45
+[e = _ADCON0 -> -> 128 `i `uc ]
+[; ;customADC.c: 46: }
+"46
 [e :UE 102 ]
 }
-"48
+"49
 [v _selectHumidity `(v  1 ef ]
 {
-[; ;customADC.c: 47: void selectHumidity()
-[; ;customADC.c: 48: {
+[; ;customADC.c: 48: void selectHumidity()
+[; ;customADC.c: 49: {
 [e :U _selectHumidity ]
 [f ]
-[; ;customADC.c: 49: ADCON0 = 0x84;
-"49
-[e = _ADCON0 -> -> 132 `i `uc ]
-[; ;customADC.c: 50: }
+[; ;customADC.c: 50: ADCON0 = 0x84;
 "50
+[e = _ADCON0 -> -> 132 `i `uc ]
+[; ;customADC.c: 51: }
+"51
 [e :UE 103 ]
 }

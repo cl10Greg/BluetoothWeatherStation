@@ -1197,12 +1197,12 @@ RD4 = 0;
 RD5 = 0;
 RD6 = 0;
 RD7 = 0;
-_delay((unsigned long)((15)*(20000000/4000.0)));
+_delay((unsigned long)((15)*(4000000/4000.0)));
 PORTD = 0x30;
 togE();
-_delay((unsigned long)((5)*(20000000/4000.0)));
+_delay((unsigned long)((5)*(4000000/4000.0)));
 togE();
-_delay((unsigned long)((200)*(20000000/4000000.0)));
+_delay((unsigned long)((200)*(4000000/4000000.0)));
 togE();
 PORTD = 0x20;
 togE();
@@ -1216,13 +1216,13 @@ lcdWrite(0x60);
 
 void togE(){
 RD2 = 1;
-_delay((unsigned long)((2)*(20000000/4000.0)));
+_delay((unsigned long)((2)*(4000000/4000.0)));
 RD2 = 0;
-_delay((unsigned long)((2)*(20000000/4000.0)));
+_delay((unsigned long)((2)*(4000000/4000.0)));
 }
 
 void lcdWrite(unsigned char c){
-_delay((unsigned long)((40)*(20000000/4000000.0)));
+_delay((unsigned long)((40)*(4000000/4000000.0)));
 PORTD = ((c >> 4) & 0xF0);
 togE();
 PORTD = (c & 0xF0);
@@ -1232,7 +1232,7 @@ togE();
 void lcdClear(){
 RD0 = 0;
 lcdWrite(0x10);
-_delay((unsigned long)((2)*(20000000/4000.0)));
+_delay((unsigned long)((2)*(4000000/4000.0)));
 }
 
 void lcdPuts(const char* s){
@@ -1249,5 +1249,5 @@ lcdWrite(c);
 void lcdGoto(unsigned char pos){
 RD0 = 0;
 lcdWrite(0x80+pos);
-_delay((unsigned long)((10)*(20000000/4000.0)));
+_delay((unsigned long)((10)*(4000000/4000.0)));
 }

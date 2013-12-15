@@ -13,8 +13,8 @@
 #define NEWLINE '\n'
 
 //Set the oscillator frequency to 20MHz
-#define _XTAL_FREQ 20000000
-
+//#define _XTAL_FREQ 20000000
+#define _XTAL_FREQ 4000000
 
 const char member1[] = "Greg Girard";
 const char member2[] = "Deepak Chandrasekar";

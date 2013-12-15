@@ -53,7 +53,8 @@ void initUSART()
          * BRGH = 1:    FOSC/(16(X+1))
          * 20000000/(16(9600+1)) = 130
          * ~129 on the datasheet                                */
-	SPBRG = 129;
+	//SPBRG = 129; 20MHz
+        SPBRG = 25; //4MHz
         //Turn on global interrupts
         GIE = 1;
         //Turn on the peripheral interrupts

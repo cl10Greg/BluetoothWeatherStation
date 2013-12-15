@@ -1254,7 +1254,8 @@ void lcdPutch(char c);
 void lcdGoto(unsigned char pos);
 
 # 32 "main.c"
-asm("\tpsect config,class=CONFIG,delta=2"); asm("\tdw ""0xFFFB & 0xFF7F & 0xFFBF & 0xFFFE & 0xFFFF") ;
+asm("\tpsect config,class=CONFIG,delta=2"); asm("\tdw ""0xFFFB & 0xFF7F & 0xFFBF & 0xFFFD & 0xFFFF") ;
+
 
 void getPacket(void);
 
@@ -1264,7 +1265,7 @@ getPacket();
 }
 }
 
-# 50
+# 51
 int main()
 {
 char testString[] = "Welcome\n";
@@ -1289,7 +1290,7 @@ writeString(testString);
 
 while(1){
 getTemp();
-_delay((unsigned long)((10)*(20000000/4000.0)));
+_delay((unsigned long)((10)*(4000000/4000.0)));
 }
 
 

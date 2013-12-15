@@ -18,8 +18,9 @@ void initADC()
      * 0:PCFG0      Port configuration control bits
      * 0100 0000:   0xC0
      */
-    //ADCON1 = 0x80;
-    ADCON1 = 0x0F;
+    ADCON1 = 0x80;
+   //ADCON1 = 0x0F;
+    //ADCON1 = 0x8F;
 
     /* ADCON0:      A/D module control register
      * 7:ADCS1      Conversion clock select bit

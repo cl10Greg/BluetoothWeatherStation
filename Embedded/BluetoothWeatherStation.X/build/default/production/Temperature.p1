@@ -2112,9 +2112,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;Temperature.c: 9: ADON = 1;
 "9
 [e = _ADON -> -> 1 `i `b ]
-[; ;Temperature.c: 13: _delay((unsigned long)((10)*(20000000/4000.0)));
+[; ;Temperature.c: 13: _delay((unsigned long)((10)*(4000000/4000.0)));
 "13
-[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 4000000 `l `d .4000.0 `ul ]
 [; ;Temperature.c: 15: GO_nDONE = 1;
 "15
 [e = _GO_nDONE -> -> 1 `i `b ]
