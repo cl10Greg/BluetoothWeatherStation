@@ -12,7 +12,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "24 userMacro.h
 [v _groupNum `Cuc  1 e ]
 "26 userMacro.h
-[v _readError `Cuc  -> 0 `x e ]
+[v _readError `uc  -> 0 `x e ]
 "30 userMacro.h
 [v _userStartByte `Cuc  1 e ]
 "32 userMacro.h
@@ -1095,7 +1095,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-[; ;userMacro.h: 26: const unsigned char readError[] = "Not a valid read command";
+[; ;userMacro.h: 26: unsigned char readError[] = "Not a valid read command";
 "30
 [i _userStartByte
 -> -> 170 `i `uc
@@ -2100,165 +2100,168 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;eeprom_routines.h: 43: extern void eecpymem(volatile unsigned char *to, eeprom unsigned char *from, unsigned char size);
 [; ;eeprom_routines.h: 44: extern void memcpyee(eeprom unsigned char *to, const unsigned char *from, unsigned char size);
 [; ;pic.h: 154: extern void _delay(unsigned long);
-"6 Command.c
+"12 Command.c
 [v _readCommands `(v  1 ef ]
 {
-[; ;Command.c: 6: void readCommands(){
+[; ;Command.c: 12: void readCommands(){
 [e :U _readCommands ]
 [f ]
-[; ;Command.c: 8: switch(eeprom_read(cmdByteAddr)){
-"8
+[; ;Command.c: 14: switch(eeprom_read(cmdByteAddr)){
+"14
 [e $U 103  ]
 {
-[; ;Command.c: 10: case 0:
-"10
-[e :U 104 ]
-[; ;Command.c: 11: writeByte(userStartByte);
-"11
-[e ( _writeByte (1 _userStartByte ]
-[; ;Command.c: 12: writeByte(tempValHAddr);
-"12
-[e ( _writeByte (1 _tempValHAddr ]
-[; ;Command.c: 13: writeByte(tempValLAddr);
-"13
-[e ( _writeByte (1 _tempValLAddr ]
-[; ;Command.c: 14: break;
-"14
-[e $U 102  ]
-[; ;Command.c: 16: case 1:
+[; ;Command.c: 16: case 0:
 "16
-[e :U 105 ]
+[e :U 104 ]
 [; ;Command.c: 17: writeByte(userStartByte);
 "17
 [e ( _writeByte (1 _userStartByte ]
-[; ;Command.c: 18: writeByte(tempHiAddr);
+[; ;Command.c: 18: writeByte(tempValHAddr);
 "18
-[e ( _writeByte (1 _tempHiAddr ]
-[; ;Command.c: 19: break;
+[e ( _writeByte (1 _tempValHAddr ]
+[; ;Command.c: 19: writeByte(tempValLAddr);
 "19
+[e ( _writeByte (1 _tempValLAddr ]
+[; ;Command.c: 20: break;
+"20
 [e $U 102  ]
-[; ;Command.c: 21: case 2:
-"21
-[e :U 106 ]
-[; ;Command.c: 22: writeByte(userStartByte);
+[; ;Command.c: 22: case 1:
 "22
-[e ( _writeByte (1 _userStartByte ]
-[; ;Command.c: 23: writeByte(tempLoAddr);
+[e :U 105 ]
+[; ;Command.c: 23: writeByte(userStartByte);
 "23
-[e ( _writeByte (1 _tempLoAddr ]
-[; ;Command.c: 24: break;
-"24
-[e $U 102  ]
-[; ;Command.c: 26: case 3:
-"26
-[e :U 107 ]
-[; ;Command.c: 27: writeByte(userStartByte);
-"27
 [e ( _writeByte (1 _userStartByte ]
-[; ;Command.c: 28: writeByte(humValHAddr);
+[; ;Command.c: 24: writeByte(tempHiAddr);
+"24
+[e ( _writeByte (1 _tempHiAddr ]
+[; ;Command.c: 25: break;
+"25
+[e $U 102  ]
+[; ;Command.c: 27: case 2:
+"27
+[e :U 106 ]
+[; ;Command.c: 28: writeByte(userStartByte);
 "28
-[e ( _writeByte (1 _humValHAddr ]
-[; ;Command.c: 29: writeByte(humValLAddr);
+[e ( _writeByte (1 _userStartByte ]
+[; ;Command.c: 29: writeByte(tempLoAddr);
 "29
-[e ( _writeByte (1 _humValLAddr ]
+[e ( _writeByte (1 _tempLoAddr ]
 [; ;Command.c: 30: break;
 "30
 [e $U 102  ]
-[; ;Command.c: 32: case 4:
+[; ;Command.c: 32: case 3:
 "32
-[e :U 108 ]
+[e :U 107 ]
 [; ;Command.c: 33: writeByte(userStartByte);
 "33
 [e ( _writeByte (1 _userStartByte ]
-[; ;Command.c: 34: writeByte(humHiAddr);
+[; ;Command.c: 34: writeByte(humValHAddr);
 "34
-[e ( _writeByte (1 _humHiAddr ]
-[; ;Command.c: 35: break;
+[e ( _writeByte (1 _humValHAddr ]
+[; ;Command.c: 35: writeByte(humValLAddr);
 "35
+[e ( _writeByte (1 _humValLAddr ]
+[; ;Command.c: 36: break;
+"36
 [e $U 102  ]
-[; ;Command.c: 37: case 5:
-"37
-[e :U 109 ]
-[; ;Command.c: 38: writeByte(userStartByte);
+[; ;Command.c: 38: case 4:
 "38
-[e ( _writeByte (1 _userStartByte ]
-[; ;Command.c: 39: writeByte(humLoAddr);
+[e :U 108 ]
+[; ;Command.c: 39: writeByte(userStartByte);
 "39
-[e ( _writeByte (1 _humLoAddr ]
-[; ;Command.c: 40: break;
+[e ( _writeByte (1 _userStartByte ]
+[; ;Command.c: 40: writeByte(humHiAddr);
 "40
+[e ( _writeByte (1 _humHiAddr ]
+[; ;Command.c: 41: break;
+"41
 [e $U 102  ]
-[; ;Command.c: 42: case 6:
-"42
-[e :U 110 ]
-[; ;Command.c: 43: writeByte('R');
+[; ;Command.c: 43: case 5:
 "43
-[e ( _writeByte (1 -> -> 82 `ui `uc ]
-[; ;Command.c: 44: writeByte('T');
+[e :U 109 ]
+[; ;Command.c: 44: writeByte(userStartByte);
 "44
-[e ( _writeByte (1 -> -> 84 `ui `uc ]
-[; ;Command.c: 45: writeByte('C');
+[e ( _writeByte (1 _userStartByte ]
+[; ;Command.c: 45: writeByte(humLoAddr);
 "45
-[e ( _writeByte (1 -> -> 67 `ui `uc ]
+[e ( _writeByte (1 _humLoAddr ]
 [; ;Command.c: 46: break;
 "46
 [e $U 102  ]
-[; ;Command.c: 48: case 7:
+[; ;Command.c: 48: case 6:
 "48
-[e :U 111 ]
+[e :U 110 ]
 [; ;Command.c: 49: writeByte(userStartByte);
 "49
 [e ( _writeByte (1 _userStartByte ]
-[; ;Command.c: 50: writeByte(tempValHAddr);
+[; ;Command.c: 50: writeByte('R');
 "50
-[e ( _writeByte (1 _tempValHAddr ]
-[; ;Command.c: 51: writeByte(tempValLAddr);
-"51
-[e ( _writeByte (1 _tempValLAddr ]
-[; ;Command.c: 52: writeByte(tempHiAddr);
-"52
-[e ( _writeByte (1 _tempHiAddr ]
-[; ;Command.c: 53: writeByte(tempLoAddr);
-"53
-[e ( _writeByte (1 _tempLoAddr ]
-[; ;Command.c: 54: writeByte(humValHAddr);
-"54
-[e ( _writeByte (1 _humValHAddr ]
-[; ;Command.c: 55: writeByte(humValLAddr);
-"55
-[e ( _writeByte (1 _humValLAddr ]
-[; ;Command.c: 56: writeByte(humHiAddr);
-"56
-[e ( _writeByte (1 _humHiAddr ]
-[; ;Command.c: 57: writeByte(humLoAddr);
-"57
-[e ( _writeByte (1 _humLoAddr ]
-[; ;Command.c: 58: writeByte('R');
-"58
 [e ( _writeByte (1 -> -> 82 `ui `uc ]
-[; ;Command.c: 59: writeByte('T');
-"59
+[; ;Command.c: 51: writeByte('T');
+"51
 [e ( _writeByte (1 -> -> 84 `ui `uc ]
-[; ;Command.c: 60: writeByte('C');
-"60
+[; ;Command.c: 52: writeByte('C');
+"52
 [e ( _writeByte (1 -> -> 67 `ui `uc ]
-[; ;Command.c: 61: break;
+[; ;Command.c: 53: break;
+"53
+[e $U 102  ]
+[; ;Command.c: 55: case 7:
+"55
+[e :U 111 ]
+[; ;Command.c: 56: writeByte(userStartByte);
+"56
+[e ( _writeByte (1 _userStartByte ]
+[; ;Command.c: 57: writeByte(tempValHAddr);
+"57
+[e ( _writeByte (1 _tempValHAddr ]
+[; ;Command.c: 58: writeByte(tempValLAddr);
+"58
+[e ( _writeByte (1 _tempValLAddr ]
+[; ;Command.c: 59: writeByte(tempHiAddr);
+"59
+[e ( _writeByte (1 _tempHiAddr ]
+[; ;Command.c: 60: writeByte(tempLoAddr);
+"60
+[e ( _writeByte (1 _tempLoAddr ]
+[; ;Command.c: 61: writeByte(humValHAddr);
 "61
-[e $U 102  ]
-[; ;Command.c: 63: default:
+[e ( _writeByte (1 _humValHAddr ]
+[; ;Command.c: 62: writeByte(humValLAddr);
+"62
+[e ( _writeByte (1 _humValLAddr ]
+[; ;Command.c: 63: writeByte(humHiAddr);
 "63
-[e :U 112 ]
-[; ;Command.c: 64: writeString(readError);
+[e ( _writeByte (1 _humHiAddr ]
+[; ;Command.c: 64: writeByte(humLoAddr);
 "64
-[e ( _writeString (1 -> &U _readError `*uc ]
-[; ;Command.c: 65: break;
+[e ( _writeByte (1 _humLoAddr ]
+[; ;Command.c: 65: writeByte('R');
 "65
-[e $U 102  ]
+[e ( _writeByte (1 -> -> 82 `ui `uc ]
+[; ;Command.c: 66: writeByte('T');
 "66
-}
-[; ;Command.c: 66: }
+[e ( _writeByte (1 -> -> 84 `ui `uc ]
+[; ;Command.c: 67: writeByte('C');
+"67
+[e ( _writeByte (1 -> -> 67 `ui `uc ]
+[; ;Command.c: 68: break;
+"68
 [e $U 102  ]
-"8
+[; ;Command.c: 70: default:
+"70
+[e :U 112 ]
+[; ;Command.c: 71: writeString(readError);
+"71
+[e ( _writeString (1 &U _readError ]
+[; ;Command.c: 72: break;
+"72
+[e $U 102  ]
+"73
+}
+[; ;Command.c: 73: }
+[e $U 102  ]
+"14
 [e :U 103 ]
 [e [\ ( _eeprom_read (1 _cmdByteAddr , $ -> -> 0 `i `uc 104
  , $ -> -> 1 `i `uc 105
@@ -2269,19 +2272,19 @@ Version 3.2 HI-TECH Software Intermediate Code
  , $ -> -> 6 `i `uc 110
  , $ -> -> 7 `i `uc 111
  112 ]
-"66
+"73
 [e :U 102 ]
-[; ;Command.c: 69: }
-"69
+[; ;Command.c: 76: }
+"76
 [e :UE 101 ]
 }
-"71
+"85
 [v _writeCommands `(v  1 ef ]
 {
-[; ;Command.c: 71: void writeCommands(){
+[; ;Command.c: 85: void writeCommands(){
 [e :U _writeCommands ]
 [f ]
-[; ;Command.c: 75: }
-"75
+[; ;Command.c: 89: }
+"89
 [e :UE 113 ]
 }

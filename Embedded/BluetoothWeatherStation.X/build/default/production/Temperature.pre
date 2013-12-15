@@ -22,7 +22,7 @@ const char classNum[] = "ECE5620";
 const char classTerm[] = "Fall 2013";
 const char groupNum = '2';
 
-const unsigned char readError[] = "Not a valid read command";
+unsigned char readError[] = "Not a valid read command";
 
 
 

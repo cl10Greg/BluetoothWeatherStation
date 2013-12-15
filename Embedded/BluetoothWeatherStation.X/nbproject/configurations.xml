@@ -12,8 +12,8 @@
       <itemPath>customADC.h</itemPath>
       <itemPath>pic16f877a.h</itemPath>
       <itemPath>userMacro.h</itemPath>
-      <itemPath>LCD.h</itemPath>
       <itemPath>Command.h</itemPath>
+      <itemPath>16x4LCD.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -23,8 +23,8 @@
       <itemPath>Temperature.c</itemPath>
       <itemPath>customADC.c</itemPath>
       <itemPath>main.c</itemPath>
-      <itemPath>LCD.c</itemPath>
       <itemPath>Command.c</itemPath>
+      <itemPath>16x4LCD.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -34,6 +34,8 @@
   </logicalFolder>
   <sourceRootList>
     <Elem>.</Elem>
+    <Elem>../../../../../Downloads/Interfacing-LCD-with-PIC-Microcontroller-Hi-Tech-C/Interfacing LCD with PIC Microcontroller - Hi Tech C/Header File</Elem>
+    <Elem>../../../../../Downloads/Interfacing-LCD-with-PIC-Microcontroller-Hi-Tech-C/Interfacing LCD with PIC Microcontroller - Hi Tech C/4 Bit</Elem>
   </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>

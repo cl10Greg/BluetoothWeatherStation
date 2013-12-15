@@ -2267,10 +2267,10 @@
 `uc 1 EEPGD 1 0 :1:7 
 ]
 [u S4757 . 1 `S1248 1 . 1 0 ]
-"35 main.c
-[v F1172 `(v  1 t 0 ]
+"36 main.c
+[v F1183 `(v  1 t 0 ]
 "103 C:\Microchip\HiTech\include\pic16f877a.h
-[s S4885 . 1 `uc 1 C 1 0 :1:0 
+[s S4903 . 1 `uc 1 C 1 0 :1:0 
 `uc 1 DC 1 0 :1:1 
 `uc 1 Z 1 0 :1:2 
 `uc 1 nPD 1 0 :1:3 
@@ -2278,22 +2278,22 @@
 `uc 1 RP 1 0 :2:5 
 `uc 1 IRP 1 0 :1:7 
 ]
-[s S4893 . 1 `uc 1 . 1 0 :5:0 
+[s S4911 . 1 `uc 1 . 1 0 :5:0 
 `uc 1 RP0 1 0 :1:5 
 `uc 1 RP1 1 0 :1:6 
 ]
-[u S4897 . 1 `S71 1 . 1 0 `S79 1 . 1 0 ]
+[u S4915 . 1 `S71 1 . 1 0 `S79 1 . 1 0 ]
 "135
-[s S4909 . 1 `uc 1 RA0 1 0 :1:0 
+[s S4927 . 1 `uc 1 RA0 1 0 :1:0 
 `uc 1 RA1 1 0 :1:1 
 `uc 1 RA2 1 0 :1:2 
 `uc 1 RA3 1 0 :1:3 
 `uc 1 RA4 1 0 :1:4 
 `uc 1 RA5 1 0 :1:5 
 ]
-[u S4916 . 1 `S107 1 . 1 0 ]
+[u S4934 . 1 `S107 1 . 1 0 ]
 "159
-[s S4928 . 1 `uc 1 RB0 1 0 :1:0 
+[s S4946 . 1 `uc 1 RB0 1 0 :1:0 
 `uc 1 RB1 1 0 :1:1 
 `uc 1 RB2 1 0 :1:2 
 `uc 1 RB3 1 0 :1:3 
@@ -2302,9 +2302,9 @@
 `uc 1 RB6 1 0 :1:6 
 `uc 1 RB7 1 0 :1:7 
 ]
-[u S4937 . 1 `S133 1 . 1 0 ]
+[u S4955 . 1 `S133 1 . 1 0 ]
 "185
-[s S4949 . 1 `uc 1 RC0 1 0 :1:0 
+[s S4967 . 1 `uc 1 RC0 1 0 :1:0 
 `uc 1 RC1 1 0 :1:1 
 `uc 1 RC2 1 0 :1:2 
 `uc 1 RC3 1 0 :1:3 
@@ -2313,9 +2313,9 @@
 `uc 1 RC6 1 0 :1:6 
 `uc 1 RC7 1 0 :1:7 
 ]
-[u S4958 . 1 `S163 1 . 1 0 ]
+[u S4976 . 1 `S163 1 . 1 0 ]
 "211
-[s S4970 . 1 `uc 1 RD0 1 0 :1:0 
+[s S4988 . 1 `uc 1 RD0 1 0 :1:0 
 `uc 1 RD1 1 0 :1:1 
 `uc 1 RD2 1 0 :1:2 
 `uc 1 RD3 1 0 :1:3 
@@ -2324,19 +2324,19 @@
 `uc 1 RD6 1 0 :1:6 
 `uc 1 RD7 1 0 :1:7 
 ]
-[u S4979 . 1 `S193 1 . 1 0 ]
+[u S4997 . 1 `S193 1 . 1 0 ]
 "232
-[s S4986 . 1 `uc 1 RE0 1 0 :1:0 
+[s S5004 . 1 `uc 1 RE0 1 0 :1:0 
 `uc 1 RE1 1 0 :1:1 
 `uc 1 RE2 1 0 :1:2 
 ]
-[u S4990 . 1 `S218 1 . 1 0 ]
+[u S5008 . 1 `S218 1 . 1 0 ]
 "244
-[s S4994 . 1 `uc 1 PCLATH 1 0 :5:0 
+[s S5012 . 1 `uc 1 PCLATH 1 0 :5:0 
 ]
-[u S4996 . 1 `S230 1 . 1 0 ]
+[u S5014 . 1 `S230 1 . 1 0 ]
 "266
-[s S5010 . 1 `uc 1 RBIF 1 0 :1:0 
+[s S5028 . 1 `uc 1 RBIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 RBIE 1 0 :1:3 
@@ -2345,14 +2345,14 @@
 `uc 1 PEIE 1 0 :1:6 
 `uc 1 GIE 1 0 :1:7 
 ]
-[s S5019 . 1 `uc 1 . 1 0 :2:0 
+[s S5037 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 T0IE 1 0 :1:5 
 ]
-[u S5024 . 1 `S248 1 . 1 0 `S257 1 . 1 0 ]
+[u S5042 . 1 `S248 1 . 1 0 `S257 1 . 1 0 ]
 "298
-[s S5037 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[s S5055 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 CCP1IF 1 0 :1:2 
 `uc 1 SSPIF 1 0 :1:3 
@@ -2361,7 +2361,7 @@
 `uc 1 ADIF 1 0 :1:6 
 `uc 1 PSPIF 1 0 :1:7 
 ]
-[s S5046 . 1 `uc 1 . 1 0 :1:0 
+[s S5064 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -2369,39 +2369,39 @@
 `uc 1 . 1 0 :1:6 
 `uc 1 . 1 0 :1:7 
 ]
-[u S5054 . 1 `S289 1 . 1 0 `S298 1 . 1 0 ]
+[u S5072 . 1 `S289 1 . 1 0 `S298 1 . 1 0 ]
 "329
-[s S5063 . 1 `uc 1 CCP2IF 1 0 :1:0 
+[s S5081 . 1 `uc 1 CCP2IF 1 0 :1:0 
 `uc 1 . 1 0 :2:1 
 `uc 1 BCLIF 1 0 :1:3 
 `uc 1 EEIF 1 0 :1:4 
 `uc 1 . 1 0 :1:5 
 `uc 1 CMIF 1 0 :1:6 
 ]
-[u S5070 . 1 `S332 1 . 1 0 ]
+[u S5088 . 1 `S332 1 . 1 0 ]
 "365
-[s S5085 . 1 `uc 1 TMR1ON 1 0 :1:0 
+[s S5103 . 1 `uc 1 TMR1ON 1 0 :1:0 
 `uc 1 TMR1CS 1 0 :1:1 
 `uc 1 nT1SYNC 1 0 :1:2 
 `uc 1 T1OSCEN 1 0 :1:3 
 `uc 1 T1CKPS 1 0 :2:4 
 ]
-[s S5091 . 1 `uc 1 . 1 0 :2:0 
+[s S5109 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T1SYNC 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 T1CKPS0 1 0 :1:4 
 `uc 1 T1CKPS1 1 0 :1:5 
 ]
-[s S5097 . 1 `uc 1 . 1 0 :2:0 
+[s S5115 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T1INSYNC 1 0 :1:2 
 ]
-[u S5100 . 1 `S361 1 . 1 0 `S367 1 . 1 0 `S373 1 . 1 0 ]
+[u S5118 . 1 `S361 1 . 1 0 `S367 1 . 1 0 `S373 1 . 1 0 ]
 "402
-[s S5114 . 1 `uc 1 T2CKPS 1 0 :2:0 
+[s S5132 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 TOUTPS 1 0 :4:3 
 ]
-[s S5118 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+[s S5136 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 TOUTPS0 1 0 :1:3 
@@ -2409,33 +2409,33 @@
 `uc 1 TOUTPS2 1 0 :1:5 
 `uc 1 TOUTPS3 1 0 :1:6 
 ]
-[u S5126 . 1 `S405 1 . 1 0 `S409 1 . 1 0 ]
+[u S5144 . 1 `S405 1 . 1 0 `S409 1 . 1 0 ]
 "436
-[s S5140 . 1 `uc 1 SSPM 1 0 :4:0 
+[s S5158 . 1 `uc 1 SSPM 1 0 :4:0 
 `uc 1 CKP 1 0 :1:4 
 `uc 1 SSPEN 1 0 :1:5 
 `uc 1 SSPOV 1 0 :1:6 
 `uc 1 WCOL 1 0 :1:7 
 ]
-[s S5146 . 1 `uc 1 SSPM0 1 0 :1:0 
+[s S5164 . 1 `uc 1 SSPM0 1 0 :1:0 
 `uc 1 SSPM1 1 0 :1:1 
 `uc 1 SSPM2 1 0 :1:2 
 `uc 1 SSPM3 1 0 :1:3 
 ]
-[u S5151 . 1 `S443 1 . 1 0 `S449 1 . 1 0 ]
+[u S5169 . 1 `S443 1 . 1 0 `S449 1 . 1 0 ]
 "475
-[s S5165 . 1 `uc 1 CCP1M 1 0 :4:0 
+[s S5183 . 1 `uc 1 CCP1M 1 0 :4:0 
 `uc 1 CCP1Y 1 0 :1:4 
 `uc 1 CCP1X 1 0 :1:5 
 ]
-[s S5169 . 1 `uc 1 CCP1M0 1 0 :1:0 
+[s S5187 . 1 `uc 1 CCP1M0 1 0 :1:0 
 `uc 1 CCP1M1 1 0 :1:1 
 `uc 1 CCP1M2 1 0 :1:2 
 `uc 1 CCP1M3 1 0 :1:3 
 ]
-[u S5174 . 1 `S479 1 . 1 0 `S483 1 . 1 0 ]
+[u S5192 . 1 `S479 1 . 1 0 `S483 1 . 1 0 ]
 "506
-[s S5191 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S5209 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -2444,42 +2444,42 @@
 `uc 1 RX9 1 0 :1:6 
 `uc 1 SPEN 1 0 :1:7 
 ]
-[s S5200 . 1 `uc 1 RCD8 1 0 :1:0 
+[s S5218 . 1 `uc 1 RCD8 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 RC9 1 0 :1:6 
 ]
-[s S5204 . 1 `uc 1 . 1 0 :6:0 
+[s S5222 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 nRC8 1 0 :1:6 
 ]
-[s S5207 . 1 `uc 1 . 1 0 :6:0 
+[s S5225 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 RC8_9 1 0 :1:6 
 ]
-[u S5210 . 1 `S514 1 . 1 0 `S523 1 . 1 0 `S527 1 . 1 0 `S530 1 . 1 0 ]
+[u S5228 . 1 `S514 1 . 1 0 `S523 1 . 1 0 `S527 1 . 1 0 `S530 1 . 1 0 ]
 "563
-[s S5228 . 1 `uc 1 CCP2M 1 0 :4:0 
+[s S5246 . 1 `uc 1 CCP2M 1 0 :4:0 
 `uc 1 CCP2Y 1 0 :1:4 
 `uc 1 CCP2X 1 0 :1:5 
 ]
-[s S5232 . 1 `uc 1 CCP2M0 1 0 :1:0 
+[s S5250 . 1 `uc 1 CCP2M0 1 0 :1:0 
 `uc 1 CCP2M1 1 0 :1:1 
 `uc 1 CCP2M2 1 0 :1:2 
 `uc 1 CCP2M3 1 0 :1:3 
 ]
-[u S5237 . 1 `S570 1 . 1 0 `S574 1 . 1 0 ]
+[u S5255 . 1 `S570 1 . 1 0 `S574 1 . 1 0 ]
 "596
-[s S5253 . 1 `uc 1 ADON 1 0 :1:0 
+[s S5271 . 1 `uc 1 ADON 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 GO_nDONE 1 0 :1:2 
 `uc 1 CHS 1 0 :3:3 
 `uc 1 ADCS 1 0 :2:6 
 ]
-[s S5259 . 1 `uc 1 . 1 0 :1:0 
+[s S5277 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 . 1 0 :3:3 
 `uc 1 . 1 0 :2:6 
 ]
-[s S5265 . 1 `uc 1 . 1 0 :2:0 
+[s S5283 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 GO 1 0 :1:2 
 `uc 1 CHS0 1 0 :1:3 
 `uc 1 CHS1 1 0 :1:4 
@@ -2487,37 +2487,37 @@
 `uc 1 ADCS0 1 0 :1:6 
 `uc 1 ADCS1 1 0 :1:7 
 ]
-[s S5273 . 1 `uc 1 . 1 0 :2:0 
+[s S5291 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nDONE 1 0 :1:2 
 ]
-[s S5276 . 1 `uc 1 . 1 0 :2:0 
+[s S5294 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 GO_DONE 1 0 :1:2 
 ]
-[u S5279 . 1 `S604 1 . 1 0 `S610 1 . 1 0 `S616 1 . 1 0 `S624 1 . 1 0 `S627 1 . 1 0 ]
+[u S5297 . 1 `S604 1 . 1 0 `S610 1 . 1 0 `S616 1 . 1 0 `S624 1 . 1 0 `S627 1 . 1 0 ]
 "648
-[s S5295 . 1 `uc 1 PS 1 0 :3:0 
+[s S5313 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
 `uc 1 INTEDG 1 0 :1:6 
 `uc 1 nRBPU 1 0 :1:7 
 ]
-[s S5302 . 1 `uc 1 PS0 1 0 :1:0 
+[s S5320 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 ]
-[u S5306 . 1 `S672 1 . 1 0 `S679 1 . 1 0 ]
+[u S5324 . 1 `S672 1 . 1 0 `S679 1 . 1 0 ]
 "675
-[s S5317 . 1 `uc 1 TRISA0 1 0 :1:0 
+[s S5335 . 1 `uc 1 TRISA0 1 0 :1:0 
 `uc 1 TRISA1 1 0 :1:1 
 `uc 1 TRISA2 1 0 :1:2 
 `uc 1 TRISA3 1 0 :1:3 
 `uc 1 TRISA4 1 0 :1:4 
 `uc 1 TRISA5 1 0 :1:5 
 ]
-[u S5324 . 1 `S705 1 . 1 0 ]
+[u S5342 . 1 `S705 1 . 1 0 ]
 "699
-[s S5336 . 1 `uc 1 TRISB0 1 0 :1:0 
+[s S5354 . 1 `uc 1 TRISB0 1 0 :1:0 
 `uc 1 TRISB1 1 0 :1:1 
 `uc 1 TRISB2 1 0 :1:2 
 `uc 1 TRISB3 1 0 :1:3 
@@ -2526,9 +2526,9 @@
 `uc 1 TRISB6 1 0 :1:6 
 `uc 1 TRISB7 1 0 :1:7 
 ]
-[u S5345 . 1 `S731 1 . 1 0 ]
+[u S5363 . 1 `S731 1 . 1 0 ]
 "725
-[s S5357 . 1 `uc 1 TRISC0 1 0 :1:0 
+[s S5375 . 1 `uc 1 TRISC0 1 0 :1:0 
 `uc 1 TRISC1 1 0 :1:1 
 `uc 1 TRISC2 1 0 :1:2 
 `uc 1 TRISC3 1 0 :1:3 
@@ -2537,9 +2537,9 @@
 `uc 1 TRISC6 1 0 :1:6 
 `uc 1 TRISC7 1 0 :1:7 
 ]
-[u S5366 . 1 `S761 1 . 1 0 ]
+[u S5384 . 1 `S761 1 . 1 0 ]
 "751
-[s S5378 . 1 `uc 1 TRISD0 1 0 :1:0 
+[s S5396 . 1 `uc 1 TRISD0 1 0 :1:0 
 `uc 1 TRISD1 1 0 :1:1 
 `uc 1 TRISD2 1 0 :1:2 
 `uc 1 TRISD3 1 0 :1:3 
@@ -2548,9 +2548,9 @@
 `uc 1 TRISD6 1 0 :1:6 
 `uc 1 TRISD7 1 0 :1:7 
 ]
-[u S5387 . 1 `S791 1 . 1 0 ]
+[u S5405 . 1 `S791 1 . 1 0 ]
 "776
-[s S5398 . 1 `uc 1 TRISE0 1 0 :1:0 
+[s S5416 . 1 `uc 1 TRISE0 1 0 :1:0 
 `uc 1 TRISE1 1 0 :1:1 
 `uc 1 TRISE2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -2559,9 +2559,9 @@
 `uc 1 OBF 1 0 :1:6 
 `uc 1 IBF 1 0 :1:7 
 ]
-[u S5407 . 1 `S820 1 . 1 0 ]
+[u S5425 . 1 `S820 1 . 1 0 ]
 "802
-[s S5419 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[s S5437 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 CCP1IE 1 0 :1:2 
 `uc 1 SSPIE 1 0 :1:3 
@@ -2570,25 +2570,25 @@
 `uc 1 ADIE 1 0 :1:6 
 `uc 1 PSPIE 1 0 :1:7 
 ]
-[u S5428 . 1 `S850 1 . 1 0 ]
+[u S5446 . 1 `S850 1 . 1 0 ]
 "824
-[s S5436 . 1 `uc 1 CCP2IE 1 0 :1:0 
+[s S5454 . 1 `uc 1 CCP2IE 1 0 :1:0 
 `uc 1 . 1 0 :2:1 
 `uc 1 BCLIE 1 0 :1:3 
 `uc 1 EEIE 1 0 :1:4 
 `uc 1 . 1 0 :1:5 
 `uc 1 CMIE 1 0 :1:6 
 ]
-[u S5443 . 1 `S876 1 . 1 0 ]
+[u S5461 . 1 `S876 1 . 1 0 ]
 "843
-[s S5450 . 1 `uc 1 nBOR 1 0 :1:0 
+[s S5468 . 1 `uc 1 nBOR 1 0 :1:0 
 `uc 1 nPOR 1 0 :1:1 
 ]
-[s S5453 . 1 `uc 1 nBO 1 0 :1:0 
+[s S5471 . 1 `uc 1 nBO 1 0 :1:0 
 ]
-[u S5455 . 1 `S897 1 . 1 0 `S900 1 . 1 0 ]
+[u S5473 . 1 `S897 1 . 1 0 `S900 1 . 1 0 ]
 "866
-[s S5468 . 1 `uc 1 SEN 1 0 :1:0 
+[s S5486 . 1 `uc 1 SEN 1 0 :1:0 
 `uc 1 RSEN 1 0 :1:1 
 `uc 1 PEN 1 0 :1:2 
 `uc 1 RCEN 1 0 :1:3 
@@ -2597,9 +2597,9 @@
 `uc 1 ACKSTAT 1 0 :1:6 
 `uc 1 GCEN 1 0 :1:7 
 ]
-[u S5477 . 1 `S920 1 . 1 0 ]
+[u S5495 . 1 `S920 1 . 1 0 ]
 "914
-[s S5505 . 1 `uc 1 BF 1 0 :1:0 
+[s S5523 . 1 `uc 1 BF 1 0 :1:0 
 `uc 1 UA 1 0 :1:1 
 `uc 1 R_nW 1 0 :1:2 
 `uc 1 S 1 0 :1:3 
@@ -2608,7 +2608,7 @@
 `uc 1 CKE 1 0 :1:6 
 `uc 1 SMP 1 0 :1:7 
 ]
-[s S5514 . 1 `uc 1 . 1 0 :1:0 
+[s S5532 . 1 `uc 1 . 1 0 :1:0 
 `uc 1 . 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -2617,40 +2617,40 @@
 `uc 1 . 1 0 :1:6 
 `uc 1 . 1 0 :1:7 
 ]
-[s S5523 . 1 `uc 1 . 1 0 :2:0 
+[s S5541 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D 1 0 :1:5 
 ]
-[s S5528 . 1 `uc 1 . 1 0 :2:0 
+[s S5546 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 I2C_READ 1 0 :1:2 
 `uc 1 I2C_START 1 0 :1:3 
 `uc 1 I2C_STOP 1 0 :1:4 
 `uc 1 I2C_DATA 1 0 :1:5 
 ]
-[s S5534 . 1 `uc 1 . 1 0 :2:0 
+[s S5552 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nW 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nA 1 0 :1:5 
 ]
-[s S5539 . 1 `uc 1 . 1 0 :2:0 
+[s S5557 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 nWRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 nADDRESS 1 0 :1:5 
 ]
-[s S5544 . 1 `uc 1 . 1 0 :2:0 
+[s S5562 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 R_W 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 D_A 1 0 :1:5 
 ]
-[s S5549 . 1 `uc 1 . 1 0 :2:0 
+[s S5567 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 READ_WRITE 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 DATA_ADDRESS 1 0 :1:5 
 ]
-[u S5554 . 1 `S966 1 . 1 0 `S975 1 . 1 0 `S984 1 . 1 0 `S989 1 . 1 0 `S995 1 . 1 0 `S1000 1 . 1 0 `S1005 1 . 1 0 `S1010 1 . 1 0 ]
+[u S5572 . 1 `S966 1 . 1 0 `S975 1 . 1 0 `S984 1 . 1 0 `S989 1 . 1 0 `S995 1 . 1 0 `S1000 1 . 1 0 `S1005 1 . 1 0 `S1010 1 . 1 0 ]
 "989
-[s S5575 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S5593 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
@@ -2659,69 +2659,536 @@
 `uc 1 TX9 1 0 :1:6 
 `uc 1 CSRC 1 0 :1:7 
 ]
-[s S5584 . 1 `uc 1 TXD8 1 0 :1:0 
+[s S5602 . 1 `uc 1 TXD8 1 0 :1:0 
 `uc 1 . 1 0 :5:1 
 `uc 1 nTX8 1 0 :1:6 
 ]
-[s S5588 . 1 `uc 1 . 1 0 :6:0 
+[s S5606 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 TX8_9 1 0 :1:6 
 ]
-[u S5591 . 1 `S1085 1 . 1 0 `S1094 1 . 1 0 `S1098 1 . 1 0 ]
+[u S5609 . 1 `S1085 1 . 1 0 `S1094 1 . 1 0 `S1098 1 . 1 0 ]
 "1028
-[s S5606 . 1 `uc 1 CM 1 0 :3:0 
+[s S5624 . 1 `uc 1 CM 1 0 :3:0 
 `uc 1 CIS 1 0 :1:3 
 `uc 1 C1INV 1 0 :1:4 
 `uc 1 C2INV 1 0 :1:5 
 `uc 1 C1OUT 1 0 :1:6 
 `uc 1 C2OUT 1 0 :1:7 
 ]
-[s S5613 . 1 `uc 1 CM0 1 0 :1:0 
+[s S5631 . 1 `uc 1 CM0 1 0 :1:0 
 `uc 1 CM1 1 0 :1:1 
 `uc 1 CM2 1 0 :1:2 
 ]
-[u S5617 . 1 `S1132 1 . 1 0 `S1139 1 . 1 0 ]
+[u S5635 . 1 `S1132 1 . 1 0 `S1139 1 . 1 0 ]
 "1056
-[s S5629 . 1 `uc 1 CVR 1 0 :4:0 
+[s S5647 . 1 `uc 1 CVR 1 0 :4:0 
 `uc 1 . 1 0 :1:4 
 `uc 1 CVRR 1 0 :1:5 
 `uc 1 CVROE 1 0 :1:6 
 `uc 1 CVREN 1 0 :1:7 
 ]
-[s S5635 . 1 `uc 1 CVR0 1 0 :1:0 
+[s S5653 . 1 `uc 1 CVR0 1 0 :1:0 
 `uc 1 CVR1 1 0 :1:1 
 `uc 1 CVR2 1 0 :1:2 
 `uc 1 CVR3 1 0 :1:3 
 ]
-[u S5640 . 1 `S1166 1 . 1 0 `S1172 1 . 1 0 ]
+[u S5658 . 1 `S1166 1 . 1 0 `S1172 1 . 1 0 ]
 "1087
-[s S5652 . 1 `uc 1 PCFG 1 0 :4:0 
+[s S5670 . 1 `uc 1 PCFG 1 0 :4:0 
 `uc 1 . 1 0 :2:4 
 `uc 1 ADCS2 1 0 :1:6 
 `uc 1 ADFM 1 0 :1:7 
 ]
-[s S5657 . 1 `uc 1 PCFG0 1 0 :1:0 
+[s S5675 . 1 `uc 1 PCFG0 1 0 :1:0 
 `uc 1 PCFG1 1 0 :1:1 
 `uc 1 PCFG2 1 0 :1:2 
 `uc 1 PCFG3 1 0 :1:3 
 ]
-[u S5662 . 1 `S1200 1 . 1 0 `S1205 1 . 1 0 ]
+[u S5680 . 1 `S1200 1 . 1 0 `S1205 1 . 1 0 ]
 "1119
-[s S5669 . 1 `uc 1 . 1 0 :6:0 
+[s S5687 . 1 `uc 1 . 1 0 :6:0 
 ]
-[u S5671 . 1 `S1227 1 . 1 0 ]
+[u S5689 . 1 `S1227 1 . 1 0 ]
 "1130
-[s S5675 . 1 `uc 1 . 1 0 :5:0 
+[s S5693 . 1 `uc 1 . 1 0 :5:0 
 ]
-[u S5677 . 1 `S1235 1 . 1 0 ]
+[u S5695 . 1 `S1235 1 . 1 0 ]
 "1152
-[s S5686 . 1 `uc 1 RD 1 0 :1:0 
+[s S5704 . 1 `uc 1 RD 1 0 :1:0 
 `uc 1 WR 1 0 :1:1 
 `uc 1 WREN 1 0 :1:2 
 `uc 1 WRERR 1 0 :1:3 
 `uc 1 . 1 0 :3:4 
 `uc 1 EEPGD 1 0 :1:7 
 ]
-[u S5693 . 1 `S1248 1 . 1 0 ]
+[u S5711 . 1 `S1248 1 . 1 0 ]
+"103
+[s S5732 . 1 `uc 1 C 1 0 :1:0 
+`uc 1 DC 1 0 :1:1 
+`uc 1 Z 1 0 :1:2 
+`uc 1 nPD 1 0 :1:3 
+`uc 1 nTO 1 0 :1:4 
+`uc 1 RP 1 0 :2:5 
+`uc 1 IRP 1 0 :1:7 
+]
+[s S5740 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RP0 1 0 :1:5 
+`uc 1 RP1 1 0 :1:6 
+]
+[u S5744 . 1 `S71 1 . 1 0 `S79 1 . 1 0 ]
+"135
+[s S5756 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+]
+[u S5763 . 1 `S107 1 . 1 0 ]
+"159
+[s S5775 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+[u S5784 . 1 `S133 1 . 1 0 ]
+"185
+[s S5796 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S5805 . 1 `S163 1 . 1 0 ]
+"211
+[s S5817 . 1 `uc 1 RD0 1 0 :1:0 
+`uc 1 RD1 1 0 :1:1 
+`uc 1 RD2 1 0 :1:2 
+`uc 1 RD3 1 0 :1:3 
+`uc 1 RD4 1 0 :1:4 
+`uc 1 RD5 1 0 :1:5 
+`uc 1 RD6 1 0 :1:6 
+`uc 1 RD7 1 0 :1:7 
+]
+[u S5826 . 1 `S193 1 . 1 0 ]
+"232
+[s S5833 . 1 `uc 1 RE0 1 0 :1:0 
+`uc 1 RE1 1 0 :1:1 
+`uc 1 RE2 1 0 :1:2 
+]
+[u S5837 . 1 `S218 1 . 1 0 ]
+"244
+[s S5841 . 1 `uc 1 PCLATH 1 0 :5:0 
+]
+[u S5843 . 1 `S230 1 . 1 0 ]
+"266
+[s S5857 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S5866 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S5871 . 1 `S248 1 . 1 0 `S257 1 . 1 0 ]
+"298
+[s S5884 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 PSPIF 1 0 :1:7 
+]
+[s S5893 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 . 1 0 :2:4 
+`uc 1 . 1 0 :1:6 
+`uc 1 . 1 0 :1:7 
+]
+[u S5901 . 1 `S289 1 . 1 0 `S298 1 . 1 0 ]
+"329
+[s S5910 . 1 `uc 1 CCP2IF 1 0 :1:0 
+`uc 1 . 1 0 :2:1 
+`uc 1 BCLIF 1 0 :1:3 
+`uc 1 EEIF 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CMIF 1 0 :1:6 
+]
+[u S5917 . 1 `S332 1 . 1 0 ]
+"365
+[s S5932 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 TMR1CS 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS 1 0 :2:4 
+]
+[s S5938 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1SYNC 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+]
+[s S5944 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T1INSYNC 1 0 :1:2 
+]
+[u S5947 . 1 `S361 1 . 1 0 `S367 1 . 1 0 `S373 1 . 1 0 ]
+"402
+[s S5961 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 TOUTPS 1 0 :4:3 
+]
+[s S5965 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TOUTPS0 1 0 :1:3 
+`uc 1 TOUTPS1 1 0 :1:4 
+`uc 1 TOUTPS2 1 0 :1:5 
+`uc 1 TOUTPS3 1 0 :1:6 
+]
+[u S5973 . 1 `S405 1 . 1 0 `S409 1 . 1 0 ]
+"436
+[s S5987 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+[s S5993 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[u S5998 . 1 `S443 1 . 1 0 `S449 1 . 1 0 ]
+"475
+[s S6012 . 1 `uc 1 CCP1M 1 0 :4:0 
+`uc 1 CCP1Y 1 0 :1:4 
+`uc 1 CCP1X 1 0 :1:5 
+]
+[s S6016 . 1 `uc 1 CCP1M0 1 0 :1:0 
+`uc 1 CCP1M1 1 0 :1:1 
+`uc 1 CCP1M2 1 0 :1:2 
+`uc 1 CCP1M3 1 0 :1:3 
+]
+[u S6021 . 1 `S479 1 . 1 0 `S483 1 . 1 0 ]
+"506
+[s S6038 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+[s S6047 . 1 `uc 1 RCD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 RC9 1 0 :1:6 
+]
+[s S6051 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 nRC8 1 0 :1:6 
+]
+[s S6054 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 RC8_9 1 0 :1:6 
+]
+[u S6057 . 1 `S514 1 . 1 0 `S523 1 . 1 0 `S527 1 . 1 0 `S530 1 . 1 0 ]
+"563
+[s S6075 . 1 `uc 1 CCP2M 1 0 :4:0 
+`uc 1 CCP2Y 1 0 :1:4 
+`uc 1 CCP2X 1 0 :1:5 
+]
+[s S6079 . 1 `uc 1 CCP2M0 1 0 :1:0 
+`uc 1 CCP2M1 1 0 :1:1 
+`uc 1 CCP2M2 1 0 :1:2 
+`uc 1 CCP2M3 1 0 :1:3 
+]
+[u S6084 . 1 `S570 1 . 1 0 `S574 1 . 1 0 ]
+"596
+[s S6100 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 GO_nDONE 1 0 :1:2 
+`uc 1 CHS 1 0 :3:3 
+`uc 1 ADCS 1 0 :2:6 
+]
+[s S6106 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 . 1 0 :3:3 
+`uc 1 . 1 0 :2:6 
+]
+[s S6112 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO 1 0 :1:2 
+`uc 1 CHS0 1 0 :1:3 
+`uc 1 CHS1 1 0 :1:4 
+`uc 1 CHS2 1 0 :1:5 
+`uc 1 ADCS0 1 0 :1:6 
+`uc 1 ADCS1 1 0 :1:7 
+]
+[s S6120 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nDONE 1 0 :1:2 
+]
+[s S6123 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 GO_DONE 1 0 :1:2 
+]
+[u S6126 . 1 `S604 1 . 1 0 `S610 1 . 1 0 `S616 1 . 1 0 `S624 1 . 1 0 `S627 1 . 1 0 ]
+"648
+[s S6142 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nRBPU 1 0 :1:7 
+]
+[s S6149 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+]
+[u S6153 . 1 `S672 1 . 1 0 `S679 1 . 1 0 ]
+"675
+[s S6164 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+]
+[u S6171 . 1 `S705 1 . 1 0 ]
+"699
+[s S6183 . 1 `uc 1 TRISB0 1 0 :1:0 
+`uc 1 TRISB1 1 0 :1:1 
+`uc 1 TRISB2 1 0 :1:2 
+`uc 1 TRISB3 1 0 :1:3 
+`uc 1 TRISB4 1 0 :1:4 
+`uc 1 TRISB5 1 0 :1:5 
+`uc 1 TRISB6 1 0 :1:6 
+`uc 1 TRISB7 1 0 :1:7 
+]
+[u S6192 . 1 `S731 1 . 1 0 ]
+"725
+[s S6204 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+[u S6213 . 1 `S761 1 . 1 0 ]
+"751
+[s S6225 . 1 `uc 1 TRISD0 1 0 :1:0 
+`uc 1 TRISD1 1 0 :1:1 
+`uc 1 TRISD2 1 0 :1:2 
+`uc 1 TRISD3 1 0 :1:3 
+`uc 1 TRISD4 1 0 :1:4 
+`uc 1 TRISD5 1 0 :1:5 
+`uc 1 TRISD6 1 0 :1:6 
+`uc 1 TRISD7 1 0 :1:7 
+]
+[u S6234 . 1 `S791 1 . 1 0 ]
+"776
+[s S6245 . 1 `uc 1 TRISE0 1 0 :1:0 
+`uc 1 TRISE1 1 0 :1:1 
+`uc 1 TRISE2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 PSPMODE 1 0 :1:4 
+`uc 1 IBOV 1 0 :1:5 
+`uc 1 OBF 1 0 :1:6 
+`uc 1 IBF 1 0 :1:7 
+]
+[u S6254 . 1 `S820 1 . 1 0 ]
+"802
+[s S6266 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 PSPIE 1 0 :1:7 
+]
+[u S6275 . 1 `S850 1 . 1 0 ]
+"824
+[s S6283 . 1 `uc 1 CCP2IE 1 0 :1:0 
+`uc 1 . 1 0 :2:1 
+`uc 1 BCLIE 1 0 :1:3 
+`uc 1 EEIE 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 CMIE 1 0 :1:6 
+]
+[u S6290 . 1 `S876 1 . 1 0 ]
+"843
+[s S6297 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+]
+[s S6300 . 1 `uc 1 nBO 1 0 :1:0 
+]
+[u S6302 . 1 `S897 1 . 1 0 `S900 1 . 1 0 ]
+"866
+[s S6315 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+[u S6324 . 1 `S920 1 . 1 0 ]
+"914
+[s S6352 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S6361 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 . 1 0 :1:7 
+]
+[s S6370 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S6375 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DATA 1 0 :1:5 
+]
+[s S6381 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S6386 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S6391 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S6396 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[u S6401 . 1 `S966 1 . 1 0 `S975 1 . 1 0 `S984 1 . 1 0 `S989 1 . 1 0 `S995 1 . 1 0 `S1000 1 . 1 0 `S1005 1 . 1 0 `S1010 1 . 1 0 ]
+"989
+[s S6422 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+[s S6431 . 1 `uc 1 TXD8 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 nTX8 1 0 :1:6 
+]
+[s S6435 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[u S6438 . 1 `S1085 1 . 1 0 `S1094 1 . 1 0 `S1098 1 . 1 0 ]
+"1028
+[s S6453 . 1 `uc 1 CM 1 0 :3:0 
+`uc 1 CIS 1 0 :1:3 
+`uc 1 C1INV 1 0 :1:4 
+`uc 1 C2INV 1 0 :1:5 
+`uc 1 C1OUT 1 0 :1:6 
+`uc 1 C2OUT 1 0 :1:7 
+]
+[s S6460 . 1 `uc 1 CM0 1 0 :1:0 
+`uc 1 CM1 1 0 :1:1 
+`uc 1 CM2 1 0 :1:2 
+]
+[u S6464 . 1 `S1132 1 . 1 0 `S1139 1 . 1 0 ]
+"1056
+[s S6476 . 1 `uc 1 CVR 1 0 :4:0 
+`uc 1 . 1 0 :1:4 
+`uc 1 CVRR 1 0 :1:5 
+`uc 1 CVROE 1 0 :1:6 
+`uc 1 CVREN 1 0 :1:7 
+]
+[s S6482 . 1 `uc 1 CVR0 1 0 :1:0 
+`uc 1 CVR1 1 0 :1:1 
+`uc 1 CVR2 1 0 :1:2 
+`uc 1 CVR3 1 0 :1:3 
+]
+[u S6487 . 1 `S1166 1 . 1 0 `S1172 1 . 1 0 ]
+"1087
+[s S6499 . 1 `uc 1 PCFG 1 0 :4:0 
+`uc 1 . 1 0 :2:4 
+`uc 1 ADCS2 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+[s S6504 . 1 `uc 1 PCFG0 1 0 :1:0 
+`uc 1 PCFG1 1 0 :1:1 
+`uc 1 PCFG2 1 0 :1:2 
+`uc 1 PCFG3 1 0 :1:3 
+]
+[u S6509 . 1 `S1200 1 . 1 0 `S1205 1 . 1 0 ]
+"1119
+[s S6516 . 1 `uc 1 . 1 0 :6:0 
+]
+[u S6518 . 1 `S1227 1 . 1 0 ]
+"1130
+[s S6522 . 1 `uc 1 . 1 0 :5:0 
+]
+[u S6524 . 1 `S1235 1 . 1 0 ]
+"1152
+[s S6533 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 EEPGD 1 0 :1:7 
+]
+[u S6540 . 1 `S1248 1 . 1 0 ]
+"6 16x4LCD.c
+[v _initLCD `(v  1 e 0 0 ]
+"32
+[v _togE `(v  1 e 0 0 ]
+"39
+[v _lcdWrite `(v  1 e 0 0 ]
+"47
+[v _lcdClear `(v  1 e 0 0 ]
+"53
+[v _lcdPuts `(v  1 e 0 0 ]
+"59
+[v _lcdPutch `(v  1 e 0 0 ]
+"64
+[v _lcdGoto `(v  1 e 0 0 ]
 "16 Bluetooth.c
 [v _initUSART `(v  1 e 0 0 ]
 "74
@@ -2850,9 +3317,9 @@
 [v ___tmul `(um  1 e 3 0 ]
 "3 C:\Microchip\HiTech\sources\wmul.c
 [v ___wmul `(ui  1 e 2 0 ]
-"6 Command.c
+"12 Command.c
 [v _readCommands `(v  1 e 0 0 ]
-"71
+"85
 [v _writeCommands `(v  1 e 0 0 ]
 "7 customADC.c
 [v _initADC `(v  1 e 0 0 ]
@@ -2862,11 +3329,11 @@
 [v _selectHumidity `(v  1 e 0 0 ]
 "7 eeread.c
 [v _eeprom_read `(uc  1 e 1 0 ]
-"35 main.c
+"36 main.c
 [v _isr `I(v  1 s 0 isr ]
-"50
+"51
 [v _main `(i  1 e 2 0 ]
-"77
+"82
 [v _getPacket `(v  1 e 0 0 ]
 "42 Packet.c
 [v _checkEven `(i  1 e 2 0 ]
@@ -3597,7 +4064,7 @@
 "24
 [v _groupNum `DCuc  1 e 1 0 ]
 "26
-[v _readError `DC[25]uc  1 e 25 0 ]
+[v _readError `[25]uc  1 e 25 0 ]
 "30
 [v _userStartByte `DCuc  1 e 1 0 ]
 "32
@@ -3664,13 +4131,44 @@
 [v _humStartHi `DCuc  1 e 1 0 ]
 "104
 [v _humStartLo `DCuc  1 e 1 0 ]
-"50 main.c
+"51 main.c
 [v _main `(i  1 e 2 0 ]
 {
+"52
+[v main@testString `[9]uc  1 a 9 18 ]
+[v main@F1186 `[9]uc  1 s 9 F1186 ]
+"80
+} 0
+"6 16x4LCD.c
+[v _initLCD `(v  1 e 0 0 ]
+{
+"30
+} 0
+"53
+[v _lcdPuts `(v  1 e 0 0 ]
+{
+[v lcdPuts@s `*.cDCuc  1 a 1 wreg ]
+[v lcdPuts@s `*.cDCuc  1 a 1 wreg ]
+"57
+} 0
+"64
+[v _lcdGoto `(v  1 e 0 0 ]
+{
+[v lcdGoto@pos `uc  1 a 1 wreg ]
+[v lcdGoto@pos `uc  1 a 1 wreg ]
+"68
+} 0
+"47
+[v _lcdClear `(v  1 e 0 0 ]
+{
 "51
-[v main@testString `[9]uc  1 a 9 16 ]
-[v main@F1175 `[9]uc  1 s 9 F1175 ]
-"75
+} 0
+"39
+[v _lcdWrite `(v  1 e 0 0 ]
+{
+[v lcdWrite@c `uc  1 a 1 wreg ]
+[v lcdWrite@c `uc  1 a 1 wreg ]
+"45
 } 0
 "45 Temperature.c
 [v _getTemp `(v  1 e 0 0 ]
@@ -3679,7 +4177,12 @@
 [v getTemp@tempReading `ui  1 a 2 5 ]
 "55
 } 0
-"24
+"32 16x4LCD.c
+[v _togE `(v  1 e 0 0 ]
+{
+"37
+} 0
+"24 Temperature.c
 [v _initTemp `(v  1 e 0 0 ]
 {
 "31
@@ -3692,10 +4195,11 @@
 "140 Bluetooth.c
 [v _writeString `(v  1 e 0 0 ]
 {
+[v writeString@userString `*.0uc  1 a 1 wreg ]
 "142
-[v writeString@i `ui  1 a 2 10 ]
+[v writeString@i `ui  1 a 2 12 ]
 "140
-[v writeString@userString `*.muc  1 p 2 8 ]
+[v writeString@userString `*.0uc  1 a 1 wreg ]
 "150
 } 0
 "7 customADC.c
@@ -3719,10 +4223,11 @@
 "5 C:\Microchip\HiTech\sources\strlen.c
 [v _strlen `(ui  1 e 2 0 ]
 {
+[v strlen@s `*.0DCuc  1 a 1 wreg ]
 "6
-[v strlen@cp `*.mDCuc  1 a 2 6 ]
+[v strlen@cp `*.0DCuc  1 a 1 9 ]
 "5
-[v strlen@s `*.mDCuc  1 p 2 0 ]
+[v strlen@s `*.0DCuc  1 a 1 wreg ]
 "12
 } 0
 "74 Bluetooth.c
@@ -3737,23 +4242,23 @@
 {
 "64
 } 0
-"35 main.c
+"36 main.c
 [v _isr `I(v  1 s 0 isr ]
 {
-"39
+"40
 } 0
-"77
+"82
 [v _getPacket `(v  1 e 0 0 ]
 {
-"81
-[v getPacket@arrStore `[50]uc  1 a 50 14 ]
-[v getPacket@F1178 `[50]uc  1 s 50 F1178 ]
-"104
+"86
+[v getPacket@arrStore `[50]uc  1 a 50 16 ]
+[v getPacket@F1189 `[50]uc  1 s 50 F1189 ]
+"107
 } 0
-"6 Command.c
+"12 Command.c
 [v _readCommands `(v  1 e 0 0 ]
 {
-"69
+"76
 } 0
 "236 Packet.c
 [v _validatePacket `(i  1 e 2 0 ]
@@ -3765,9 +4270,9 @@
 {
 [v parsePacket@dataPacket `*.0uc  1 a 1 wreg ]
 "133
-[v parsePacket@i `uc  1 a 1 8 ]
+[v parsePacket@i `uc  1 a 1 10 ]
 "116
-[v parsePacket@dataCounter `i  1 a 2 6 ]
+[v parsePacket@dataCounter `i  1 a 2 8 ]
 "114
 [v parsePacket@dataPacket `*.0uc  1 a 1 wreg ]
 "138
@@ -3775,9 +4280,9 @@
 "140 Bluetooth.c
 [v i1_writeString `(v  1 e 0 0 ]
 {
-[v i1writeString@userString `*.cuc  1 a 1 wreg ]
-[v i1writeString@i `ui  1 a 2 9 ]
-[v i1writeString@userString `*.cuc  1 a 1 wreg ]
+[v i1writeString@userString `*.0uc  1 a 1 wreg ]
+[v i1writeString@i `ui  1 a 2 12 ]
+[v i1writeString@userString `*.0uc  1 a 1 wreg ]
 "150
 } 0
 "258 Packet.c
@@ -3827,10 +4332,10 @@
 {
 [v makeHexByte@nibOne `uc  1 a 1 wreg ]
 "216
-[v makeHexByte@input_byte `uc  1 a 1 1 ]
+[v makeHexByte@input_byte `uc  1 a 1 3 ]
 "215
 [v makeHexByte@nibOne `uc  1 a 1 wreg ]
-[v makeHexByte@nibTwo `uc  1 p 1 11 ]
+[v makeHexByte@nibTwo `uc  1 p 1 13 ]
 "220
 } 0
 "162
@@ -3838,9 +4343,9 @@
 {
 [v readString@readStorage `*.0uc  1 a 1 wreg ]
 "164
-[v readString@i `ui  1 a 2 1 ]
+[v readString@i `ui  1 a 2 3 ]
 "166
-[v readString@ch `uc  1 a 1 3 ]
+[v readString@ch `uc  1 a 1 5 ]
 "162
 [v readString@readStorage `*.0uc  1 a 1 wreg ]
 "188
@@ -3848,8 +4353,9 @@
 "5 C:\Microchip\HiTech\sources\strlen.c
 [v i1_strlen `(ui  1 e 2 0 ]
 {
-[v i1strlen@cp `*DCuc  1 a 2 6 ]
-[v i1strlen@s `*.mDCuc  1 p 2 0 ]
+[v i1strlen@s `*.0DCuc  1 a 1 wreg ]
+[v i1strlen@cp `*DCuc  1 a 1 9 ]
+[v i1strlen@s `*.0DCuc  1 a 1 wreg ]
 "12
 } 0
 "7 C:\Microchip\HiTech\sources\eewrite.c
@@ -3857,7 +4363,7 @@
 {
 [v i1eeprom_write@addr `uc  1 a 1 wreg ]
 [v i1eeprom_write@addr `uc  1 a 1 wreg ]
-[v i1eeprom_write@value `uc  1 p 1 8 ]
+[v i1eeprom_write@value `uc  1 p 1 10 ]
 "10
 } 0
 "74 Bluetooth.c
@@ -3867,10 +4373,10 @@
 [v i1writeByte@Byte `uc  1 a 1 wreg ]
 "82
 } 0
-"71 Command.c
+"85 Command.c
 [v _writeCommands `(v  1 e 0 0 ]
 {
-"75
+"89
 } 0
 "7 C:\Microchip\HiTech\sources\eeread.c
 [v _eeprom_read `(uc  1 e 1 0 ]

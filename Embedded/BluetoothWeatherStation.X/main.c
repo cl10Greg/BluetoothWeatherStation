@@ -13,6 +13,7 @@
 #include "customADC.h"
 #include "Packet.h"
 #include "Command.h"
+#include "16x4LCD.h"
 
 
 /*************************************************************************
@@ -55,9 +56,13 @@ int main()
     initUSART();
     //Used to setup the ADC
     initADC();
-    //Used to setup the LCD
-    //initLCD();
+    //User to setup temperature
     initTemp();
+
+    initLCD();
+    lcdClear();
+    lcdGoto(0x00);
+    lcdPuts("Hello");
     
     //Write a welcome message on start up
     writeString(testString);

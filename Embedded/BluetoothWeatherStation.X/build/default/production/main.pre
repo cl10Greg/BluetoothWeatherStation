@@ -1115,7 +1115,7 @@ const char classNum[] = "ECE5620";
 const char classTerm[] = "Fall 2013";
 const char groupNum = '2';
 
-const unsigned char readError[] = "Not a valid read command";
+unsigned char readError[] = "Not a valid read command";
 
 
 
@@ -1244,7 +1244,16 @@ void displayPacket();
 void readCommands();
 void writeCommands();
 
-# 31 "main.c"
+# 41 "16x4LCD.h"
+void initLCD();
+void togE();
+void lcdWrite(unsigned char c);
+void lcdClear();
+void lcdPuts(const char* s);
+void lcdPutch(char c);
+void lcdGoto(unsigned char pos);
+
+# 32 "main.c"
 asm("\tpsect config,class=CONFIG,delta=2"); asm("\tdw ""0xFFFB & 0xFF7F & 0xFFBF & 0xFFFE & 0xFFFF") ;
 
 void getPacket(void);
@@ -1255,7 +1264,7 @@ getPacket();
 }
 }
 
-# 49
+# 50
 int main()
 {
 char testString[] = "Welcome\n";
@@ -1266,8 +1275,12 @@ initUSART();
 
 initADC();
 
-
 initTemp();
+
+initLCD();
+lcdClear();
+lcdGoto(0x00);
+lcdPuts("Hello");
 
 
 writeString(testString);
@@ -1291,8 +1304,6 @@ eeprom_write(calcCSByteAddr,0x00);
 char arrStore[50] = {0};
 
 readString(arrStore);
-
-writeByte(eeprom_read(RXLenAddr));
 
 parsePacket(arrStore);
 

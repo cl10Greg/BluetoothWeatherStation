@@ -1,12 +1,7 @@
 C:\Microchip\HiTech\include\pic16f877a.h
 C:\Microchip\HiTech\include\htc.h
-Bluetooth.h
 16x4LCD.h
 C:\Microchip\HiTech\include\eeprom_routines.h
-Command.h
 C:\Microchip\HiTech\include\chip_select.h
 C:\Microchip\HiTech\include\pic.h
-Packet.h
-Temperature.h
 userMacro.h
-customADC.h

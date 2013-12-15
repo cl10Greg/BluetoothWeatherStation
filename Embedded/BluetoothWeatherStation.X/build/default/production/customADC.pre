@@ -1105,7 +1105,7 @@ const char classNum[] = "ECE5620";
 const char classTerm[] = "Fall 2013";
 const char groupNum = '2';
 
-const unsigned char readError[] = "Not a valid read command";
+unsigned char readError[] = "Not a valid read command";
 
 
 
@@ -1191,7 +1191,7 @@ void initADC()
 TRISA = 0x03;
 
 # 22
-ADCON1 = 0x80;
+ADCON1 = 0x0F;
 
 # 39
 ADCON0 = 0x80;

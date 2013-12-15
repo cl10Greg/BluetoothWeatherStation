@@ -46,6 +46,7 @@ void readCommands(){
             break;
         //Get Time
         case 6:
+            writeByte(userStartByte);
             writeByte('R');
             writeByte('T');
             writeByte('C');

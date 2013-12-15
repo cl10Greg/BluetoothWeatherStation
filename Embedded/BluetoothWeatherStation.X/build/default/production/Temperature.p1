@@ -12,7 +12,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "24 userMacro.h
 [v _groupNum `Cuc  1 e ]
 "26 userMacro.h
-[v _readError `Cuc  -> 0 `x e ]
+[v _readError `uc  -> 0 `x e ]
 "30 userMacro.h
 [v _userStartByte `Cuc  1 e ]
 "32 userMacro.h
@@ -1102,7 +1102,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-[; ;userMacro.h: 26: const unsigned char readError[] = "Not a valid read command";
+[; ;userMacro.h: 26: unsigned char readError[] = "Not a valid read command";
 "30
 [i _userStartByte
 -> -> 170 `i `uc

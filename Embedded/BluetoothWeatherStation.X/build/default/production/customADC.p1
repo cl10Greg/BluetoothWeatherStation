@@ -894,7 +894,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 "24 userMacro.h
 [v _groupNum `Cuc  1 e ]
 "26 userMacro.h
-[v _readError `Cuc  -> 0 `x e ]
+[v _readError `uc  -> 0 `x e ]
 "30 userMacro.h
 [v _userStartByte `Cuc  1 e ]
 "32 userMacro.h
@@ -1923,7 +1923,7 @@ Version 3.2 HI-TECH Software Intermediate Code
 -> 0 `c
 ..
 ]
-[; ;userMacro.h: 26: const unsigned char readError[] = "Not a valid read command";
+[; ;userMacro.h: 26: unsigned char readError[] = "Not a valid read command";
 "30
 [i _userStartByte
 -> -> 170 `i `uc
@@ -2099,9 +2099,9 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;customADC.c: 8: TRISA = 0x03;
 "8
 [e = _TRISA -> -> 3 `i `uc ]
-[; ;customADC.c: 22: ADCON1 = 0x80;
+[; ;customADC.c: 22: ADCON1 = 0x0F;
 "22
-[e = _ADCON1 -> -> 128 `i `uc ]
+[e = _ADCON1 -> -> 15 `i `uc ]
 [; ;customADC.c: 39: ADCON0 = 0x80;
 "39
 [e = _ADCON0 -> -> 128 `i `uc ]
