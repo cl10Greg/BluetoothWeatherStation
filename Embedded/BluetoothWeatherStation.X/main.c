@@ -43,7 +43,6 @@ static void interrupt isr(void){
     if(RCIF && RCIE){
         if(OERR){
             CREN = 0;
-            unsinged char tempData = RCREG;
             CREN = 1;
         }else{
         getPacket();
@@ -91,6 +90,7 @@ void getPacket(){
             
             //Read the UART data
             readString(arrStore);
+            CREN = 0;
             //Reset calculated check sum
             eeprom_write(calcCSByteAddr,0x00);
             //Break the data up into the data sections
@@ -111,5 +111,6 @@ void getPacket(){
                 //Return error code
 
             }
+            CREN = 1;
 }
 

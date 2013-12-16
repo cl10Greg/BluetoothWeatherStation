@@ -20,6 +20,8 @@ void initUSART()
 	// RX Pin - input
 	TRISC7 = 1;
 
+        
+        
 	// RX Setting, 8bit, enable receive,
         /* RCSTA:   Receive status and control register
          * 7:SPEN   Serial port enable
@@ -47,14 +49,16 @@ void initUSART()
          * 0010 0100:   0x24                                    */
         TXSTA = 0x24;
 
-	// Set Baudrade - 9600 (from datasheet baudrade table)
+        // Set Baudrade - 9600 (from datasheet baudrade table)
         /* ASYNC baud rates:
          * BRGH = 0:    FOSC/(64(X+1))
          * BRGH = 1:    FOSC/(16(X+1))
          * 20000000/(16(9600+1)) = 130
          * ~129 on the datasheet                                */
-	//SPBRG = 129; 20MHz
-        SPBRG = 25; //4MHz
+	SPBRG = 129; //20MHz
+        //SPBRG = 25; //4MHz
+
+	
         //Turn on global interrupts
         GIE = 1;
         //Turn on the peripheral interrupts
@@ -95,7 +99,12 @@ unsigned char readByte()
     /* RCIF:    USART receive interrupt flag bit
      * 1:       Buffer is full
      * 0:       Buffer is empty                     */
-    while(!RCIF);// || timeoutCounter < 100){
+    while(!RCIF){
+        if(OERR){
+            CREN = 0;
+            CREN = 1;
+        }
+    }// || timeoutCounter < 100){
         //timeoutCounter++;
         //__delay_ms(10);
     //}
@@ -167,9 +176,8 @@ void readString(unsigned char* readStorage)
     unsigned char ch;
     //Get the first byte
     ch = readByte();
-    writeByte(ch);
     //Loop through all the data until a end byte is detected
-    while(ch != userEndByte)// || ch != timeoutByte)
+    while(ch != userEndByte)
     {
         //Store each byte into the char array
         readStorage[i] = ch;
@@ -177,14 +185,8 @@ void readString(unsigned char* readStorage)
         i++;
         //Get the next byte
         ch = readByte();
-        writeByte(ch);
     }
-    //if(ch == timeoutByte){
-    //    writeByte('O');
-    //}else{
-        //Write the counter length to memory
         eeprom_write(RXLenAddr,i);
-    //}
       
 }
 
