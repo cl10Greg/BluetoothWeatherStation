@@ -95,16 +95,16 @@ void writeByte(unsigned char Byte)
  ***********************************************************************/
 unsigned char readByte()
 {
-    //unsigned char timeoutCounter = 0;
-    /* RCIF:    USART receive interrupt flag bit
-     * 1:       Buffer is full
-     * 0:       Buffer is empty                     */
-    while(!RCIF){
-        if(OERR){
+    if(OERR){
             CREN = 0;
             CREN = 1;
         }
-    }// || timeoutCounter < 100){
+    /* RCIF:    USART receive interrupt flag bit
+     * 1:       Buffer is full
+     * 0:       Buffer is empty                     */
+    while(!RCIF);
+        
+    // || timeoutCounter < 100){
         //timeoutCounter++;
         //__delay_ms(10);
     //}

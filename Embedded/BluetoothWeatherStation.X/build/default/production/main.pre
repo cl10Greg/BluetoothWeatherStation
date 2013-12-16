@@ -1247,16 +1247,24 @@ void writeCommands();
 # 34 "main.c"
 asm("\tpsect config,class=CONFIG,delta=2"); asm("\tdw ""0xFFFB & 0xFF7F & 0xFFBF & 0xFFFE & 0xFFFF") ;
 
-# 40
+
+
+unsigned char arrStore[50];
+
 void getPacket(void);
 
 static void interrupt isr(void){
 if(RCIF && RCIE){
+if(OERR){
+CREN = 0;
+CREN = 1;
+}else{
 getPacket();
 }
 }
+}
 
-# 56
+# 61
 int main()
 {
 char testString[] = "Welcome\n";
@@ -1276,7 +1284,8 @@ writeString(testString);
 
 while(1){
 getTemp();
-_delay((unsigned long)((1000)*(20000000/4000.0)));
+_delay((unsigned long)((10)*(20000000/4000.0)));
+
 }
 
 
@@ -1286,9 +1295,10 @@ return 0;
 
 void getPacket(){
 
-unsigned char arrStore[50] = {0};
+
 
 readString(arrStore);
+CREN = 0;
 
 eeprom_write(calcCSByteAddr,0x00);
 
@@ -1309,5 +1319,6 @@ writeCommands();
 
 
 }
+CREN = 1;
 }
 

@@ -1280,15 +1280,20 @@ unsigned char readByte()
 {
 
 # 102
-while(!RCIF);
+while(!RCIF){
+if(OERR){
+CREN = 0;
+CREN = 1;
+}
+}
 
-# 111
+# 116
 return RCREG;
 
 
 }
 
-# 124
+# 129
 void echoBack()
 {
 
@@ -1301,7 +1306,7 @@ writeByte(ch);
 writeByte('*');
 }
 
-# 144
+# 149
 void writeString(unsigned char* userString)
 {
 
@@ -1315,7 +1320,7 @@ writeByte((unsigned char)i);
 
 }
 
-# 166
+# 171
 void readString(unsigned char* readStorage)
 {
 
@@ -1338,7 +1343,7 @@ eeprom_write(RXLenAddr,i);
 
 }
 
-# 196
+# 201
 unsigned char makeNibble(unsigned char tempNib)
 {
 if(tempNib>='A'){
@@ -1347,7 +1352,7 @@ return ((tempNib - (unsigned char)'A')+10);
 return (tempNib - '0');
 }
 
-# 212
+# 217
 unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo)
 {
 unsigned char input_byte;

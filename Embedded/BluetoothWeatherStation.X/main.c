@@ -35,7 +35,7 @@ __CONFIG(WDTE_OFF & LVP_OFF & BOREN_OFF & FOSC_HS & PWRTE_OFF) ;
 //XT for 4MHZ
 //HS for 20MHz
 
-unsigned char arrStore[50] = {0};
+unsigned char arrStore[50];
 
 void getPacket(void);
 
@@ -44,9 +44,8 @@ static void interrupt isr(void){
         if(OERR){
             CREN = 0;
             CREN = 1;
-        }else{
-        getPacket();
         }
+            getPacket();
     }
 }
 /************************************************************************
@@ -77,7 +76,8 @@ int main()
     //send and receive data in this loop
     while(1){
             getTemp();
-            __delay_ms(1000);
+            __delay_ms(10);
+
     }
 
     //Should never get to this part of the program.  If it does, there was an
