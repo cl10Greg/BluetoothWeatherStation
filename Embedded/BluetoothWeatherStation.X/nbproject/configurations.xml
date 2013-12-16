@@ -14,6 +14,7 @@
       <itemPath>userMacro.h</itemPath>
       <itemPath>Command.h</itemPath>
       <itemPath>16x4LCD.h</itemPath>
+      <itemPath>LCD.h</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -25,6 +26,7 @@
       <itemPath>main.c</itemPath>
       <itemPath>Command.c</itemPath>
       <itemPath>16x4LCD.c</itemPath>
+      <itemPath>LCD.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -146,7 +148,7 @@
       </HI-TECH-LINK>
       <PICkit2PlatformTool>
         <property key="pk2settings.3state" value="false"/>
-        <property key="pk2settings.preserveee" value="false"/>
+        <property key="pk2settings.preserveee" value="true"/>
         <property key="pk2settings.setvddvoltage" value="5.00"/>
         <property key="pk2settings.userpgmexec" value="true"/>
         <property key="pk2settings.usetargetpower" value="false"/>

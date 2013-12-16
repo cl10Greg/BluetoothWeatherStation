@@ -1,8 +1,8 @@
-C:\Microchip\HiTech\include\pic16f877a.h
-C:\Microchip\HiTech\include\htc.h
+C:\Microchip\HiTech\PICC\9.83\include\pic16f877a.h
+C:\Microchip\HiTech\PICC\9.83\include\htc.h
+C:\Microchip\HiTech\PICC\9.83\include\string.h
 Bluetooth.h
-C:\Microchip\HiTech\include\eeprom_routines.h
-C:\Microchip\HiTech\include\string.h
-C:\Microchip\HiTech\include\chip_select.h
-C:\Microchip\HiTech\include\pic.h
+C:\Microchip\HiTech\PICC\9.83\include\eeprom_routines.h
+C:\Microchip\HiTech\PICC\9.83\include\chip_select.h
+C:\Microchip\HiTech\PICC\9.83\include\pic.h
 userMacro.h

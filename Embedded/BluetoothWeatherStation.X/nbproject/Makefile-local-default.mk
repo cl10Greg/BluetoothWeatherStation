@@ -19,19 +19,19 @@ PATH_TO_IDE_BIN=C:/Microchip/MPLABX/mplab_ide/mplab_ide/modules/../../bin/
 # Adding MPLAB X bin directory to path.
 PATH:=C:/Microchip/MPLABX/mplab_ide/mplab_ide/modules/../../bin/:$(PATH)
 # Path to java used to run MPLAB X when this makefile was created
-MP_JAVA_PATH="C:\Microchip\MPLABX\sys\java\jre1.7.0_17/bin/"
+MP_JAVA_PATH="C:\Microchip\MPLABX\sys\java\jre1.7.0_25-windows\java-windows/bin/"
 OS_CURRENT="$(shell uname -s)"
-MP_CC="C:\Microchip\HiTech\bin\picc.exe"
+MP_CC="C:\Microchip\HiTech\PICC\9.83\bin\picc.exe"
 # MP_CPPC is not defined
 # MP_BC is not defined
-MP_AS="C:\Microchip\HiTech\bin\picc.exe"
-MP_LD="C:\Microchip\HiTech\bin\picc.exe"
-MP_AR="C:\Microchip\HiTech\bin\picc.exe"
+MP_AS="C:\Microchip\HiTech\PICC\9.83\bin\picc.exe"
+MP_LD="C:\Microchip\HiTech\PICC\9.83\bin\picc.exe"
+MP_AR="C:\Microchip\HiTech\PICC\9.83\bin\picc.exe"
 DEP_GEN=${MP_JAVA_PATH}java -jar "C:/Microchip/MPLABX/mplab_ide/mplab_ide/modules/../../bin/extractobjectdependencies.jar" 
-MP_CC_DIR="C:\Microchip\HiTech\bin"
+MP_CC_DIR="C:\Microchip\HiTech\PICC\9.83\bin"
 # MP_CPPC_DIR is not defined
 # MP_BC_DIR is not defined
-MP_AS_DIR="C:\Microchip\HiTech\bin"
-MP_LD_DIR="C:\Microchip\HiTech\bin"
-MP_AR_DIR="C:\Microchip\HiTech\bin"
+MP_AS_DIR="C:\Microchip\HiTech\PICC\9.83\bin"
+MP_LD_DIR="C:\Microchip\HiTech\PICC\9.83\bin"
+MP_AR_DIR="C:\Microchip\HiTech\PICC\9.83\bin"
 # MP_BC_DIR is not defined

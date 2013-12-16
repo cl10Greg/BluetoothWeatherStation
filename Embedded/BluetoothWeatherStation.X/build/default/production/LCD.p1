@@ -1,84 +1,4 @@
 Version 3.2 HI-TECH Software Intermediate Code
-"19 userMacro.h
-[v _member1 `Cuc  -> 0 `x e ]
-"20 userMacro.h
-[v _member2 `Cuc  -> 0 `x e ]
-"21 userMacro.h
-[v _member3 `Cuc  -> 0 `x e ]
-"22 userMacro.h
-[v _classNum `Cuc  -> 0 `x e ]
-"23 userMacro.h
-[v _classTerm `Cuc  -> 0 `x e ]
-"24 userMacro.h
-[v _groupNum `Cuc  1 e ]
-"26 userMacro.h
-[v _readError `uc  -> 0 `x e ]
-"30 userMacro.h
-[v _userStartByte `Cuc  1 e ]
-"32 userMacro.h
-[v _userEndByte `Cuc  1 e ]
-"34 userMacro.h
-[v _newLineChar `Cuc  1 e ]
-"36 userMacro.h
-[v _minSizeByte `Cuc  1 e ]
-"38 userMacro.h
-[v _noDataLen `Cuc  1 e ]
-"40 userMacro.h
-[v _maxCmd `Cuc  1 e ]
-"42 userMacro.h
-[v _readByteVal `Cuc  1 e ]
-"44 userMacro.h
-[v _writeByteVal `Cuc  1 e ]
-"46 userMacro.h
-[v _timeoutByte `Cuc  1 e ]
-"50 userMacro.h
-[v _RXLenAddr `Cuc  1 e ]
-"52 userMacro.h
-[v _startByteAddr `Cuc  1 e ]
-"54 userMacro.h
-[v _rwByteAddr `Cuc  1 e ]
-"56 userMacro.h
-[v _cmdByteAddr `Cuc  1 e ]
-"58 userMacro.h
-[v _lenByteAddr `Cuc  1 e ]
-"60 userMacro.h
-[v _csByteAddr `Cuc  1 e ]
-"62 userMacro.h
-[v _endByteAddr `Cuc  1 e ]
-"64 userMacro.h
-[v _dataBytesAddr `Cuc  1 e ]
-"66 userMacro.h
-[v _calcCSByteAddr `Cuc  1 e ]
-"70 userMacro.h
-[v _tempValHAddr `Cuc  1 e ]
-"72 userMacro.h
-[v _tempValLAddr `Cuc  1 e ]
-"74 userMacro.h
-[v _tempHiAddr `Cuc  1 e ]
-"76 userMacro.h
-[v _tempLoAddr `Cuc  1 e ]
-"78 userMacro.h
-[v _tempUnitAddr `Cuc  1 e ]
-"82 userMacro.h
-[v _tempStartHi `Cuc  1 e ]
-"84 userMacro.h
-[v _tempStartLo `Cuc  1 e ]
-"86 userMacro.h
-[v _tempC `Cuc  1 e ]
-"88 userMacro.h
-[v _tempF `Cuc  1 e ]
-"92 userMacro.h
-[v _humValHAddr `Cuc  1 e ]
-"94 userMacro.h
-[v _humValLAddr `Cuc  1 e ]
-"96 userMacro.h
-[v _humHiAddr `Cuc  1 e ]
-"98 userMacro.h
-[v _humLoAddr `Cuc  1 e ]
-"102 userMacro.h
-[v _humStartHi `Cuc  1 e ]
-"104 userMacro.h
-[v _humStartLo `Cuc  1 e ]
 "82 C:\Microchip\HiTech\PICC\9.83\include\pic16f877a.h
 [v _INDF `Vuc  1 e@0 ]
 "86 C:\Microchip\HiTech\PICC\9.83\include\pic16f877a.h
@@ -961,312 +881,94 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _EECON1bits `VS99  1 e@396 ]
 "1167 C:\Microchip\HiTech\PICC\9.83\include\pic16f877a.h
 [v _EECON2 `Vuc  1 e@397 ]
-"55 C:\Microchip\HiTech\PICC\9.83\include\string.h
-[v _strlen `(ui  0 ef1`*Cuc ]
-"41 C:\Microchip\HiTech\PICC\9.83\include\eeprom_routines.h
-[v _eeprom_write `(uc  0 ef2`uc`uc ]
-[; ;Bluetooth.h: 12: void initUSART();
-[; ;Bluetooth.h: 14: void writeByte(unsigned char Byte);
-[; ;Bluetooth.h: 16: unsigned char readByte();
-[; ;Bluetooth.h: 18: void echoBack();
-[; ;Bluetooth.h: 20: void writeString(unsigned char* userString);
-[; ;Bluetooth.h: 22: void readString(unsigned char* readStorage);
-[; ;Bluetooth.h: 24: unsigned char makeNibble(unsigned char tempByte);
-[; ;Bluetooth.h: 26: unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo);
 "19 userMacro.h
-[i _member1
-:U ..
--> 71 `c
--> 114 `c
--> 101 `c
--> 103 `c
--> 32 `c
--> 71 `c
--> 105 `c
--> 114 `c
--> 97 `c
--> 114 `c
--> 100 `c
--> 0 `c
-..
-]
-[; ;userMacro.h: 19: const char member1[] = "Greg Girard";
-"20
-[i _member2
-:U ..
--> 68 `c
--> 101 `c
--> 101 `c
--> 112 `c
--> 97 `c
--> 107 `c
--> 32 `c
--> 67 `c
--> 104 `c
--> 97 `c
--> 110 `c
--> 100 `c
--> 114 `c
--> 97 `c
--> 115 `c
--> 101 `c
--> 107 `c
--> 97 `c
--> 114 `c
--> 0 `c
-..
-]
-[; ;userMacro.h: 20: const char member2[] = "Deepak Chandrasekar";
-"21
-[i _member3
-:U ..
--> 65 `c
--> 112 `c
--> 117 `c
--> 114 `c
--> 118 `c
--> 101 `c
--> 32 `c
--> 66 `c
--> 104 `c
--> 105 `c
--> 100 `c
--> 101 `c
--> 0 `c
-..
-]
-[; ;userMacro.h: 21: const char member3[] = "Apurve Bhide";
-"22
-[i _classNum
-:U ..
--> 69 `c
--> 67 `c
--> 69 `c
--> 53 `c
--> 54 `c
--> 50 `c
--> 48 `c
--> 0 `c
-..
-]
-[; ;userMacro.h: 22: const char classNum[] = "ECE5620";
-"23
-[i _classTerm
-:U ..
--> 70 `c
--> 97 `c
--> 108 `c
--> 108 `c
--> 32 `c
--> 50 `c
--> 48 `c
--> 49 `c
--> 51 `c
--> 0 `c
-..
-]
-[; ;userMacro.h: 23: const char classTerm[] = "Fall 2013";
-"24
-[i _groupNum
--> -> 50 `ui `uc
-]
-[; ;userMacro.h: 24: const char groupNum = '2';
-"26
-[i _readError
-:U ..
--> 78 `c
--> 111 `c
--> 116 `c
--> 32 `c
--> 97 `c
--> 32 `c
--> 118 `c
--> 97 `c
--> 108 `c
--> 105 `c
--> 100 `c
--> 32 `c
--> 114 `c
--> 101 `c
--> 97 `c
--> 100 `c
--> 32 `c
--> 99 `c
--> 111 `c
--> 109 `c
--> 109 `c
--> 97 `c
--> 110 `c
--> 100 `c
--> 0 `c
-..
-]
-[; ;userMacro.h: 26: unsigned char readError[] = "Not a valid read command";
-"30
-[i _userStartByte
--> -> 170 `i `uc
-]
-[; ;userMacro.h: 30: const unsigned char userStartByte = 0xAA;
-"32
-[i _userEndByte
--> -> 10 `i `uc
-]
-[; ;userMacro.h: 32: const unsigned char userEndByte = 0x0A;
-"34
-[i _newLineChar
--> -> 10 `i `uc
-]
-[; ;userMacro.h: 34: const unsigned char newLineChar = 0x0A;
-"36
-[i _minSizeByte
--> -> 10 `i `uc
-]
-[; ;userMacro.h: 36: const unsigned char minSizeByte = 0x0A;
-"38
-[i _noDataLen
--> -> 10 `i `uc
-]
-[; ;userMacro.h: 38: const unsigned char noDataLen = 0x0A;
-"40
-[i _maxCmd
--> -> 14 `i `uc
-]
-[; ;userMacro.h: 40: const unsigned char maxCmd = 0x0E;
-"42
-[i _readByteVal
--> -> 0 `i `uc
-]
-[; ;userMacro.h: 42: const unsigned char readByteVal = 0x00;
-"44
-[i _writeByteVal
--> -> 1 `i `uc
-]
-[; ;userMacro.h: 44: const unsigned char writeByteVal = 0x01;
-"46
-[i _timeoutByte
--> -> 255 `i `uc
-]
-[; ;userMacro.h: 46: const unsigned char timeoutByte = 0xFF;
-"50
-[i _RXLenAddr
--> -> 0 `i `uc
-]
-[; ;userMacro.h: 50: const unsigned char RXLenAddr = 0x00;
-"52
-[i _startByteAddr
--> -> 1 `i `uc
-]
-[; ;userMacro.h: 52: const unsigned char startByteAddr = 0x01;
-"54
-[i _rwByteAddr
--> -> 2 `i `uc
-]
-[; ;userMacro.h: 54: const unsigned char rwByteAddr = 0x02;
-"56
-[i _cmdByteAddr
--> -> 3 `i `uc
-]
-[; ;userMacro.h: 56: const unsigned char cmdByteAddr = 0x03;
-"58
-[i _lenByteAddr
--> -> 4 `i `uc
-]
-[; ;userMacro.h: 58: const unsigned char lenByteAddr = 0x04;
-"60
-[i _csByteAddr
--> -> 5 `i `uc
-]
-[; ;userMacro.h: 60: const unsigned char csByteAddr = 0x05;
-"62
-[i _endByteAddr
--> -> 6 `i `uc
-]
-[; ;userMacro.h: 62: const unsigned char endByteAddr = 0x06;
-"64
-[i _dataBytesAddr
--> -> 7 `i `uc
-]
-[; ;userMacro.h: 64: const unsigned char dataBytesAddr = 0x07;
-"66
-[i _calcCSByteAddr
--> -> 48 `i `uc
-]
-[; ;userMacro.h: 66: const unsigned char calcCSByteAddr = 0x30;
-"70
-[i _tempValHAddr
--> -> 96 `i `uc
-]
-[; ;userMacro.h: 70: const unsigned char tempValHAddr = 0x60;
-"72
-[i _tempValLAddr
--> -> 97 `i `uc
-]
-[; ;userMacro.h: 72: const unsigned char tempValLAddr = 0x61;
-"74
-[i _tempHiAddr
--> -> 98 `i `uc
-]
-[; ;userMacro.h: 74: const unsigned char tempHiAddr = 0x62;
-"76
-[i _tempLoAddr
--> -> 100 `i `uc
-]
-[; ;userMacro.h: 76: const unsigned char tempLoAddr = 0x64;
-"78
-[i _tempUnitAddr
--> -> 102 `i `uc
-]
-[; ;userMacro.h: 78: const unsigned char tempUnitAddr = 0x66;
-"82
-[i _tempStartHi
--> -> 100 `i `uc
-]
-[; ;userMacro.h: 82: const unsigned char tempStartHi = 0x64;
-"84
-[i _tempStartLo
--> -> 160 `i `uc
-]
-[; ;userMacro.h: 84: const unsigned char tempStartLo = 0xA0;
-"86
-[i _tempC
--> -> 0 `i `uc
-]
-[; ;userMacro.h: 86: const unsigned char tempC = 0x00;
-"88
-[i _tempF
--> -> 16 `i `uc
-]
-[; ;userMacro.h: 88: const unsigned char tempF = 0x10;
-"92
-[i _humValHAddr
--> -> 128 `i `uc
-]
-[; ;userMacro.h: 92: const unsigned char humValHAddr = 0x80;
-"94
-[i _humValLAddr
--> -> 130 `i `uc
-]
-[; ;userMacro.h: 94: const unsigned char humValLAddr = 0x82;
-"96
-[i _humHiAddr
--> -> 132 `i `uc
-]
-[; ;userMacro.h: 96: const unsigned char humHiAddr = 0x84;
-"98
-[i _humLoAddr
--> -> 134 `i `uc
-]
-[; ;userMacro.h: 98: const unsigned char humLoAddr = 0x86;
-"102
-[i _humStartHi
--> -> 80 `i `uc
-]
-[; ;userMacro.h: 102: const unsigned char humStartHi = 0x50;
-"104
-[i _humStartLo
--> -> 10 `i `uc
-]
-[; ;userMacro.h: 104: const unsigned char humStartLo = 0x0A;
+[v _member1 `Cuc  -> 0 `x e ]
+"20 userMacro.h
+[v _member2 `Cuc  -> 0 `x e ]
+"21 userMacro.h
+[v _member3 `Cuc  -> 0 `x e ]
+"22 userMacro.h
+[v _classNum `Cuc  -> 0 `x e ]
+"23 userMacro.h
+[v _classTerm `Cuc  -> 0 `x e ]
+"24 userMacro.h
+[v _groupNum `Cuc  1 e ]
+"26 userMacro.h
+[v _readError `uc  -> 0 `x e ]
+"30 userMacro.h
+[v _userStartByte `Cuc  1 e ]
+"32 userMacro.h
+[v _userEndByte `Cuc  1 e ]
+"34 userMacro.h
+[v _newLineChar `Cuc  1 e ]
+"36 userMacro.h
+[v _minSizeByte `Cuc  1 e ]
+"38 userMacro.h
+[v _noDataLen `Cuc  1 e ]
+"40 userMacro.h
+[v _maxCmd `Cuc  1 e ]
+"42 userMacro.h
+[v _readByteVal `Cuc  1 e ]
+"44 userMacro.h
+[v _writeByteVal `Cuc  1 e ]
+"46 userMacro.h
+[v _timeoutByte `Cuc  1 e ]
+"50 userMacro.h
+[v _RXLenAddr `Cuc  1 e ]
+"52 userMacro.h
+[v _startByteAddr `Cuc  1 e ]
+"54 userMacro.h
+[v _rwByteAddr `Cuc  1 e ]
+"56 userMacro.h
+[v _cmdByteAddr `Cuc  1 e ]
+"58 userMacro.h
+[v _lenByteAddr `Cuc  1 e ]
+"60 userMacro.h
+[v _csByteAddr `Cuc  1 e ]
+"62 userMacro.h
+[v _endByteAddr `Cuc  1 e ]
+"64 userMacro.h
+[v _dataBytesAddr `Cuc  1 e ]
+"66 userMacro.h
+[v _calcCSByteAddr `Cuc  1 e ]
+"70 userMacro.h
+[v _tempValHAddr `Cuc  1 e ]
+"72 userMacro.h
+[v _tempValLAddr `Cuc  1 e ]
+"74 userMacro.h
+[v _tempHiAddr `Cuc  1 e ]
+"76 userMacro.h
+[v _tempLoAddr `Cuc  1 e ]
+"78 userMacro.h
+[v _tempUnitAddr `Cuc  1 e ]
+"82 userMacro.h
+[v _tempStartHi `Cuc  1 e ]
+"84 userMacro.h
+[v _tempStartLo `Cuc  1 e ]
+"86 userMacro.h
+[v _tempC `Cuc  1 e ]
+"88 userMacro.h
+[v _tempF `Cuc  1 e ]
+"92 userMacro.h
+[v _humValHAddr `Cuc  1 e ]
+"94 userMacro.h
+[v _humValLAddr `Cuc  1 e ]
+"96 userMacro.h
+[v _humHiAddr `Cuc  1 e ]
+"98 userMacro.h
+[v _humLoAddr `Cuc  1 e ]
+"102 userMacro.h
+[v _humStartHi `Cuc  1 e ]
+"104 userMacro.h
+[v _humStartLo `Cuc  1 e ]
+"154 C:\Microchip\HiTech\PICC\9.83\include\pic.h
+[v __delay `(v  0 ef1`ul ]
+[p i __delay ]
+[; ;lcd.h: 33: void WriteCommandToLCD(unsigned char);
+[; ;lcd.h: 34: void WriteDataToLCD(char);
+[; ;lcd.h: 35: void InitLCD(void);
+[; ;lcd.h: 36: void WriteStringToLCD(const char*);
+[; ;lcd.h: 37: void ClearLCDScreen(void);
 [; ;pic16f877a.h: 82: volatile unsigned char INDF @ 0x000;
 [; ;pic16f877a.h: 86: volatile unsigned char TMR0 @ 0x001;
 [; ;pic16f877a.h: 90: volatile unsigned char PCL @ 0x002;
@@ -2098,275 +1800,536 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;eeprom_routines.h: 43: extern void eecpymem(volatile unsigned char *to, eeprom unsigned char *from, unsigned char size);
 [; ;eeprom_routines.h: 44: extern void memcpyee(eeprom unsigned char *to, const unsigned char *from, unsigned char size);
 [; ;pic.h: 154: extern void _delay(unsigned long);
-[; ;string.h: 4: typedef int ptrdiff_t;
-[; ;string.h: 5: typedef unsigned size_t;
-[; ;string.h: 6: typedef unsigned short wchar_t;
-[; ;string.h: 9: extern int errno;
-[; ;string.h: 22: extern void * memcpy(void *, const void *, size_t);
-[; ;string.h: 23: extern void * memmove(void *, const void *, size_t);
-[; ;string.h: 24: extern void * memset(void *, int, size_t);
-[; ;string.h: 35: extern char * strcat(char *, const char *);
-[; ;string.h: 36: extern char * strcpy(char *, const char *);
-[; ;string.h: 37: extern char * strncat(char *, const char *, size_t);
-[; ;string.h: 38: extern char * strncpy(char *, const char *, size_t);
-[; ;string.h: 39: extern char * strdup(const char *);
-[; ;string.h: 40: extern char * strtok(char *, const char *);
-[; ;string.h: 43: extern int memcmp(const void *, const void *, size_t);
-[; ;string.h: 44: extern int strcmp(const char *, const char *);
-[; ;string.h: 45: extern int stricmp(const char *, const char *);
-[; ;string.h: 46: extern int strncmp(const char *, const char *, size_t);
-[; ;string.h: 47: extern int strnicmp(const char *, const char *, size_t);
-[; ;string.h: 48: extern void * memchr(const void *, int, size_t);
-[; ;string.h: 49: extern size_t strcspn(const char *, const char *);
-[; ;string.h: 50: extern char * strpbrk(const char *, const char *);
-[; ;string.h: 51: extern size_t strspn(const char *, const char *);
-[; ;string.h: 52: extern char * strstr(const char *, const char *);
-[; ;string.h: 53: extern char * stristr(const char *, const char *);
-[; ;string.h: 54: extern char * strerror(int);
-[; ;string.h: 55: extern size_t strlen(const char *);
-[; ;string.h: 56: extern char * strchr(const char *, int);
-[; ;string.h: 57: extern char * strichr(const char *, int);
-[; ;string.h: 58: extern char * strrchr(const char *, int);
-[; ;string.h: 59: extern char * strrichr(const char *, int);
-"16 Bluetooth.c
-[v _initUSART `(v  1 ef ]
-{
-[; ;Bluetooth.c: 15: void initUSART()
-[; ;Bluetooth.c: 16: {
-[e :U _initUSART ]
-[f ]
-[; ;Bluetooth.c: 18: TRISC6 = 0;
-"18
-[e = _TRISC6 -> -> 0 `i `b ]
-[; ;Bluetooth.c: 21: TRISC7 = 1;
+"19 userMacro.h
+[i _member1
+:U ..
+-> 71 `c
+-> 114 `c
+-> 101 `c
+-> 103 `c
+-> 32 `c
+-> 71 `c
+-> 105 `c
+-> 114 `c
+-> 97 `c
+-> 114 `c
+-> 100 `c
+-> 0 `c
+..
+]
+[; ;userMacro.h: 19: const char member1[] = "Greg Girard";
+"20
+[i _member2
+:U ..
+-> 68 `c
+-> 101 `c
+-> 101 `c
+-> 112 `c
+-> 97 `c
+-> 107 `c
+-> 32 `c
+-> 67 `c
+-> 104 `c
+-> 97 `c
+-> 110 `c
+-> 100 `c
+-> 114 `c
+-> 97 `c
+-> 115 `c
+-> 101 `c
+-> 107 `c
+-> 97 `c
+-> 114 `c
+-> 0 `c
+..
+]
+[; ;userMacro.h: 20: const char member2[] = "Deepak Chandrasekar";
 "21
-[e = _TRISC7 -> -> 1 `i `b ]
-[; ;Bluetooth.c: 36: RCSTA = 0x90;
+[i _member3
+:U ..
+-> 65 `c
+-> 112 `c
+-> 117 `c
+-> 114 `c
+-> 118 `c
+-> 101 `c
+-> 32 `c
+-> 66 `c
+-> 104 `c
+-> 105 `c
+-> 100 `c
+-> 101 `c
+-> 0 `c
+..
+]
+[; ;userMacro.h: 21: const char member3[] = "Apurve Bhide";
+"22
+[i _classNum
+:U ..
+-> 69 `c
+-> 67 `c
+-> 69 `c
+-> 53 `c
+-> 54 `c
+-> 50 `c
+-> 48 `c
+-> 0 `c
+..
+]
+[; ;userMacro.h: 22: const char classNum[] = "ECE5620";
+"23
+[i _classTerm
+:U ..
+-> 70 `c
+-> 97 `c
+-> 108 `c
+-> 108 `c
+-> 32 `c
+-> 50 `c
+-> 48 `c
+-> 49 `c
+-> 51 `c
+-> 0 `c
+..
+]
+[; ;userMacro.h: 23: const char classTerm[] = "Fall 2013";
+"24
+[i _groupNum
+-> -> 50 `ui `uc
+]
+[; ;userMacro.h: 24: const char groupNum = '2';
+"26
+[i _readError
+:U ..
+-> 78 `c
+-> 111 `c
+-> 116 `c
+-> 32 `c
+-> 97 `c
+-> 32 `c
+-> 118 `c
+-> 97 `c
+-> 108 `c
+-> 105 `c
+-> 100 `c
+-> 32 `c
+-> 114 `c
+-> 101 `c
+-> 97 `c
+-> 100 `c
+-> 32 `c
+-> 99 `c
+-> 111 `c
+-> 109 `c
+-> 109 `c
+-> 97 `c
+-> 110 `c
+-> 100 `c
+-> 0 `c
+..
+]
+[; ;userMacro.h: 26: unsigned char readError[] = "Not a valid read command";
+"30
+[i _userStartByte
+-> -> 170 `i `uc
+]
+[; ;userMacro.h: 30: const unsigned char userStartByte = 0xAA;
+"32
+[i _userEndByte
+-> -> 10 `i `uc
+]
+[; ;userMacro.h: 32: const unsigned char userEndByte = 0x0A;
+"34
+[i _newLineChar
+-> -> 10 `i `uc
+]
+[; ;userMacro.h: 34: const unsigned char newLineChar = 0x0A;
 "36
-[e = _RCSTA -> -> 144 `i `uc ]
-[; ;Bluetooth.c: 50: TXSTA = 0x24;
+[i _minSizeByte
+-> -> 10 `i `uc
+]
+[; ;userMacro.h: 36: const unsigned char minSizeByte = 0x0A;
+"38
+[i _noDataLen
+-> -> 10 `i `uc
+]
+[; ;userMacro.h: 38: const unsigned char noDataLen = 0x0A;
+"40
+[i _maxCmd
+-> -> 14 `i `uc
+]
+[; ;userMacro.h: 40: const unsigned char maxCmd = 0x0E;
+"42
+[i _readByteVal
+-> -> 0 `i `uc
+]
+[; ;userMacro.h: 42: const unsigned char readByteVal = 0x00;
+"44
+[i _writeByteVal
+-> -> 1 `i `uc
+]
+[; ;userMacro.h: 44: const unsigned char writeByteVal = 0x01;
+"46
+[i _timeoutByte
+-> -> 255 `i `uc
+]
+[; ;userMacro.h: 46: const unsigned char timeoutByte = 0xFF;
 "50
-[e = _TXSTA -> -> 36 `i `uc ]
-[; ;Bluetooth.c: 58: SPBRG = 129;
+[i _RXLenAddr
+-> -> 0 `i `uc
+]
+[; ;userMacro.h: 50: const unsigned char RXLenAddr = 0x00;
+"52
+[i _startByteAddr
+-> -> 1 `i `uc
+]
+[; ;userMacro.h: 52: const unsigned char startByteAddr = 0x01;
+"54
+[i _rwByteAddr
+-> -> 2 `i `uc
+]
+[; ;userMacro.h: 54: const unsigned char rwByteAddr = 0x02;
+"56
+[i _cmdByteAddr
+-> -> 3 `i `uc
+]
+[; ;userMacro.h: 56: const unsigned char cmdByteAddr = 0x03;
 "58
-[e = _SPBRG -> -> 129 `i `uc ]
-[; ;Bluetooth.c: 63: GIE = 1;
-"63
-[e = _GIE -> -> 1 `i `b ]
-[; ;Bluetooth.c: 65: PEIE = 1;
-"65
-[e = _PEIE -> -> 1 `i `b ]
-[; ;Bluetooth.c: 67: RCIE = 1;
-"67
-[e = _RCIE -> -> 1 `i `b ]
-[; ;Bluetooth.c: 69: }
-"69
+[i _lenByteAddr
+-> -> 4 `i `uc
+]
+[; ;userMacro.h: 58: const unsigned char lenByteAddr = 0x04;
+"60
+[i _csByteAddr
+-> -> 5 `i `uc
+]
+[; ;userMacro.h: 60: const unsigned char csByteAddr = 0x05;
+"62
+[i _endByteAddr
+-> -> 6 `i `uc
+]
+[; ;userMacro.h: 62: const unsigned char endByteAddr = 0x06;
+"64
+[i _dataBytesAddr
+-> -> 7 `i `uc
+]
+[; ;userMacro.h: 64: const unsigned char dataBytesAddr = 0x07;
+"66
+[i _calcCSByteAddr
+-> -> 48 `i `uc
+]
+[; ;userMacro.h: 66: const unsigned char calcCSByteAddr = 0x30;
+"70
+[i _tempValHAddr
+-> -> 96 `i `uc
+]
+[; ;userMacro.h: 70: const unsigned char tempValHAddr = 0x60;
+"72
+[i _tempValLAddr
+-> -> 97 `i `uc
+]
+[; ;userMacro.h: 72: const unsigned char tempValLAddr = 0x61;
+"74
+[i _tempHiAddr
+-> -> 98 `i `uc
+]
+[; ;userMacro.h: 74: const unsigned char tempHiAddr = 0x62;
+"76
+[i _tempLoAddr
+-> -> 100 `i `uc
+]
+[; ;userMacro.h: 76: const unsigned char tempLoAddr = 0x64;
+"78
+[i _tempUnitAddr
+-> -> 102 `i `uc
+]
+[; ;userMacro.h: 78: const unsigned char tempUnitAddr = 0x66;
+"82
+[i _tempStartHi
+-> -> 100 `i `uc
+]
+[; ;userMacro.h: 82: const unsigned char tempStartHi = 0x64;
+"84
+[i _tempStartLo
+-> -> 160 `i `uc
+]
+[; ;userMacro.h: 84: const unsigned char tempStartLo = 0xA0;
+"86
+[i _tempC
+-> -> 0 `i `uc
+]
+[; ;userMacro.h: 86: const unsigned char tempC = 0x00;
+"88
+[i _tempF
+-> -> 16 `i `uc
+]
+[; ;userMacro.h: 88: const unsigned char tempF = 0x10;
+"92
+[i _humValHAddr
+-> -> 128 `i `uc
+]
+[; ;userMacro.h: 92: const unsigned char humValHAddr = 0x80;
+"94
+[i _humValLAddr
+-> -> 130 `i `uc
+]
+[; ;userMacro.h: 94: const unsigned char humValLAddr = 0x82;
+"96
+[i _humHiAddr
+-> -> 132 `i `uc
+]
+[; ;userMacro.h: 96: const unsigned char humHiAddr = 0x84;
+"98
+[i _humLoAddr
+-> -> 134 `i `uc
+]
+[; ;userMacro.h: 98: const unsigned char humLoAddr = 0x86;
+"102
+[i _humStartHi
+-> -> 80 `i `uc
+]
+[; ;userMacro.h: 102: const unsigned char humStartHi = 0x50;
+"104
+[i _humStartLo
+-> -> 10 `i `uc
+]
+[; ;userMacro.h: 104: const unsigned char humStartLo = 0x0A;
+"8 LCD.c
+[v _ToggleEpinOfLCD `(v  1 ef ]
+{
+[; ;LCD.c: 7: void ToggleEpinOfLCD(void)
+[; ;LCD.c: 8: {
+[e :U _ToggleEpinOfLCD ]
+[f ]
+[; ;LCD.c: 9: RD2 = 1;
+"9
+[e = _RD2 -> -> 1 `i `b ]
+[; ;LCD.c: 10: _delay((unsigned long)((500)*(20000000/4000000.0)));
+"10
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 20000000 `l `d .4000000.0 `ul ]
+[; ;LCD.c: 11: RD2 = 0;
+"11
+[e = _RD2 -> -> 0 `i `b ]
+[; ;LCD.c: 12: _delay((unsigned long)((500)*(20000000/4000000.0)));
+"12
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 20000000 `l `d .4000000.0 `ul ]
+[; ;LCD.c: 13: }
+"13
 [e :UE 101 ]
 }
-"79
-[v _writeByte `(v  1 ef1`uc ]
+"17
+[v _WriteCommandToLCD `(v  1 ef1`uc ]
 {
-[; ;Bluetooth.c: 78: void writeByte(unsigned char Byte)
-[; ;Bluetooth.c: 79: {
-[e :U _writeByte ]
-[v _Byte `uc  1 r1 ]
+[; ;LCD.c: 16: void WriteCommandToLCD(unsigned char Command)
+[; ;LCD.c: 17: {
+[e :U _WriteCommandToLCD ]
+[v _Command `uc  1 r1 ]
 [f ]
-[; ;Bluetooth.c: 83: while(!TXIF);
-"83
-[e $U 103  ]
-[e :U 104 ]
-[e :U 103 ]
-[e $ ! _TXIF 104  ]
-[e :U 105 ]
-[; ;Bluetooth.c: 86: TXREG = Byte;
-"86
-[e = _TXREG _Byte ]
-[; ;Bluetooth.c: 87: }
-"87
+[; ;LCD.c: 18: RD0 = 0;
+"18
+[e = _RD0 -> -> 0 `i `b ]
+[; ;LCD.c: 20: PORTD &= 0x0F;
+"20
+[e =& _PORTD -> -> 15 `i `uc ]
+[; ;LCD.c: 21: PORTD |= (Command&0xF0);
+"21
+[e =| _PORTD -> & -> _Command `i -> 240 `i `uc ]
+[; ;LCD.c: 22: ToggleEpinOfLCD();
+"22
+[e ( _ToggleEpinOfLCD ..  ]
+[; ;LCD.c: 24: PORTD &= 0x0F;
+"24
+[e =& _PORTD -> -> 15 `i `uc ]
+[; ;LCD.c: 25: PORTD |= ((Command<<4)&0xF0);
+"25
+[e =| _PORTD -> & << -> _Command `i -> 4 `i -> 240 `i `uc ]
+[; ;LCD.c: 26: ToggleEpinOfLCD();
+"26
+[e ( _ToggleEpinOfLCD ..  ]
+[; ;LCD.c: 27: }
+"27
 [e :UE 102 ]
 }
-"97
-[v _readByte `(uc  1 ef ]
+"31
+[v _WriteDataToLCD `(v  1 ef1`uc ]
 {
-[; ;Bluetooth.c: 96: unsigned char readByte()
-[; ;Bluetooth.c: 97: {
-[e :U _readByte ]
+[; ;LCD.c: 30: void WriteDataToLCD(char LCDChar)
+[; ;LCD.c: 31: {
+[e :U _WriteDataToLCD ]
+[v _LCDChar `uc  1 r1 ]
 [f ]
-[; ;Bluetooth.c: 102: while(!RCIF);
-"102
-[e $U 107  ]
-[e :U 108 ]
+[; ;LCD.c: 32: RD0 = 1;
+"32
+[e = _RD0 -> -> 1 `i `b ]
+[; ;LCD.c: 34: PORTD &= 0x0F;
+"34
+[e =& _PORTD -> -> 15 `i `uc ]
+[; ;LCD.c: 35: PORTD |= (LCDChar&0xF0);
+"35
+[e =| _PORTD -> & -> _LCDChar `i -> 240 `i `uc ]
+[; ;LCD.c: 36: ToggleEpinOfLCD();
+"36
+[e ( _ToggleEpinOfLCD ..  ]
+[; ;LCD.c: 38: PORTD &= 0x0F;
+"38
+[e =& _PORTD -> -> 15 `i `uc ]
+[; ;LCD.c: 39: PORTD |= ((LCDChar<<4)&0xF0);
+"39
+[e =| _PORTD -> & << -> _LCDChar `i -> 4 `i -> 240 `i `uc ]
+[; ;LCD.c: 40: ToggleEpinOfLCD();
+"40
+[e ( _ToggleEpinOfLCD ..  ]
+[; ;LCD.c: 41: }
+"41
+[e :UE 103 ]
+}
+"45
+[v _InitLCD `(v  1 ef ]
+{
+[; ;LCD.c: 44: void InitLCD(void)
+[; ;LCD.c: 45: {
+[e :U _InitLCD ]
+[f ]
+[; ;LCD.c: 47: RD2 = 0;
+"47
+[e = _RD2 -> -> 0 `i `b ]
+[; ;LCD.c: 48: RD0 = 0;
+"48
+[e = _RD0 -> -> 0 `i `b ]
+[; ;LCD.c: 49: RD4 = 0;
+"49
+[e = _RD4 -> -> 0 `i `b ]
+[; ;LCD.c: 50: RD5 = 0;
+"50
+[e = _RD5 -> -> 0 `i `b ]
+[; ;LCD.c: 51: RD6 = 0;
+"51
+[e = _RD6 -> -> 0 `i `b ]
+[; ;LCD.c: 52: RD7 = 0;
+"52
+[e = _RD7 -> -> 0 `i `b ]
+[; ;LCD.c: 53: TRISD2 = 0;
+"53
+[e = _TRISD2 -> -> 0 `i `b ]
+[; ;LCD.c: 54: TRISD0 = 0;
+"54
+[e = _TRISD0 -> -> 0 `i `b ]
+[; ;LCD.c: 55: TRISD4 = 0;
+"55
+[e = _TRISD4 -> -> 0 `i `b ]
+[; ;LCD.c: 56: TRISD5 = 0;
+"56
+[e = _TRISD5 -> -> 0 `i `b ]
+[; ;LCD.c: 57: TRISD6 = 0;
+"57
+[e = _TRISD6 -> -> 0 `i `b ]
+[; ;LCD.c: 58: TRISD7 = 0;
+"58
+[e = _TRISD7 -> -> 0 `i `b ]
+[; ;LCD.c: 61: _delay((unsigned long)((40)*(20000000/4000.0)));
+"61
+[e ( __delay (1 -> * -> -> 40 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;LCD.c: 63: PORTD &= 0x0F;
+"63
+[e =& _PORTD -> -> 15 `i `uc ]
+[; ;LCD.c: 64: PORTD |= 0x30;
+"64
+[e =| _PORTD -> -> 48 `i `uc ]
+[; ;LCD.c: 65: ToggleEpinOfLCD();
+"65
+[e ( _ToggleEpinOfLCD ..  ]
+[; ;LCD.c: 67: _delay((unsigned long)((6)*(20000000/4000.0)));
+"67
+[e ( __delay (1 -> * -> -> 6 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;LCD.c: 69: PORTD &= 0x0F;
+"69
+[e =& _PORTD -> -> 15 `i `uc ]
+[; ;LCD.c: 70: PORTD |= 0x30;
+"70
+[e =| _PORTD -> -> 48 `i `uc ]
+[; ;LCD.c: 71: ToggleEpinOfLCD();
+"71
+[e ( _ToggleEpinOfLCD ..  ]
+[; ;LCD.c: 73: _delay((unsigned long)((300)*(20000000/4000000.0)));
+"73
+[e ( __delay (1 -> * -> -> 300 `i `d / -> -> 20000000 `l `d .4000000.0 `ul ]
+[; ;LCD.c: 75: PORTD &= 0x0F;
+"75
+[e =& _PORTD -> -> 15 `i `uc ]
+[; ;LCD.c: 76: PORTD |= 0x30;
+"76
+[e =| _PORTD -> -> 48 `i `uc ]
+[; ;LCD.c: 77: ToggleEpinOfLCD();
+"77
+[e ( _ToggleEpinOfLCD ..  ]
+[; ;LCD.c: 79: _delay((unsigned long)((2)*(20000000/4000.0)));
+"79
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;LCD.c: 81: PORTD &= 0x0F;
+"81
+[e =& _PORTD -> -> 15 `i `uc ]
+[; ;LCD.c: 82: PORTD |= 0x20;
+"82
+[e =| _PORTD -> -> 32 `i `uc ]
+[; ;LCD.c: 83: ToggleEpinOfLCD();
+"83
+[e ( _ToggleEpinOfLCD ..  ]
+[; ;LCD.c: 85: _delay((unsigned long)((2)*(20000000/4000.0)));
+"85
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;LCD.c: 87: WriteCommandToLCD(0x28);
+"87
+[e ( _WriteCommandToLCD (1 -> -> 40 `i `uc ]
+[; ;LCD.c: 88: WriteCommandToLCD(0x0c);
+"88
+[e ( _WriteCommandToLCD (1 -> -> 12 `i `uc ]
+[; ;LCD.c: 89: WriteCommandToLCD(0x01);
+"89
+[e ( _WriteCommandToLCD (1 -> -> 1 `i `uc ]
+[; ;LCD.c: 90: WriteCommandToLCD(0x06);
+"90
+[e ( _WriteCommandToLCD (1 -> -> 6 `i `uc ]
+[; ;LCD.c: 91: }
+"91
+[e :UE 104 ]
+}
+"95
+[v _WriteStringToLCD `(v  1 ef1`*Cuc ]
+{
+[; ;LCD.c: 94: void WriteStringToLCD(const char *s)
+[; ;LCD.c: 95: {
+[e :U _WriteStringToLCD ]
+[v _s `*Cuc  1 r1 ]
+[f ]
+[; ;LCD.c: 96: while(*s)
+"96
+[e $U 106  ]
 [e :U 107 ]
-[e $ ! _RCIF 108  ]
-[e :U 109 ]
-[; ;Bluetooth.c: 111: return RCREG;
-"111
-[e ) _RCREG ]
-[e $UE 106  ]
-[; ;Bluetooth.c: 114: }
-"114
-[e :UE 106 ]
+[; ;LCD.c: 97: WriteDataToLCD(*s++);
+"97
+[e ( _WriteDataToLCD (1 *U ++ _s * -> -> 1 `i `x -> -> # *U _s `i `x ]
+[e :U 106 ]
+"96
+[e $ != -> *U _s `i -> -> -> 0 `i `Cuc `i 107  ]
+[e :U 108 ]
+[; ;LCD.c: 98: }
+"98
+[e :UE 105 ]
 }
-"125
-[v _echoBack `(v  1 ef ]
+"102
+[v _ClearLCDScreen `(v  1 ef ]
 {
-[; ;Bluetooth.c: 124: void echoBack()
-[; ;Bluetooth.c: 125: {
-[e :U _echoBack ]
+[; ;LCD.c: 101: void ClearLCDScreen(void)
+[; ;LCD.c: 102: {
+[e :U _ClearLCDScreen ]
 [f ]
-"127
-[v _ch `uc  1 a ]
-[; ;Bluetooth.c: 127: unsigned char ch;
-[; ;Bluetooth.c: 129: ch = readByte();
-"129
-[e = _ch ( _readByte ..  ]
-[; ;Bluetooth.c: 131: writeByte(ch);
-"131
-[e ( _writeByte (1 _ch ]
-[; ;Bluetooth.c: 133: writeByte('*');
-"133
-[e ( _writeByte (1 -> -> 42 `ui `uc ]
-[; ;Bluetooth.c: 134: }
-"134
-[e :UE 110 ]
-}
-"145
-[v _writeString `(v  1 ef1`*uc ]
-{
-[; ;Bluetooth.c: 144: void writeString(unsigned char* userString)
-[; ;Bluetooth.c: 145: {
-[e :U _writeString ]
-[v _userString `*uc  1 r1 ]
-[f ]
-"147
-[v _i `ui  1 a ]
-[; ;Bluetooth.c: 147: unsigned int i;
-[; ;Bluetooth.c: 149: for(i = 0;i<strlen(userString);i++){
-"149
-{
-[e = _i -> -> 0 `i `ui ]
-[e $U 115  ]
-[e :U 112 ]
-{
-[; ;Bluetooth.c: 150: writeByte(userString[i]);
-"150
-[e ( _writeByte (1 *U + _userString * -> _i `ux -> -> # *U _userString `ui `ux ]
-"151
-}
-"149
-[e ++ _i -> -> 1 `i `ui ]
-[e :U 115 ]
-[e $ < _i ( _strlen (1 -> _userString `*Cuc 112  ]
-[e :U 113 ]
-"151
-}
-[; ;Bluetooth.c: 151: }
-[; ;Bluetooth.c: 153: writeByte((unsigned char)i);
-"153
-[e ( _writeByte (1 -> _i `uc ]
-[; ;Bluetooth.c: 155: }
-"155
-[e :UE 111 ]
-}
-"167
-[v _readString `(v  1 ef1`*uc ]
-{
-[; ;Bluetooth.c: 166: void readString(unsigned char* readStorage)
-[; ;Bluetooth.c: 167: {
-[e :U _readString ]
-[v _readStorage `*uc  1 r1 ]
-[f ]
-"169
-[v _i `ui  1 a ]
-[; ;Bluetooth.c: 169: unsigned int i = 0;
-[e = _i -> -> 0 `i `ui ]
-"171
-[v _ch `uc  1 a ]
-[; ;Bluetooth.c: 171: unsigned char ch;
-[; ;Bluetooth.c: 173: ch = readByte();
-"173
-[e = _ch ( _readByte ..  ]
-[; ;Bluetooth.c: 175: while(ch != userEndByte)
-"175
-[e $U 117  ]
-[e :U 118 ]
-[; ;Bluetooth.c: 176: {
-"176
-{
-[; ;Bluetooth.c: 178: readStorage[i] = ch;
-"178
-[e = *U + _readStorage * -> _i `ux -> -> # *U _readStorage `ui `ux _ch ]
-[; ;Bluetooth.c: 180: i++;
-"180
-[e ++ _i -> -> 1 `i `ui ]
-[; ;Bluetooth.c: 182: ch = readByte();
-"182
-[e = _ch ( _readByte ..  ]
-"183
-}
-[e :U 117 ]
-"175
-[e $ != -> _ch `i -> _userEndByte `i 118  ]
-[e :U 119 ]
-[; ;Bluetooth.c: 183: }
-[; ;Bluetooth.c: 184: eeprom_write(RXLenAddr,i);
-"184
-[e ( _eeprom_write (2 , _RXLenAddr -> _i `uc ]
-[; ;Bluetooth.c: 186: }
-"186
-[e :UE 116 ]
-}
-"197
-[v _makeNibble `(uc  1 ef1`uc ]
-{
-[; ;Bluetooth.c: 196: unsigned char makeNibble(unsigned char tempNib)
-[; ;Bluetooth.c: 197: {
-[e :U _makeNibble ]
-[v _tempNib `uc  1 r1 ]
-[f ]
-[; ;Bluetooth.c: 198: if(tempNib>='A'){
-"198
-[e $ ! >= -> _tempNib `ui -> 65 `ui 121  ]
-{
-[; ;Bluetooth.c: 199: return ((tempNib - (unsigned char)'A')+10);
-"199
-[e ) -> + - -> _tempNib `i -> -> -> 65 `ui `uc `i -> 10 `i `uc ]
-[e $UE 120  ]
-"200
-}
-[e :U 121 ]
-[; ;Bluetooth.c: 200: }
-[; ;Bluetooth.c: 201: return (tempNib - '0');
-"201
-[e ) -> - -> _tempNib `ui -> 48 `ui `uc ]
-[e $UE 120  ]
-[; ;Bluetooth.c: 202: }
-"202
-[e :UE 120 ]
-}
-"213
-[v _makeHexByte `(uc  1 ef2`uc`uc ]
-{
-[; ;Bluetooth.c: 212: unsigned char makeHexByte(unsigned char nibOne, unsigned char nibTwo)
-[; ;Bluetooth.c: 213: {
-[e :U _makeHexByte ]
-[v _nibOne `uc  1 r1 ]
-[v _nibTwo `uc  1 r2 ]
-[f ]
-"214
-[v _input_byte `uc  1 a ]
-[; ;Bluetooth.c: 214: unsigned char input_byte;
-[; ;Bluetooth.c: 215: input_byte = (makeNibble(nibOne)<<4);
-"215
-[e = _input_byte -> << -> ( _makeNibble (1 _nibOne `i -> 4 `i `uc ]
-[; ;Bluetooth.c: 216: input_byte|= makeNibble(nibTwo);
-"216
-[e =| _input_byte ( _makeNibble (1 _nibTwo ]
-[; ;Bluetooth.c: 217: return input_byte;
-"217
-[e ) _input_byte ]
-[e $UE 122  ]
-[; ;Bluetooth.c: 218: }
-"218
-[e :UE 122 ]
+[; ;LCD.c: 103: WriteCommandToLCD(0x01);
+"103
+[e ( _WriteCommandToLCD (1 -> -> 1 `i `uc ]
+[; ;LCD.c: 104: _delay((unsigned long)((2)*(20000000/4000.0)));
+"104
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 20000000 `l `d .4000.0 `ul ]
+[; ;LCD.c: 105: }
+"105
+[e :UE 109 ]
 }

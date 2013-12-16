@@ -13,7 +13,9 @@
 #include "customADC.h"
 #include "Packet.h"
 #include "Command.h"
-#include "16x4LCD.h"
+//#include "16x4LCD.h"
+//#include "LCD.h"
+//#include <pic.h>
 
 
 /*************************************************************************
@@ -29,14 +31,23 @@
  * PWRTE:   Power up timer enable bit                                    *
  *      Value:  OFF                                                      *
  ************************************************************************/
-__CONFIG(WDTE_OFF & LVP_OFF & BOREN_OFF & FOSC_XT & PWRTE_OFF) ;
+__CONFIG(WDTE_OFF & LVP_OFF & BOREN_OFF & FOSC_HS & PWRTE_OFF) ;
 //XT for 4MHZ
 //HS for 20MHz
+
+unsigned char arrStore[50] = {0};
+
 void getPacket(void);
 
 static void interrupt isr(void){
     if(RCIF && RCIE){
+        if(OERR){
+            CREN = 0;
+            unsinged char tempData = RCREG;
+            CREN = 1;
+        }else{
         getPacket();
+        }
     }
 }
 /************************************************************************
@@ -52,27 +63,22 @@ int main()
 {
     char testString[] = "Welcome\n";
     //char counterText[] = "Length: ";
-    
-    //Used to setup the UART connection for bluetooth
-    initUSART();
+    TRISB = 0x00;
+    RB1 = 1;
     //Used to setup the ADC
     initADC();
     //User to setup temperature
     initTemp();
+    //Used to setup the UART connection for bluetooth
+    initUSART();
 
-    initLCD();
-    lcdClear();
-    lcdGoto(0x00);
-    lcdPuts("Hello");
-    
-    //Write a welcome message on start up
     writeString(testString);
-
+    
     //Infinite loop.  Will look for communication and get analog values. Will
     //send and receive data in this loop
     while(1){
             getTemp();
-            __delay_ms(10);
+            __delay_ms(1000);
     }
 
     //Should never get to this part of the program.  If it does, there was an
@@ -81,12 +87,12 @@ int main()
 }
 
 void getPacket(){
-            //Reset calculated check sum
-            eeprom_write(calcCSByteAddr,0x00);
-            //Data input space (temporarily only 4 packets of data)
-            char arrStore[50] = {0};
+    //Data input space (temporarily 25)
+            
             //Read the UART data
             readString(arrStore);
+            //Reset calculated check sum
+            eeprom_write(calcCSByteAddr,0x00);
             //Break the data up into the data sections
             parsePacket(arrStore);
             //Validate the data that is in the packet
@@ -103,7 +109,7 @@ void getPacket(){
             //If there is an error in the packet, response error
             }else{
                 //Return error code
-                
+
             }
 }
 
